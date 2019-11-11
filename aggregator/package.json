@@ -1,0 +1,19 @@
+{
+  "name": "aggregator",
+  "version": "1.0.0",
+  "description": "Utility to aggregate data from SAF-T files and Jasmin into a database ",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "pg": "^7.12.1",
+    "pg-hstore": "^2.3.3",
+    "sequelize": "^5.21.2",
+    "sequelize-cli": "^5.5.1",
+    "xml2js": "^0.4.22"
+  }
+}
