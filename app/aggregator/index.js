@@ -1,3 +1,3 @@
-let db = require('./db');
+let bootstrapDb = require('./bootstrapDb');
 
-db.sync();
+bootstrapDb();
