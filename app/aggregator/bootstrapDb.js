@@ -1,12 +1,8 @@
-let db = require('./db');
+const db = require('./db');
+require('./models')
 
 function run() {
-  var normalizedPath = require('path').join(__dirname, 'models');
-
-  require('fs').readdirSync(normalizedPath).forEach(file => {
-    require("./models/" + file);
-  });
-  db.sync();
+  db.sync({force: true});
 }
 
 module.exports = run;
