@@ -1,22 +1,27 @@
-let db = require('../db');
-let Sequelize = require('sequelize');
+const db = require('../db');
+const Sequelize = require('sequelize');
 
-let HeaderData = db.define('HeaderData', {
+const HeaderData = db.define('HeaderData', {
   fiscalYear: {
     type: Sequelize.INTEGER,
-    primaryKey: true
+    primaryKey: true,
+    field: 'fiscal_year'
   },
   companyName: {
-    type: Sequelize.STRING
+    type: Sequelize.STRING,
+    field: 'company_name'
   },
   startDate: {
-    type: Sequelize.DATE
+    type: Sequelize.DATE,
+    field: 'start_date'
   },
   endDate: {
-    type: Sequelize.DATE
+    type: Sequelize.DATE,
+    field: 'end_date'
   },
   currencyCode: {
-    type: Sequelize.STRING
+    type: Sequelize.STRING,
+    field: 'currency_code'
   }
 });
 
