@@ -1,3 +1,3 @@
-let bootstrapDb = require('./bootstrapDb');
+const bootstrapDb = require('./bootstrapDb');
 
 bootstrapDb();
