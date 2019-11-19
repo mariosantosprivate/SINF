@@ -8,7 +8,8 @@ const SalesInvoice = db.define('SalesInvoice', {
     field: 'fiscal_year'
   },
   numberOfEntries: {
-    type: Sequelize.BIGINT
+    type: Sequelize.BIGINT,
+    field: 'number_of_entries'
   },
   totalDebit: {
     type: Sequelize.DECIMAL,
