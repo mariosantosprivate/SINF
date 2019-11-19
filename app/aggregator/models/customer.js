@@ -2,9 +2,10 @@ const db = require('../db');
 const Sequelize = require('sequelize');
 
 const Customer = db.define('Customer', {
-  id: {
+  customerId: {
     type: Sequelize.BIGINT,
-    primaryKey: true
+    primaryKey: true,
+    field: 'customer_id'
   },
   companyName: {
     type: Sequelize.STRING,

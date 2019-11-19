@@ -7,7 +7,10 @@ const Invoice = db.define('Invoice', {
     primaryKey: true,
     field: 'invoice_no'
   },
-  
+  invoiceDate: {
+    type: Sequelize.DATEONLY,
+    field: 'invoice_date'
+  }
 });
 
 module.exports = Invoice;
