@@ -10,7 +10,10 @@ const models = {
   Tax: require('./tax'),
   MovementOfGoods: require('./movementOfGoods'),
   StockMovement: require('./stockMovement'),
-  StockMovementLine: require('./stockMovementLine')
+  StockMovementLine: require('./stockMovementLine'),
+  PaymentsInfo: require('./paymentsInfo'),
+  Payment: require('./payment'),
+  PaymentLine: require('./paymentLine')
 };
 
 // ************************ SalesInvoice ************************
@@ -102,6 +105,22 @@ models.StockMovementLine.belongsTo(models.Product, {
 
 models.StockMovementLine.belongsTo(models.Tax, {
   foreignKey: 'tax_id'
+});
+
+// ************************ Payments ************************
+
+models.Payment.belongsTo(models.PaymentsInfo, { foreignKey: 'fiscal_year' });
+models.PaymentsInfo.hasMany(models.Payment, {
+  foreignKey: 'fiscal_year',
+  onDelete: 'cascade'
+});
+
+models.PaymentsInfo.belongsTo(models.DocumentTotals, { foreignKey: 'document_totals_id' });
+
+models.PaymentLine.belongsTo(models.Payment, { foreignKey: 'payment_ref_no' });
+models.Payment.hasMany(models.PaymentLine, {
+  foreignKey: 'payment_ref_no',
+  onDelete: 'cascade'
 });
 
 module.exports = models;
