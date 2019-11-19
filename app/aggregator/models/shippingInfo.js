@@ -23,6 +23,6 @@ const ShippingInfo = db.define('ShippingInfo', {
   country: {
     type: Sequelize.STRING
   }
-});
+}, { tableName: 'ShippingInfo' });
 
 module.exports = ShippingInfo;
