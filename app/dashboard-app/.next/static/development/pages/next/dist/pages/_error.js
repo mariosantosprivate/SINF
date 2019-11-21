@@ -3121,10 +3121,10 @@ for (var i = 0; i < DOMIterables.length; i++) {
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fnext%2Fdist%2Fpages%2F_error&absolutePagePath=C%3A%5CUsers%5Cmario%5COneDrive%5CDesktop%5CSINF%5CSINF%5Capp%5Cdashboard-app%5Cnode_modules%5Cnext%5Cdist%5Cpages%5C_error.js!./":
-/*!***********************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fnext%2Fdist%2Fpages%2F_error&absolutePagePath=C%3A%5CUsers%5Cmario%5COneDrive%5CDesktop%5CSINF%5CSINF%5Capp%5Cdashboard-app%5Cnode_modules%5Cnext%5Cdist%5Cpages%5C_error.js ***!
-  \***********************************************************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fnext%2Fdist%2Fpages%2F_error&absolutePagePath=C%3A%5CUsers%5Cmario%5COneDrive%5CDesktop%5CSINF%5Capp%5Cdashboard-app%5Cnode_modules%5Cnext%5Cdist%5Cpages%5C_error.js!./":
+/*!****************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fnext%2Fdist%2Fpages%2F_error&absolutePagePath=C%3A%5CUsers%5Cmario%5COneDrive%5CDesktop%5CSINF%5Capp%5Cdashboard-app%5Cnode_modules%5Cnext%5Cdist%5Cpages%5C_error.js ***!
+  \****************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3674,14 +3674,14 @@ module.exports = (__webpack_require__(/*! dll-reference dll_5f137288facb1107b491
 
 /***/ }),
 
-/***/ 1:
-/*!***************************************************************************************************************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2Fnext%2Fdist%2Fpages%2F_error&absolutePagePath=C%3A%5CUsers%5Cmario%5COneDrive%5CDesktop%5CSINF%5CSINF%5Capp%5Cdashboard-app%5Cnode_modules%5Cnext%5Cdist%5Cpages%5C_error.js ***!
-  \***************************************************************************************************************************************************************************************************************************/
+/***/ 4:
+/*!********************************************************************************************************************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2Fnext%2Fdist%2Fpages%2F_error&absolutePagePath=C%3A%5CUsers%5Cmario%5COneDrive%5CDesktop%5CSINF%5Capp%5Cdashboard-app%5Cnode_modules%5Cnext%5Cdist%5Cpages%5C_error.js ***!
+  \********************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fnext%2Fdist%2Fpages%2F_error&absolutePagePath=C%3A%5CUsers%5Cmario%5COneDrive%5CDesktop%5CSINF%5CSINF%5Capp%5Cdashboard-app%5Cnode_modules%5Cnext%5Cdist%5Cpages%5C_error.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fnext%2Fdist%2Fpages%2F_error&absolutePagePath=C%3A%5CUsers%5Cmario%5COneDrive%5CDesktop%5CSINF%5CSINF%5Capp%5Cdashboard-app%5Cnode_modules%5Cnext%5Cdist%5Cpages%5C_error.js!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fnext%2Fdist%2Fpages%2F_error&absolutePagePath=C%3A%5CUsers%5Cmario%5COneDrive%5CDesktop%5CSINF%5Capp%5Cdashboard-app%5Cnode_modules%5Cnext%5Cdist%5Cpages%5C_error.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fnext%2Fdist%2Fpages%2F_error&absolutePagePath=C%3A%5CUsers%5Cmario%5COneDrive%5CDesktop%5CSINF%5Capp%5Cdashboard-app%5Cnode_modules%5Cnext%5Cdist%5Cpages%5C_error.js!./");
 
 
 /***/ }),
@@ -3697,5 +3697,5 @@ module.exports = dll_5f137288facb1107b491;
 
 /***/ })
 
-},[[1,"static/runtime/webpack.js"]]]);
+},[[4,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=_error.js.map

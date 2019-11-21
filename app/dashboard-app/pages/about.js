@@ -1,9 +1,13 @@
-import Layout from '../components/Layout';
+import Navbar from '../components/Navbar'
 
-export default function About() {
-    return (
-        <Layout>
-            <p>This is the about page</p>
-        </Layout>
-    );
-}
+const About = () => (
+    <section>
+    <Head>
+        <title>About - Next JS</title>
+    </Head>
+    <Navbar />
+        <h1>About Next JS</h1>
+    </section>
+);
+
+export default About;
