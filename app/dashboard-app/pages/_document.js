@@ -1,11 +1,14 @@
-import Document, {Head, Main, NextScript} from 'next/document'
+import Document, { Html, Head, Main, NextScript } from 'next/document'
 
-export default class MyDocument extends Document {
+class MyDocument extends Document {
+    static async getInitialProps(ctx) {
+        const initialProps = await Document.getInitialProps(ctx)
+        return { ...initialProps }
+    }
     render(){
         return(
             <html>
                 <Head>
-                    <title>Next JS</title>
                     <link rel="stylesheet" 
                     href="/_next/static/style.css"/>
                 </Head>
@@ -17,3 +20,5 @@ export default class MyDocument extends Document {
         )
     }
 }
+
+export default MyDocument

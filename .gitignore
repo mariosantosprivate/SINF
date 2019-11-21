@@ -2,3 +2,4 @@
 .DS_Store
 
 app/dashboard-app/node_modules/
+app/dashboard-app/.next/
