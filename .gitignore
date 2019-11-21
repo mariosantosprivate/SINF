@@ -1,2 +1,4 @@
 # macOS files
 .DS_Store
+
+app/dashboard-app/node_modules/
