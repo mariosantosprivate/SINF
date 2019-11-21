@@ -13,7 +13,11 @@ const models = {
   StockMovementLine: require('./stockMovementLine'),
   PaymentsInfo: require('./paymentsInfo'),
   Payment: require('./payment'),
-  PaymentLine: require('./paymentLine')
+  PaymentLine: require('./paymentLine'),
+  GeneralLedgerEntries: require('./generalLedgerEntries'),
+  Journal: require('./journal'),
+  Line: require('./line'),
+  Transaction: require('./trasaction')
 };
 
 // ************************ SalesInvoice ************************
@@ -123,4 +127,23 @@ models.Payment.hasMany(models.PaymentLine, {
   onDelete: 'cascade'
 });
 
+// ************************ GeneralLedgerEntries ************************
+
+models.Line.belongsTo(models.Transaction, { foreignKey: 'transactionID' });
+GeneralLedgerEntries.hasMany(Journal, {
+  foreignKey: 'journalID',
+  onDelete: 'cascade'
+});
+
+Journal.belongsTo(GeneralLedgerEntries, { foreignKey: 'GLEDate' });
+Transaction.hasMany(Line, {
+  foreignKey: 'code',
+  onDelete: 'cascade'
+});
+
+Transaction.belongsTo(Journal, { foreignKey: 'journalID' });
+Journal.hasMany(Transaction, {
+  foreignKey: 'transactionID',
+  onDelete: 'cascade'
+});
 module.exports = models;
