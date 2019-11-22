@@ -6,11 +6,10 @@ const PaymentLine = db.define('PaymentLine', {
     type: Sequelize.BIGINT,
     field: 'line_number'
   },
-  debitAmount: {
-    type: Sequelize.DECIMAL,
-    field: 'debit_amount'
+  type: {
+    type: Sequelize.ENUM('credit', 'debit')
   },
-  credtiAmount: {
+  amount: {
     type: Sequelize.DECIMAL,
     field: 'credit_amount'
   }
