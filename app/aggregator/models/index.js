@@ -16,7 +16,7 @@ const models = {
   PaymentLine: require('./paymentLine'),
   GeneralLedgerEntries: require('./generalLedgerEntries'),
   Journal: require('./journal'),
-  Line: require('./line'),
+  TransactionLine: require('./TransactionLine'),
   Transaction: require('./trasaction')
 };
 
@@ -128,22 +128,22 @@ models.Payment.hasMany(models.PaymentLine, {
 });
 
 // ************************ GeneralLedgerEntries ************************
-
-models.Line.belongsTo(models.Transaction, { foreignKey: 'transactionID' });
-GeneralLedgerEntries.hasMany(Journal, {
-  foreignKey: 'journalID',
+models.Journal.belongsTo(models.GeneralLedgerEntries, { foreignKey: 'fiscal_year' });
+models.GeneralLedgerEntries.hasMany(models.Journal, {
+  foreignKey: 'fiscal_year',
   onDelete: 'cascade'
 });
 
-Journal.belongsTo(GeneralLedgerEntries, { foreignKey: 'GLEDate' });
-Transaction.hasMany(Line, {
-  foreignKey: 'code',
+models.Transaction.belongsTo(models.Journal, { foreignKey: 'journal_id' });
+models.Journal.hasMany(models.Transaction, {
+  foreignKey: 'journal_id',
   onDelete: 'cascade'
 });
 
-Transaction.belongsTo(Journal, { foreignKey: 'journalID' });
-Journal.hasMany(Transaction, {
-  foreignKey: 'transactionID',
+models.TransactionLine.belongsTo(models.Transaction, { foreignKey: 'transaction_id' });
+models.Transaction.hasMany(models.TransactionLine, {
+  foreignKey: 'transaction_id',
   onDelete: 'cascade'
 });
+
 module.exports = models;
