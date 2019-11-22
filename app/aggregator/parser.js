@@ -1,11 +1,16 @@
 const xml2js = require('xml2js');
-const fs = require('fs').promises;
+const fs = require('fs');
 
 const SAFT_FOLDER = 'saf-t';
 
-async function parseSAFT(fileName) {
-  const data = await fs.readFile(`${__dirname}/${SAFT_FOLDER}/${fileName}`);
-  const parsedData = await xml2js.parseStringPromise(data, { explicitArray : false });
+function parseSAFT(fileName) {
+  const data = fs.readFileSync(`${__dirname}/${SAFT_FOLDER}/${fileName}`);
+  let parsedData;
+
+  // this shouldn't always work but it does for some reason
+  xml2js.parseString(data, (err, result) => {
+    parsedData = result;
+  });
 
   return parsedData;
 }
