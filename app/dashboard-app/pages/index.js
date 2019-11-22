@@ -1,9 +1,16 @@
-import Layout from '../components/Layout';
+import Navbar from '../components/Navbar'
+import '../scss/style.scss';
+import Head from 'next/head'
 
-export default function Index() {
-    return (
-        <Layout>
-            <p>Hello Next.js</p>
-        </Layout>
-    );
-}
+const Index = () => (
+    <section>
+        <Head>
+            <title>Next JS - Home</title>
+            <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        </Head>
+        <Navbar/>
+        <h1>Hello World from Next JS</h1>
+    </section>
+);
+
+export default Index;

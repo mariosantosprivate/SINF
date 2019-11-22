@@ -1,6 +1,8 @@
 const models = {
   Customer: require('./customer'),
   HeaderData: require('./headerData'),
+  AddressStructure: require('./addressStructure'),
+  Supplier: require('./suppplier'),
   SalesInvoice: require('./salesInvoice'),
   DocumentTotals: require('./documentTotals'),
   ShippingInfo: require('./shippingInfo'),
@@ -17,8 +19,22 @@ const models = {
   GeneralLedgerEntries: require('./generalLedgerEntries'),
   Journal: require('./journal'),
   TransactionLine: require('./TransactionLine'),
-  Transaction: require('./trasaction')
+  Transaction: require('./trasaction'),
 };
+
+// ************************ Supplier **********************
+
+models.AddressStructure.belongsTo(models.Supplier, {
+  foreignKey: 'billingAddress'
+});
+models.Supplier.hasOne(models.AddressStructure, {
+  foreignKey: 'billingAddress',
+  onDelete: 'cascade'
+});
+models.Supplier.hasOne(models.AddressStructure, {
+  foreignKey: 'shiptToAddress',
+  onDelete: 'cascade'
+});
 
 // ************************ SalesInvoice ************************
 
@@ -34,7 +50,7 @@ models.SalesInvoice.belongsTo(models.DocumentTotals, {
 
 models.Invoice.belongsTo(models.Customer, { foreignKey: 'customer_id' });
 models.Customer.hasMany(models.Invoice, {
-  foreignKey: 'customer_id',
+  foreignKey: 'customer_id'
 });
 
 // Technically a shipping info belongs to an Invoice, but sequelize is retarded
@@ -65,7 +81,9 @@ models.InvoiceLine.belongsTo(models.Tax, {
 
 // ************************ MovementOfGoods ************************
 
-models.StockMovement.belongsTo(models.MovementOfGoods, { foreignKey: 'fiscal_year' });
+models.StockMovement.belongsTo(models.MovementOfGoods, {
+  foreignKey: 'fiscal_year'
+});
 models.MovementOfGoods.hasMany(models.StockMovement, {
   foreignKey: 'fiscal_year',
   onDelete: 'cascade'
@@ -97,7 +115,9 @@ models.Supplier.hasMany(models.StockMovement, {
 });
 */
 
-models.StockMovementLine.belongsTo(models.StockMovement, { foreignKey: 'document_number' });
+models.StockMovementLine.belongsTo(models.StockMovement, {
+  foreignKey: 'document_number'
+});
 models.StockMovement.hasMany(models.StockMovementLine, {
   foreignKey: 'document_number',
   onDelete: 'cascade'
@@ -119,7 +139,9 @@ models.PaymentsInfo.hasMany(models.Payment, {
   onDelete: 'cascade'
 });
 
-models.PaymentsInfo.belongsTo(models.DocumentTotals, { foreignKey: 'document_totals_id' });
+models.PaymentsInfo.belongsTo(models.DocumentTotals, {
+  foreignKey: 'document_totals_id'
+});
 
 models.PaymentLine.belongsTo(models.Payment, { foreignKey: 'payment_ref_no' });
 models.Payment.hasMany(models.PaymentLine, {

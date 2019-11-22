@@ -1,9 +1,15 @@
-import Layout from '../components/Layout';
+import Navbar from '../components/Navbar'
+import Head from 'next/head'
 
-export default function About() {
-    return (
-        <Layout>
-            <p>This is the about page</p>
-        </Layout>
-    );
-}
+const About = () => (
+    <section>
+        <Head>
+            <title>Next JS - About</title>
+            <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        </Head>
+        <Navbar />
+        <h1>About Next JS</h1>
+    </section>
+);
+
+export default About;
