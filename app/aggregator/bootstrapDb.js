@@ -2,9 +2,9 @@ const db = require('./db');
 require('./models');
 const seeders = require('./seeders');
 
-function run() {
+function run(fileNames) {
   db.sync({force: true}).then(() => {
-    seeders.runAll();
+    seeders.runAll(fileNames);
     db.close();
   });
 }
