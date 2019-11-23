@@ -8,7 +8,7 @@ const seeders = {
 function runAll(fileNames) {
   // if a fileName isn't specified, then the seeders will
   // take data from all SAF-T files
-  if (!fileNames || fileNames.legth === 0) {
+  if (!fileNames || fileNames.length === 0) {
     for (file of saft.FILES) {
       for(seeder in seeders) {
         seeders[seeder].seed(file.data);
