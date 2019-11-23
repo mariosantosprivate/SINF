@@ -7,7 +7,7 @@ const models = {
   DocumentTotals: require('./documentTotals'),
   ShippingInfo: require('./shippingInfo'),
   Invoice: require('./invoice'),
-  InvoiceLine: require('./InvoiceLine'),
+  InvoiceLine: require('./invoiceLine'),
   Product: require('./product'),
   Tax: require('./tax'),
   MovementOfGoods: require('./movementOfGoods'),
@@ -18,7 +18,7 @@ const models = {
   PaymentLine: require('./paymentLine'),
   GeneralLedgerEntries: require('./generalLedgerEntries'),
   Journal: require('./journal'),
-  TransactionLine: require('./TransactionLine'),
+  TransactionLine: require('./transactionLine'),
   Transaction: require('./trasaction'),
 };
 
