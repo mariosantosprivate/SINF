@@ -18,7 +18,7 @@ async function parseFiles() {
   }
 
   console.log('==============================================================================')
-  console.log('Finished parsing SAF-T files');
+  console.log('Finished parsing SAF-T files.\n');
 }
 
 parseFiles();
