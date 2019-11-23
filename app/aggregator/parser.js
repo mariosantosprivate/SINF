@@ -8,10 +8,10 @@ function parseSAFT(fileName) {
   let parsedData;
 
   // this shouldn't always work but it does for some reason
-  xml2js.parseString(data, (err, result) => {
+  xml2js.parseString(data, {explicitArray: false}, (err, result) => {
     parsedData = result;
   });
-
+  
   return parsedData;
 }
 
