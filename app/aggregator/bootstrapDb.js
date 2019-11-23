@@ -1,9 +1,10 @@
 const db = require('./db');
 require('./models');
+const seeders = require('./seeders');
 
 function run() {
   db.sync({force: true}).then(() => {
-    require('./seeders');
+    seeders.runAll();
     db.close();
   });
 }
