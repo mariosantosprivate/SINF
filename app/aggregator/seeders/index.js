@@ -5,13 +5,13 @@ const seeders = {
   customerSeeder: require('./customerSeeder')
 }
 
-function runAll(fileNames) {
+async function runAll(fileNames) {
   // if a fileName isn't specified, then the seeders will
   // take data from all SAF-T files
   if (!fileNames || fileNames.length === 0) {
     for (file of saft.FILES) {
       for(seeder in seeders) {
-        seeders[seeder].seed(file.data);
+        await seeders[seeder].seed(file.data);
       }
     }
   // if at least one fileName is specified, the seeders will only
@@ -24,7 +24,7 @@ function runAll(fileNames) {
         return;
       }
       for(seeder in seeders) {
-        seeders[seeder].seed(file.data);
+        await seeders[seeder].seed(file.data);
       }
     }
   }

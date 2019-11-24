@@ -4,8 +4,9 @@ const seeders = require('./seeders');
 
 function run(fileNames) {
   db.sync({force: true}).then(() => {
-    seeders.runAll(fileNames);
-    db.close();
+    seeders.runAll(fileNames).then(() => {
+      db.close();
+    })
   });
 }
 
