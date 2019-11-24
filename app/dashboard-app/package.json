@@ -1,20 +1,28 @@
 {
-  "name": "app",
+  "name": "nexttutorial",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon -w server server/index.js"
+    "dev": "start next"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@zeit/next-sass": "^1.0.1",
-    "express": "^4.17.1",
-    "next": "^9.1.4",
-    "node-sass": "^4.13.0",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0"
+    "autoprefixer": "^9.6.1",
+    "babel-plugin-module-resolver": "^3.1.1",
+    "babel-plugin-wrap-in-js": "^1.1.1",
+    "express": "^4.16.3",
+    "next": "^9.0.3",
+    "node-sass": "^4.8.3",
+    "postcss-easy-import": "^3.0.0",
+    "postcss-loader": "^3.0.0",
+    "raw-loader": "^3.1.0",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "sass-loader": "^7.0.1",
+    "tailwindcss": "^0.5.2"
   }
 }
