@@ -20,13 +20,12 @@ const InvoiceLine = db.define('InvoiceLine', {
   description: {
     type: Sequelize.STRING
   },
-  creditAmount: {
+  type: {
+    type: Sequelize.ENUM('credit', 'debit')
+  },
+  amount: {
     type: Sequelize.DECIMAL,
     field: 'credit_amount'
-  },
-  debitAmount: {
-    type: Sequelize.DECIMAL,
-    field: 'debit_amount'
   },
   settlementAmount: {
     type: Sequelize.DECIMAL,
