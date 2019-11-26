@@ -1,29 +1,24 @@
 // pages/_app.js
 import App, { Container } from 'next/app'
-import Head from 'next/head'
 import React from 'react'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default class MyApp extends App {
-  static async getInitialProps({ Component, ctx }) {
-    let pageProps = {}
+    static async getInitialProps({ Component, ctx }) {
+        let pageProps = {}
 
-    if (Component.getInitialProps) {
-      pageProps = await Component.getInitialProps(ctx)
+        if (Component.getInitialProps) {
+            pageProps = await Component.getInitialProps(ctx)
+        }
+
+        return { pageProps }
     }
 
-    return { pageProps }
-  }
+    render() {
+        const { Component, pageProps } = this.props
 
-  render() {
-    const { Component, pageProps } = this.props
-
-    return (
-      <Container>
-        <Head>
-          <title>360 Dashboard</title>
-        </Head>
-        <Component {...pageProps} />
-      </Container>
-    )
-  }
+        return (
+            <Component {...pageProps} />
+        )
+    }
 }

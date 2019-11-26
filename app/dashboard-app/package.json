@@ -1,28 +1,20 @@
 {
-  "name": "nexttutorial",
+  "name": "next-template",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "start next"
+    "dev": "next"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@zeit/next-sass": "^1.0.1",
-    "autoprefixer": "^9.6.1",
-    "babel-plugin-module-resolver": "^3.1.1",
-    "babel-plugin-wrap-in-js": "^1.1.1",
-    "express": "^4.16.3",
-    "next": "^9.0.3",
-    "node-sass": "^4.8.3",
-    "postcss-easy-import": "^3.0.0",
-    "postcss-loader": "^3.0.0",
-    "raw-loader": "^3.1.0",
-    "react": "^16.3.2",
-    "react-dom": "^16.3.2",
-    "sass-loader": "^7.0.1",
-    "tailwindcss": "^0.5.2"
+    "@zeit/next-css": "^1.0.1",
+    "bootstrap": "^4.3.1",
+    "next": "^9.1.4",
+    "react": "^16.12.0",
+    "react-bootstrap": "^1.0.0-beta.16",
+    "react-dom": "^16.12.0"
   }
 }

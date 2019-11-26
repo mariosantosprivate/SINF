@@ -1,15 +1,10 @@
-import Head from "next/head";
-import "../scss/style.scss";
-import Navbar from "../components/Navbar";
-
+// Importing a local CSS file.
+import "../assets/css/app.css";
+import Header from "../components/Header";
 const Index = () => (
-  <section className="page-section">
-    <Head>
-      <title>Dashboard - General</title>
-    </Head>
-    <Navbar />
-      <h1>Hello World from index.js</h1>
-  </section>
-);
-
-export default Index;
+    <div>
+    <Header />
+        <p>Hello Next.js</p>
+    </div>
+)
+export default Index
