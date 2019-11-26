@@ -1,11 +1,11 @@
 # SINF
 
-## Running the application:
+## Running the application (dashboard-app):
 
 > Open dashboard-app folder in terminal
 
-> Run "yarn run build"
+> Run "npm build"
 
-> Run "yarn run dev"
+> Run "npm dev"
 
-> Application should be running in localhost:3000
+> Open browser at http://localhost:3000/
