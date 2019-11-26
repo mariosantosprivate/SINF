@@ -1,6 +1,6 @@
 // Importing a local CSS file.
 import "../assets/css/app.css";
-import Header from "../components/Header";
+import Header from "../components/Header/Header";
 const Sales = () => (
     <div>
     <Header />

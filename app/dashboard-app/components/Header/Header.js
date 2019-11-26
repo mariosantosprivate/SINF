@@ -1,5 +1,5 @@
 // Importing a local CSS file.
-import "../assets/css/app.css";
+import "./Header.css";
 import { Navbar, Nav } from 'react-bootstrap'
 import Link from "./Link"
 
