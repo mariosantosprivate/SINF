@@ -6,6 +6,6 @@
 
 > Run "npm build"
 
-> Run "npm dev"
+> Run "npm run dev"
 
 > Open browser at http://localhost:3000/
