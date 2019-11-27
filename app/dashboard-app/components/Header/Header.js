@@ -4,7 +4,7 @@ import { Navbar, Nav } from 'react-bootstrap'
 import Link from "./Link"
 
 const Header = () => (
-    <Navbar collapseOnSelect expand="md" bg="dark" variant="dark">
+    <Navbar fixed="top" collapseOnSelect expand="md" bg="dark" variant="dark">
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="justify-content-center text-center center-nav">
