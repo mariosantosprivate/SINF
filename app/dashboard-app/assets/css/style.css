@@ -2,3 +2,23 @@
     margin: 0 auto;
     width: 320px;
 }
+
+.top-padded-row {
+    padding-top: 10vh;
+}
+
+.side-padded-row {
+    max-width: 99vw;
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+.side-padded-row-small {
+    max-width: 99vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+.center-card {
+    margin: 0 auto;
+}
