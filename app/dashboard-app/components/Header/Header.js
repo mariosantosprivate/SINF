@@ -5,10 +5,9 @@ import Link from "./Link"
 
 const Header = () => (
     <Navbar collapseOnSelect expand="md" bg="dark" variant="dark">
-        <Navbar.Brand href="/">360-Dash</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav className="center-nav">
+            <Nav className="justify-content-center text-center center-nav">
                 <Nav.Item>
                     <Link href="/">
                         <a className="nav-link">General</a>
@@ -24,10 +23,18 @@ const Header = () => (
                         <a className="nav-link">Purchases</a>
                     </Link>
                 </Nav.Item>
+                <Nav.Item>
+                    <Link href="/finances">
+                        <a className="nav-link">Finances</a>
+                    </Link>
+                </Nav.Item>
+                <Nav.Item>
+                    <Link href="/logistics">
+                        <a className="nav-link">Logistics</a>
+                    </Link>
+                </Nav.Item>
             </Nav>
         </Navbar.Collapse>
     </Navbar>
-
-
 )
 export default Header

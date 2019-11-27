@@ -9,13 +9,12 @@ const Sales = () => (
         <Header />
         <div>
             <Row className="justify-content-sm-center">
-                <Col sm className="text-center">1 of 1</Col>
+                <Col sm className="text-center">1 of 4</Col>
+                <Col sm className="text-center">2 of 4</Col>
+                <Col sm className="text-center">3 of 4</Col>
+                <Col sm className="text-center">4 of 4</Col>
             </Row>
             <Row className="text-center center-content">
-                <Col sm className="text-center">1 of 2</Col>
-                <Col sm className="text-center">2 of 2</Col>
-            </Row>
-            <Row className="justify-content-sm-center">
                 <Col sm className="text-center">1 of 2</Col>
                 <Col sm className="text-center">2 of 2</Col>
             </Row>
