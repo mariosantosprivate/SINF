@@ -4,11 +4,10 @@ import { LineGraph } from "../components/Chart/LineGraph";
 import Card from 'react-bootstrap/Card'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
-import Button from 'react-bootstrap/Button'
 // Importing a local CSS file.
 import "../assets/css/style.css";
 
-const Index = () => (
+const Finances = () => (
     <div>
         <Header />
         <div>
@@ -16,22 +15,22 @@ const Index = () => (
                 <Col className="text-center">
                     <Card style={{ width: '18rem' }} className="center-card">
                         <Card.Body>
-                            <Card.Title>Sales Value</Card.Title>
+                            <Card.Title>Total Income</Card.Title>
                             <Card.Text>
                                 [VALUE]
                             </Card.Text>
-                            <Button variant="primary">Go to Sales</Button>
+
                         </Card.Body>
                     </Card>
                 </Col>
                 <Col className="text-center">
                     <Card style={{ width: '18rem' }} className="center-card">
                         <Card.Body>
-                            <Card.Title>Purchases Value</Card.Title>
+                            <Card.Title>Total Expenses</Card.Title>
                             <Card.Text>
                                 [VALUE]
                             </Card.Text>
-                            <Button variant="primary">Go to Purchases</Button>
+
                         </Card.Body>
                     </Card>
                 </Col>
@@ -42,29 +41,54 @@ const Index = () => (
                             <Card.Text>
                                 [VALUE]
                             </Card.Text>
-                            <Button variant="primary">Go to Finances</Button>
+
                         </Card.Body>
                     </Card>
                 </Col>
                 <Col className="text-center">
                     <Card style={{ width: '18rem' }} className="center-card">
                         <Card.Body>
-                            <Card.Title>Revenue Increase</Card.Title>
+                            <Card.Title>Total Asset Value</Card.Title>
                             <Card.Text>
                                 [VALUE]
                             </Card.Text>
-                            <Button variant="primary">Go to Finances</Button>
+
+                        </Card.Body>
+                    </Card>
+                </Col>
+            </Row>
+
+            <Row className="justify-content-center top-padded-row side-padded-row-small">
+                <Col className="text-center">
+                    <Card style={{ width: '18rem' }} className="center-card">
+                        <Card.Body>
+                            <Card.Title>Accounts Payable</Card.Title>
+                            <Card.Text>
+                                [VALUE]
+                            </Card.Text>
+
                         </Card.Body>
                     </Card>
                 </Col>
                 <Col className="text-center">
                     <Card style={{ width: '18rem' }} className="center-card">
                         <Card.Body>
-                            <Card.Title>Inventory Value</Card.Title>
+                            <Card.Title>Accounts Receivable</Card.Title>
                             <Card.Text>
                                 [VALUE]
                             </Card.Text>
-                            <Button variant="primary">Go to Logistics</Button>
+
+                        </Card.Body>
+                    </Card>
+                </Col>
+                <Col className="text-center">
+                    <Card style={{ width: '18rem' }} className="center-card">
+                        <Card.Body>
+                            <Card.Title>Financial Autonomy</Card.Title>
+                            <Card.Text>
+                                [VALUE]
+                            </Card.Text>
+
                         </Card.Body>
                     </Card>
                 </Col>
@@ -79,14 +103,14 @@ const Index = () => (
                 </Col>
             </Row>
             <Row className="justify-content-sm-center top-padded-row side-padded-row">
-                <Col className="text-center w-50">
+                <Col className="text-center">
                     <LineGraph />
                 </Col>
-                <Col className="text-center w-50">
+                <Col className="text-center">
                     <LineGraph />
                 </Col>
             </Row>
         </div>
     </div>
 )
-export default Index
+export default Finances

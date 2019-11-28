@@ -1,14 +1,12 @@
 import Header from "../components/Header/Header";
-import { BarGraph } from "../components/Chart/BarGraph";
-import { LineGraph } from "../components/Chart/LineGraph";
+import { DoughnutGraph } from "../components/Chart/DoughnutGraph";
 import Card from 'react-bootstrap/Card'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
-import Button from 'react-bootstrap/Button'
 // Importing a local CSS file.
 import "../assets/css/style.css";
 
-const Index = () => (
+const Logistics = () => (
     <div>
         <Header />
         <div>
@@ -16,77 +14,57 @@ const Index = () => (
                 <Col className="text-center">
                     <Card style={{ width: '18rem' }} className="center-card">
                         <Card.Body>
-                            <Card.Title>Sales Value</Card.Title>
-                            <Card.Text>
-                                [VALUE]
-                            </Card.Text>
-                            <Button variant="primary">Go to Sales</Button>
-                        </Card.Body>
-                    </Card>
-                </Col>
-                <Col className="text-center">
-                    <Card style={{ width: '18rem' }} className="center-card">
-                        <Card.Body>
-                            <Card.Title>Purchases Value</Card.Title>
-                            <Card.Text>
-                                [VALUE]
-                            </Card.Text>
-                            <Button variant="primary">Go to Purchases</Button>
-                        </Card.Body>
-                    </Card>
-                </Col>
-                <Col className="text-center">
-                    <Card style={{ width: '18rem' }} className="center-card">
-                        <Card.Body>
-                            <Card.Title>Total Revenue</Card.Title>
-                            <Card.Text>
-                                [VALUE]
-                            </Card.Text>
-                            <Button variant="primary">Go to Finances</Button>
-                        </Card.Body>
-                    </Card>
-                </Col>
-                <Col className="text-center">
-                    <Card style={{ width: '18rem' }} className="center-card">
-                        <Card.Body>
-                            <Card.Title>Revenue Increase</Card.Title>
-                            <Card.Text>
-                                [VALUE]
-                            </Card.Text>
-                            <Button variant="primary">Go to Finances</Button>
-                        </Card.Body>
-                    </Card>
-                </Col>
-                <Col className="text-center">
-                    <Card style={{ width: '18rem' }} className="center-card">
-                        <Card.Body>
                             <Card.Title>Inventory Value</Card.Title>
                             <Card.Text>
                                 [VALUE]
                             </Card.Text>
-                            <Button variant="primary">Go to Logistics</Button>
+
+                        </Card.Body>
+                    </Card>
+                </Col>
+                <Col className="text-center">
+                    <Card style={{ width: '18rem' }} className="center-card">
+                        <Card.Body>
+                            <Card.Title>Average Inventory Period</Card.Title>
+                            <Card.Text>
+                                [VALUE]
+                            </Card.Text>
+
+                        </Card.Body>
+                    </Card>
+                </Col>
+                <Col className="text-center">
+                    <Card style={{ width: '18rem' }} className="center-card">
+                        <Card.Body>
+                            <Card.Title>Inventory Turnover</Card.Title>
+                            <Card.Text>
+                                [VALUE]
+                            </Card.Text>
+
+                        </Card.Body>
+                    </Card>
+                </Col>
+                <Col className="text-center">
+                    <Card style={{ width: '18rem' }} className="center-card">
+                        <Card.Body>
+                            <Card.Title>Total Deliveries</Card.Title>
+                            <Card.Text>
+                                [VALUE]
+                            </Card.Text>
+
                         </Card.Body>
                     </Card>
                 </Col>
             </Row>
-
             <Row className="text-center center-content top-padded-row side-padded-row">
                 <Col className="text-center w-50">
-                    <BarGraph />
+                    <DoughnutGraph />
                 </Col>
                 <Col className="text-center w-50">
-                    <BarGraph />
-                </Col>
-            </Row>
-            <Row className="justify-content-sm-center top-padded-row side-padded-row">
-                <Col className="text-center w-50">
-                    <LineGraph />
-                </Col>
-                <Col className="text-center w-50">
-                    <LineGraph />
+                    <DoughnutGraph />
                 </Col>
             </Row>
         </div>
     </div>
 )
-export default Index
+export default Logistics
