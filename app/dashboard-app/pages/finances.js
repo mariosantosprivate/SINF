@@ -4,7 +4,6 @@ import { LineGraph } from "../components/Chart/LineGraph";
 import Card from 'react-bootstrap/Card'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
-import Button from 'react-bootstrap/Button'
 // Importing a local CSS file.
 import "../assets/css/style.css";
 
