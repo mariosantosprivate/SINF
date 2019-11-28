@@ -18,10 +18,9 @@ const Finances = () => (
                         <Card.Body>
                             <Card.Title>Total Income</Card.Title>
                             <Card.Text>
-                                Some quick example text to build on the card title and make up the bulk of
-                                the card's content.
+                                [VALUE]
                             </Card.Text>
-                            <Button variant="primary">Go somewhere</Button>
+
                         </Card.Body>
                     </Card>
                 </Col>
@@ -30,10 +29,9 @@ const Finances = () => (
                         <Card.Body>
                             <Card.Title>Total Expenses</Card.Title>
                             <Card.Text>
-                                Some quick example text to build on the card title and make up the bulk of
-                                the card's content.
+                                [VALUE]
                             </Card.Text>
-                            <Button variant="primary">Go somewhere</Button>
+
                         </Card.Body>
                     </Card>
                 </Col>
@@ -42,10 +40,9 @@ const Finances = () => (
                         <Card.Body>
                             <Card.Title>Total Revenue</Card.Title>
                             <Card.Text>
-                                Some quick example text to build on the card title and make up the bulk of
-                                the card's content.
+                                [VALUE]
                             </Card.Text>
-                            <Button variant="primary">Go somewhere</Button>
+
                         </Card.Body>
                     </Card>
                 </Col>
@@ -54,10 +51,9 @@ const Finances = () => (
                         <Card.Body>
                             <Card.Title>Total Asset Value</Card.Title>
                             <Card.Text>
-                                Some quick example text to build on the card title and make up the bulk of
-                                the card's content.
+                                [VALUE]
                             </Card.Text>
-                            <Button variant="primary">Go somewhere</Button>
+
                         </Card.Body>
                     </Card>
                 </Col>
@@ -69,10 +65,9 @@ const Finances = () => (
                         <Card.Body>
                             <Card.Title>Accounts Payable</Card.Title>
                             <Card.Text>
-                                Some quick example text to build on the card title and make up the bulk of
-                                the card's content.
+                                [VALUE]
                             </Card.Text>
-                            <Button variant="primary">Go somewhere</Button>
+
                         </Card.Body>
                     </Card>
                 </Col>
@@ -81,10 +76,9 @@ const Finances = () => (
                         <Card.Body>
                             <Card.Title>Accounts Receivable</Card.Title>
                             <Card.Text>
-                                Some quick example text to build on the card title and make up the bulk of
-                                the card's content.
+                                [VALUE]
                             </Card.Text>
-                            <Button variant="primary">Go somewhere</Button>
+
                         </Card.Body>
                     </Card>
                 </Col>
@@ -93,10 +87,9 @@ const Finances = () => (
                         <Card.Body>
                             <Card.Title>Financial Autonomy</Card.Title>
                             <Card.Text>
-                                Some quick example text to build on the card title and make up the bulk of
-                                the card's content.
+                                [VALUE]
                             </Card.Text>
-                            <Button variant="primary">Go somewhere</Button>
+
                         </Card.Body>
                     </Card>
                 </Col>

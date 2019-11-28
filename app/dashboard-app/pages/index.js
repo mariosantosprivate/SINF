@@ -18,10 +18,9 @@ const Index = () => (
                         <Card.Body>
                             <Card.Title>Sales Value</Card.Title>
                             <Card.Text>
-                                Some quick example text to build on the card title and make up the bulk of
-                                the card's content.
+                                [VALUE]
                             </Card.Text>
-                            <Button variant="primary">Go somewhere</Button>
+                            <Button variant="primary">Go to Sales</Button>
                         </Card.Body>
                     </Card>
                 </Col>
@@ -30,10 +29,9 @@ const Index = () => (
                         <Card.Body>
                             <Card.Title>Purchases Value</Card.Title>
                             <Card.Text>
-                                Some quick example text to build on the card title and make up the bulk of
-                                the card's content.
+                                [VALUE]
                             </Card.Text>
-                            <Button variant="primary">Go somewhere</Button>
+                            <Button variant="primary">Go to Purchases</Button>
                         </Card.Body>
                     </Card>
                 </Col>
@@ -42,10 +40,9 @@ const Index = () => (
                         <Card.Body>
                             <Card.Title>Total Revenue</Card.Title>
                             <Card.Text>
-                                Some quick example text to build on the card title and make up the bulk of
-                                the card's content.
+                                [VALUE]
                             </Card.Text>
-                            <Button variant="primary">Go somewhere</Button>
+                            <Button variant="primary">Go to Finances</Button>
                         </Card.Body>
                     </Card>
                 </Col>
@@ -54,10 +51,9 @@ const Index = () => (
                         <Card.Body>
                             <Card.Title>Revenue Increase</Card.Title>
                             <Card.Text>
-                                Some quick example text to build on the card title and make up the bulk of
-                                the card's content.
+                                [VALUE]
                             </Card.Text>
-                            <Button variant="primary">Go somewhere</Button>
+                            <Button variant="primary">Go to Finances</Button>
                         </Card.Body>
                     </Card>
                 </Col>
@@ -66,15 +62,14 @@ const Index = () => (
                         <Card.Body>
                             <Card.Title>Inventory Value</Card.Title>
                             <Card.Text>
-                                Some quick example text to build on the card title and make up the bulk of
-                                the card's content.
+                                [VALUE]
                             </Card.Text>
-                            <Button variant="primary">Go somewhere</Button>
+                            <Button variant="primary">Go to Logistics</Button>
                         </Card.Body>
                     </Card>
                 </Col>
             </Row>
-            
+
             <Row className="text-center center-content top-padded-row side-padded-row">
                 <Col className="text-center w-50">
                     <BarGraph />
@@ -84,10 +79,10 @@ const Index = () => (
                 </Col>
             </Row>
             <Row className="justify-content-sm-center top-padded-row side-padded-row">
-                <Col className="text-center">
+                <Col className="text-center w-50">
                     <LineGraph />
                 </Col>
-                <Col className="text-center">
+                <Col className="text-center w-50">
                     <LineGraph />
                 </Col>
             </Row>

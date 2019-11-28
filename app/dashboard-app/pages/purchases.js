@@ -12,17 +12,16 @@ const Index = () => (
     <div>
         <Header />
         <div>
-        <Row className="justify-content-center top-padded-row side-padded-row-small">
-                
+            <Row className="justify-content-center top-padded-row side-padded-row-small">
+
                 <Col className="text-center">
                     <Card style={{ width: '18rem' }} className="center-card">
                         <Card.Body>
                             <Card.Title>Purchases Value</Card.Title>
                             <Card.Text>
-                                Some quick example text to build on the card title and make up the bulk of
-                                the card's content.
+                                [VALUE]
                             </Card.Text>
-                            <Button variant="primary">Go somewhere</Button>
+
                         </Card.Body>
                     </Card>
                 </Col>
@@ -31,15 +30,14 @@ const Index = () => (
                         <Card.Body>
                             <Card.Title>Total Purchase Orders</Card.Title>
                             <Card.Text>
-                                Some quick example text to build on the card title and make up the bulk of
-                                the card's content.
+                                [VALUE]
                             </Card.Text>
-                            <Button variant="primary">Go somewhere</Button>
+
                         </Card.Body>
                     </Card>
                 </Col>
             </Row>
-            
+
             <Row className="text-center center-content top-padded-row side-padded-row">
                 <Col className="text-center w-50">
                     <BarGraph />

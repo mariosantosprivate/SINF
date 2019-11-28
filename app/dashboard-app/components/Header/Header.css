@@ -1,12 +1,15 @@
 .center-nav {
     margin: 0 auto;
     width: 320px;
+    height: 4vh;
 }
 
 .navbar-nav a {
+    padding-top: 1vh;
     color: grey;
     padding-right: 1rem;
     padding-left: 1rem;
+    
 }
 
 .navbar-nav a:hover {
