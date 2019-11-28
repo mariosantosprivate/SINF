@@ -4,7 +4,6 @@ const models = {
   AddressStructure: require('./addressStructure'),
   Supplier: require('./suppplier'),
   SalesInvoice: require('./salesInvoice'),
-  DocumentTotals: require('./documentTotals'),
   ShippingInfo: require('./shippingInfo'),
   Invoice: require('./invoice'),
   InvoiceLine: require('./invoiceLine'),
@@ -42,10 +41,6 @@ models.Invoice.belongsTo(models.SalesInvoice, { foreignKey: 'fiscal_year' });
 models.SalesInvoice.hasMany(models.Invoice, {
   foreignKey: 'fiscal_year',
   onDelete: 'cascade'
-});
-
-models.SalesInvoice.belongsTo(models.DocumentTotals, {
-  foreignKey: 'document_totals_id'
 });
 
 models.Invoice.belongsTo(models.Customer, { foreignKey: 'customer_id' });
@@ -87,10 +82,6 @@ models.StockMovement.belongsTo(models.MovementOfGoods, {
 models.MovementOfGoods.hasMany(models.StockMovement, {
   foreignKey: 'fiscal_year',
   onDelete: 'cascade'
-});
-
-models.MovementOfGoods.belongsTo(models.DocumentTotals, {
-  foreignKey: 'document_totals_id'
 });
 
 models.StockMovement.belongsTo(models.Customer, { foreignKey: 'customer_id' });
@@ -137,10 +128,6 @@ models.Payment.belongsTo(models.PaymentsInfo, { foreignKey: 'fiscal_year' });
 models.PaymentsInfo.hasMany(models.Payment, {
   foreignKey: 'fiscal_year',
   onDelete: 'cascade'
-});
-
-models.PaymentsInfo.belongsTo(models.DocumentTotals, {
-  foreignKey: 'document_totals_id'
 });
 
 models.PaymentLine.belongsTo(models.Payment, { foreignKey: 'payment_ref_no' });
