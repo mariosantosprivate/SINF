@@ -2,7 +2,8 @@ const jp = require('jsonpath')
 const saft = require('../saft');
 
 const seeders = {
-  customerSeeder: require('./customerSeeder')
+  customerSeeder: require('./customerSeeder'),
+  salesInvoiceSeeder: require('./salesInvoiceSeeder')
 }
 
 async function runAll(fileNames) {
