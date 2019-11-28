@@ -14,6 +14,22 @@ const StockMovement = db.define('StockMovement', {
   movementType: {
     type: Sequelize.STRING,
     field: 'movement_type'
+  },
+  // Document Totals
+  taxPayable: {
+    type: Sequelize.DECIMAL,
+    field: 'tax_payable'
+  },
+  netTotal: {
+    type: Sequelize.DECIMAL,
+    field: 'net_total'
+  },
+  grossTotal: {
+    type: Sequelize.DECIMAL,
+    field: 'gross_total'
+  },
+  currency: {
+    type: Sequelize.STRING
   }
 });
 
