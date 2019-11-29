@@ -4,8 +4,9 @@ const saft = require('../saft');
 const seeders = {
   customerSeeder: require('./customerSeeder'),
   salesInvoiceSeeder: require('./salesInvoiceSeeder'),
+  invoiceSeeder: require('./invoiceSeeder'),
   movementOfGoodsSeeder: require('./movementOfGoodsSeeder'),
-  paymentsInfoSeeder: require('./paymentsInfoSeeder')
+  paymentsInfoSeeder: require('./paymentsInfoSeeder'),
 }
 
 async function runAll(fileNames) {
