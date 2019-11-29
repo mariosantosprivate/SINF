@@ -2,21 +2,25 @@ let db = require('../db');
 let Sequelize = require('sequelize');
 
 let Tax = db.define('Tax', {
-  id: {
-    type: Sequelize.BIGINT,
-    primaryKey: true
-  },
   type: {
-    type: Sequelize.STRING
+    type: Sequelize.STRING,
+    field: 'type'
   },
   countryRegion: {
-    type: Sequelize.STRING
+    type: Sequelize.STRING,
+    field: 'country_region'
   },
   code: {
-    type: Sequelize.STRING
+    type: Sequelize.STRING,
+    field: 'code'
+  },
+  description: {
+    type: Sequelize.STRING,
+    field: 'description'
   },
   percentage: {
-    type: Sequelize.DECIMAL
+    type: Sequelize.DECIMAL,
+    field: 'percentage'
   }
 });
 
