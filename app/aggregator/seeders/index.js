@@ -3,6 +3,8 @@ const saft = require('../saft');
 
 const seeders = {
   customerSeeder: require('./customerSeeder'),
+  productSeeder: require('./productSeeder'),
+  taxSeeder: require('./taxSeeder'),
   salesInvoiceSeeder: require('./salesInvoiceSeeder'),
   invoiceSeeder: require('./invoiceSeeder'),
   movementOfGoodsSeeder: require('./movementOfGoodsSeeder'),
