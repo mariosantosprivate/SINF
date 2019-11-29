@@ -14,6 +14,10 @@ let Tax = db.define('Tax', {
     type: Sequelize.STRING,
     field: 'code'
   },
+  description: {
+    type: Sequelize.STRING,
+    field: 'description'
+  },
   percentage: {
     type: Sequelize.DECIMAL,
     field: 'percentage'
