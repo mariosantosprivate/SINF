@@ -1,12 +1,12 @@
-let db = require("../db");
-let Sequelize = require("sequelize");
+let db = require('../db');
+let Sequelize = require('sequelize');
 
-const Supplier = db.define("Supplier", {
+const Supplier = db.define('Supplier', {
   supplierId: {
-    type: Sequelize.BIGINT,
+    type: Sequelize.STRING,
     primaryKey: true
   },
-  supplierTaxId: {
+  supplierTaxID: {
     type: Sequelize.INTEGER
   },
   companyName: {

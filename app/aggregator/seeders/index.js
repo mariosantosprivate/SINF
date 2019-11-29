@@ -1,22 +1,23 @@
-const jp = require('jsonpath')
+const jp = require('jsonpath');
 const saft = require('../saft');
 
 const seeders = {
   customerSeeder: require('./customerSeeder'),
-  salesInvoiceSeeder: require('./salesInvoiceSeeder')
-}
+  salesInvoiceSeeder: require('./salesInvoiceSeeder'),
+  supplierSeeder: require('./supplierSeeder')
+};
 
 async function runAll(fileNames) {
   // if a fileName isn't specified, then the seeders will
   // take data from all SAF-T files
   if (!fileNames || fileNames.length === 0) {
     for (file of saft.FILES) {
-      for(seeder in seeders) {
+      for (seeder in seeders) {
         await seeders[seeder].seed(file.data);
       }
     }
-  // if at least one fileName is specified, the seeders will only
-  // take data from the files that matche each fileName in fileNames
+    // if at least one fileName is specified, the seeders will only
+    // take data from the files that matche each fileName in fileNames
   } else {
     for (fileName of fileNames) {
       const file = jp.query(saft.FILES, `$[?(@.name=="${fileName}")]`)[0];
@@ -24,7 +25,7 @@ async function runAll(fileNames) {
         console.error('File ' + fileName + ' not found. Aborted seeding.');
         return;
       }
-      for(seeder in seeders) {
+      for (seeder in seeders) {
         await seeders[seeder].seed(file.data);
       }
     }
@@ -33,4 +34,4 @@ async function runAll(fileNames) {
 
 module.exports = {
   runAll
-}
+};
