@@ -1,4 +1,4 @@
-const jp = require('jsonpath')
+const jp = require('jsonpath');
 const saft = require('../saft');
 
 const seeders = {
@@ -6,6 +6,7 @@ const seeders = {
   productSeeder: require('./productSeeder'),
   taxSeeder: require('./taxSeeder'),
   salesInvoiceSeeder: require('./salesInvoiceSeeder'),
+  supplierSeeder: require('./supplierSeeder'),
   invoiceSeeder: require('./invoiceSeeder'),
   movementOfGoodsSeeder: require('./movementOfGoodsSeeder'),
   stockMovementSeeder: require('./stockMovementSeeder'),
@@ -28,8 +29,8 @@ async function runAll(fileNames) {
       console.log('==============================================================================')
       console.log('Finished seeding with data from file ' + file.name)
     }
-  // if at least one fileName is specified, the seeders will only
-  // take data from the files that matche each fileName in fileNames
+    // if at least one fileName is specified, the seeders will only
+    // take data from the files that matche each fileName in fileNames
   } else {
     for (fileName of fileNames) {
       const file = jp.query(saft.FILES, `$[?(@.name=="${fileName}")]`)[0];
@@ -54,4 +55,4 @@ async function runAll(fileNames) {
 
 module.exports = {
   runAll
-}
+};

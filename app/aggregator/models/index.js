@@ -1,8 +1,8 @@
 const models = {
   Customer: require('./customer'),
   HeaderData: require('./headerData'),
-  AddressStructure: require('./addressStructure'),
-  Supplier: require('./suppplier'),
+  Supplier: require('./addressStructure'),
+  AddressStructure: require('./suppplier'),
   SalesInvoice: require('./salesInvoice'),
   ShippingInfo: require('./shippingInfo'),
   Invoice: require('./invoice'),
@@ -18,7 +18,7 @@ const models = {
   GeneralLedgerEntries: require('./generalLedgerEntries'),
   Journal: require('./journal'),
   TransactionLine: require('./transactionLine'),
-  Transaction: require('./trasaction'),
+  Transaction: require('./trasaction')
 };
 
 // ************************ Supplier **********************
@@ -31,7 +31,7 @@ models.Supplier.hasOne(models.AddressStructure, {
   onDelete: 'cascade'
 });
 models.Supplier.hasOne(models.AddressStructure, {
-  foreignKey: 'shiptToAddress',
+  foreignKey: 'shipToAddress',
   onDelete: 'cascade'
 });
 
@@ -137,7 +137,9 @@ models.Payment.hasMany(models.PaymentLine, {
 });
 
 // ************************ GeneralLedgerEntries ************************
-models.Journal.belongsTo(models.GeneralLedgerEntries, { foreignKey: 'fiscal_year' });
+models.Journal.belongsTo(models.GeneralLedgerEntries, {
+  foreignKey: 'fiscal_year'
+});
 models.GeneralLedgerEntries.hasMany(models.Journal, {
   foreignKey: 'fiscal_year',
   onDelete: 'cascade'
@@ -149,7 +151,9 @@ models.Journal.hasMany(models.Transaction, {
   onDelete: 'cascade'
 });
 
-models.TransactionLine.belongsTo(models.Transaction, { foreignKey: 'transaction_id' });
+models.TransactionLine.belongsTo(models.Transaction, {
+  foreignKey: 'transaction_id'
+});
 models.Transaction.hasMany(models.TransactionLine, {
   foreignKey: 'transaction_id',
   onDelete: 'cascade'
