@@ -6,6 +6,7 @@ const seeders = {
   salesInvoiceSeeder: require('./salesInvoiceSeeder'),
   invoiceSeeder: require('./invoiceSeeder'),
   movementOfGoodsSeeder: require('./movementOfGoodsSeeder'),
+  stockMovementSeeder: require('./stockMovementSeeder'),
   paymentsInfoSeeder: require('./paymentsInfoSeeder'),
 }
 

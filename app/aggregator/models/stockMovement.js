@@ -27,9 +27,6 @@ const StockMovement = db.define('StockMovement', {
   grossTotal: {
     type: Sequelize.DECIMAL,
     field: 'gross_total'
-  },
-  currency: {
-    type: Sequelize.STRING
   }
 });
 
