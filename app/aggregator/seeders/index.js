@@ -3,7 +3,8 @@ const saft = require('../saft');
 
 const seeders = {
   customerSeeder: require('./customerSeeder'),
-  salesInvoiceSeeder: require('./salesInvoiceSeeder')
+  salesInvoiceSeeder: require('./salesInvoiceSeeder'),
+  movementOfGoodsSeeder: require('./movementOfGoodsSeeder')
 }
 
 async function runAll(fileNames) {
@@ -11,9 +12,16 @@ async function runAll(fileNames) {
   // take data from all SAF-T files
   if (!fileNames || fileNames.length === 0) {
     for (file of saft.FILES) {
+      console.log('Seeding with data from file ' + file.name)
+      console.log('==============================================================================')
+
       for(seeder in seeders) {
         await seeders[seeder].seed(file.data);
+        console.log('* Finished ' + seeder);
       }
+
+      console.log('==============================================================================')
+      console.log('Finished seeding with data from file ' + file.name)
     }
   // if at least one fileName is specified, the seeders will only
   // take data from the files that matche each fileName in fileNames
@@ -24,9 +32,17 @@ async function runAll(fileNames) {
         console.error('File ' + fileName + ' not found. Aborted seeding.');
         return;
       }
+
+      console.log('Seeding with data from file ' + fileName)
+      console.log('==============================================================================')
+
       for(seeder in seeders) {
         await seeders[seeder].seed(file.data);
+        console.log('* Finished ' + seeder);
       }
+      
+      console.log('==============================================================================')
+      console.log('Finished seeding with data from file ' + fileName)
     }
   }
 }
