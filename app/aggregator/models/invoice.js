@@ -23,9 +23,6 @@ const Invoice = db.define('Invoice', {
   grossTotal: {
     type: Sequelize.DECIMAL,
     field: 'gross_total'
-  },
-  currency: {
-    type: Sequelize.STRING
   }
 });
 

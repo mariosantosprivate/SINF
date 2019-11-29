@@ -2,10 +2,6 @@ const db = require('../db');
 const Sequelize = require('sequelize');
 
 const ShippingInfo = db.define('ShippingInfo', {
-  id: {
-    type: Sequelize.BIGINT,
-    primaryKey: true
-  },
   deliveryDate: {
     type: Sequelize.DATEONLY,
     field: 'delivery_date'
