@@ -1,6 +1,5 @@
 const axios = require('axios');
 const qs = require('query-string');
-const tokenStorage = require('./tokenStorage');
 
 async function getToken() {
   const config = {
@@ -19,7 +18,7 @@ async function getToken() {
 
   try {
     const response = await axios.post(url, qs.stringify(requestBody), config);
-    tokenStorage.token = response.data.access_token;
+    return response.data.access_token;
   } catch (err) {
     console.log(err.response.data);
   }
