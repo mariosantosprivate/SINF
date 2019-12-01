@@ -1,3 +1,4 @@
+require('dotenv').config()
 const bootstrapDb = require('./bootstrapDb');
 const saft = require('./saft');
 
