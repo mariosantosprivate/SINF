@@ -5,7 +5,8 @@ const sequelize = new Sequelize('postgres', 'postgres', 'dummy', {
   dialect: 'postgres',
   define: {
     timestamps: false
-  }
+  },
+  logging: false
 });
 
 module.exports = sequelize;

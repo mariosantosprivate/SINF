@@ -1,6 +1,6 @@
 const jp = require('jsonpath');
-const Supplier = require('../models/suppplier');
-const addressStructure = require('../models/addressStructure');
+const Supplier = require('../../common/models/suppplier');
+const addressStructure = require('../../common/models/addressStructure');
 
 async function seed(data) {
   const suppliers = jp.query(data, '$.auditFile.masterFiles.supplier')[0];

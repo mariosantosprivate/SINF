@@ -1,5 +1,5 @@
 const jp = require('jsonpath');
-const Tax = require('../models/tax');
+const Tax = require('../../common/models/tax');
 
 async function seed(data) {
   const taxTableEntries = jp.query(data, '$.auditFile.masterFiles.taxTable.taxTableEntry')[0];

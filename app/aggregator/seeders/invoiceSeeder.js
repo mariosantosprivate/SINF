@@ -1,6 +1,6 @@
 const jp = require('jsonpath');
-const Invoice = require('../models/invoice');
-const ShippingInfo = require('../models/shippingInfo');
+const Invoice = require('../../common/models/invoice');
+const ShippingInfo = require('../../common/models/shippingInfo');
 
 async function seed(data) {
   const fiscalYear = data.auditFile.header.fiscalYear;

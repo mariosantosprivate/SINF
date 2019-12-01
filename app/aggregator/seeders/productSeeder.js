@@ -1,5 +1,5 @@
 const jp = require('jsonpath');
-const Product = require('../models/product');
+const Product = require('../../common/models/product');
 
 async function seed(data) {
   const products = jp.query(data, '$.auditFile.masterFiles.product')[0];

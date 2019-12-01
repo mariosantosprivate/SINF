@@ -1,5 +1,5 @@
-const db = require('./db');
-require('./models');
+const db = require('../common/db');
+require('../common/models');
 const seeders = require('./seeders');
 
 function run(fileNames) {
