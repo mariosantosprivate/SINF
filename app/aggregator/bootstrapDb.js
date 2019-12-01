@@ -2,12 +2,10 @@ const db = require('../common/db');
 require('../common/models');
 const seeders = require('./seeders');
 
-function run(fileNames) {
-  db.sync({force: true}).then(() => {
-    seeders.runAll(fileNames).then(() => {
-      db.close();
-    })
-  });
+async function run(fileNames) {
+  await db.sync({force: true});
+  await seeders.runAllSaft(fileNames);
+  await db.close();
 }
 
 module.exports = run;

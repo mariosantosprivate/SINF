@@ -1,9 +1,8 @@
 const axios = require('axios');
 const qs = require('query-string');
+const tokenStorage = require('./tokenStorage');
 
-const token;
-
-async function make() {
+async function getToken() {
   const config = {
     headers: {
       'Content-Type': 'application/x-www-form-urlencoded'
@@ -20,17 +19,10 @@ async function make() {
 
   try {
     const response = await axios.post(url, qs.stringify(requestBody), config);
-    token = response.access_token;
+    tokenStorage.token = response.data.access_token;
   } catch (err) {
     console.log(err.response.data);
   }
 }
 
-function token() {
-  return token;
-}
-
-module.exports = {
-  make,
-  token
-};
+module.exports = getToken;
