@@ -4,7 +4,7 @@ const seeders = require('./seeders');
 
 async function run(fileNames) {
   await db.sync({force: true});
-  await seeders.runAllSaft(fileNames);
+  await seeders.runAll(fileNames);
   await db.close();
 }
 
