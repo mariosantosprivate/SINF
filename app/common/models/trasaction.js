@@ -42,14 +42,6 @@ let Transaction = db.define('Transaction', {
         validate: {
             notNull: { msg: 'Transacation Date is required' },
         },
-    },
-    customerID: {
-        type: Sequelize.BIGINT,
-        field: 'costumer_id',
-    },
-    supplierID: {
-        type: Sequelize.BIGINT,
-        field: 'supplier_id',
     }
 });
 
