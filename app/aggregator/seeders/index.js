@@ -11,6 +11,7 @@ const seeders = {
   movementOfGoodsSeeder: require('./movementOfGoodsSeeder'),
   stockMovementSeeder: require('./stockMovementSeeder'),
   paymentsInfoSeeder: require('./paymentsInfoSeeder'),
+  purchaseInvoiceSeeder: require('./purchaseInvoiceSeeder')
 }
 
 async function runAll(fileNames) {

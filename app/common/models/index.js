@@ -18,7 +18,8 @@ const models = {
   GeneralLedgerEntries: require('./generalLedgerEntries'),
   Journal: require('./journal'),
   TransactionLine: require('./transactionLine'),
-  Transaction: require('./trasaction')
+  Transaction: require('./trasaction'),
+  PurchaseInvoice: require('./purchaseInvoice')
 };
 
 // ************************ Supplier **********************
