@@ -2,6 +2,10 @@ const db = require('../db');
 const Sequelize = require('sequelize');
 
 const PurchaseInvoice = db.define('PurchaseInvoice', {
+  fiscalYear: {
+    type: Sequelize.INTEGER,
+    field: 'fiscal_year'
+  },
   documentDate: {
     type: Sequelize.DATE,
     field: 'document_date'
