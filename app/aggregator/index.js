@@ -1,4 +1,4 @@
-require('dotenv').config()
+require('dotenv').config();
 const bootstrapDb = require('./bootstrapDb');
 const saft = require('./saft');
 const getToken = require('./requests/getToken');

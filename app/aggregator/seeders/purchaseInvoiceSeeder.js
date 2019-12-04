@@ -3,30 +3,32 @@ const PurchaseInvoice = require('../../common/models/purchaseInvoice');
 
 async function seed(data) {
   const axiosInstance = axios.getInstance();
-  
-  const fiscalYear = data.auditFile.header.fiscalYear;
+
+  const { fiscalYear } = data.auditFile.header;
 
   const request = await axiosInstance.get(`invoiceReceipt/invoices/odata?$filter=year(DocumentDate) eq ${fiscalYear}`);
   const purchaseInvoices = request.data.items;
 
-  for (i in purchaseInvoices) {
-    const purchaseInvoice = purchaseInvoices[i];
+  for (const key in purchaseInvoices) {
+    if (Object.prototype.hasOwnProperty.call(purchaseInvoices, key)) {
+      const purchaseInvoice = purchaseInvoices[key];
 
-    await PurchaseInvoice.create({
-      fiscalYear: fiscalYear,
-      documentDate: purchaseInvoice.documentDate,
-      grossValueAmount: purchaseInvoice.grossValueAmount,
-      allowanceChargeAmount: purchaseInvoice.allowanceChargeAmountAmount,
-      taxExclusiveAmount: purchaseInvoice.taxExclusiveAmountAmount,
-      taxTotalAmount: purchaseInvoice.taxTotalAmount,
-      payableAmount: purchaseInvoice.payableAmountAmount,
-      wTaxTotalAmount: purchaseInvoice.wTaxTotalAmount,
-      totalLiabilityAmount: purchaseInvoice.totalLiabilityAmount,
-      discountInValueAmount: purchaseInvoice.discountInValueAmountAmount
-    });
+      await PurchaseInvoice.create({
+        fiscalYear,
+        documentDate: purchaseInvoice.documentDate,
+        grossValueAmount: purchaseInvoice.grossValueAmount,
+        allowanceChargeAmount: purchaseInvoice.allowanceChargeAmountAmount,
+        taxExclusiveAmount: purchaseInvoice.taxExclusiveAmountAmount,
+        taxTotalAmount: purchaseInvoice.taxTotalAmount,
+        payableAmount: purchaseInvoice.payableAmountAmount,
+        wTaxTotalAmount: purchaseInvoice.wTaxTotalAmount,
+        totalLiabilityAmount: purchaseInvoice.totalLiabilityAmount,
+        discountInValueAmount: purchaseInvoice.discountInValueAmountAmount,
+      });
+    }
   }
 }
 
 module.exports = {
-  seed
+  seed,
 };

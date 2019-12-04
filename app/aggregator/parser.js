@@ -9,13 +9,16 @@ function parseSAFT(fileName) {
   let parsedData;
 
   // this shouldn't always work but it does for some reason
-  xml2js.parseString(data, {explicitArray: false, tagNameProcessors: [camelCase]}, (err, result) => {
+  xml2js.parseString(data, {
+    explicitArray: false,
+    tagNameProcessors: [camelCase],
+  }, (err, result) => {
     parsedData = result;
   });
-  
+
   return parsedData;
 }
 
 module.exports = {
-  parseSAFT
-}
+  parseSAFT,
+};
