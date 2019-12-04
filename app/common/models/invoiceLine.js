@@ -1,36 +1,36 @@
-const db = require('../db');
 const Sequelize = require('sequelize');
+const db = require('../db');
 
 const InvoiceLine = db.define('InvoiceLine', {
   lineNumber: {
     type: Sequelize.BIGINT,
-    field: 'line_number'
+    field: 'line_number',
   },
   quantity: {
-    type: Sequelize.DECIMAL
+    type: Sequelize.DECIMAL,
   },
   unitOfMeasure: {
     type: Sequelize.STRING,
-    field: 'unit_of_measure'
+    field: 'unit_of_measure',
   },
   unitPrice: {
     type: Sequelize.DECIMAL,
-    field: 'unit_price'
+    field: 'unit_price',
   },
-  description: {
-    type: Sequelize.STRING
+  description: {
+    type: Sequelize.STRING,
   },
   type: {
-    type: Sequelize.ENUM('credit', 'debit')
+    type: Sequelize.ENUM('credit', 'debit'),
   },
   amount: {
     type: Sequelize.DECIMAL,
-    field: 'credit_amount'
+    field: 'credit_amount',
   },
   settlementAmount: {
     type: Sequelize.DECIMAL,
-    field: 'settlement_amount'
-  }
+    field: 'settlement_amount',
+  },
 });
 
 module.exports = InvoiceLine;

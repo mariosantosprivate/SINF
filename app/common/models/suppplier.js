@@ -1,32 +1,32 @@
-let db = require('../db');
-let Sequelize = require('sequelize');
+const Sequelize = require('sequelize');
+const db = require('../db');
 
 const Supplier = db.define('Supplier', {
   supplierId: {
     type: Sequelize.STRING,
-    primaryKey: true
+    primaryKey: true,
   },
   supplierTaxID: {
-    type: Sequelize.INTEGER
+    type: Sequelize.INTEGER,
   },
   companyName: {
-    type: Sequelize.STRING
+    type: Sequelize.STRING,
   },
   contact: {
-    type: Sequelize.STRING
+    type: Sequelize.STRING,
   },
   telephone: {
-    type: Sequelize.STRING
+    type: Sequelize.STRING,
   },
   fax: {
-    type: Sequelize.STRING
+    type: Sequelize.STRING,
   },
   email: {
-    type: Sequelize.STRING
+    type: Sequelize.STRING,
   },
   website: {
-    type: Sequelize.STRING
-  }
+    type: Sequelize.STRING,
+  },
 });
 
 module.exports = Supplier;

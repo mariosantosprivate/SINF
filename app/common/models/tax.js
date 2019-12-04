@@ -1,27 +1,27 @@
-let db = require('../db');
-let Sequelize = require('sequelize');
+const Sequelize = require('sequelize');
+const db = require('../db');
 
-let Tax = db.define('Tax', {
+const Tax = db.define('Tax', {
   type: {
     type: Sequelize.STRING,
-    field: 'type'
+    field: 'type',
   },
   countryRegion: {
     type: Sequelize.STRING,
-    field: 'country_region'
+    field: 'country_region',
   },
   code: {
     type: Sequelize.STRING,
-    field: 'code'
+    field: 'code',
   },
   description: {
     type: Sequelize.STRING,
-    field: 'description'
+    field: 'description',
   },
   percentage: {
     type: Sequelize.DECIMAL,
-    field: 'percentage'
-  }
+    field: 'percentage',
+  },
 });
 
 module.exports = Tax;

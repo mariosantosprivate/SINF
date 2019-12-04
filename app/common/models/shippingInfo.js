@@ -1,24 +1,24 @@
-const db = require('../db');
 const Sequelize = require('sequelize');
+const db = require('../db');
 
 const ShippingInfo = db.define('ShippingInfo', {
   deliveryDate: {
     type: Sequelize.DATEONLY,
-    field: 'delivery_date'
+    field: 'delivery_date',
   },
   addressDetail: {
     type: Sequelize.STRING,
-    field: 'address_detail'
+    field: 'address_detail',
   },
   city: {
-    type: Sequelize.STRING
+    type: Sequelize.STRING,
   },
   postalCode: {
-    type: Sequelize.STRING
+    type: Sequelize.STRING,
   },
   country: {
-    type: Sequelize.STRING
-  }
+    type: Sequelize.STRING,
+  },
 }, { tableName: 'ShippingInfo' });
 
 module.exports = ShippingInfo;

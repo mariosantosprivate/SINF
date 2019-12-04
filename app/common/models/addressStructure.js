@@ -1,28 +1,28 @@
-let db = require("../db");
-let Sequelize = require("sequelize");
+const Sequelize = require('sequelize');
+const db = require('../db');
 
-const AddressStructure = db.define("AdressStructure", {
+const AddressStructure = db.define('AdressStructure', {
   buildingNumber: {
-    type: Sequelize.BIGINT
+    type: Sequelize.BIGINT,
   },
   streetName: {
-    type: Sequelize.STRING
+    type: Sequelize.STRING,
   },
   addressDetail: {
-    type: Sequelize.STRING
+    type: Sequelize.STRING,
   },
   city: {
-    type: Sequelize.STRING
+    type: Sequelize.STRING,
   },
   postalCode: {
-    type: Sequelize.STRING
+    type: Sequelize.STRING,
   },
   region: {
-    type: Sequelize.STRING
+    type: Sequelize.STRING,
   },
   country: {
-    type: Sequelize.STRING
-  }
+    type: Sequelize.STRING,
+  },
 });
 
 module.exports = AddressStructure;
