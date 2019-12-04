@@ -160,4 +160,16 @@ models.Transaction.hasMany(models.TransactionLine, {
   onDelete: 'cascade'
 });
 
+models.Transaction.belongsTo(models.Customer, { foreignKey: 'customer_id' });
+models.Customer.hasMany(models.Transaction, {
+  foreignKey: 'customer_id',
+  onDelete: 'cascade'
+});
+
+models.Transaction.belongsTo(models.Supplier, { foreignKey: 'supplierID' });
+models.Supplier.hasMany(models.Transaction, {
+  foreignKey: 'supplierID',
+  onDelete: 'cascade'
+});
+
 module.exports = models;
