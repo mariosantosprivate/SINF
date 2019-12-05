@@ -5,6 +5,7 @@ import Header from '../components/Header/Header';
 import { BarGraph } from '../components/Chart/BarGraph';
 import { DoughnutGraph } from '../components/Chart/DoughnutGraph';
 import { LineGraph } from '../components/Chart/LineGraph';
+import TrendChart from '../components/Chart/TrendChart';
 import KPI from '../components/KPI';
 import salesService from '../services/salesService';
 // Importing a local CSS file.
@@ -58,7 +59,7 @@ class Sales extends React.Component {
           </Row>
           <Row className="justify-content-sm-center top-padded-row side-padded-row">
             <Col className="text-center">
-              <LineGraph />
+              <TrendChart legend="Sales trend" data={this.state.data.salesTrend} />
             </Col>
             <Col className="text-center">
               <DoughnutGraph />
