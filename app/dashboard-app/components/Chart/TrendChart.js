@@ -1,8 +1,6 @@
 import { Line } from 'react-chartjs-2';
 import PropTypes from 'prop-types';
 
-const formatValuesToEuro = (data) => data.map(value => `${value}€`);
-
 const TrendChart = ({ data, legend }) => {
   const chartData = {
     labels: [
