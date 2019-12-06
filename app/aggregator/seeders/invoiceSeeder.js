@@ -1,5 +1,6 @@
 const jp = require('jsonpath');
 const Invoice = require('../../common/models/invoice');
+const InvoiceLine = require('../../common/models/invoiceLine');
 const ShippingInfo = require('../../common/models/shippingInfo');
 
 async function seed(data) {
@@ -38,6 +39,29 @@ async function seed(data) {
         ship_to_info_id: shipTo.id,
         ship_from_info_id: shipFrom.id,
       });
+
+      let invoiceLines = invoice.line;
+
+      // xml2js doesn't parse lines as an array if there's only 1
+      if (!Array.isArray(invoiceLines)) { invoiceLines = [invoiceLines]; }
+
+      for (const key2 in invoiceLines) {
+        if (Object.prototype.hasOwnProperty.call(invoiceLines, key2)) {
+          const invoiceLine = invoiceLines[key2];
+
+          await InvoiceLine.create({
+            invoice_no: invoice.invoiceNo,
+            lineNumber: invoiceLine.lineNumber,
+            product_code: invoiceLine.productCode,
+            quantity: invoiceLine.quantity,
+            unitOfMeasure: invoiceLine.unitOfMeasure,
+            unitPrice: invoiceLine.unitPrice,
+            description: invoiceLine.description,
+            creditAmount: invoiceLine.creditAmount,
+            settlementAmount: invoiceLine.settlementAmount,
+          });
+        }
+      }
     }
   }
 }
