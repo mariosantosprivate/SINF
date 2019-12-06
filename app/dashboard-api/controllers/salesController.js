@@ -8,13 +8,17 @@ async function getMetrics(req, res) {
   try {
     const totalSalesNetValue = await salesService.totalSalesNetValue(fiscalYear);
     const salesTrend = await salesService.salesTrend(fiscalYear);
+    const topSoldProducts = await salesService.topSoldProducts(fiscalYear);
 
     return res.json({
       totalSalesNetValue,
       salesTrend,
+      topSoldProducts,
     });
   } catch (err) {
-    if (err instanceof NotFoundError) { res.status(404).json(new ErrorMessage(err.message)); }
+    if (err instanceof NotFoundError) {
+      return res.status(404).json(new ErrorMessage(err.message));
+    }
     return res.status(500).json(new ErrorMessage());
   }
 }
