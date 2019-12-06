@@ -4,8 +4,8 @@ const db = require('../db');
 const Product = db.define('Product', {
   code: {
     type: Sequelize.STRING,
-    unique: true,
-    field: 'code',
+    primaryKey: true,
+    field: 'product_code',
   },
   description: {
     type: Sequelize.STRING,
