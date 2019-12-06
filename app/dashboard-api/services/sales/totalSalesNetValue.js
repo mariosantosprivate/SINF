@@ -1,4 +1,5 @@
 const SalesInvoice = require('../../../common/models/salesInvoice');
+const NotFoundError = require('../../errors/NotFoundError');
 
 async function calculate(fiscalYear) {
   const salesInvoice = await SalesInvoice.findOne({
@@ -8,7 +9,7 @@ async function calculate(fiscalYear) {
     },
   });
 
-  if (!salesInvoice) throw new Error(`There is no sales information for the fiscal year ${fiscalYear}`);
+  if (!salesInvoice) throw new NotFoundError(`There is no sales information for the fiscal year ${fiscalYear}`);
 
   return parseFloat(salesInvoice.totalCredit);
 }
