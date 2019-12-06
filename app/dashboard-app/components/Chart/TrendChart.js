@@ -21,7 +21,7 @@ const TrendChart = ({ data, legend }) => {
       {
         label: legend,
         backgroundColor: 'rgba(0,0,0,0)',
-        borderColor: 'rgba(255,99,132,1)',
+        borderColor: 'rgba(85,161,229,1)',
         borderWidth: 3,
         hoverBackgroundColor: 'rgba(255,99,132,0.4)',
         hoverBorderColor: 'rgba(255,99,132,1)',
