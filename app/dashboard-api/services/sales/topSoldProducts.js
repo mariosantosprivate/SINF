@@ -2,15 +2,6 @@ const Invoice = require('../../../common/models/invoice');
 const InvoiceLine = require('../../../common/models/invoiceLine');
 const formatTop5 = require('../../utils/formatTop5');
 
-function formatProducts(products) {
-  return products.map((product) => {
-    const name = Object.keys(product)[0];
-    const totalSoldValue = Number(product[Object.keys(product)[0]].toFixed(2));
-
-    return { name, totalSoldValue };
-  });
-}
-
 async function calculate(fiscalYear) {
   const valuePerProduct = {};
 
