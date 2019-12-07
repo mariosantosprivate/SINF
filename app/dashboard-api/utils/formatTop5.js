@@ -1,9 +1,9 @@
 function formatEntities(entities) {
   return entities.map((entity) => {
     const name = Object.keys(entity)[0];
-    const totalValue = Number(entity[Object.keys(entity)[0]].toFixed(2));
+    const value = Number(entity[Object.keys(entity)[0]].toFixed(2));
 
-    return { name, totalValue };
+    return { name, value };
   });
 }
 
