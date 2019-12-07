@@ -1,13 +1,12 @@
 import React from 'react';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+import { Row, Col } from 'react-bootstrap';
 import Header from '../components/Header/Header';
-import { BarGraph } from '../components/Chart/BarGraph';
-import { DoughnutGraph } from '../components/Chart/DoughnutGraph';
-import { LineGraph } from '../components/Chart/LineGraph';
 import TrendChart from '../components/Chart/TrendChart';
+import BarChart from '../components/Chart/BarChart';
+import PieChart from '../components/Chart/PieChart';
 import KPI from '../components/KPI';
 import salesService from '../services/salesService';
+import chartTypes from '../utils/chartTypes';
 // Importing a local CSS file.
 import '../assets/css/style.css';
 
@@ -51,10 +50,14 @@ class Sales extends React.Component {
           </Row>
           <Row className="text-center center-content top-padded-row side-padded-row">
             <Col className="text-center w-50">
-              <BarGraph />
+              <BarChart
+                data={data.topSoldProducts.map((product) => product.totalSoldValue)}
+                labels={data.topSoldProducts.map((product) => product.name)}
+                legend="Top 5 sold products"
+              />
             </Col>
             <Col className="text-center w-50">
-              <BarGraph />
+              <BarChart data={[1, 2, 3, 4]} labels={['Hey', 'Vsauce', 'Michael', 'Here']} legend="VSAUCEEE" />
             </Col>
           </Row>
           <Row className="justify-content-sm-center top-padded-row side-padded-row">
@@ -62,7 +65,7 @@ class Sales extends React.Component {
               <TrendChart legend="Sales trend" data={this.state.data.salesTrend} />
             </Col>
             <Col className="text-center">
-              <DoughnutGraph />
+              <PieChart data={[1, 2, 3, 4, 5]} labels={['Hey', 'Vsauce', 'Michael', 'Here', 'Again']} chartType={chartTypes.PERCENTAGE_CHART} />
             </Col>
           </Row>
         </div>
