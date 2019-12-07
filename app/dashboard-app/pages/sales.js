@@ -69,7 +69,11 @@ class Sales extends React.Component {
               <TrendChart legend="Sales trend" data={this.state.data.salesTrend} />
             </Col>
             <Col className="text-center">
-              <PieChart data={[1, 2, 3, 4, 5]} labels={['Hey', 'Vsauce', 'Michael', 'Here', 'Again']} chartType={chartTypes.PERCENTAGE_CHART} />
+              <PieChart
+                data={data.salesByRegion.map((region) => region.value)}
+                labels={data.salesByRegion.map((region) => region.name)}
+                chartType={chartTypes.EURO_CHART}
+              />
             </Col>
           </Row>
         </div>
