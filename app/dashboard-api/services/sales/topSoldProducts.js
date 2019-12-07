@@ -1,4 +1,5 @@
-const models = require('../../../common/models');
+const Invoice = require('../../../common/models/invoice');
+const InvoiceLine = require('../../../common/models/invoiceLine');
 
 function formatProducts(products) {
   return products.map((product) => {
@@ -12,10 +13,10 @@ function formatProducts(products) {
 async function calculate(fiscalYear) {
   const valuePerProduct = {};
 
-  const invoiceLines = await models.InvoiceLine.findAll({
+  const invoiceLines = await InvoiceLine.findAll({
     raw: true,
     include: [{
-      model: models.Invoice,
+      model: Invoice,
       where: { fiscal_year: fiscalYear },
     }],
   });
