@@ -13,6 +13,7 @@ const seeders = {
   stockMovementSeeder: require('./stockMovementSeeder'),
   paymentsInfoSeeder: require('./paymentsInfoSeeder'),
   purchaseInvoiceSeeder: require('./purchaseInvoiceSeeder'),
+  generalLedgerEntriesSeeder: require('./generalLedgerEntriesSeeder'),
 };
 
 async function runAll(fileNames) {
