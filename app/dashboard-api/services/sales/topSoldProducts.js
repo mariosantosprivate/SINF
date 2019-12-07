@@ -1,5 +1,6 @@
 const Invoice = require('../../../common/models/invoice');
 const InvoiceLine = require('../../../common/models/invoiceLine');
+const formatTop5 = require('../../utils/formatTop5');
 
 function formatProducts(products) {
   return products.map((product) => {
@@ -29,27 +30,7 @@ async function calculate(fiscalYear) {
     valuePerProduct[invoiceLine.product_code] += parseFloat(invoiceLine.creditAmount);
   }
 
-  let top5Products = [];
-
-  for (const key in valuePerProduct) {
-    if (Object.prototype.hasOwnProperty.call(valuePerProduct, key)) {
-      const product = {};
-      product[key] = valuePerProduct[key];
-
-      top5Products.push(product);
-    }
-  }
-
-  top5Products.sort((a, b) => {
-    const aValue = a[Object.keys(a)[0]];
-    const bValue = b[Object.keys(b)[0]];
-
-    return bValue - aValue;
-  });
-
-  top5Products = top5Products.slice(0, 5);
-
-  return formatProducts(top5Products);
+  return formatTop5(valuePerProduct);
 }
 
 module.exports = calculate;
