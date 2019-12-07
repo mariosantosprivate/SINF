@@ -51,13 +51,17 @@ class Sales extends React.Component {
           <Row className="text-center center-content top-padded-row side-padded-row">
             <Col className="text-center w-50">
               <BarChart
-                data={data.topSoldProducts.map((product) => product.totalSoldValue)}
+                data={data.topSoldProducts.map((product) => product.value)}
                 labels={data.topSoldProducts.map((product) => product.name)}
                 legend="Top 5 sold products"
               />
             </Col>
             <Col className="text-center w-50">
-              <BarChart data={[1, 2, 3, 4]} labels={['Hey', 'Vsauce', 'Michael', 'Here']} legend="VSAUCEEE" />
+              <BarChart
+                data={data.topCustomers.map((customer) => customer.value)}
+                labels={data.topCustomers.map((customer) => customer.name)}
+                legend="Top 5 customers"
+              />
             </Col>
           </Row>
           <Row className="justify-content-sm-center top-padded-row side-padded-row">
