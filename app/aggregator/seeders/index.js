@@ -14,6 +14,9 @@ const seeders = {
   paymentsInfoSeeder: require('./paymentsInfoSeeder'),
   purchaseInvoiceSeeder: require('./purchaseInvoiceSeeder'),
   generalLedgerEntriesSeeder: require('./generalLedgerEntriesSeeder'),
+
+  journalSeeder: require('./journalSeeder'),
+  transactionSeeder: require('./transactionSeeder'),
 };
 
 async function runAll(fileNames) {
