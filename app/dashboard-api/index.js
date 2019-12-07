@@ -1,4 +1,4 @@
-const app = require('./app');
 require('../common/models');
+const app = require('./app');
 
 app.listen(3001);
