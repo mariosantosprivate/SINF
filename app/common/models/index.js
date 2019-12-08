@@ -2,7 +2,7 @@
 const models = {
   Customer: require('./customer'),
   HeaderData: require('./headerData'),
-  Supplier: require('./suppplier'),
+  Supplier: require('./supplier'),
   AddressStructure: require('./addressStructure'),
   SalesInvoice: require('./salesInvoice'),
   ShippingInfo: require('./shippingInfo'),
@@ -158,7 +158,7 @@ models.TransactionLine.belongsTo(models.Transaction, {
   foreignKey: 'transactionId'
 });
 models.Transaction.hasMany(models.TransactionLine, {
-  foreignKey: 'transaction_id',
+  foreignKey: 'transactionId',
   onDelete: 'cascade'
 });
 

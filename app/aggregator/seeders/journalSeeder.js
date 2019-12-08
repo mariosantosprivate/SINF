@@ -1,7 +1,7 @@
 const jp = require('jsonpath');
 const Journal = require('../../common/models/journal');
 const Transaction = require('../../common/models/transaction');
-const Supplier = require('../../common/models/suppplier');
+const TransactionLine = require('../../common/models/transactionLine');
 
 async function seed(data) {
   const { fiscalYear } = data.auditFile.header;
@@ -36,8 +36,11 @@ async function seed(data) {
             docArchivalNumber: transaction.docArchivalNumber,
             customerId: transaction.customerId,
             supplierId: transaction.supplierId,
-            journalid: journal.journalId
+            journalId: journal.journalId
           });
+          if (transaction.lines !== undefined) {
+            await Lines(transaction.lines, transaction);
+          }
         }
       } else {
         await Transaction.create({
@@ -50,13 +53,72 @@ async function seed(data) {
           docArchivalNumber: transactions.docArchivalNumber,
           customerId: transactions.customerId,
           supplierId: transactions.supplierId,
-          journal_id: journal.journalId
+          journalId: journal.journalId
         });
+        if (transactions.lines !== undefined) {
+          await Lines(transactions.lines, transactions);
+        }
       }
     }
   }
 }
 
+async function Lines(lines, transaction) {
+  let credit = jp.query(lines, '$.creditLine')[0];
+  let debit = jp.query(lines, '$.debitLine')[0];
+  if (credit instanceof Array) {
+    for (i in credit) {
+      let c = credit[i];
+      await TransactionLine.create({
+        type: 'credit',
+        recordId: c.recordId,
+        accountId: c.accountId,
+        description: c.description,
+        amount: c.creditAmount,
+        sourceDocumentId: c.sourceDocumentId,
+        systemEntryDate: c.systemEntryDate,
+        transactionId: transaction.transactionId
+      });
+    }
+  } else {
+    await TransactionLine.create({
+      type: 'credit',
+      recordId: credit.recordId,
+      accountId: credit.accountId,
+      description: credit.description,
+      amount: credit.creditAmount,
+      sourceDocumentId: credit.sourceDocumentId,
+      systemEntryDate: credit.systemEntryDate,
+      transactionId: transaction.transactionId
+    });
+  }
+  if (debit instanceof Array) {
+    for (i in debit) {
+      let d = debit[i];
+      await TransactionLine.create({
+        type: 'debit',
+        recordId: d.recordId,
+        accountId: d.accountId,
+        description: d.description,
+        amount: d.debitAmount,
+        sourceDocumentId: d.sourceDocumentId,
+        systemEntryDate: d.systemEntryDate,
+        transactionId: transaction.transactionId
+      });
+    }
+  } else {
+    await TransactionLine.create({
+      type: 'debit',
+      recordId: debit.recordId,
+      accountId: debit.accountId,
+      description: debit.description,
+      amount: debit.debitAmount,
+      sourceDocumentId: debit.sourceDocumentId,
+      systemEntryDate: debit.systemEntryDate,
+      transactionId: transaction.transactionId
+    });
+  }
+}
 module.exports = {
   seed
 };

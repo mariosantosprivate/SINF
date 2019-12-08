@@ -1,5 +1,5 @@
 const jp = require('jsonpath');
-const Supplier = require('../../common/models/suppplier');
+const Supplier = require('../../common/models/supplier');
 const addressStructure = require('../../common/models/addressStructure');
 
 async function seed(data) {

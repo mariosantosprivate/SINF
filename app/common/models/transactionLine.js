@@ -10,7 +10,7 @@ const TransactionLine = db.define('TransactionLine', {
       notNull: { msg: 'Type is required' },
     },
   },
-  recordID: {
+  recordId: {
     type: Sequelize.BIGINT,
     field: 'record_id',
     allowNull: false,
@@ -18,7 +18,7 @@ const TransactionLine = db.define('TransactionLine', {
       notNull: { msg: 'Record ID is required' },
     },
   },
-  accountID: {
+  accountId: {
     type: Sequelize.BIGINT,
     field: 'account_id',
     allowNull: false,
@@ -26,8 +26,8 @@ const TransactionLine = db.define('TransactionLine', {
       notNull: { msg: 'Account ID is required' },
     },
   },
-  sourceDocumentID: {
-    type: Sequelize.BIGINT,
+  sourceDocumentId: {
+    type: Sequelize.STRING,
     field: 'source_document_id',
   },
   systemEntryDate: {
