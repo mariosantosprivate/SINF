@@ -3,13 +3,16 @@ const parser = require('./parser');
 const FILES = [
   {
     name: 'SAFT_DEMOSINF_01-01-2016_31-12-2016.xml',
-    data: null,
+    data: null
   },
+  { name: 'SAFT_Sample_Accounting_2019.xml', data: null }
 ];
 
 async function parseFiles(fileNames) {
   console.log('\nParsing SAF-T files...');
-  console.log('==============================================================================');
+  console.log(
+    '=============================================================================='
+  );
 
   let i;
 
@@ -23,15 +26,19 @@ async function parseFiles(fileNames) {
       if (fileNames.includes(FILES[i].name)) {
         FILES[i].data = parser.parseSAFT(FILES[i].name);
         console.log(`* Parsed file ${FILES[i].name}`);
-      } else { console.log(`# Skipped file ${FILES[i].name}`); }
+      } else {
+        console.log(`# Skipped file ${FILES[i].name}`);
+      }
     }
   }
 
-  console.log('==============================================================================');
+  console.log(
+    '=============================================================================='
+  );
   console.log('Finished parsing SAF-T files.\n');
 }
 
 module.exports = {
   FILES,
-  parseFiles,
+  parseFiles
 };
