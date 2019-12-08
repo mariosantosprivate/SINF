@@ -6,7 +6,7 @@ const Supplier = db.define('Supplier', {
     type: Sequelize.STRING,
     primaryKey: true
   },
-  supplierTaxID: {
+  supplierTaxId: {
     type: Sequelize.STRING
   },
   companyName: {

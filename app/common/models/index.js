@@ -2,8 +2,8 @@
 const models = {
   Customer: require('./customer'),
   HeaderData: require('./headerData'),
-  Supplier: require('./addressStructure'),
-  AddressStructure: require('./suppplier'),
+  Supplier: require('./suppplier'),
+  AddressStructure: require('./addressStructure'),
   SalesInvoice: require('./salesInvoice'),
   ShippingInfo: require('./shippingInfo'),
   Invoice: require('./invoice'),
@@ -22,6 +22,7 @@ const models = {
   Transaction: require('./transaction'),
   PurchaseInvoice: require('./purchaseInvoice')
 };
+const Sequelize = require('sequelize');
 
 // ************************ Supplier **********************
 
@@ -161,7 +162,9 @@ models.Transaction.hasMany(models.TransactionLine, {
   onDelete: 'cascade'
 });
 
-models.Transaction.belongsTo(models.Supplier, { foreignKey: 'supplierId' });
+models.Transaction.belongsTo(models.Supplier, {
+  foreignKey: 'supplierId'
+});
 models.Supplier.hasMany(models.Transaction, {
   foreignKey: 'supplierId',
   onDelete: 'cascade'

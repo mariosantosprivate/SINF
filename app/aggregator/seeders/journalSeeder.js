@@ -1,6 +1,7 @@
 const jp = require('jsonpath');
 const Journal = require('../../common/models/journal');
 const Transaction = require('../../common/models/transaction');
+const Supplier = require('../../common/models/suppplier');
 
 async function seed(data) {
   const { fiscalYear } = data.auditFile.header;
@@ -24,12 +25,7 @@ async function seed(data) {
       if (transactions instanceof Array) {
         for (i in transactions) {
           let transaction = transactions[i];
-          /*if (transaction.supplierId !== undefined) {
-            console.log(transaction);
-          }
-          if (transaction.supplierId == '245074205') {
-            console.log(transaction);
-          }*/
+
           await Transaction.create({
             transactionId: transaction.transactionId,
             period: transaction.period,
@@ -39,14 +35,11 @@ async function seed(data) {
             glPostingDate: transaction.glPostingDate,
             docArchivalNumber: transaction.docArchivalNumber,
             customerId: transaction.customerId,
-           // supplierId: transaction.supplierId,
+            supplierId: transaction.supplierId,
             journalid: journal.journalId
           });
         }
       } else {
-        if (transactions.supplierId !== undefined) {
-          console.log(transactions);
-        }
         await Transaction.create({
           transactionId: transactions.transactionId,
           period: transactions.period,
@@ -56,7 +49,7 @@ async function seed(data) {
           glPostingDate: transactions.glPostingDate,
           docArchivalNumber: transactions.docArchivalNumber,
           customerId: transactions.customerId,
-          //supplierId: transactions.supplierId,
+          supplierId: transactions.supplierId,
           journal_id: journal.journalId
         });
       }
