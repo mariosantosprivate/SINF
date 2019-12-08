@@ -15,7 +15,8 @@ const seeders = {
   purchaseInvoiceSeeder: require('./purchaseInvoiceSeeder'),
   generalLedgerEntriesSeeder: require('./generalLedgerEntriesSeeder'),
   journalSeeder: require('./journalSeeder'),
- // transactionSeeder: require('./transactionSeeder')
+  // transactionSeeder: require('./transactionSeeder')
+  headerDataSeeder: require('./headerDataSeeder'),
 };
 
 async function runAll(fileNames) {
@@ -25,7 +26,7 @@ async function runAll(fileNames) {
     for (const file of saft.FILES) {
       console.log(`Seeding with data from file ${file.name}`);
       console.log(
-        '=============================================================================='
+        '==============================================================================',
       );
 
       for (const key in seeders) {
@@ -36,7 +37,7 @@ async function runAll(fileNames) {
       }
 
       console.log(
-        '=============================================================================='
+        '==============================================================================',
       );
       console.log(`Finished seeding with data from file ${file.name}`);
     }
@@ -52,7 +53,7 @@ async function runAll(fileNames) {
 
       console.log(`Seeding with data from file ${fileName}`);
       console.log(
-        '=============================================================================='
+        '==============================================================================',
       );
 
       for (const key in seeders) {
@@ -63,7 +64,7 @@ async function runAll(fileNames) {
       }
 
       console.log(
-        '=============================================================================='
+        '==============================================================================',
       );
       console.log(`Finished seeding with data from file ${fileName}`);
     }
@@ -71,5 +72,5 @@ async function runAll(fileNames) {
 }
 
 module.exports = {
-  runAll
+  runAll,
 };
