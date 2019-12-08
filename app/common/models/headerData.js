@@ -12,11 +12,11 @@ const HeaderData = db.define('HeaderData', {
     field: 'company_name',
   },
   startDate: {
-    type: Sequelize.DATE,
+    type: Sequelize.DATEONLY,
     field: 'start_date',
   },
   endDate: {
-    type: Sequelize.DATE,
+    type: Sequelize.DATEONLY,
     field: 'end_date',
   },
   currencyCode: {
