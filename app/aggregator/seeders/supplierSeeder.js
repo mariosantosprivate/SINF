@@ -18,7 +18,7 @@ async function seed(data) {
         city: billingAddress.city,
         postalCode: billingAddress.postalCode,
         region: billingAddress.region,
-        country: billingAddress.country,
+        country: billingAddress.country
       });
 
       const shipToAddress = supplier.shipFromAddress;
@@ -30,12 +30,11 @@ async function seed(data) {
         city: shipToAddress.city,
         postalCode: shipToAddress.postalCode,
         region: shipToAddress.region,
-        country: shipToAddress.country,
+        country: shipToAddress.country
       });
-
       await Supplier.create({
         supplierId: supplier.supplierId,
-        supplierTaxID: supplier.supplierTaxID,
+        supplierTaxID: supplier.supplierTaxId,
         companyName: supplier.companyName,
         contact: supplier.contact,
         telephone: supplier.telephone,
@@ -43,12 +42,12 @@ async function seed(data) {
         email: supplier.email,
         website: supplier.website,
         billingAddress: billingAddressSaved.id,
-        shipToAddress: shipToAddressSaved.id,
+        shipToAddress: shipToAddressSaved.id
       });
     }
   }
 }
 
 module.exports = {
-  seed,
+  seed
 };

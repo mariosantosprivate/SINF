@@ -19,7 +19,7 @@ const models = {
   GeneralLedgerEntries: require('./generalLedgerEntries'),
   Journal: require('./journal'),
   TransactionLine: require('./transactionLine'),
-  Transaction: require('./trasaction'),
+  Transaction: require('./transaction'),
   PurchaseInvoice: require('./purchaseInvoice')
 };
 
@@ -147,29 +147,29 @@ models.GeneralLedgerEntries.hasMany(models.Journal, {
   onDelete: 'cascade'
 });
 
-models.Transaction.belongsTo(models.Journal, { foreignKey: 'journal_id' });
+models.Transaction.belongsTo(models.Journal, { foreignKey: 'journalId' });
 models.Journal.hasMany(models.Transaction, {
-  foreignKey: 'journal_id',
+  foreignKey: 'journalId',
   onDelete: 'cascade'
 });
 
 models.TransactionLine.belongsTo(models.Transaction, {
-  foreignKey: 'transaction_id'
+  foreignKey: 'transactionId'
 });
 models.Transaction.hasMany(models.TransactionLine, {
   foreignKey: 'transaction_id',
   onDelete: 'cascade'
 });
 
-models.Transaction.belongsTo(models.Customer, { foreignKey: 'customer_id' });
-models.Customer.hasMany(models.Transaction, {
-  foreignKey: 'customer_id',
+models.Transaction.belongsTo(models.Supplier, { foreignKey: 'supplierId' });
+models.Supplier.hasMany(models.Transaction, {
+  foreignKey: 'supplierId',
   onDelete: 'cascade'
 });
 
-models.Transaction.belongsTo(models.Supplier, { foreignKey: 'supplierID' });
-models.Supplier.hasMany(models.Transaction, {
-  foreignKey: 'supplier_id',
+models.Transaction.belongsTo(models.Customer, { foreignKey: 'customerId' });
+models.Customer.hasMany(models.Transaction, {
+  foreignKey: 'customerId',
   onDelete: 'cascade'
 });
 

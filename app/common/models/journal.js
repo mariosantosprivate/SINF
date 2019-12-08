@@ -2,7 +2,7 @@ const Sequelize = require('sequelize');
 const db = require('../db');
 
 const Journal = db.define('Journal', {
-  journalID: {
+  journalId: {
     type: Sequelize.BIGINT,
     field: 'journal_id',
     primaryKey: true,
