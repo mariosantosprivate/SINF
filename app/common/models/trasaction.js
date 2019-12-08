@@ -2,47 +2,55 @@ const Sequelize = require('sequelize');
 const db = require('../db');
 
 const Transaction = db.define('Transaction', {
-  transactionID: {
-    type: Sequelize.BIGINT,
+  transactionId: {
+    type: Sequelize.STRING,
     field: 'transaction_id',
-    primaryKey: true,
+    primaryKey: true
   },
   period: {
     type: Sequelize.INTEGER,
     field: 'period',
     allowNull: false,
     validate: {
-      notNull: { msg: 'Period is required' },
-    },
+      notNull: { msg: 'Period is required' }
+    }
   },
   transactionDate: {
     type: Sequelize.DATE,
     field: 'transaction_date',
     allowNull: false,
     validate: {
-      notNull: { msg: 'Transacation Date is required' },
-    },
+      notNull: { msg: 'Transacation Date is required' }
+    }
   },
-  sourceID: {
-    type: Sequelize.DATE,
-    field: 'source_id',
+  sourceId: {
+    type: Sequelize.STRING,
+    field: 'source_id'
   },
   description: {
     type: Sequelize.STRING,
     field: 'description',
     allowNull: false,
     validate: {
-      notNull: { msg: 'Description is required' },
-    },
+      notNull: { msg: 'Description is required' }
+    }
   },
-  GLPostingDate: {
+  docArchivalNumber: {
+    type: Sequelize.STRING,
+    field: 'description',
+    allowNull: false,
+    validate: {
+      notNull: { msg: 'Description is required' }
+    }
+  },
+  glPostingDate: {
     type: Sequelize.DATE,
     field: 'gl_posting_date',
     allowNull: false,
     validate: {
-      notNull: { msg: 'Transacation Date is required' },
-    },
-  },
+      notNull: { msg: 'Transacation Date is required' }
+    }
+  }
 });
 
 module.exports = Transaction;

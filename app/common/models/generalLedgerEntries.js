@@ -16,7 +16,7 @@ const GeneralLedgerEntries = db.define('GeneralLedgerEntries', {
     },
   },
   totalDebit: {
-    type: Sequelize.INTEGER,
+    type: Sequelize.FLOAT,
     field: 'total_debit',
     allowNull: false,
     validate: {
@@ -24,7 +24,7 @@ const GeneralLedgerEntries = db.define('GeneralLedgerEntries', {
     },
   },
   totalCredit: {
-    type: Sequelize.INTEGER,
+    type: Sequelize.FLOAT,
     field: 'total_credit',
     allowNull: false,
     validate: {

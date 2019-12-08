@@ -15,7 +15,7 @@ const seeders = {
   purchaseInvoiceSeeder: require('./purchaseInvoiceSeeder'),
   generalLedgerEntriesSeeder: require('./generalLedgerEntriesSeeder'),
   journalSeeder: require('./journalSeeder'),
-  transactionSeeder: require('./transactionSeeder'),
+ // transactionSeeder: require('./transactionSeeder')
 };
 
 async function runAll(fileNames) {
@@ -24,7 +24,9 @@ async function runAll(fileNames) {
   if (!fileNames || fileNames.length === 0) {
     for (const file of saft.FILES) {
       console.log(`Seeding with data from file ${file.name}`);
-      console.log('==============================================================================');
+      console.log(
+        '=============================================================================='
+      );
 
       for (const key in seeders) {
         if (Object.prototype.hasOwnProperty.call(seeders, key)) {
@@ -33,7 +35,9 @@ async function runAll(fileNames) {
         }
       }
 
-      console.log('==============================================================================');
+      console.log(
+        '=============================================================================='
+      );
       console.log(`Finished seeding with data from file ${file.name}`);
     }
     // if at least one fileName is specified, the seeders will only
@@ -47,7 +51,9 @@ async function runAll(fileNames) {
       }
 
       console.log(`Seeding with data from file ${fileName}`);
-      console.log('==============================================================================');
+      console.log(
+        '=============================================================================='
+      );
 
       for (const key in seeders) {
         if (Object.prototype.hasOwnProperty.call(seeders, key)) {
@@ -56,12 +62,14 @@ async function runAll(fileNames) {
         }
       }
 
-      console.log('==============================================================================');
+      console.log(
+        '=============================================================================='
+      );
       console.log(`Finished seeding with data from file ${fileName}`);
     }
   }
 }
 
 module.exports = {
-  runAll,
+  runAll
 };
