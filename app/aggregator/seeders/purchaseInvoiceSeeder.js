@@ -24,6 +24,7 @@ async function seed(data) {
         wTaxTotalAmount: purchaseInvoice.wTaxTotalAmount,
         totalLiabilityAmount: purchaseInvoice.totalLiabilityAmount,
         discountInValueAmount: purchaseInvoice.discountInValueAmountAmount,
+        supplier_id: purchaseInvoice.sellerSupplierParty,
       });
     }
   }

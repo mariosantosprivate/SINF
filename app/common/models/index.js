@@ -175,4 +175,8 @@ models.Customer.hasMany(models.Transaction, {
   onDelete: 'cascade',
 });
 
+// ************************ PurchaseInvoice ************************
+
+models.PurchaseInvoice.belongsTo(models.Supplier, { foreignKey: 'supplier_id' });
+
 module.exports = models;
