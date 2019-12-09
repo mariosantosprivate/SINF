@@ -8,11 +8,13 @@ async function getMetrics(req, res) {
     const totalPurchasesValue = await purchasesService.totalPurchasesValue(fiscalYear);
     const totalPurchaseOrders = await purchasesService.totalPurchaseOrders(fiscalYear);
     const purchasesTrend = await purchasesService.purchasesTrend(fiscalYear);
+    const topSuppliers = await purchasesService.topSuppliers(fiscalYear);
 
     return res.json({
       totalPurchasesValue,
       totalPurchaseOrders,
       purchasesTrend,
+      topSuppliers,
     });
   } catch (err) {
     return res.status(500).json(new ErrorMessage());
