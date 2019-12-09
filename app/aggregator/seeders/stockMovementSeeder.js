@@ -5,7 +5,12 @@ const ShippingInfo = require('../../common/models/shippingInfo');
 async function seed(data) {
   const { fiscalYear } = data.auditFile.header;
 
-  const stockMovements = jp.query(data, '$.auditFile.sourceDocuments.movementOfGoods.stockMovement')[0];
+  let stockMovements = jp.query(data, '$.auditFile.sourceDocuments.movementOfGoods.stockMovement')[0];
+
+  if (!stockMovements) return;
+
+  if (!Array.isArray(stockMovements)) { stockMovements = [stockMovements]; }
+
 
   for (const key in stockMovements) {
     if (Object.prototype.hasOwnProperty.call(stockMovements, key)) {
