@@ -3,15 +3,15 @@ const parser = require('./parser');
 const FILES = [
   {
     name: 'SAFT_DEMOSINF_01-01-2016_31-12-2016.xml',
-    data: null
+    data: null,
   },
-  { name: 'SAFT_Sample_Accounting_2019.xml', data: null }
+  { name: 'SAFT_Sample_Accounting_2019.xml', data: null },
 ];
 
 async function parseFiles(fileNames) {
   console.log('\nParsing SAF-T files...');
   console.log(
-    '=============================================================================='
+    '==============================================================================',
   );
 
   let i;
@@ -33,12 +33,12 @@ async function parseFiles(fileNames) {
   }
 
   console.log(
-    '=============================================================================='
+    '==============================================================================',
   );
   console.log('Finished parsing SAF-T files.\n');
 }
 
 module.exports = {
   FILES,
-  parseFiles
+  parseFiles,
 };
