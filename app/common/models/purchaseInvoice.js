@@ -7,7 +7,7 @@ const PurchaseInvoice = db.define('PurchaseInvoice', {
     field: 'fiscal_year',
   },
   documentDate: {
-    type: Sequelize.DATE,
+    type: Sequelize.DATEONLY,
     field: 'document_date',
   },
   grossValueAmount: {
