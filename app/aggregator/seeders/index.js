@@ -39,7 +39,7 @@ async function runAll(fileNames) {
       console.log(
         '==============================================================================',
       );
-      console.log(`Finished seeding with data from file ${file.name}`);
+      console.log(`Finished seeding with data from file ${file.name}\n`);
     }
     // if at least one fileName is specified, the seeders will only
     // take data from the files that matche each fileName in fileNames
@@ -51,7 +51,7 @@ async function runAll(fileNames) {
         return;
       }
 
-      console.log(`Seeding with data from file ${fileName}`);
+      console.log(`Seeding with data from file ${fileName}\n`);
       console.log(
         '==============================================================================',
       );
