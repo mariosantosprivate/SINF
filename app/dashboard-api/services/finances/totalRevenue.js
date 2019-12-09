@@ -13,7 +13,7 @@ async function calculate(fiscalYear) {
       `There is no general ledger information for the fiscal year ${fiscalYear}`
     );
 
-  return parseFloat(General.totalDebit);
+  return parseFloat(General.totalCredit);
 }
 
 module.exports = calculate;
