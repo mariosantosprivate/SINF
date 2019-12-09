@@ -20,22 +20,21 @@ const models = {
   Journal: require('./journal'),
   TransactionLine: require('./transactionLine'),
   Transaction: require('./transaction'),
-  PurchaseInvoice: require('./purchaseInvoice')
+  PurchaseInvoice: require('./purchaseInvoice'),
 };
-const Sequelize = require('sequelize');
 
 // ************************ Supplier **********************
 
 models.AddressStructure.belongsTo(models.Supplier, {
-  foreignKey: 'billingAddress'
+  foreignKey: 'billingAddress',
 });
 models.Supplier.hasOne(models.AddressStructure, {
   foreignKey: 'billingAddress',
-  onDelete: 'cascade'
+  onDelete: 'cascade',
 });
 models.Supplier.hasOne(models.AddressStructure, {
   foreignKey: 'shipToAddress',
-  onDelete: 'cascade'
+  onDelete: 'cascade',
 });
 
 // ************************ SalesInvoice ************************
@@ -43,63 +42,63 @@ models.Supplier.hasOne(models.AddressStructure, {
 models.Invoice.belongsTo(models.SalesInvoice, { foreignKey: 'fiscal_year' });
 models.SalesInvoice.hasMany(models.Invoice, {
   foreignKey: 'fiscal_year',
-  onDelete: 'cascade'
+  onDelete: 'cascade',
 });
 
 models.Invoice.belongsTo(models.Customer, { foreignKey: 'customer_id' });
 models.Customer.hasMany(models.Invoice, {
-  foreignKey: 'customer_id'
+  foreignKey: 'customer_id',
 });
 
 // Technically a shipping info belongs to an Invoice, but sequelize is retarded
 // https://stackoverflow.com/questions/43746774/sequelize-one-to-one-relation
 models.Invoice.belongsTo(models.ShippingInfo, {
   foreignKey: 'ship_to_info_id',
-  onDelete: 'cascade'
+  onDelete: 'cascade',
 });
 
 models.Invoice.belongsTo(models.ShippingInfo, {
   foreignKey: 'ship_from_info_id',
-  onDelete: 'cascade'
+  onDelete: 'cascade',
 });
 
 models.InvoiceLine.belongsTo(models.Invoice, { foreignKey: 'invoice_no' });
 models.Invoice.hasMany(models.InvoiceLine, {
   foreignKey: 'invoice_no',
-  onDelete: 'cascade'
+  onDelete: 'cascade',
 });
 
 models.InvoiceLine.belongsTo(models.Product, {
-  foreignKey: 'product_code'
+  foreignKey: 'product_code',
 });
 
 models.InvoiceLine.belongsTo(models.Tax, {
-  foreignKey: 'tax_id'
+  foreignKey: 'tax_id',
 });
 
 // ************************ MovementOfGoods ************************
 
 models.StockMovement.belongsTo(models.MovementOfGoods, {
-  foreignKey: 'fiscal_year'
+  foreignKey: 'fiscal_year',
 });
 models.MovementOfGoods.hasMany(models.StockMovement, {
   foreignKey: 'fiscal_year',
-  onDelete: 'cascade'
+  onDelete: 'cascade',
 });
 
 models.StockMovement.belongsTo(models.Customer, { foreignKey: 'customer_id' });
 models.Customer.hasMany(models.StockMovement, {
-  foreignKey: 'customer_id'
+  foreignKey: 'customer_id',
 });
 
 models.StockMovement.belongsTo(models.ShippingInfo, {
   foreignKey: 'ship_to_info_id',
-  onDelete: 'cascade'
+  onDelete: 'cascade',
 });
 
 models.StockMovement.belongsTo(models.ShippingInfo, {
   foreignKey: 'ship_from_info_id',
-  onDelete: 'cascade'
+  onDelete: 'cascade',
 });
 
 /*
@@ -110,19 +109,19 @@ models.Supplier.hasMany(models.StockMovement, {
 */
 
 models.StockMovementLine.belongsTo(models.StockMovement, {
-  foreignKey: 'document_number'
+  foreignKey: 'document_number',
 });
 models.StockMovement.hasMany(models.StockMovementLine, {
   foreignKey: 'document_number',
-  onDelete: 'cascade'
+  onDelete: 'cascade',
 });
 
 models.StockMovementLine.belongsTo(models.Product, {
-  foreignKey: 'product_code'
+  foreignKey: 'product_code',
 });
 
 models.StockMovementLine.belongsTo(models.Tax, {
-  foreignKey: 'tax_id'
+  foreignKey: 'tax_id',
 });
 
 // ************************ Payments ************************
@@ -130,50 +129,50 @@ models.StockMovementLine.belongsTo(models.Tax, {
 models.Payment.belongsTo(models.PaymentsInfo, { foreignKey: 'fiscal_year' });
 models.PaymentsInfo.hasMany(models.Payment, {
   foreignKey: 'fiscal_year',
-  onDelete: 'cascade'
+  onDelete: 'cascade',
 });
 
 models.PaymentLine.belongsTo(models.Payment, { foreignKey: 'payment_ref_no' });
 models.Payment.hasMany(models.PaymentLine, {
   foreignKey: 'payment_ref_no',
-  onDelete: 'cascade'
+  onDelete: 'cascade',
 });
 
 // ************************ GeneralLedgerEntries ************************
 models.Journal.belongsTo(models.GeneralLedgerEntries, {
-  foreignKey: 'fiscal_year'
+  foreignKey: 'fiscal_year',
 });
 models.GeneralLedgerEntries.hasMany(models.Journal, {
   foreignKey: 'fiscal_year',
-  onDelete: 'cascade'
+  onDelete: 'cascade',
 });
 
 models.Transaction.belongsTo(models.Journal, { foreignKey: 'journalId' });
 models.Journal.hasMany(models.Transaction, {
   foreignKey: 'journalId',
-  onDelete: 'cascade'
+  onDelete: 'cascade',
 });
 
 models.TransactionLine.belongsTo(models.Transaction, {
-  foreignKey: 'transactionId'
+  foreignKey: 'transactionId',
 });
 models.Transaction.hasMany(models.TransactionLine, {
   foreignKey: 'transactionId',
-  onDelete: 'cascade'
+  onDelete: 'cascade',
 });
 
 models.Transaction.belongsTo(models.Supplier, {
-  foreignKey: 'supplierId'
+  foreignKey: 'supplierId',
 });
 models.Supplier.hasMany(models.Transaction, {
   foreignKey: 'supplierId',
-  onDelete: 'cascade'
+  onDelete: 'cascade',
 });
 
 models.Transaction.belongsTo(models.Customer, { foreignKey: 'customerId' });
 models.Customer.hasMany(models.Transaction, {
   foreignKey: 'customerId',
-  onDelete: 'cascade'
+  onDelete: 'cascade',
 });
 
 module.exports = models;
