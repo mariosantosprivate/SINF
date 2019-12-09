@@ -21,6 +21,7 @@ const models = {
   TransactionLine: require('./transactionLine'),
   Transaction: require('./transaction'),
   PurchaseInvoice: require('./purchaseInvoice'),
+  PurchaseInvoiceLine: require('./purchaseInvoiceLine'),
 };
 
 // ************************ Supplier **********************
@@ -178,5 +179,16 @@ models.Customer.hasMany(models.Transaction, {
 // ************************ PurchaseInvoice ************************
 
 models.PurchaseInvoice.belongsTo(models.Supplier, { foreignKey: 'supplier_id' });
+
+models.PurchaseInvoiceLine.belongsTo(models.PurchaseInvoice, { foreignKey: 'invoice_id' });
+models.PurchaseInvoice.hasMany(models.PurchaseInvoiceLine, {
+  foreignKey: 'invoice_id',
+  onDelete: 'cascade',
+});
+
+models.PurchaseInvoiceLine.belongsTo(models.Product, {
+  foreignKey: 'product_code',
+});
+
 
 module.exports = models;
