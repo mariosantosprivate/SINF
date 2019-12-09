@@ -39,7 +39,7 @@ async function seed(data) {
 
           await PurchaseInvoiceLine.create({
             invoice_id: savedPurchaseInvoice.id,
-            product_code: line.purchasesItemBaseEntityId,
+            product_code: line.purchasesItem,
             grossValueAmount: line.grossValueAmount,
           });
         }

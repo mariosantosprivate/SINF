@@ -30,7 +30,7 @@ async function seedFromJasmin() {
     // upsert is used here to avoid SequelizeUniqueConstraintError
     // due to duplicate entries
     await Product.upsert({
-      code: product.id,
+      code: product.itemKey,
       description: product.description,
       group: product.assortment,
       numberCode: product.barCode,
