@@ -1,8 +1,9 @@
 const jp = require('jsonpath');
+const axios = require('../requests/axios');
 const Supplier = require('../../common/models/supplier');
 const addressStructure = require('../../common/models/addressStructure');
 
-async function seed(data) {
+async function seedFromSaft(data) {
   const suppliers = jp.query(data, '$.auditFile.masterFiles.supplier')[0];
 
   for (const key in suppliers) {
@@ -19,7 +20,7 @@ async function seed(data) {
         telephone: supplier.telephone,
         fax: supplier.fax,
         email: supplier.email,
-        website: supplier.website
+        website: supplier.website,
       });
 
       if (billingAddress !== undefined) {
@@ -31,7 +32,7 @@ async function seed(data) {
           postalCode: billingAddress.postalCode,
           region: billingAddress.region,
           country: billingAddress.country,
-          billingAddress: supplier.supplierId
+          billingAddress: supplier.supplierId,
         });
       }
       if (shipFromAddress !== undefined) {
@@ -43,13 +44,38 @@ async function seed(data) {
           postalCode: shipFromAddress.postalCode,
           region: shipFromAddress.region,
           country: shipFromAddress.country,
-          shipToAddress: supplier.supplierId
+          shipToAddress: supplier.supplierId,
         });
       }
     }
   }
 }
 
+async function seedFromJasmin() {
+  const axiosInstance = axios.getInstance();
+
+  const request = await axiosInstance.get('purchasesCore/supplierParties');
+  const suppliers = request.data;
+
+  for (const supplier of suppliers) {
+    // upsert is used here to avoid SequelizeUniqueConstraintError
+    // due to duplicate entries
+    await Supplier.upsert({
+      supplierId: supplier.partyKey,
+      companyName: supplier.name,
+      contact: supplier.contactName,
+      telephone: supplier.telephone,
+      email: supplier.electronicMail,
+      website: supplier.websiteUrl,
+    });
+  }
+}
+
+async function seed(data) {
+  await seedFromSaft(data);
+  await seedFromJasmin();
+}
+
 module.exports = {
-  seed
+  seed,
 };
