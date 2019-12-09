@@ -6,9 +6,11 @@ async function getMetrics(req, res) {
 
   try {
     const totalPurchasesValue = await purchasesService.totalPurchasesValue(fiscalYear);
+    const totalPurchaseOrders = await purchasesService.totalPurchaseOrders(fiscalYear);
 
     return res.json({
       totalPurchasesValue,
+      totalPurchaseOrders,
     });
   } catch (err) {
     return res.status(500).json(new ErrorMessage());
