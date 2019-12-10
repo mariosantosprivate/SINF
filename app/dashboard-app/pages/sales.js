@@ -1,6 +1,5 @@
 import React from 'react';
 import { Row, Col } from 'react-bootstrap';
-import Header from '../components/Header/Header';
 import TrendChart from '../components/Chart/TrendChart';
 import BarChart from '../components/Chart/BarChart';
 import PieChart from '../components/Chart/PieChart';
@@ -41,7 +40,6 @@ class Sales extends React.Component {
 
     return (
       <div>
-        <Header />
         <div>
           <Row className="justify-content-center top-padded-row side-padded-row-small">
             <Col lg={12} className="text-center">

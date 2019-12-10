@@ -1,7 +1,6 @@
 import Card from 'react-bootstrap/Card';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Header from '../components/Header/Header';
 import { BarGraph } from '../components/Chart/BarGraph';
 import { LineGraph } from '../components/Chart/LineGraph';
 // Importing a local CSS file.
@@ -9,7 +8,7 @@ import '../assets/css/style.css';
 
 const Finances = () => (
   <div>
-    <Header />
+
     <div>
       <Row className="justify-content-center top-padded-row side-padded-row-small">
         <Col className="text-center">
