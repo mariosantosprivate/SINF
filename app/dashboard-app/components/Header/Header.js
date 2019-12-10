@@ -1,9 +1,10 @@
 // Importing a local CSS file.
 import './Header.css';
-import { Navbar, Nav } from 'react-bootstrap';
+import { Navbar, Nav, Col } from 'react-bootstrap';
+import PropTypes from 'prop-types';
 import Link from './Link';
 
-const Header = () => (
+const Header = (props) => (
   <Navbar fixed="top" collapseOnSelect expand="md" bg="dark" variant="dark">
     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
     <Navbar.Collapse id="responsive-navbar-nav">
@@ -35,6 +36,16 @@ const Header = () => (
         </Nav.Item>
       </Nav>
     </Navbar.Collapse>
+    {props.children}
   </Navbar>
 );
+
+Header.propTypes = {
+  children: PropTypes.node,
+};
+
+Header.defaultProps = {
+  children: null,
+};
+
 export default Header;
