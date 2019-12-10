@@ -38,7 +38,7 @@ const PieChart = ({ data, labels, chartType }) => {
       callbacks: {
         label: (tooltipItem, tooltipData) => {
           formatTooltip(
-            tooltipData.datasets[tooltipItem.datasetIndex].data[tooltipItem.index], 
+            tooltipData.datasets[tooltipItem.datasetIndex].data[tooltipItem.index],
             chartType,
           );
         },
