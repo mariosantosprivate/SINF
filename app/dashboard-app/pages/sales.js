@@ -46,11 +46,7 @@ class Sales extends React.Component {
         const fiscalYears = await metadataService.getFiscalYears();
         [fiscalYear] = fiscalYears;
       }
-    } catch (err) {
-      this.setState({ hasError: true, errorMessage: err.message });
-    }
 
-    try {
       const data = await salesService.getMetrics(fiscalYear);
       this.setState({
         loading: false,
