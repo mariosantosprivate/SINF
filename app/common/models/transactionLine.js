@@ -19,7 +19,7 @@ const TransactionLine = db.define('TransactionLine', {
     }
   },
   accountId: {
-    type: Sequelize.BIGINT,
+    type: Sequelize.STRING,
     field: 'account_id',
     allowNull: false,
     validate: {

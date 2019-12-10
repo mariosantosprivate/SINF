@@ -8,17 +8,17 @@ async function getMetrics(req, res) {
   try {
     const totalRevenue = await financesService.totalRevenue(fiscalYear);
 
-    const totalExpenses = await financesService.totalExpenses(fiscalYear);
+    // const totalExpenses = await financesService.totalExpenses(fiscalYear);
 
-    const totalIncome = await financesService.totalIncome(fiscalYear);
+    // const totalIncome = await financesService.totalIncome(fiscalYear);
     const accountsReceivable = await financesService.accountsReceivable(
       fiscalYear
     );
 
     return res.json({
       totalRevenue,
-      totalExpenses,
-      totalIncome,
+      //totalExpenses,
+      //totalIncome,
       accountsReceivable
     });
   } catch (err) {

@@ -1,25 +1,27 @@
 const Journal = require('../../../common/models/journal');
-const Transactions = require('../../../common/models/transaction');
+const Transaction = require('../../../common/models/transaction');
 const TransactionsLines = require('../../../common/models/transactionLine');
 const Sequelize = require('sequelize');
 const Op = Sequelize.Op;
 
 async function calculate(fiscalYear) {
+  fiscalYear = parseInt(fiscalYear);
   const transactions = await TransactionsLines.findAll({
     include: [
       {
-        model: Transactions,
-        where: { customerId: { [Op.ne]: null } },
+        model: Transaction,
         include: [
           {
-            model: Journal,
-            where: { fiscal_year: fiscalYear }
+            model: Journal
           }
         ]
       }
     ],
     raw: true,
-    where: { type: 'credit' }
+    where: {
+      accountId: { [Op.startsWith]: '21' },
+      '$Transaction.Journal.fiscal_year$': fiscalYear
+    }
   }).catch(function(err) {
     return err;
   });
@@ -30,7 +32,7 @@ async function calculate(fiscalYear) {
   let totalValue = 0;
   for (i in transactions) {
     transaction = transactions[i];
-    if (transaction.type == 'debit') {
+    if (transaction.type == 'credit') {
       totalValue -= transaction.amount;
     } else {
       totalValue += transaction.amount;
