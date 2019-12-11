@@ -1,6 +1,6 @@
-const financesService = require('../services/financesService');
-const ErrorMessage = require('../utils/ErrorMessage');
-const NotFoundError = require('../errors/NotFoundError');
+const financesService = require("../services/financesService");
+const ErrorMessage = require("../utils/ErrorMessage");
+const NotFoundError = require("../errors/NotFoundError");
 
 async function getMetrics(req, res) {
   const { fiscalYear } = req.query;
@@ -14,9 +14,10 @@ async function getMetrics(req, res) {
     const accountsReceivable = await financesService.accountsReceivable(
       fiscalYear
     );
+    const totalRevenue = await financesService.totalRevenue(fiscalYear);
 
     return res.json({
-      //totalRevenue,
+      totalRevenue,
       //totalExpenses,
       totalAssets,
       //totalIncome,
