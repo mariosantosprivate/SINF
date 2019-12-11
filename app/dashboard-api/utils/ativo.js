@@ -1,12 +1,17 @@
 class SNCsAtivo {
   constructor() {
-    this.positovo = [];
-    this.negativo = [];
+    this.positivo.corrente.credito = [];
+    this.positivo.corrente.debito = [];
+    this.positivo.naoCorrente.credito = [];
+    this.positivo.naoCorrente.debito = [];
+    this.negativos.corrente = [];
+    this.negativos.naoCorrente = [];
+    this.positivos = [];
   }
 }
 let sNCsAtivo = Object.create(SNCsAtivo.prototype);
-sNCsAtivo.positivo = [
-  //Ativos fixos tangíveis
+sNCsAtivo.positivo.corrente.credito = [
+  //Ativos fixos tangiveis
   268,
   269,
   270,
@@ -60,16 +65,21 @@ sNCsAtivo.positivo = [
   304,
   308,
   //Créditos a receber
+  112,
+  129,
+  //Ativos por impostos diferidos
+  133
+];
+sNCsAtivo.positivo.corrente.dedito = [
+  //Creditos a receber
   62,
   64,
-  112,
   114,
   125,
   127,
-  129,
-  139,
-  //Ativos por impostos diferidos
-  133,
+  139
+];
+sNCsAtivo.positivo.naoCorrente.credito = [
   //Inventários
   165,
   166,
@@ -95,20 +105,6 @@ sNCsAtivo.positivo = [
   195,
   196,
   214,
-  //Clientes
-  10,
-  11,
-  12,
-  13,
-  14,
-  15,
-  16,
-  17,
-  18,
-  19,
-  20,
-  21,
-  22,
   //Estado e outros entes públicos
   71,
   73,
@@ -126,35 +122,13 @@ sNCsAtivo.positivo = [
   106,
   107,
   //Outros créditos a receber
-  37,
-  38,
-  39,
-  40,
-  41,
-  42,
-  43,
-  44,
-  45,
-  46,
-  47,
-  48,
-  49,
-  50,
   51,
-  55,
-  56,
   61,
   63,
   108,
-  109,
-  110,
   111,
-  113,
-  124,
-  126,
   128,
   130,
-  138,
   //Diferimentos
   146,
   //Ativos financeiros detidos para negociação
@@ -169,11 +143,50 @@ sNCsAtivo.positivo = [
   323,
   324,
   //Caixa e deósitos bancários
-  1,
+  1
+];
+sNCsAtivo.positivo.naoCorrente.dedito = [
+  //Clientes
+  10,
+  11,
+  12,
+  13,
+  14,
+  15,
+  16,
+  17,
+  18,
+  19,
+  20,
+  21,
+  22,
+  //Outros creditos a receber
+  37,
+  38,
+  39,
+  40,
+  41,
+  42,
+  43,
+  44,
+  45,
+  46,
+  47,
+  48,
+  49,
+  50,
+  55,
+  56,
+  109,
+  110,
+  113,
+  124,
+  126,
+  138,
   2,
   3
 ];
-sNCsAtivo.negativo = [
+sNCsAtivo.negativo.corrente = [
   //Ativos fixos tangíveis
   275,
   276,
@@ -252,7 +265,9 @@ sNCsAtivo.negativo = [
   141,
   145,
   //Ativos por impostos diferidos
-  143,
+  143
+];
+sNCsAtivo.negativo.naoCorrente = [
   //Inventários
   168,
   169,
@@ -304,11 +319,21 @@ sNCsAtivo.negativo = [
   140,
   142,
   144,
-  //Ativos não correntes detidos para venda
+  //Ativos não correntes detidos para vendaF
   326,
   327,
   328,
   329,
   330
 ];
+sNCsAtivo.negativos = sNCsAtivo.negativo.corrente.concat(
+  sNCsAtivo.negativo.naoCorrente
+);
+sNCsAtivo.positivos = sNCsAtivo.positivo.corrente.creditoconcat(
+  sNCsAtivo.positivo.corrente.dedito.concat(
+    sNCsAtivo.positivo.naoCorrente.credito.concat(
+      sNCsAtivo.positivo.naoCorrente.dedito
+    )
+  )
+);
 module.exports = sNCsAtivo;
