@@ -6,7 +6,7 @@ async function getMetrics(req, res) {
   const { fiscalYear } = req.query;
 
   try {
-    const totalRevenue = await financesService.totalRevenue(fiscalYear);
+    const totalAssets = await financesService.totalAssets(fiscalYear);
 
     // const totalExpenses = await financesService.totalExpenses(fiscalYear);
 
@@ -16,8 +16,9 @@ async function getMetrics(req, res) {
     );
 
     return res.json({
-      totalRevenue,
+      //totalRevenue,
       //totalExpenses,
+      totalAssets,
       //totalIncome,
       accountsReceivable
     });

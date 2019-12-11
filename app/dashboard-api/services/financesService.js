@@ -1,10 +1,10 @@
-const totalRevenue = require('./finances/totalRevenue');
+const totalAssets = require('./finances/totalAssets');
 const totalExpenses = require('./finances/totalExpenses');
 const totalIncome = require('./finances/totalIncome');
 const accountsReceivable = require('./finances/accountsReceivable');
 
 module.exports = {
-  totalRevenue,
+  totalAssets,
   totalExpenses,
   totalIncome,
   accountsReceivable
