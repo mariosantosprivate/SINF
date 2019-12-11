@@ -2,7 +2,7 @@ const Journal = require('../../../common/models/journal');
 const Transaction = require('../../../common/models/transaction');
 const TransactionsLines = require('../../../common/models/transactionLine');
 const Sequelize = require('sequelize');
-const ativo = require('../../utils/ativo');
+//const ativo = require('../../utils/ativo'); TOFIX
 //const Op = Sequelize.Op;
 
 async function calculate(fiscalYear) {
