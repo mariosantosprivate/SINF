@@ -39,8 +39,8 @@ async function calculate(fiscalYear) {
       `There is no general ledger information for the fiscal year ${fiscalYear}`
     );
   let totalValue = 0;
-  const negativos = ativo.negativo.join().split(',');
-  const positivos = ativo.positivo.join().split(',');
+  const negativos = ativo.negativos.join().split(',');
+  const positivos = ativo.positivos.join().split(',');
   for (i in transactions) {
     const transaction = transactions[i];
     const positive = positivos.find(element =>
