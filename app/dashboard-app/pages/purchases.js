@@ -59,13 +59,15 @@ class Purchases extends React.Component {
   render() {
     const { data } = this.state;
 
-    const header = (
-      <div>
-        <FiscalYearSelect onChange={this.onChangeFiscalYear} />
-      </div>
+    const fiscalYearSelect = (
+      <Row className="justify-content-center top-padded-row side-padded-row-small">
+        <Col lg={2} className="offset-md-11">
+          <FiscalYearSelect onChange={this.onChangeFiscalYear} />
+        </Col>
+      </Row>
     );
 
-    const page = [header];
+    const page = [fiscalYearSelect];
 
     if (this.state.hasError) {
       page.push(<ErrorMessage message={this.state.errorMessage} />);
