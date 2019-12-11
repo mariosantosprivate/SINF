@@ -6,22 +6,20 @@ async function getMetrics(req, res) {
   const { fiscalYear } = req.query;
 
   try {
-    const totalRevenue = await financesService.totalRevenue(
-      fiscalYear,
-    );
+    const totalRevenue = await financesService.totalRevenue(fiscalYear);
 
-    const totalExpenses = await financesService.totalExpenses(
-      fiscalYear,
-    );
+    // const totalExpenses = await financesService.totalExpenses(fiscalYear);
 
-    const totalIncome = await financesService.totalIncome(
-      fiscalYear,
+    // const totalIncome = await financesService.totalIncome(fiscalYear);
+    const accountsReceivable = await financesService.accountsReceivable(
+      fiscalYear
     );
 
     return res.json({
       totalRevenue,
-      totalExpenses,
-      totalIncome,
+      //totalExpenses,
+      //totalIncome,
+      accountsReceivable
     });
   } catch (err) {
     if (err instanceof NotFoundError) {
@@ -32,5 +30,5 @@ async function getMetrics(req, res) {
 }
 
 module.exports = {
-  getMetrics,
+  getMetrics
 };

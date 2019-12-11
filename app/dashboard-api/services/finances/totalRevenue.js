@@ -1,19 +1,19 @@
 const General = require('../../../common/models/generalLedgerEntries');
 
 async function calculate(fiscalYear) {
-  const General = await General.findOne({
+  const general = await General.findOne({
     raw: true,
     where: {
       fiscalYear
     }
   });
 
-  if (!General)
+  if (!general)
     throw new Error(
       `There is no general ledger information for the fiscal year ${fiscalYear}`
     );
 
-  return parseFloat(General.totalCredit);
+  return parseFloat(general.totalCredit);
 }
 
 module.exports = calculate;

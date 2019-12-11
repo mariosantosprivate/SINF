@@ -1,6 +1,5 @@
 import React from 'react';
 import { Row, Col } from 'react-bootstrap';
-import Header from '../components/Header/Header';
 import TrendChart from '../components/Chart/TrendChart';
 import BarChart from '../components/Chart/BarChart';
 import KPI from '../components/KPI';
@@ -62,9 +61,7 @@ class Purchases extends React.Component {
 
     const header = (
       <div>
-        <Header>
-          <FiscalYearSelect onChange={this.onChangeFiscalYear} />
-        </Header>
+        <FiscalYearSelect onChange={this.onChangeFiscalYear} />
       </div>
     );
 

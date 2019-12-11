@@ -1,14 +1,13 @@
 import Card from 'react-bootstrap/Card';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Header from '../components/Header/Header';
 import { DoughnutGraph } from '../components/Chart/DoughnutGraph';
 // Importing a local CSS file.
 import '../assets/css/style.css';
 
 const Logistics = () => (
   <div>
-    <Header />
+
     <div>
       <Row className="justify-content-center top-padded-row side-padded-row-small">
         <Col className="text-center">
