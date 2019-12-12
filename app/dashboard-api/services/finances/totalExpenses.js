@@ -1,16 +1,41 @@
-const PaymentsInfo = require('../../../common/models/paymentsInfo');
+const journal = require('../../../common/models/journal');
+const transaction = require('../../../common/models/transaction');
+const transactionLine = require('../../../common/models/transactionLine');
 
 async function calculate(fiscalYear) {
-  const paymentsInfo = await PaymentsInfo.findOne({
+  // get all transactionLines of type debit and which journal's fiscal year matches the fiscal year
+  const transactionLines = await transactionLine.findAll({
     raw: true,
+    include: [
+      {
+        model: transaction,
+        include: [
+          {
+            model: journal,
+            where: { fiscalYear },
+          },
+        ],
+      },
+    ],
     where: {
-      fiscalYear,
+      type: 'debit',
     },
   });
 
-  if (!paymentsInfo) throw new Error(`There is no payment information for the fiscal year ${fiscalYear}`);
+  if (!transactionLines) throw new Error(`There is no debit transaction lines for the fiscal year ${fiscalYear}`);
 
-  return parseFloat(paymentsInfo.totalCredit);
+  // sum the ammount of every transaction line
+  let debit = 0;
+  let i = 0;
+  for (i in transactionLines) {
+    if (transactionLines[i] !== undefined) {
+      debit += transactionLines[i].ammount;
+    }
+  }
+
+  // or get GeneralLedgesEntries by fiscal year and get totalDebit
+
+  return parseFloat(debit);
 }
 
 module.exports = calculate;

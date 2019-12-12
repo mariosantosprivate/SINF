@@ -13,5 +13,5 @@ module.exports = {
   accountsReceivable,
   totalRevenue,
   revenueTrend,
-  financialAutonomy
+  financialAutonomy,
 };
