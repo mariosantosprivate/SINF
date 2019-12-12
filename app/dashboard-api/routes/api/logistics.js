@@ -1,5 +1,5 @@
 const router = require('express').Router();
-constlogisticsController = require('../../controllers/logisticsController');
+const logisticsController = require('../../controllers/logisticsController');
 
 router.get('/', logisticsController.getMetrics);
 

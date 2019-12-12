@@ -24,7 +24,7 @@ async function calculate(fiscalYear) {
             deliveryPerCountry[country] = 0;
         }
 
-        deliveryPerCountry[country] += 1;
+        deliveryPerCountry[country]++;
     }
 
     return formatTop5(deliveryPerCountry);
