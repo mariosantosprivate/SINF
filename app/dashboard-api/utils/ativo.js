@@ -1,12 +1,14 @@
 function SNCsAtivo() {
   this.positivo_corrente_credito = [];
   this.positivo_corrente_debito = [];
+  this.positivo_corrente = [];
   this.positivo_naoCorrente_credito = [];
   this.positivo_naoCorrente_debito = [];
   this.negativo_corrente = [];
   this.negativo_naoCorrente = [];
   this.positivos = [];
   this.negativos = [];
+  this.positivos_credito = [];
   this.positivos_debito = [];
 }
 let sNCsAtivo = new SNCsAtivo();
@@ -339,4 +341,25 @@ sNCsAtivo.positivos = sNCsAtivo.positivo_corrente_credito.concat(
 sNCsAtivo.positivos_debito = sNCsAtivo.positivo_corrente_debito.concat(
   sNCsAtivo.positivo_naoCorrente_debito
 );
+sNCsAtivo.positivos_credito = sNCsAtivo.positivo_corrente_credito.concat(
+  sNCsAtivo.positivo_naoCorrente_credito
+);
+sNCsAtivo.positivo_corrente = sNCsAtivo.positivo_corrente_credito.concat(
+  sNCsAtivo.positivo_corrente_debito
+);
+sNCsAtivo.positivo_corrente_credito.sort(sortNumber).reverse();
+sNCsAtivo.positivo_corrente_debito.sort(sortNumber).reverse();
+sNCsAtivo.positivo_corrente.sort(sortNumber).reverse();
+sNCsAtivo.positivo_naoCorrente_credito.sort(sortNumber).reverse();
+sNCsAtivo.positivo_naoCorrente_debito.sort(sortNumber).reverse();
+sNCsAtivo.negativo_corrente.sort(sortNumber).reverse();
+sNCsAtivo.negativo_naoCorrente.sort(sortNumber).reverse();
+sNCsAtivo.positivos.sort(sortNumber).reverse();
+sNCsAtivo.negativos.sort(sortNumber).reverse();
+sNCsAtivo.positivos_credito.sort(sortNumber).reverse();
+sNCsAtivo.positivos_debito.sort(sortNumber).reverse();
+
+function sortNumber(a, b) {
+  return a - b;
+}
 module.exports = sNCsAtivo;

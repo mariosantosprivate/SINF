@@ -6,6 +6,7 @@ const ativo = require('../../utils/ativo');
 const negativos = ativo.negativos.join().split(',');
 const positivos = ativo.positivos.join().split(',');
 const positivos_debito = ativo.positivos_debito.join().split(',');
+const positivos_credito = ativo.positivos_credito.join().split(',');
 //const Op = Sequelize.Op;
 
 async function calculate(fiscalYear) {
@@ -46,18 +47,36 @@ async function calculate(fiscalYear) {
     let transaction = transactions[i];
     let positive = check(transaction.accountId, positivos);
     let negative = check(transaction.accountId, negativos);
+    //Daremos sempre priorirdade nos calculos aqueles que forem buscar melhor os SNC
+    // Ou seja, se houver 2 e 24 noutro, o 24 terá como prioridade
     if (positive !== undefined && negative !== undefined) {
       if (negative.length > positive.length) positive = undefined;
       else if (negative.length < positive.length) negative = undefined;
     }
     if (positive !== undefined) {
-      if (check(transaction.accountId, positivos_debito) !== undefined) {
-        if (transaction.type == 'debit') totalValue += transaction.amount;
-      } else {
-        if (transaction.type == 'credit') totalValue += transaction.amount;
+      let positive_debito = check(transaction.accountId, positivos_debito);
+      let positive_corrente_credito = check(
+        transaction.accountId,
+        positivos_credito
+      );
+      if (
+        positive_corrente_credito !== undefined &&
+        positive_debito !== undefined
+      ) {
+        if (positive_debito.length > positive_corrente_credito.length)
+          positive_corrente_credito = undefined;
+        else if (positive_debito.length < positive_corrente_credito.length)
+          positive_debito = undefined;
       }
+      if (transaction.type == 'debit' && positive_debito !== undefined)
+        totalValue += transaction.amount;
+      else if (
+        transaction.type == 'credit' &&
+        positive_corrente_credito !== undefined
+      )
+        totalValue += transaction.amount;
     } else if (negative !== undefined) {
-      if (transaction.type == 'debit') {
+      if (transaction.type == 'credit') {
         totalValue -= transaction.amount;
       }
     }
