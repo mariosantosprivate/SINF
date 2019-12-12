@@ -4,6 +4,7 @@ function SNCsAtivo() {
   this.positivo_corrente = [];
   this.positivo_naoCorrente_credito = [];
   this.positivo_naoCorrente_debito = [];
+  this.positivo_naoCorrente = [];
   this.negativo_corrente = [];
   this.negativo_naoCorrente = [];
   this.positivos = [];
@@ -347,11 +348,15 @@ sNCsAtivo.positivos_credito = sNCsAtivo.positivo_corrente_credito.concat(
 sNCsAtivo.positivo_corrente = sNCsAtivo.positivo_corrente_credito.concat(
   sNCsAtivo.positivo_corrente_debito
 );
+sNCsAtivo.positivo_naoCorrente = sNCsAtivo.positivo_naoCorrente_credito.concat(
+  sNCsAtivo.positivo_naoCorrente_debito
+);
 sNCsAtivo.positivo_corrente_credito.sort(sortNumber).reverse();
 sNCsAtivo.positivo_corrente_debito.sort(sortNumber).reverse();
 sNCsAtivo.positivo_corrente.sort(sortNumber).reverse();
 sNCsAtivo.positivo_naoCorrente_credito.sort(sortNumber).reverse();
 sNCsAtivo.positivo_naoCorrente_debito.sort(sortNumber).reverse();
+sNCsAtivo.positivo_naoCorrente.sort(sortNumber).reverse();
 sNCsAtivo.negativo_corrente.sort(sortNumber).reverse();
 sNCsAtivo.negativo_naoCorrente.sort(sortNumber).reverse();
 sNCsAtivo.positivos.sort(sortNumber).reverse();
