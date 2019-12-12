@@ -1,6 +1,6 @@
-const financesService = require("../services/financesService");
-const ErrorMessage = require("../utils/ErrorMessage");
-const NotFoundError = require("../errors/NotFoundError");
+const financesService = require('../services/financesService');
+const ErrorMessage = require('../utils/ErrorMessage');
+const NotFoundError = require('../errors/NotFoundError');
 
 async function getMetrics(req, res) {
   const { fiscalYear } = req.query;
@@ -16,12 +16,19 @@ async function getMetrics(req, res) {
     );
     const totalRevenue = await financesService.totalRevenue(fiscalYear);
 
+    let financialAutonomy = await financesService.financialAutonomy(fiscalYear);
+    financialAutonomy = financialAutonomy / totalAssets;
+
+    const revenueTrend = await financesService.revenueTrend(fiscalYear);
+
     return res.json({
       totalRevenue,
       //totalExpenses,
       totalAssets,
       //totalIncome,
-      accountsReceivable
+      accountsReceivable,
+      financialAutonomy,
+      revenueTrend
     });
   } catch (err) {
     if (err instanceof NotFoundError) {

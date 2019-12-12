@@ -3,14 +3,14 @@ function SNCsAtivo() {
   this.positivo_corrente_debito = [];
   this.positivo_naoCorrente_credito = [];
   this.positivo_naoCorrente_debito = [];
-  this.negativos_corrente = [];
-  this.negativos_naoCorrente = [];
+  this.negativo_corrente = [];
+  this.negativo_naoCorrente = [];
   this.positivos = [];
   this.negativos = [];
   this.positivos_debito = [];
 }
 let sNCsAtivo = new SNCsAtivo();
-sNCsAtivo.positivo_corrente_credito = [
+sNCsAtivo.positivo_naoCorrente_credito = [
   //Ativos fixos tangiveis
   268,
   269,
@@ -70,7 +70,7 @@ sNCsAtivo.positivo_corrente_credito = [
   //Ativos por impostos diferidos
   133
 ];
-sNCsAtivo.positivo_corrente_dedito = [
+sNCsAtivo.positivo_naoCorrente_debito = [
   //Creditos a receber
   62,
   64,
@@ -79,7 +79,7 @@ sNCsAtivo.positivo_corrente_dedito = [
   127,
   139
 ];
-sNCsAtivo.positivo_naoCorrente_credito = [
+sNCsAtivo.positivo_corrente_credito = [
   //Inventários
   165,
   166,
@@ -145,7 +145,7 @@ sNCsAtivo.positivo_naoCorrente_credito = [
   //Caixa e deósitos bancários
   1
 ];
-sNCsAtivo.positivo_naoCorrente_dedito = [
+sNCsAtivo.positivo_corrente_debito = [
   //Clientes
   10,
   11,
@@ -186,7 +186,7 @@ sNCsAtivo.positivo_naoCorrente_dedito = [
   2,
   3
 ];
-sNCsAtivo.negativo_corrente = [
+sNCsAtivo.negativo_naoCorrente = [
   //Ativos fixos tangíveis
   275,
   276,
@@ -267,7 +267,7 @@ sNCsAtivo.negativo_corrente = [
   //Ativos por impostos diferidos
   143
 ];
-sNCsAtivo.negativo_naoCorrente = [
+sNCsAtivo.negativo_corrente = [
   //Inventários
   168,
   169,
@@ -330,13 +330,13 @@ sNCsAtivo.negativos = sNCsAtivo.negativo_corrente.concat(
   sNCsAtivo.negativo_naoCorrente
 );
 sNCsAtivo.positivos = sNCsAtivo.positivo_corrente_credito.concat(
-  sNCsAtivo.positivo_corrente_dedito.concat(
+  sNCsAtivo.positivo_corrente_debito.concat(
     sNCsAtivo.positivo_naoCorrente_credito.concat(
-      sNCsAtivo.positivo_naoCorrente_dedito
+      sNCsAtivo.positivo_naoCorrente_debito
     )
   )
 );
-sNCsAtivo.positivos_debito = sNCsAtivo.positivo_corrente_dedito.concat(
-  sNCsAtivo.positivo_naoCorrente_dedito
+sNCsAtivo.positivos_debito = sNCsAtivo.positivo_corrente_debito.concat(
+  sNCsAtivo.positivo_naoCorrente_debito
 );
 module.exports = sNCsAtivo;
