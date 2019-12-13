@@ -2,13 +2,26 @@ const Journal = require('../../../common/models/journal');
 const Transaction = require('../../../common/models/transaction');
 const TransactionsLines = require('../../../common/models/transactionLine');
 const Sequelize = require('sequelize');
-const ativo = require('../../utils/ativo');
-const negativos = ativo.negativo_corrente.join().split(',');
-const positivos = ativo.positivo_corrente.join().split(',');
-const positivos_debito = ativo.positivo_corrente_debito.join().split(',');
-const positivos_credito = ativo.positivo_corrente_credito.join().split(',');
-//const Op = Sequelize.Op;
-
+const positivos = [
+  716, // 510
+  721, // 513
+  722, // 514
+  723, // 515
+  724, // 515
+  727, // 515
+  725, // 516
+  726 // 517
+];
+const negativos = [
+  712, // 507
+  711, // 506
+  713, // 508
+  714, // 509
+  717, // 511
+  718, // 512
+  728 // 518
+];
+const Op = Sequelize.Op;
 async function calculate(fiscalYear) {
   fiscalYear = parseInt(fiscalYear);
   const transactions = await TransactionsLines.findAll({
@@ -16,9 +29,11 @@ async function calculate(fiscalYear) {
     include: [
       {
         model: Transaction,
+        attributes: [],
         include: [
           {
-            model: Journal
+            model: Journal,
+            attributes: []
           }
         ]
       }
@@ -47,49 +62,28 @@ async function calculate(fiscalYear) {
     let transaction = transactions[i];
     let positive = check(transaction.accountId, positivos);
     let negative = check(transaction.accountId, negativos);
-    //Daremos sempre priorirdade nos calculos aqueles que forem buscar melhor os SNC
-    // Ou seja, se houver 2 e 24 noutro, o 24 terá como prioridade
     if (positive !== undefined && negative !== undefined) {
       if (negative.length > positive.length) positive = undefined;
       else if (negative.length < positive.length) negative = undefined;
     }
     if (positive !== undefined) {
-      let positive_debito = check(transaction.accountId, positivos_debito);
-      let positive_corrente_credito = check(
-        transaction.accountId,
-        positivos_credito
-      );
-      if (
-        positive_corrente_credito !== undefined &&
-        positive_debito !== undefined
-      ) {
-        if (positive_debito.length > positive_corrente_credito.length)
-          positive_corrente_credito = undefined;
-        else if (positive_debito.length < positive_corrente_credito.length)
-          positive_debito = undefined;
+      if (transaction.type == 'debit') {
+        totalValue += transaction.amount;
+      } else {
+        totalValue -= transaction.amount;
       }
-      if (transaction.type == 'debit' && positive_debito !== undefined)
-        totalValue += transaction.amount;
-      else if (
-        transaction.type == 'credit' &&
-        positive_corrente_credito !== undefined
-      )
-        totalValue += transaction.amount;
     } else if (negative !== undefined) {
       if (transaction.type == 'credit') {
+        totalValue += transaction.amount;
+      } else {
         totalValue -= transaction.amount;
       }
     }
   }
+  Number(totalValue.toFixed(2));
   return totalValue;
 }
-
 function check(accountId, array) {
-  if (accountId.length <= 3) {
-    return array.find(element => accountId == element);
-  } else {
-    return array.find(element => accountId.startsWith(element));
-  }
+  return array.find(element => accountId.startsWith(element));
 }
-
 module.exports = calculate;
