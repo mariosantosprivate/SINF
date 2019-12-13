@@ -22,9 +22,9 @@ async function calculate(fiscalYear) {
     for (const invoice of invoices) {
         // since the name of the property ShippingInfo.country contains a "." (dot),
         // the property needs to be fetched like this
-        const date = invoice['ShippingInfo.delivery_date'];
-        const today = new Date();
-        if (date.getTime() <= today.getTime()) {
+        let date = new Date(invoice['ShippingInfo.deliveryDate']);
+        let today = new Date();
+        if (date <= today) {
             deliveryStatus[delivered]++;
         } else {
             deliveryStatus[undelivered]++;
