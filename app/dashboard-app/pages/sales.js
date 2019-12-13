@@ -103,10 +103,10 @@ class Sales extends React.Component {
             </Col>
           </Row>
           <Row className="justify-content-sm-center top-padded-row side-padded-row">
-            <Col className="text-center">
+            <Col lg={6} className="text-center">
               <TrendChart legend="Sales trend" data={this.state.data.salesTrend} />
             </Col>
-            <Col className="text-center">
+            <Col lg={6} className="text-center">
               <PieChart
                 data={data.salesByRegion.map((region) => region.value)}
                 labels={data.salesByRegion.map((region) => region.name)}
