@@ -17,9 +17,11 @@ async function calculate(fiscalYear) {
     include: [
       {
         model: Transaction,
+        attributes: [],
         include: [
           {
-            model: Journal
+            model: Journal,
+            attributes: []
           }
         ]
       }
@@ -91,6 +93,7 @@ async function calculate(fiscalYear) {
       totalValue += saldo;
     }
   }
+  Number(totalValue.toFixed(2));
   return totalValue;
 }
 
