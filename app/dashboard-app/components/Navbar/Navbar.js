@@ -12,6 +12,11 @@ const AppNavbar = ({ user }) => (
         {user && (
           <>
             <Nav.Item>
+              <Link href="/Home">
+                <a className="nav-link">General</a>
+              </Link>
+            </Nav.Item>
+            <Nav.Item>
               <Link href="/general">
                 <a className="nav-link">General</a>
               </Link>
@@ -44,9 +49,18 @@ const AppNavbar = ({ user }) => (
           </>
         )}
         {!user && (
-        <Link href="/login">
-          <a className="nav-link">Sign in | Sign up</a>
-        </Link>
+        <>
+          <Nav.Item>
+              <Link href="/">
+                <a className="nav-link">Home</a>
+              </Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Link href="/login">
+                <a className="nav-link">Login </a>
+              </Link>
+            </Nav.Item>
+          </>
         )}
       </Nav>
     </Navbar.Collapse>

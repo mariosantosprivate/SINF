@@ -36,6 +36,7 @@ export default class MyDocument extends Document {
             integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
             crossOrigin="anonymous"
           />
+          <script src="https://kit.fontawesome.com/a076d05399.js"></script>
         </Head>
         <body>
           <Main />
