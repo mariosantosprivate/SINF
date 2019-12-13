@@ -4,10 +4,6 @@ const TransactionsLines = require('../../../common/models/transactionLine');
 const Sequelize = require('sequelize');
 const getMonth = require('date-fns/getMonth');
 const positivos = [
-  711, // 506
-  712, // 507
-  713, // 508
-  714, // 509
   716, // 510
   721, // 513
   722, // 514
@@ -18,6 +14,10 @@ const positivos = [
   726 // 517
 ];
 const negativos = [
+  712, // 507
+  711, // 506
+  713, // 508
+  714, // 509
   717, // 511
   718, // 512
   728 // 518
@@ -69,13 +69,13 @@ async function calculate(fiscalYear) {
       else if (negative.length < positive.length) negative = undefined;
     }
     if (positive !== undefined) {
-      if (transaction.type == 'credit') {
+      if (transaction.type == 'debit') {
         Value += transaction.amount;
       } else {
         Value -= transaction.amount;
       }
     } else if (negative !== undefined) {
-      if (transaction.type == 'debit') {
+      if (transaction.type == 'credit') {
         Value += transaction.amount;
       } else {
         Value -= transaction.amount;

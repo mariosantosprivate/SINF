@@ -93,8 +93,7 @@ async function calculate(fiscalYear) {
       totalValue += saldo;
     }
   }
-  Number(totalValue.toFixed(2));
-  return totalValue;
+  return parseFloat(totalValue.toFixed(2));
 }
 
 function check(accountId, array) {
