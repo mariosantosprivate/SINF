@@ -3,10 +3,10 @@ const Transaction = require('../../../common/models/transaction');
 const TransactionsLines = require('../../../common/models/transactionLine');
 const Sequelize = require('sequelize');
 const ativo = require('../../utils/ativo');
-const negativos = ativo.negativo_corrente.join().split(',');
-const positivos = ativo.positivo_corrente.join().split(',');
-const positivos_debito = ativo.positivo_corrente_debito.join().split(',');
-const positivos_credito = ativo.positivo_corrente_credito.join().split(',');
+const negativos = ativo.negativos.join().split(',');
+const positivos = ativo.positivos.join().split(',');
+const positivos_debito = ativo.positivos_debito.join().split(',');
+const positivos_credito = ativo.positivos_credito.join().split(',');
 //const Op = Sequelize.Op;
 
 async function calculate(fiscalYear) {

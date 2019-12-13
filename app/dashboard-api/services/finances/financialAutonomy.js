@@ -2,8 +2,8 @@ const Journal = require('../../../common/models/journal');
 const Transaction = require('../../../common/models/transaction');
 const TransactionsLines = require('../../../common/models/transactionLine');
 const Sequelize = require('sequelize');
-const clientes_debito = [10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22];
-const clientes_negativo = [];
+const nums = require('../../utils/equity');
+const equity = nums.numeros.join().split(',');
 const Op = Sequelize.Op;
 
 async function calculate(fiscalYear) {
@@ -21,7 +21,6 @@ async function calculate(fiscalYear) {
     ],
     raw: true,
     where: {
-      accountId: { [Op.startsWith]: '212' },
       '$Transaction.Journal.fiscal_year$': fiscalYear
     }
   }).catch(function(err) {
@@ -34,10 +33,15 @@ async function calculate(fiscalYear) {
   let totalValue = 0;
   for (i in transactions) {
     transaction = transactions[i];
-    if (transaction.type == 'debit') {
-      totalValue += transaction.amount;
-    } else if (transaction.type == 'credit') {
-      totalValue -= transaction.amount;
+    if (
+      equity.find(element => transaction.accountId.startsWith(element)) !==
+      undefined
+    ) {
+      if (transaction.type == 'debit') {
+        totalValue -= transaction.amount;
+      } else if (transaction.type == 'credit') {
+        totalValue += transaction.amount;
+      }
     }
   }
   return totalValue;
