@@ -1,41 +1,49 @@
 function sncEquity() {
-  this.numeros = [];
+  this.positivos = [];
+  this.negativos = [];
+  this.devedoresECredores = [];
 }
 let sNCsAtivo = new sncEquity();
-sNCsAtivo.numeros = [
-  331,
+sNCsAtivo.positivos = [
+  51, // 331
+  53, // 334
 
-  332,
-  333,
+  54, // 335
 
-  334,
+  551, // 336
 
-  335,
+  552, // 337
 
-  336,
+  5811, // 343 verificar
+  5891, // 345
 
-  337,
-
-  338,
-
-  343,
-  344,
-  345,
-  346,
-
-  339,
-  340,
-  341,
-  342,
-  347,
-  348,
-  349,
-  350,
-  351,
-  352,
-
-  646,
-  647
+  5712, // 340
+  5931, // 349
+  594 // 351
 ];
+sNCsAtivo.negativos = [
+  521, // 332
+  5812, // 344
+  5892, // 346
+  5932, // 350
+  89 // 647
+];
+sNCsAtivo.devedoresECredores = [
+  522, // 333
+  56, // 338
+  5711, // 339
+  5713, // 341
+  579, // 342
+  591, // 347
+  592, // 348
+  599, // 352
+  818 // 646
+];
+sNCsAtivo.positivos.sort(sortNumber).reverse();
+sNCsAtivo.negativos.sort(sortNumber).reverse();
+sNCsAtivo.devedoresECredores.sort(sortNumber).reverse();
 
+function sortNumber(a, b) {
+  return a - b;
+}
 module.exports = sNCsAtivo;
