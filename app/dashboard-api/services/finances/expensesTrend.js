@@ -44,18 +44,24 @@ async function calculate(fiscalYear) {
 
   if (!transactionLines) throw new Error(`There is no expenses transaction lines for the fiscal year ${fiscalYear}`);
 
-  // sum the ammount of every transaction line
-  let expenses = 0;
-  let i = 0;
-  for (i in transactionLines) {
-    if (transactionLines[i] !== undefined) {
-      expenses += transactionLines[i].ammount;
+  // sum the ammount of every transaction line for each month
+  const expensesPerMonth = [];
+  for (let i = 0; i < 12; i += 1) {
+    let expenses = 0;
+    let t = 0;
+    for (t in transactionLines) {
+      if (transactionLines[t] !== undefined) {
+        const date = new Date(transactionLine[t].systemEntryDate);
+        const month = date.getMonth();
+        if (month === i) {
+          expenses += transactionLines[t].ammount;
+        }
+      }
     }
+    expensesPerMonth[i] = parseFloat(expenses);
   }
 
-  // or get GeneralLedgesEntries by fiscal year and get totalDebit
-
-  return parseFloat(expenses);
+  return expensesPerMonth;
 }
 
 module.exports = calculate;
