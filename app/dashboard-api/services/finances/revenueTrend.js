@@ -64,6 +64,9 @@ async function calculate(fiscalYear) {
     let transaction = transactions[i];
     let positive = check(transaction.accountId, positivos);
     let negative = check(transaction.accountId, negativos);
+    // This ifs are needed to check if it is to sum credit or debit amount, or subtract
+    // Bigger priority number is used. Which means if negative is 852 and positive is 85 p.e
+    // We will use negative function because devedor got a better match than positive
     if (positive !== undefined && negative !== undefined) {
       if (negative.length > positive.length) positive = undefined;
       else if (negative.length < positive.length) negative = undefined;
