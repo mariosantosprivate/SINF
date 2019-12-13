@@ -6,7 +6,8 @@ const ativo = require('../../utils/ativo');
 const negativos = ativo.negativo_corrente.join().split(',');
 const positivos = ativo.positivo_corrente.join().split(',');
 const positivos_debito = ativo.positivo_corrente_debito.join().split(',');
-const positivos_credito = ativo.positivo_corrente_credito.join().split(',');
+//const positivos_credito = ativo.positivo_corrente_credito.join().split(',');
+const saldosDevedor = {};
 //const Op = Sequelize.Op;
 
 async function calculate(fiscalYear) {
@@ -47,49 +48,54 @@ async function calculate(fiscalYear) {
     let transaction = transactions[i];
     let positive = check(transaction.accountId, positivos);
     let negative = check(transaction.accountId, negativos);
-    //Daremos sempre priorirdade nos calculos aqueles que forem buscar melhor os SNC
-    // Ou seja, se houver 2 e 24 noutro, o 24 terá como prioridade
+    let devedor = check(transaction.accountId, positivos_debito);
     if (positive !== undefined && negative !== undefined) {
       if (negative.length > positive.length) positive = undefined;
       else if (negative.length < positive.length) negative = undefined;
     }
-    if (positive !== undefined) {
-      let positive_debito = check(transaction.accountId, positivos_debito);
-      let positive_corrente_credito = check(
-        transaction.accountId,
-        positivos_credito
-      );
-      if (
-        positive_corrente_credito !== undefined &&
-        positive_debito !== undefined
-      ) {
-        if (positive_debito.length > positive_corrente_credito.length)
-          positive_corrente_credito = undefined;
-        else if (positive_debito.length < positive_corrente_credito.length)
-          positive_debito = undefined;
+    if (
+      (positive !== undefined || negative !== undefined) &&
+      devedor !== undefined
+    ) {
+      if (positive === undefined) {
+        if (negative.length > devedor.length) negative = undefined;
+        else if (negative.length < devedor.length) devedor = undefined;
+      } else {
+        if (positive.length > devedor.length) positive = undefined;
+        else if (positive.length < devedor.length) devedor = undefined;
       }
-      if (transaction.type == 'debit' && positive_debito !== undefined)
-        totalValue += transaction.amount;
-      else if (
-        transaction.type == 'credit' &&
-        positive_corrente_credito !== undefined
-      )
-        totalValue += transaction.amount;
-   /* } else if (negative !== undefined) {
+    }
+    if (positive !== undefined) {
       if (transaction.type == 'debit') {
+        totalValue += transaction.amount;
+      } else {
         totalValue -= transaction.amount;
-      }*/
+      }
+    } else if (negative !== undefined) {
+      if (transaction.type == 'credit') {
+        totalValue += transaction.amount;
+      } else {
+        totalValue -= transaction.amount;
+      }
+    } else if (devedor !== undefined) {
+      if (transaction.type == 'debit') {
+        saldosDevedor[parseInt(devedor)] += transaction.amount;
+      } else {
+        saldosDevedor[parseInt(devedor)] -= transaction.amount;
+      }
+    }
+  }
+  for (i in saldosDevedor) {
+    saldo = saldosDevedor[i];
+    if (saldo > 0) {
+      totalValue += saldo;
     }
   }
   return totalValue;
 }
 
 function check(accountId, array) {
-  if (accountId.length <= 3) {
-    return array.find(element => accountId == element);
-  } else {
-    return array.find(element => accountId.startsWith(element));
-  }
+  return array.find(element => accountId.startsWith(element));
 }
 
 module.exports = calculate;
