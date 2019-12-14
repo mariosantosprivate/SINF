@@ -13,8 +13,7 @@ async function calculate(fiscalYear) {
         model: transaction,
         include: [
           {
-            model: journal,
-            where: { fiscalYear },
+            model: journal
           },
         ],
       },
@@ -31,7 +30,7 @@ async function calculate(fiscalYear) {
   let i = 0;
   for (i in transactionLines) {
     if (transactionLines[i] !== undefined) {
-      value += transactionLines[i].ammount;
+      value += transactionLines[i].amount;
     }
   }
 

@@ -5,7 +5,20 @@ const transactionLine = require('../../../common/models/transactionLine');
 function checkAccountCode(accountId) {
   // materialCostCodes = ['611', '612', '613'];
   // employeesCostCodes = ['631', '632', '6331', '6332', '634', '635', '636', '637', '638'];
-  const codes = ['611', '612', '613', '631', '632', '6331', '6332', '634', '635', '636', '637', '638'];
+  const codes = [
+    '611',
+    '612',
+    '613',
+    '631',
+    '632',
+    '6331',
+    '6332',
+    '634',
+    '635',
+    '636',
+    '637',
+    '638'
+  ];
 
   for (const i in codes) {
     if (accountId.startsWith(codes[i])) {
@@ -26,15 +39,17 @@ async function calculate(fiscalYear) {
         model: transaction,
         include: [
           {
-            model: journal,
-            where: { fiscalYear },
-          },
-        ],
-      },
-    ],
+            model: journal
+          }
+        ]
+      }
+    ]
   });
 
-  if (!transactionLines) throw new Error(`There is no expenses transaction lines for the fiscal year ${fiscalYear}`);
+  if (!transactionLines)
+    throw new Error(
+      `There is no expenses transaction lines for the fiscal year ${fiscalYear}`
+    );
 
   // sum the ammount of every transaction line for each month
   const expensesPerMonth = [];
@@ -42,8 +57,11 @@ async function calculate(fiscalYear) {
     let expenses = 0;
     let t = 0;
     for (t in transactionLines) {
-      if (transactionLines[t] !== undefined && checkAccountCode(transactionLines[t].accountId)) {
-        const date = new Date(transactionLine[t].systemEntryDate);
+      if (
+        transactionLines[t] !== undefined &&
+        checkAccountCode(transactionLines[t].accountId)
+      ) {
+        const date = new Date(transactionLines[t].systemEntryDate);
         const month = date.getMonth();
         if (month === i) {
           expenses += transactionLines[t].ammount;

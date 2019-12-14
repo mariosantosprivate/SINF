@@ -5,7 +5,20 @@ const transactionLine = require('../../../common/models/transactionLine');
 function checkAccountCode(accountId) {
   // materialCostCodes = ['611', '612', '613'];
   // employeesCostCodes = ['631', '632', '6331', '6332', '634', '635', '636', '637', '638'];
-  const codes = ['611', '612', '613', '631', '632', '6331', '6332', '634', '635', '636', '637', '638'];
+  const codes = [
+    '611',
+    '612',
+    '613',
+    '631',
+    '632',
+    '6331',
+    '6332',
+    '634',
+    '635',
+    '636',
+    '637',
+    '638'
+  ];
 
   for (const i in codes) {
     if (accountId.startsWith(codes[i])) {
@@ -26,28 +39,33 @@ async function calculate(fiscalYear) {
         model: transaction,
         include: [
           {
-            model: journal,
-            where: { fiscalYear },
-          },
-        ],
-      },
-    ],
+            model: journal
+          }
+        ]
+      }
+    ]
   });
 
-  if (!transactionLines) throw new Error(`There is no expenses transaction lines for the fiscal year ${fiscalYear}`);
+  if (!transactionLines)
+    throw new Error(
+      `There is no expenses transaction lines for the fiscal year ${fiscalYear}`
+    );
 
   // sum the ammount of every transaction line
   let expenses = 0;
   let i = 0;
   for (i in transactionLines) {
-    if (transactionLines[i] !== undefined && checkAccountCode(transactionLines[i].accountId)) {
-      expenses += transactionLines[i].ammount;
+    if (
+      transactionLines[i] !== undefined &&
+      checkAccountCode(transactionLines[i].accountId)
+    ) {
+      expenses += transactionLines[i].amount;
     }
   }
 
   // or get GeneralLedgesEntries by fiscal year and get totalDebit
 
-  return parseFloat(expenses);
+  return expenses;
 }
 
 module.exports = calculate;
