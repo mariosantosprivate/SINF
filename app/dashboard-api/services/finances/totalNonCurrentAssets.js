@@ -5,7 +5,7 @@ const Sequelize = require('sequelize');
 const ativo = require('../../utils/ativo');
 const negativos = ativo.negativo_naoCorrente.join().split(',');
 const positivos = ativo.positivo_naoCorrente.join().split(',');
-const positivos_debito = ativo.positivo_naoCorrente_debito.join().split(',');
+const devedores = ativo.positivo_naoCorrente_debito.join().split(',');
 //const positivos_credito = ativo.positivo_corrente_credito.join().split(',');
 const saldosDevedor = {};
 //const Op = Sequelize.Op;
@@ -50,7 +50,7 @@ async function calculate(fiscalYear) {
     let transaction = transactions[i];
     let positive = check(transaction.accountId, positivos);
     let negative = check(transaction.accountId, negativos);
-    let devedor = check(transaction.accountId, positivos_debito);
+    let devedor = check(transaction.accountId, devedores);
     // This ifs are needed to check if it is to sum credit or debit amount, or subtract
     // Bigger priority number is used. Which means if devedor is 852 and positive is 85 p.e
     // We will use devedor function because devedor got a better match than positive
@@ -83,6 +83,9 @@ async function calculate(fiscalYear) {
         totalValue -= transaction.amount;
       }
     } else if (devedor !== undefined) {
+      if (!saldosDevedor[parseInt(debitAndCredit)]) {
+        saldosDevedor[parseInt(debitAndCredit)] = 0;
+      }
       if (transaction.type == 'debit') {
         saldosDevedor[parseInt(devedor)] += transaction.amount;
       } else {
@@ -95,6 +98,7 @@ async function calculate(fiscalYear) {
     if (saldo > 0) {
       totalValue += saldo;
     }
+    saldosDevedor[i] = 0;
   }
   return parseFloat(totalValue.toFixed(2));
 }

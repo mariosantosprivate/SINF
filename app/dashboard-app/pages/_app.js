@@ -1,7 +1,7 @@
 // pages/_app.js
 import App, { Container as NextContainer } from 'next/app';
 import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Head from 'next/head';
 import Navbar from '../components/Navbar/Navbar';
@@ -34,11 +34,11 @@ export default class MyApp extends App {
     };
     return (
       <NextContainer>
+        <Head>
+          <title>Dashboard 360º</title>
+        </Head>
+        <Navbar user={this.state.user} />
         <Container fluid>
-          <Head>
-            <title>Dashboard</title>
-          </Head>
-          <Navbar user={this.state.user} />
           <Component {...props} />
         </Container>
       </NextContainer>

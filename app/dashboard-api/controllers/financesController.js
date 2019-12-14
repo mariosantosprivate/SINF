@@ -18,8 +18,8 @@ async function getMetrics(req, res) {
     );
     const totalRevenue = await financesService.totalRevenue(fiscalYear);
 
-    /*let financialAutonomy = await financesService.financialAutonomy(fiscalYear);
-    financialAutonomy = financialAutonomy / totalAssets;*/
+    financialAutonomy = await financesService.financialAutonomy(fiscalYear);
+    financialAutonomy = financialAutonomy / totalAssets;
 
     const revenueTrend = await financesService.revenueTrend(fiscalYear);
 
@@ -29,7 +29,7 @@ async function getMetrics(req, res) {
       totalAssets,
       //totalIncome,
       accountsReceivable,
-      //financialAutonomy,
+      financialAutonomy,
       revenueTrend
     });
   } catch (err) {

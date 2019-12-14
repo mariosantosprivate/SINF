@@ -5,13 +5,13 @@ import chartTypes from '../../utils/chartTypes';
 const formatTooltip = (data, chartType) => {
   switch (chartType) {
     case chartTypes.DEFAULT_CHART:
-      return data;
+      return `${data}`;
     case chartTypes.EURO_CHART:
       return `${data.toLocaleString()} €`;
     case chartTypes.PERCENTAGE_CHART:
       return `${data} %`;
     default:
-      return data;
+      return `${data}`;
   }
 };
 
@@ -36,12 +36,10 @@ const PieChart = ({ data, labels, chartType }) => {
   const options = {
     tooltips: {
       callbacks: {
-        label: (tooltipItem, tooltipData) => {
-          formatTooltip(
-            tooltipData.datasets[tooltipItem.datasetIndex].data[tooltipItem.index],
-            chartType,
-          );
-        },
+        label: (tooltipItem, tooltipData) => formatTooltip(
+          tooltipData.datasets[tooltipItem.datasetIndex].data[tooltipItem.index],
+          chartType,
+        ),
       },
     },
   };
