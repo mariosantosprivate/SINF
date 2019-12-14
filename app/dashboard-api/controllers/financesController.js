@@ -20,7 +20,7 @@ async function getMetrics(req, res) {
 
     let financialAutonomy = await financesService.financialAutonomy(fiscalYear);
     // financialAutonomy = financialAutonomy / totalAssets;
-    financialAutonomy /= totalAssets;
+    financialAutonomy /= totalAssets / 100;
 
     const revenueTrend = await financesService.revenueTrend(fiscalYear);
 
