@@ -1,12 +1,22 @@
-const Sequelize = require('sequelize');
 const journal = require('../../../common/models/journal');
 const transaction = require('../../../common/models/transaction');
 const transactionLine = require('../../../common/models/transactionLine');
 
+function checkAccountCode(accountId) {
+  // materialCostCodes = ['611', '612', '613'];
+  // employeesCostCodes = ['631', '632', '6331', '6332', '634', '635', '636', '637', '638'];
+  const codes = ['611', '612', '613', '631', '632', '6331', '6332', '634', '635', '636', '637', '638'];
+
+  for (const i in codes) {
+    if (accountId.startsWith(codes[i])) {
+      return true;
+    }
+  }
+
+  return false;
+}
+
 async function calculate(fiscalYear) {
-  const { Op } = Sequelize.Op;
-  const materialCostCodes = ['611', '612', '613'];
-  const employeesCostCodes = ['631', '632', '6331', '6332', '634', '635', '636', '637', '638'];
   // get all transactionLines from material cost and employees payments
   // and which journal's fiscal year matches the fiscal year
   const transactionLines = await transactionLine.findAll({
@@ -22,24 +32,6 @@ async function calculate(fiscalYear) {
         ],
       },
     ],
-    where: {
-      accountId: {
-        [Op.or]: [
-          { [Op.startsWith]: materialCostCodes[0] },
-          { [Op.startsWith]: materialCostCodes[1] },
-          { [Op.startsWith]: materialCostCodes[2] },
-          { [Op.startsWith]: employeesCostCodes[0] },
-          { [Op.startsWith]: employeesCostCodes[1] },
-          { [Op.startsWith]: employeesCostCodes[2] },
-          { [Op.startsWith]: employeesCostCodes[3] },
-          { [Op.startsWith]: employeesCostCodes[4] },
-          { [Op.startsWith]: employeesCostCodes[5] },
-          { [Op.startsWith]: employeesCostCodes[6] },
-          { [Op.startsWith]: employeesCostCodes[7] },
-          { [Op.startsWith]: employeesCostCodes[8] },
-        ],
-      },
-    },
   });
 
   if (!transactionLines) throw new Error(`There is no expenses transaction lines for the fiscal year ${fiscalYear}`);
@@ -48,7 +40,7 @@ async function calculate(fiscalYear) {
   let expenses = 0;
   let i = 0;
   for (i in transactionLines) {
-    if (transactionLines[i] !== undefined) {
+    if (transactionLines[i] !== undefined && checkAccountCode(transactionLines[i].accountId)) {
       expenses += transactionLines[i].ammount;
     }
   }
