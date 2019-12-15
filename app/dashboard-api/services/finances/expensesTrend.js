@@ -64,7 +64,7 @@ async function calculate(fiscalYear) {
         const date = new Date(transactionLines[t].systemEntryDate);
         const month = date.getMonth();
         if (month === i) {
-          expenses += transactionLines[t].ammount;
+          expenses += transactionLines[i].type === 'debit' ? transactionLines[i].amount : -transactionLines[i].amount;
         }
       }
     }

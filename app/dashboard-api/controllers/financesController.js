@@ -24,9 +24,9 @@ async function getMetrics(req, res) {
 
     const revenueTrend = await financesService.revenueTrend(fiscalYear);
 
-    // const expensesTrend = await financesService.expensesTrend(fiscalYear);
+    const expensesTrend = await financesService.expensesTrend(fiscalYear);
 
-    // const incomeTrend = await financesService.incomeTrend(fiscalYear);
+    const incomeTrend = await financesService.incomeTrend(fiscalYear);
 
     return res.json({
       totalRevenue,
@@ -37,8 +37,8 @@ async function getMetrics(req, res) {
       accountsReceivable,
       financialAutonomy,
       revenueTrend,
-      // expensesTrend,
-      // incomeTrend,
+      expensesTrend,
+      incomeTrend,
     });
   } catch (err) {
     if (err instanceof NotFoundError) {

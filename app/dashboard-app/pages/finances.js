@@ -82,16 +82,22 @@ class Finances extends React.Component {
       <div>
         <div>
           <Row className='justify-content-center top-padded-row side-padded-row-small'>
-            <Col lg={6} className='text-center'>
+            <Col lg={4} className='text-center'>
               <KPI
                 title='Total Revenue'
                 value={`${data.totalRevenue.toLocaleString()} €`}
               />
             </Col>
-            <Col lg={6} className='text-center'>
+            <Col lg={4} className='text-center'>
               <KPI
                 title='Total Income'
-                value={`${data.totalRevenue.toLocaleString()} €`}
+                value={`${data.totalIncome.toLocaleString()} €`}
+              />
+            </Col>
+            <Col lg={4} className='text-center'>
+              <KPI
+                title='Total Expenses'
+                value={`${-data.totalExpenses.toLocaleString()} €`}
               />
             </Col>
           </Row>
@@ -106,8 +112,8 @@ class Finances extends React.Component {
           <Row className='justify-content-center top-padded-row side-padded-row-small'>
             <Col lg={6} className='text-center'>
               <KPI
-                title='Accounts Receivable'
-                value={`${data.accountsReceivable.toLocaleString()} €`}
+                title='Accounts Payable'
+                value={`${data.accountsPayable.toLocaleString()} €`}
               />
             </Col>
             <Col lg={6} className='text-center'>
@@ -126,10 +132,24 @@ class Finances extends React.Component {
             </Col>
           </Row>
           <Row className='justify-content-sm-center top-padded-row side-padded-row'>
-            <Col lg={12} className='text-center'>
+            <Col lg={6} className='text-center'>
               <TrendChart
                 legend='Revenue trend'
                 data={this.state.data.revenueTrend}
+              />
+            </Col>
+            <Col lg={6} className='text-center'>
+              <TrendChart
+                legend='Expenses trend'
+                data={this.state.data.expensesTrend}
+              />
+            </Col>
+          </Row>
+          <Row className='justify-content-sm-center top-padded-row side-padded-row'>
+            <Col lg={6} className='text-center'>
+              <TrendChart
+                legend='Income trend'
+                data={this.state.data.incomeTrend}
               />
             </Col>
           </Row>
