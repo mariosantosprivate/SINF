@@ -1,6 +1,7 @@
 const journal = require('../../../common/models/journal');
 const transaction = require('../../../common/models/transaction');
 const transactionLine = require('../../../common/models/transactionLine');
+const getMonth = require('date-fns/getMonth');
 
 function checkAccountCode(accountId) {
   // materialCostCodes = ['611', '612', '613'];
@@ -30,6 +31,7 @@ function checkAccountCode(accountId) {
 }
 
 async function calculate(fiscalYear) {
+  const expensesPerMonth = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
   // get all transactionLines from material cost and employees payments
   // and which journal's fiscal year matches the fiscal year
   const transactionLines = await transactionLine.findAll({
@@ -39,36 +41,37 @@ async function calculate(fiscalYear) {
         model: transaction,
         include: [
           {
-            model: journal,
-          },
-        ],
-      },
+            model: journal
+          }
+        ]
+      }
     ],
     where: {
-      '$Transaction.Journal.fiscal_year$': fiscalYear,
-    },
+      '$Transaction.Journal.fiscal_year$': fiscalYear
+    }
   });
 
-  if (!transactionLines) throw new Error(`There is no expenses transaction lines for the fiscal year ${fiscalYear}`);
+  if (!transactionLines)
+    throw new Error(
+      `There is no Value transaction lines for the fiscal year ${fiscalYear}`
+    );
 
   // sum the ammount of every transaction line for each month
-  const expensesPerMonth = [];
-  for (let i = 0; i < 12; i += 1) {
-    let expenses = 0;
-    let t = 0;
-    for (t in transactionLines) {
-      if (
-        transactionLines[t] !== undefined &&
-        checkAccountCode(transactionLines[t].accountId)
-      ) {
-        const date = new Date(transactionLines[t].systemEntryDate);
-        const month = date.getMonth();
-        if (month === i) {
-          expenses += transactionLines[i].type === 'debit' ? transactionLines[i].amount : -transactionLines[i].amount;
-        }
+  let t = 0;
+  for (t in transactionLines) {
+    let Value = 0;
+    if (
+      transactionLines[t] !== undefined &&
+      checkAccountCode(transactionLines[t].accountId)
+    ) {
+      const month = getMonth(new Date(transactionLines[t].systemEntryDate));
+      if (transactionLines[t] == 'debit') {
+        Value -= transactionLines[t].amount;
+      } else {
+        Value += transactionLines[t].amount;
       }
+      expensesPerMonth[month] += Value;
     }
-    expensesPerMonth[i] = parseFloat(expenses);
   }
 
   return expensesPerMonth;
