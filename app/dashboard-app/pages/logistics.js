@@ -78,10 +78,10 @@ class Logistics extends React.Component {
     const content = (
       <div>
         <Row className="justify-content-center top-padded-row side-padded-row-small">
-          {/*<Col className="text-center">
-            <KPI title="Inventory Value" value={`${data.totalinventaryValue.toLocaleString()} €`} /> 
-          </Col>
           <Col className="text-center">
+            <KPI title="Inventory Value" value={`${data.totalInventoryValue.toLocaleString()} €`} />
+          </Col>
+          {/* <Col className="text-center">
             <KPI title="Average Inventory Period" value={`${data.averageInventoryPeriod.toLocaleString()} €`} />
           </Col>
           <Col className="text-center">

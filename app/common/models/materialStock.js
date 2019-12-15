@@ -12,10 +12,10 @@ const MaterialStock = db.define('MaterialStock', {
     },
     valueOfStock: {
         type: Sequelize.FLOAT,
-        field: 'stock',
+        field: 'valueOfStock',
         allowNull: false,
         validate: {
-            notNull: { msg: 'stock is required' },
+            notNull: { msg: 'valueOfStock is required' },
         },
     },
 });

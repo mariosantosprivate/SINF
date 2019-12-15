@@ -1,6 +1,5 @@
 const Invoice = require('../../../common/models/invoice');
 const ShippingInfo = require('../../../common/models/shippingInfo');
-const formatTop5 = require('../../utils/formatTop5');
 
 async function calculate(fiscalYear) {
     let cont = 0;
