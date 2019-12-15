@@ -17,7 +17,7 @@ function checkAccountCode(accountId) {
     '635',
     '636',
     '637',
-    '638'
+    '638',
   ];
 
   for (const i in codes) {
@@ -39,33 +39,31 @@ async function calculate(fiscalYear) {
         model: transaction,
         include: [
           {
-            model: journal
-          }
-        ]
-      }
-    ]
+            model: journal,
+          },
+        ],
+      },
+    ],
+    where: {
+      '$Transaction.Journal.fiscal_year$': fiscalYear,
+    },
   });
 
-  if (!transactionLines)
-    throw new Error(
-      `There is no expenses transaction lines for the fiscal year ${fiscalYear}`
-    );
+  if (!transactionLines) throw new Error(`There is no expenses transaction lines for the fiscal year ${fiscalYear}`);
 
   // sum the ammount of every transaction line
   let expenses = 0;
   let i = 0;
   for (i in transactionLines) {
     if (
-      transactionLines[i] !== undefined &&
-      checkAccountCode(transactionLines[i].accountId)
+      transactionLines[i] !== undefined
+      && checkAccountCode(transactionLines[i].accountId)
     ) {
-      expenses += transactionLines[i].amount;
+      expenses += transactionLines[i].type === 'debit' ? transactionLines[i].amount : -transactionLines[i].amount;
     }
   }
 
-  // or get GeneralLedgesEntries by fiscal year and get totalDebit
-
-  return expenses;
+  return parseFloat(expenses);
 }
 
 module.exports = calculate;

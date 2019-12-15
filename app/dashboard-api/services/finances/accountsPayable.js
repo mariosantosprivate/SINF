@@ -13,7 +13,7 @@ async function calculate(fiscalYear) {
         model: transaction,
         include: [
           {
-            model: journal
+            model: journal,
           },
         ],
       },

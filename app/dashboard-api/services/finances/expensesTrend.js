@@ -39,17 +39,17 @@ async function calculate(fiscalYear) {
         model: transaction,
         include: [
           {
-            model: journal
-          }
-        ]
-      }
-    ]
+            model: journal,
+          },
+        ],
+      },
+    ],
+    where: {
+      '$Transaction.Journal.fiscal_year$': fiscalYear,
+    },
   });
 
-  if (!transactionLines)
-    throw new Error(
-      `There is no expenses transaction lines for the fiscal year ${fiscalYear}`
-    );
+  if (!transactionLines) throw new Error(`There is no expenses transaction lines for the fiscal year ${fiscalYear}`);
 
   // sum the ammount of every transaction line for each month
   const expensesPerMonth = [];
