@@ -1,5 +1,6 @@
 /* eslint-disable global-require */
 const models = {
+  MaterialStock: require('./materialStock'),
   Customer: require('./customer'),
   HeaderData: require('./headerData'),
   Supplier: require('./supplier'),
@@ -190,5 +191,13 @@ models.PurchaseInvoiceLine.belongsTo(models.Product, {
   foreignKey: 'product_code',
 });
 
+// ************************ MaterialStock ************************
+models.MaterialStock.belongsTo(models.Product, {
+  foreignKey: 'product_code',
+});
+models.Product.hasOne(models.MaterialStock, {
+  foreignKey: 'product_code',
+  onDelete: 'cascade',
+});
 
 module.exports = models;
