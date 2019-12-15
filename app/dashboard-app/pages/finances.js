@@ -97,7 +97,7 @@ class Finances extends React.Component {
             <Col lg={4} className='text-center'>
               <KPI
                 title='Total Expenses'
-                value={`${-data.totalExpenses.toLocaleString()} €`}
+                value={`${data.totalExpenses.toLocaleString()} €`}
               />
             </Col>
           </Row>
