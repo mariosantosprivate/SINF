@@ -5,6 +5,7 @@ const saft = require('../saft');
 const seeders = {
   customerSeeder: require('./customerSeeder'),
   productSeeder: require('./productSeeder'),
+  materialStockSeeder: require('./materialStockSeeder'),
   taxSeeder: require('./taxSeeder'),
   salesInvoiceSeeder: require('./salesInvoiceSeeder'),
   supplierSeeder: require('./supplierSeeder'),

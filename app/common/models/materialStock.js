@@ -11,15 +11,7 @@ const MaterialStock = db.define('MaterialStock', {
         },
     },
     valueOfStock: {
-        type: Sequelize.BIGINT,
-        field: 'stock',
-        allowNull: false,
-        validate: {
-            notNull: { msg: 'stock is required' },
-        },
-    },
-    valueOfItem: {
-        type: Sequelize.BIGINT,
+        type: Sequelize.FLOAT,
         field: 'stock',
         allowNull: false,
         validate: {
