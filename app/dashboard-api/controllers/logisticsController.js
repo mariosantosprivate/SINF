@@ -5,11 +5,13 @@ async function getMetrics(req, res) {
     const { fiscalYear } = req.query;
 
     try {
+        const totalInventoryValue = await logisticsService.totalInventoryValue();
         const totalDeliveries = await logisticsService.totalDeliveries(fiscalYear);
         const deliveryStatus = await logisticsService.deliveryStatus(fiscalYear);
         const deliveryByCountry = await logisticsService.deliveryByCountry(fiscalYear);
 
         return res.json({
+            totalInventoryValue,
             totalDeliveries,
             deliveryStatus,
             deliveryByCountry,

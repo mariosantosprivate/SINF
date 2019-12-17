@@ -1,5 +1,6 @@
 const xml2js = require('xml2js');
 const fs = require('fs');
+const path = require('path');
 const camelCase = require('camelcase');
 
 const SAFT_FOLDER = 'saf-t';
@@ -19,6 +20,13 @@ function parseSAFT(fileName) {
   return parsedData;
 }
 
+function findFiles() {
+  const files = fs.readdirSync(`${__dirname}/${SAFT_FOLDER}`).filter((file) => path.extname(file).toLowerCase() === '.xml');
+
+  return files.map((fileName) => ({ name: fileName, data: null }));
+}
+
 module.exports = {
   parseSAFT,
+  findFiles,
 };

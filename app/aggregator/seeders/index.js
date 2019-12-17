@@ -5,6 +5,7 @@ const saft = require('../saft');
 const seeders = {
   customerSeeder: require('./customerSeeder'),
   productSeeder: require('./productSeeder'),
+  materialStockSeeder: require('./materialStockSeeder'),
   taxSeeder: require('./taxSeeder'),
   salesInvoiceSeeder: require('./salesInvoiceSeeder'),
   supplierSeeder: require('./supplierSeeder'),
@@ -23,7 +24,7 @@ async function runAll(fileNames) {
   // if a fileName isn't specified, then the seeders will
   // take data from all SAF-T files
   if (!fileNames || fileNames.length === 0) {
-    for (const file of saft.FILES) {
+    for (const file of saft.getFiles()) {
       console.log(`Seeding with data from file ${file.name}`);
       console.log(
         '==============================================================================',
@@ -45,7 +46,7 @@ async function runAll(fileNames) {
     // take data from the files that matche each fileName in fileNames
   } else {
     for (const fileName of fileNames) {
-      const file = jp.query(saft.FILES, `$[?(@.name=="${fileName}")]`)[0];
+      const file = jp.query(saft.getFiles(), `$[?(@.name=="${fileName}")]`)[0];
       if (!file) {
         console.error(`File ${fileName} not found. Aborted seeding.`);
         return;

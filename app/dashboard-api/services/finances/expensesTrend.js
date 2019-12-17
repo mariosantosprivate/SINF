@@ -1,6 +1,7 @@
 const journal = require('../../../common/models/journal');
 const transaction = require('../../../common/models/transaction');
 const transactionLine = require('../../../common/models/transactionLine');
+const getMonth = require('date-fns/getMonth');
 
 function checkAccountCode(accountId) {
   // materialCostCodes = ['611', '612', '613'];
@@ -30,6 +31,7 @@ function checkAccountCode(accountId) {
 }
 
 async function calculate(fiscalYear) {
+  const expensesPerMonth = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
   // get all transactionLines from material cost and employees payments
   // and which journal's fiscal year matches the fiscal year
   const transactionLines = await transactionLine.findAll({
@@ -51,26 +53,28 @@ async function calculate(fiscalYear) {
 
   if (!transactionLines)
     throw new Error(
-      `There is no expenses transaction lines for the fiscal year ${fiscalYear}`
+      `There is no Value transaction lines for the fiscal year ${fiscalYear}`
     );
 
-  // sum the ammount of every transaction line
-  let expenses = 0;
-  let i = 0;
-  for (i in transactionLines) {
+  // sum the ammount of every transaction line for each month
+  let t = 0;
+  for (t in transactionLines) {
+    let Value = 0;
     if (
-      transactionLines[i] !== undefined &&
-      checkAccountCode(transactionLines[i].accountId)
+      transactionLines[t] !== undefined &&
+      checkAccountCode(transactionLines[t].accountId)
     ) {
-      if (transactionLines[i] == 'debit') {
-        expenses -= transactionLines[i].amount;
+      const month = getMonth(new Date(transactionLines[t].systemEntryDate));
+      if (transactionLines[t] == 'debit') {
+        Value -= transactionLines[t].amount;
       } else {
-        expenses += transactionLines[i].amount;
+        Value += transactionLines[t].amount;
       }
+      expensesPerMonth[month] += Value;
     }
   }
 
-  return parseFloat(expenses);
+  return expensesPerMonth;
 }
 
 module.exports = calculate;

@@ -1,9 +1,8 @@
 const Invoice = require('../../../common/models/invoice');
 const ShippingInfo = require('../../../common/models/shippingInfo');
-const formatTop5 = require('../../utils/formatTop5');
 
 async function calculate(fiscalYear) {
-    const cont = 0;
+    let cont = 0;
 
     const invoices = await Invoice.findAll({
         raw: true,

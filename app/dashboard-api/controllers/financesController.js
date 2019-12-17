@@ -6,31 +6,39 @@ async function getMetrics(req, res) {
   const { fiscalYear } = req.query;
 
   try {
-    const totalAssets =
-      (await financesService.totalCurrentAssets(fiscalYear)) +
-      (await financesService.totalNonCurrentAssets(fiscalYear));
+    const totalAssets = (await financesService.totalCurrentAssets(fiscalYear))
+      + (await financesService.totalNonCurrentAssets(fiscalYear));
 
-    // const totalExpenses = await financesService.totalExpenses(fiscalYear);
+    const totalExpenses = await financesService.totalExpenses(fiscalYear);
 
-    // const totalIncome = await financesService.totalIncome(fiscalYear);
+    const totalIncome = await financesService.totalIncome(fiscalYear);
     const accountsReceivable = await financesService.accountsReceivable(
-      fiscalYear
+      fiscalYear,
     );
     const totalRevenue = await financesService.totalRevenue(fiscalYear);
+    const accountsPayable = await financesService.accountsPayable(fiscalYear);
 
-    /*let financialAutonomy = await financesService.financialAutonomy(fiscalYear);
-    financialAutonomy = financialAutonomy / totalAssets;*/
+    let financialAutonomy = await financesService.financialAutonomy(fiscalYear);
+    // financialAutonomy = financialAutonomy / totalAssets;
+    financialAutonomy /= totalAssets / 100;
 
     const revenueTrend = await financesService.revenueTrend(fiscalYear);
 
+    const expensesTrend = await financesService.expensesTrend(fiscalYear);
+
+    const incomeTrend = await financesService.incomeTrend(fiscalYear);
+
     return res.json({
       totalRevenue,
-      //totalExpenses,
+      totalExpenses,
       totalAssets,
-      //totalIncome,
+      totalIncome,
+      accountsPayable,
       accountsReceivable,
-      //financialAutonomy,
-      revenueTrend
+      financialAutonomy,
+      revenueTrend,
+      expensesTrend,
+      incomeTrend,
     });
   } catch (err) {
     if (err instanceof NotFoundError) {
@@ -41,5 +49,5 @@ async function getMetrics(req, res) {
 }
 
 module.exports = {
-  getMetrics
+  getMetrics,
 };

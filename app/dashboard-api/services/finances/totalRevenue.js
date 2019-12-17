@@ -2,26 +2,52 @@ const Journal = require('../../../common/models/journal');
 const Transaction = require('../../../common/models/transaction');
 const TransactionsLines = require('../../../common/models/transactionLine');
 const Sequelize = require('sequelize');
-const clientes_debito = [10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22];
-const clientes_negativo = [];
+const positivos = [
+  716, // 510
+  721, // 513
+  722, // 514
+  723, // 515
+  724, // 515
+  727, // 515
+  725, // 516
+  726 // 517
+];
+const negativos = [
+  712, // 507
+  711, // 506
+  713, // 508
+  714, // 509
+  717, // 511
+  718, // 512
+  728 // 518
+];
 const Op = Sequelize.Op;
-
 async function calculate(fiscalYear) {
   fiscalYear = parseInt(fiscalYear);
   const transactions = await TransactionsLines.findAll({
+    attributes: ['amount', 'type', 'accountId'],
     include: [
       {
         model: Transaction,
+        attributes: [],
         include: [
           {
-            model: Journal
+            model: Journal,
+            attributes: []
           }
         ]
       }
     ],
     raw: true,
     where: {
-      accountId: { [Op.startsWith]: '211' },
+      /*accountId: {
+        [Op.or]: [
+          {
+            [Op.startsWith]: positivos.concat(negativos)
+          }
+        ]
+      },*/
+
       '$Transaction.Journal.fiscal_year$': fiscalYear
     }
   }).catch(function(err) {
@@ -33,12 +59,34 @@ async function calculate(fiscalYear) {
     );
   let totalValue = 0;
   for (i in transactions) {
-    transaction = transactions[i];
-    if (transaction.type == 'debit') {
-      totalValue += transaction.amount;
+    let transaction = transactions[i];
+    let positive = check(transaction.accountId, positivos);
+    let negative = check(transaction.accountId, negativos);
+    // This ifs are needed to check if it is to sum credit or debit amount, or subtract
+    // Bigger priority number is used. Which means if negative is 852 and positive is 85 p.e
+    // We will use negative function because devedor got a better match than positive
+    if (positive !== undefined && negative !== undefined) {
+      if (negative.length > positive.length) positive = undefined;
+      else if (negative.length < positive.length) negative = undefined;
+    }
+    if (positive !== undefined) {
+      if (transaction.type == 'debit') {
+        totalValue += transaction.amount;
+      } else {
+        totalValue -= transaction.amount;
+      }
+    } else if (negative !== undefined) {
+      if (transaction.type == 'credit') {
+        totalValue += transaction.amount;
+      } else {
+        totalValue -= transaction.amount;
+      }
     }
   }
   return totalValue;
+  //  return parseFloat(totalValue.toFixed(2));
 }
-
+function check(accountId, array) {
+  return array.find(element => accountId.startsWith(element));
+}
 module.exports = calculate;
