@@ -1,14 +1,13 @@
 const parser = require('./parser');
 
-const FILES = [
-  {
-    name: 'SAFT_DEMOSINF_01-01-2016_31-12-2016.xml',
-    data: null,
-  },
-  { name: 'SAFT_Sample_Accounting_2019.xml', data: null },
-];
+let files = [];
+
+function getFiles() {
+  return files;
+}
 
 async function parseFiles(fileNames) {
+  files = parser.findFiles();
   console.log('\nParsing SAF-T files...');
   console.log(
     '==============================================================================',
@@ -17,17 +16,17 @@ async function parseFiles(fileNames) {
   let i;
 
   if (!fileNames || fileNames.length === 0) {
-    for (i = 0; i < FILES.length; i += 1) {
-      FILES[i].data = parser.parseSAFT(FILES[i].name);
-      console.log(`* Parsed file ${FILES[i].name}`);
+    for (i = 0; i < files.length; i += 1) {
+      files[i].data = parser.parseSAFT(files[i].name);
+      console.log(`* Parsed file ${files[i].name}`);
     }
   } else {
-    for (i = 0; i < FILES.length; i += 1) {
-      if (fileNames.includes(FILES[i].name)) {
-        FILES[i].data = parser.parseSAFT(FILES[i].name);
-        console.log(`* Parsed file ${FILES[i].name}`);
+    for (i = 0; i < files.length; i += 1) {
+      if (fileNames.includes(files[i].name)) {
+        files[i].data = parser.parseSAFT(files[i].name);
+        console.log(`* Parsed file ${files[i].name}`);
       } else {
-        console.log(`# Skipped file ${FILES[i].name}`);
+        console.log(`# Skipped file ${files[i].name}`);
       }
     }
   }
@@ -39,6 +38,6 @@ async function parseFiles(fileNames) {
 }
 
 module.exports = {
-  FILES,
+  getFiles,
   parseFiles,
 };
