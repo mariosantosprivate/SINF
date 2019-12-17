@@ -2,14 +2,18 @@ import Card from 'react-bootstrap/Card';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
+import Link from "../components/Navbar/Link";
 import { BarGraph } from '../components/Chart/BarGraph';
 import { LineGraph } from '../components/Chart/LineGraph';
 import Container from 'react-bootstrap/Container';
 // Importing a local CSS file.
 import '../assets/css/style.css';
 
-const Index = () => (
-  <div className="home">
+export default class Index extends React.Component {
+
+  render() {
+    return (
+      <div className="home">
     <div className="homeLanding">
       <div className="background"></div>
       <div className="homeHeaders">
@@ -21,19 +25,26 @@ const Index = () => (
         </h2>
         <hr></hr>
       </div>
+      
       <div className="homeButtons">
+      {!this.props.user && (
         <Row className="justify-content-center lg">
           <Col>
-            <Button variant="dark" href="/login" size="lg" block>
-              Sign in
-            </Button>
+            <Link href="/login">
+              <Button variant="dark" href="/login" size="lg" block>
+                  Sign in
+              </Button>
+            </Link>
           </Col>
           <Col>
-            <Button variant="warning" href="/login" size="lg" block>
-              Sign up
-          </Button>
+            <Link href="/login">
+              <Button variant="warning" href="/login" size="lg" block>
+                Sign up
+              </Button>
+            </Link>
           </Col>
         </Row>
+        )}
       </div>
     </div>
     <div className="homeFeatures">
@@ -45,7 +56,7 @@ const Index = () => (
       <Row className="justify-content-center">
         <Col>
           <Card>
-            <Card.Img variant="top" src="https://png2.cleanpng.com/sh/9a3ecc6873c1ebbc2a4499ff82411cb8/L0KzQYm3VMA0N6ZqiZH0aYP2gLBuTfNwdaF6jNd7LXnmf7B6TfRie5lnh9N7ZD3sfsfsjwRweqoyhdN3YXfofbb1lL10d5d5ReJxb37oPbTokBUuPZJoTKI9YnK1QLPpVckvOGQ5T6I5OUC0RYO5V8k2P2E8SaU9MT7zfri=/kisspng-computer-icons-dashboard-inventory-management-soft-phone-case-5ac404bb20bb59.0347009015227957071341.png" />
+            <Card.Img variant="top" src="https://cdn2.iconfinder.com/data/icons/illustricon-tech-vii/512/big_data-512.png" />
             <Card.Body>
               <Card.Title>General</Card.Title>
               <Card.Text>
@@ -56,7 +67,7 @@ const Index = () => (
         </Col>
         <Col>
           <Card>
-            <Card.Img variant="top" src="https://png2.cleanpng.com/sh/9a3ecc6873c1ebbc2a4499ff82411cb8/L0KzQYm3VMA0N6ZqiZH0aYP2gLBuTfNwdaF6jNd7LXnmf7B6TfRie5lnh9N7ZD3sfsfsjwRweqoyhdN3YXfofbb1lL10d5d5ReJxb37oPbTokBUuPZJoTKI9YnK1QLPpVckvOGQ5T6I5OUC0RYO5V8k2P2E8SaU9MT7zfri=/kisspng-computer-icons-dashboard-inventory-management-soft-phone-case-5ac404bb20bb59.0347009015227957071341.png" />
+            <Card.Img variant="top" src="https://cdn2.iconfinder.com/data/icons/illustricon-tech-vii/512/big_data-512.png" />
             <Card.Body>
               <Card.Title>Sales</Card.Title>
               <Card.Text>
@@ -67,7 +78,7 @@ const Index = () => (
         </Col>
         <Col>
           <Card>
-            <Card.Img variant="top" src="https://png2.cleanpng.com/sh/9a3ecc6873c1ebbc2a4499ff82411cb8/L0KzQYm3VMA0N6ZqiZH0aYP2gLBuTfNwdaF6jNd7LXnmf7B6TfRie5lnh9N7ZD3sfsfsjwRweqoyhdN3YXfofbb1lL10d5d5ReJxb37oPbTokBUuPZJoTKI9YnK1QLPpVckvOGQ5T6I5OUC0RYO5V8k2P2E8SaU9MT7zfri=/kisspng-computer-icons-dashboard-inventory-management-soft-phone-case-5ac404bb20bb59.0347009015227957071341.png" />
+            <Card.Img variant="top" src="https://cdn2.iconfinder.com/data/icons/illustricon-tech-vii/512/big_data-512.png" />
             <Card.Body>
               <Card.Title>Purchases</Card.Title>
               <Card.Text>
@@ -78,7 +89,7 @@ const Index = () => (
         </Col>
         <Col>
           <Card>
-            <Card.Img variant="top" src="https://png2.cleanpng.com/sh/9a3ecc6873c1ebbc2a4499ff82411cb8/L0KzQYm3VMA0N6ZqiZH0aYP2gLBuTfNwdaF6jNd7LXnmf7B6TfRie5lnh9N7ZD3sfsfsjwRweqoyhdN3YXfofbb1lL10d5d5ReJxb37oPbTokBUuPZJoTKI9YnK1QLPpVckvOGQ5T6I5OUC0RYO5V8k2P2E8SaU9MT7zfri=/kisspng-computer-icons-dashboard-inventory-management-soft-phone-case-5ac404bb20bb59.0347009015227957071341.png" />
+            <Card.Img variant="top" src="https://cdn2.iconfinder.com/data/icons/illustricon-tech-vii/512/big_data-512.png" />
             <Card.Body>
               <Card.Title>Finances</Card.Title>
               <Card.Text>
@@ -89,7 +100,7 @@ const Index = () => (
         </Col>
         <Col>
           <Card>
-            <Card.Img variant="top" src="https://png2.cleanpng.com/sh/9a3ecc6873c1ebbc2a4499ff82411cb8/L0KzQYm3VMA0N6ZqiZH0aYP2gLBuTfNwdaF6jNd7LXnmf7B6TfRie5lnh9N7ZD3sfsfsjwRweqoyhdN3YXfofbb1lL10d5d5ReJxb37oPbTokBUuPZJoTKI9YnK1QLPpVckvOGQ5T6I5OUC0RYO5V8k2P2E8SaU9MT7zfri=/kisspng-computer-icons-dashboard-inventory-management-soft-phone-case-5ac404bb20bb59.0347009015227957071341.png" />
+            <Card.Img variant="top" src="https://cdn2.iconfinder.com/data/icons/illustricon-tech-vii/512/big_data-512.png" />
             <Card.Body>
               <Card.Title>Logistics</Card.Title>
               <Card.Text>
@@ -102,5 +113,6 @@ const Index = () => (
     </div>
 
   </div>
-);
-export default Index;
+    )
+  }
+}

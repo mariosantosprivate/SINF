@@ -15,7 +15,7 @@ router.get("/callback", (req, res, next) => {
         if (!user) return res.redirect("/login");
         req.logIn(user, (err) => {
             if (err) return next(err);
-            res.redirect("/");
+            res.redirect("/general");
         });
     })(req, res, next);
 });
