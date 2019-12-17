@@ -2,20 +2,15 @@ import Card from 'react-bootstrap/Card';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
-import Link from "../components/Navbar/Link";
-import { BarGraph } from '../components/Chart/BarGraph';
-import { LineGraph } from '../components/Chart/LineGraph';
-import Container from 'react-bootstrap/Container';
+import PropTypes from 'prop-types';
+import Link from '../components/Navbar/Link';
 // Importing a local CSS file.
 import '../assets/css/style.css';
 
-export default class Index extends React.Component {
-
-  render() {
-    return (
-      <div className="home">
+const Index = (props) => (
+  <div className="home">
     <div className="homeLanding">
-      <div className="background"></div>
+      <div className="background" />
       <div className="homeHeaders">
         <h1 className="index-h1">
           DASHBOARD 360º
@@ -23,11 +18,11 @@ export default class Index extends React.Component {
         <h2 className="index-h2">
           Sign up to start using our services or sign in if you already have an account.
         </h2>
-        <hr></hr>
+        <hr />
       </div>
-      
+
       <div className="homeButtons">
-      {!this.props.user && (
+        {!props.user && (
         <Row className="justify-content-center lg">
           <Col>
             <Link href="/login">
@@ -45,21 +40,22 @@ export default class Index extends React.Component {
       <h2 className="homeFeatures-h2">
         FEATURES
       </h2>
-      <hr className="small-hr"></hr>
+      <hr className="small-hr" />
       <Row className="justify-content-center">
         <Col>
-          <Card>
+          <Card style={{ minHeight: '30rem' }}>
             <Card.Img variant="top" src="https://cdn2.iconfinder.com/data/icons/illustricon-tech-vii/512/big_data-512.png" />
             <Card.Body>
               <Card.Title>General</Card.Title>
               <Card.Text>
-                The General Dashboard aggregates the most crucial information from the other dashboards so that you can quickly view it.
+                The General Dashboard aggregates the most crucial information
+                from the other dashboards so that you can quickly view it.
               </Card.Text>
             </Card.Body>
           </Card>
         </Col>
         <Col>
-          <Card>
+          <Card style={{ minHeight: '30rem' }}>
             <Card.Img variant="top" src="https://cdn2.iconfinder.com/data/icons/illustricon-tech-vii/512/big_data-512.png" />
             <Card.Body>
               <Card.Title>Sales</Card.Title>
@@ -70,7 +66,7 @@ export default class Index extends React.Component {
           </Card>
         </Col>
         <Col>
-          <Card>
+          <Card style={{ minHeight: '30rem' }}>
             <Card.Img variant="top" src="https://cdn2.iconfinder.com/data/icons/illustricon-tech-vii/512/big_data-512.png" />
             <Card.Body>
               <Card.Title>Purchases</Card.Title>
@@ -81,7 +77,7 @@ export default class Index extends React.Component {
           </Card>
         </Col>
         <Col>
-          <Card>
+          <Card style={{ minHeight: '30rem' }}>
             <Card.Img variant="top" src="https://cdn2.iconfinder.com/data/icons/illustricon-tech-vii/512/big_data-512.png" />
             <Card.Body>
               <Card.Title>Finances</Card.Title>
@@ -92,7 +88,7 @@ export default class Index extends React.Component {
           </Card>
         </Col>
         <Col>
-          <Card>
+          <Card style={{ minHeight: '30rem' }}>
             <Card.Img variant="top" src="https://cdn2.iconfinder.com/data/icons/illustricon-tech-vii/512/big_data-512.png" />
             <Card.Body>
               <Card.Title>Logistics</Card.Title>
@@ -104,8 +100,16 @@ export default class Index extends React.Component {
         </Col>
       </Row>
     </div>
-
   </div>
-    )
-  }
-}
+);
+
+Index.propTypes = {
+  // eslint-disable-next-line react/forbid-prop-types
+  user: PropTypes.object,
+};
+
+Index.defaultProps = {
+  user: null,
+};
+
+export default Index;
