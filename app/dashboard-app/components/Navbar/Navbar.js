@@ -12,8 +12,8 @@ const AppNavbar = ({ user }) => (
         {user && (
           <>
             <Nav.Item>
-              <Link href="/Home">
-                <a className="nav-link">General</a>
+              <Link href="/">
+                <a className="nav-link">Home</a>
               </Link>
             </Nav.Item>
             <Nav.Item>
