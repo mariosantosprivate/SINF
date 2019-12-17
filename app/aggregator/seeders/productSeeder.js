@@ -9,7 +9,7 @@ async function seedFromSaft(data) {
     if (Object.prototype.hasOwnProperty.call(products, key)) {
       const product = products[key];
 
-      await Product.create({
+      await Product.upsert({
         code: product.productCode,
         description: product.porductDescription,
         group: product.productGroup,

@@ -8,7 +8,7 @@ async function seed(data) {
     currencyCode = headerData.currencyCode._;
   } else { currencyCode = headerData.currencyCode; }
 
-  await HeaderData.create({
+  await HeaderData.upsert({
     fiscalYear: headerData.fiscalYear,
     companyName: headerData.companyName,
     startDate: headerData.startDate,

@@ -10,7 +10,7 @@ async function seed(data) {
     if (Object.prototype.hasOwnProperty.call(customers, key)) {
       const customer = customers[key];
 
-      await Customer.create({
+      await Customer.upsert({
         customerId: customer.customerId,
         companyName: customer.companyName,
       });
