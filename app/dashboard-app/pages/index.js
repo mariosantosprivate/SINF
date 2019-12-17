@@ -18,7 +18,7 @@ export default class Index extends React.Component {
       <div className="background"></div>
       <div className="homeHeaders">
         <h1 className="index-h1">
-          Dashboard 360º
+          DASHBOARD 360º
         </h1>
         <h2 className="index-h2">
           Sign up to start using our services or sign in if you already have an account.
@@ -31,18 +31,12 @@ export default class Index extends React.Component {
         <Row className="justify-content-center lg">
           <Col>
             <Link href="/login">
-              <Button variant="dark" href="/login" size="lg" block>
+              <Button variant="outline-secondary" href="/login" size="lg" block>
                   Sign in
               </Button>
             </Link>
           </Col>
-          <Col>
-            <Link href="/login">
-              <Button variant="warning" href="/login" size="lg" block>
-                Sign up
-              </Button>
-            </Link>
-          </Col>
+
         </Row>
         )}
       </div>
@@ -52,7 +46,6 @@ export default class Index extends React.Component {
         FEATURES
       </h2>
       <hr className="small-hr"></hr>
-
       <Row className="justify-content-center">
         <Col>
           <Card>

@@ -37,21 +37,21 @@ html, body {
 padding-top: 2em;
   text-align: center;
   font-weight: 100;
-  font-size: 64px;
-  color: gold ;
+  font-size: 72px;
+  color: #e0e0e0 ;
 }
 .index-h2 {
   text-align: center;
   margin-top: 120px;
   font-weight: 100;
-  font-size: 32px;
-  color: white ;
+  font-size: 28px;
+  color: #dddddd;
 }
 
 .home .background {
-  background-image: url(https://www.bestfunforall.com/better/imgs/130%20working%20wallpaper%20%206.jpg);
+  background-image: url(https://static1.squarespace.com/static/58cc297717bffcf0cd365fa0/5bb7d8378165f58df8c1c272/5bb7db50ec212d9255999f39/1538776452590/18041_1800-3.jpg?format=2500w);
   background-position: center;
-  opacity: 0.95;
+  opacity: 1;
   background-repeat: no-repeat;
   background-size: cover;
   justify-content: center;
@@ -81,8 +81,6 @@ padding-top: 2em;
 }
 
 .homeButtons {
-  justify-content: center;
-  align-content: center;
   padding: 24em;
   padding-top: 2em;
   padding-bottom: 2em; 
@@ -100,6 +98,9 @@ padding-top: 2em;
   border-radius: 12px;
   display: block;
   margin: 0 auto;
+  font-weight: 100;
+  color: #dddddd;
+
 }
 
 .homeFeatures {
@@ -121,7 +122,7 @@ padding-top: 2em;
 
   .home hr{
     color:gold;
-    background-color: gold;
+    background-color: rgb(255, 255, 255);
     width: 75%;
   }
   .home .small-hr{
