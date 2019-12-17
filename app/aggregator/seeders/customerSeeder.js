@@ -2,7 +2,9 @@ const jp = require('jsonpath');
 const Customer = require('../../common/models/customer');
 
 async function seed(data) {
-  const customers = jp.query(data, '$.auditFile.masterFiles.customer')[0];
+  let customers = jp.query(data, '$.auditFile.masterFiles.customer')[0];
+
+  if (!Array.isArray(customers)) customers = [customers];
 
   for (const key in customers) {
     if (Object.prototype.hasOwnProperty.call(customers, key)) {
