@@ -1,12 +1,9 @@
 import React from 'react';
 import { Row, Col } from 'react-bootstrap';
 import TrendChart from '../components/Chart/TrendChart';
-import BarChart from '../components/Chart/BarChart';
-import PieChart from '../components/Chart/PieChart';
 import KPI from '../components/KPI';
 import financesService from '../services/financesService';
 import metadataService from '../services/metadataService';
-import chartTypes from '../utils/chartTypes';
 import FiscalYearSelect from '../components/FiscalYearSelect';
 import ErrorMessage from '../components/ErrorMessage';
 // Importing a local CSS file.
@@ -20,7 +17,7 @@ class Finances extends React.Component {
       data: null,
       loading: false,
       hasError: false,
-      errorMessage: null
+      errorMessage: null,
     };
 
     this.fetchData = this.fetchData.bind(this);
@@ -51,7 +48,7 @@ class Finances extends React.Component {
         loading: false,
         data,
         hasError: false,
-        errorMessage: null
+        errorMessage: null,
       });
     } catch (err) {
       this.setState({ hasError: true, errorMessage: err.message });
@@ -62,8 +59,8 @@ class Finances extends React.Component {
     const { data } = this.state;
 
     const fiscalYearSelect = (
-      <Row className='justify-content-center top-padded-row side-padded-row-small'>
-        <Col lg={2} className='offset-md-11'>
+      <Row className="justify-content-center top-padded-row side-padded-row-small">
+        <Col lg={2} className="offset-md-11">
           <FiscalYearSelect onChange={this.onChangeFiscalYear} />
         </Col>
       </Row>
@@ -81,74 +78,72 @@ class Finances extends React.Component {
     const content = (
       <div>
         <div>
-          <Row className='justify-content-center top-padded-row side-padded-row-small'>
-            <Col lg={4} className='text-center'>
+          <Row className="justify-content-center top-padded-row side-padded-row-small">
+            <Col lg={4} className="text-center">
               <KPI
-                title='Total Revenue'
+                title="Total Revenue"
                 value={`${data.totalRevenue.toLocaleString()} €`}
               />
             </Col>
-            <Col lg={4} className='text-center'>
+            <Col lg={4} className="text-center">
               <KPI
-                title='Total Income'
+                title="Total Income"
                 value={`${data.totalIncome.toLocaleString()} €`}
               />
             </Col>
-            <Col lg={4} className='text-center'>
+            <Col lg={4} className="text-center">
               <KPI
-                title='Total Expenses'
+                title="Total Expenses"
                 value={`${data.totalExpenses.toLocaleString()} €`}
               />
             </Col>
           </Row>
-          <Row className='justify-content-center top-padded-row side-padded-row-small'>
-            <Col lg={12} className='text-center'>
+          <Row className="justify-content-center top-padded-row side-padded-row-small">
+            <Col lg={4} className="text-center">
               <KPI
-                title='Total Assets Value'
+                title="Total Assets Value"
                 value={`${data.totalAssets.toLocaleString()} €`}
               />
             </Col>
-          </Row>
-          <Row className='justify-content-center top-padded-row side-padded-row-small'>
-            <Col lg={6} className='text-center'>
+            <Col lg={4} className="text-center">
               <KPI
-                title='Accounts Payable'
+                title="Accounts Payable"
                 value={`${data.accountsPayable.toLocaleString()} €`}
               />
             </Col>
-            <Col lg={6} className='text-center'>
+            <Col lg={4} className="text-center">
               <KPI
-                title='Accounts Receivable'
+                title="Accounts Receivable"
                 value={`${data.accountsReceivable.toLocaleString()} €`}
               />
             </Col>
+            <Row className="justify-content-center top-padded-row side-padded-row-small">
+              <Col lg={12} className="text-center">
+                <KPI
+                  title="Financial Autonomy"
+                  value={`${data.financialAutonomy.toLocaleString()} %`}
+                />
+              </Col>
+            </Row>
           </Row>
-          <Row className='justify-content-center top-padded-row side-padded-row-small'>
-            <Col lg={12} className='text-center'>
-              <KPI
-                title='Financial Autonomy'
-                value={`${data.financialAutonomy.toLocaleString()} %`}
-              />
-            </Col>
-          </Row>
-          <Row className='justify-content-sm-center top-padded-row side-padded-row'>
-            <Col lg={6} className='text-center'>
+          <Row className="justify-content-sm-center top-padded-row side-padded-row">
+            <Col lg={6} className="text-center">
               <TrendChart
-                legend='Revenue trend'
+                legend="Revenue trend"
                 data={this.state.data.revenueTrend}
               />
             </Col>
-            <Col lg={6} className='text-center'>
+            <Col lg={6} className="text-center">
               <TrendChart
-                legend='Expenses trend'
+                legend="Expenses trend"
                 data={this.state.data.expensesTrend}
               />
             </Col>
           </Row>
-          <Row className='justify-content-sm-center top-padded-row side-padded-row'>
-            <Col lg={6} className='text-center'>
+          <Row className="justify-content-sm-center top-padded-row side-padded-row">
+            <Col lg={6} className="text-center">
               <TrendChart
-                legend='Income trend'
+                legend="Income trend"
                 data={this.state.data.incomeTrend}
               />
             </Col>
