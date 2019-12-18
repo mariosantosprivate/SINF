@@ -55,11 +55,13 @@ models.Customer.hasMany(models.Invoice, {
 // Technically a shipping info belongs to an Invoice, but sequelize is retarded
 // https://stackoverflow.com/questions/43746774/sequelize-one-to-one-relation
 models.Invoice.belongsTo(models.ShippingInfo, {
+  as: 'shipToInfo',
   foreignKey: 'ship_to_info_id',
   onDelete: 'cascade',
 });
 
 models.Invoice.belongsTo(models.ShippingInfo, {
+  as: 'shipFromInfo',
   foreignKey: 'ship_from_info_id',
   onDelete: 'cascade',
 });
