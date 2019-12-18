@@ -18,7 +18,9 @@ async function calculate(fiscalYear) {
       valuePerProduct[invoiceLine.product_code] = 0;
     }
 
-    valuePerProduct[invoiceLine.product_code] += parseFloat(invoiceLine.creditAmount);
+    if (invoiceLine.creditAmount) {
+      valuePerProduct[invoiceLine.product_code] += parseFloat(invoiceLine.creditAmount);
+    }
   }
 
   return formatTop5(valuePerProduct);
