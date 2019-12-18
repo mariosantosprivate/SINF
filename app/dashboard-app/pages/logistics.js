@@ -81,12 +81,12 @@ class Logistics extends React.Component {
           <Col className="text-center">
             <KPI title="Inventory Value" value={`${data.totalInventoryValue.toLocaleString()} €`} />
           </Col>
-          {/* <Col className="text-center">
-            <KPI title="Average Inventory Period" value={`${data.averageInventoryPeriod.toLocaleString()} €`} />
+          <Col className="text-center">
+            <KPI title="Average Inventory Period" value={`${data.averageInventoryPeriod.toLocaleString()}`} />
           </Col>
           <Col className="text-center">
-            <KPI title="Inventory Turnovers" value={`${data.inventoryTurnovers.toLocaleString()} €`} />
-    </Col> */}
+            <KPI title="Inventory Turnovers" value={`${data.inventoryTurnover.toLocaleString()} %`} />
+          </Col>
           <Col className="text-center">
             <KPI title="Total Deliveries" value={`${data.totalDeliveries.toLocaleString()}`} />
           </Col>
