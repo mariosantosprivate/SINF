@@ -7,7 +7,6 @@ async function calculate() {
         raw: true,
     });
 
-    console.log(materialStockList);
     for (const materialStock of materialStockList) {
         cont += materialStock.valueOfStock;
     }
