@@ -1,0 +1,3773 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<AuditFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:OECD:StandardAuditFile-Tax:PT_1.04_01">
+  <Header>
+    <AuditFileVersion>1.04_01</AuditFileVersion>
+    <CompanyID>503140600</CompanyID>
+    <TaxRegistrationNumber>503140600</TaxRegistrationNumber>
+    <TaxAccountingBasis>F</TaxAccountingBasis>
+    <CompanyName>Primavera Business Software Solutions</CompanyName>
+    <CompanyAddress>
+      <BuildingNumber>N 74</BuildingNumber>
+      <StreetName>Rua Dr. Egídio Guimarães</StreetName>
+      <AddressDetail>Rua Dr. Egídio Guimarães N 74  4700-006 Braga</AddressDetail>
+      <City>Braga</City>
+      <PostalCode>4700-006</PostalCode>
+      <Region>Desconhecido</Region>
+      <Country xsi:type="xsd:string">PT</Country>
+    </CompanyAddress>
+    <FiscalYear>2019</FiscalYear>
+    <StartDate>2019-01-01</StartDate>
+    <EndDate>2019-12-31</EndDate>
+    <CurrencyCode xsi:type="xsd:string">EUR</CurrencyCode>
+    <DateCreated>2019-12-18</DateCreated>
+    <TaxEntity>GLOBAL</TaxEntity>
+    <ProductCompanyTaxID>503140600</ProductCompanyTaxID>
+    <SoftwareCertificateNumber>2616</SoftwareCertificateNumber>
+    <ProductID>PRIMAVERA JASMIN/PRIMAVERA Business Software Solutions</ProductID>
+    <ProductVersion>1.00</ProductVersion>
+  </Header>
+  <MasterFiles>
+    <Customer>
+      <CustomerID>0013.1</CustomerID>
+      <AccountID>Desconhecido</AccountID>
+      <CustomerTaxID>999999990</CustomerTaxID>
+      <CompanyName>Koji Kondo</CompanyName>
+      <BillingAddress>
+        <BuildingNumber>Desconheci</BuildingNumber>
+        <StreetName>Desconhecido</StreetName>
+        <AddressDetail>Koji Kondo</AddressDetail>
+        <City>Desconhecido</City>
+        <PostalCode>Desconhecido</PostalCode>
+        <Region>Desconhecido</Region>
+        <Country>JP</Country>
+      </BillingAddress>
+      <Telephone>Desconhecido</Telephone>
+      <Fax>Desconhecido</Fax>
+      <Email>Desconhecido</Email>
+      <Website>Desconhecido</Website>
+      <SelfBillingIndicator>0</SelfBillingIndicator>
+    </Customer>
+    <Customer>
+      <CustomerID>0013.2</CustomerID>
+      <AccountID>Desconhecido</AccountID>
+      <CustomerTaxID>999999990</CustomerTaxID>
+      <CompanyName>Koji Kondo</CompanyName>
+      <BillingAddress>
+        <BuildingNumber>Desconheci</BuildingNumber>
+        <StreetName>Desconhecido</StreetName>
+        <AddressDetail>Koji Kondo</AddressDetail>
+        <City>Desconhecido</City>
+        <PostalCode>Desconhecido</PostalCode>
+        <Region>Desconhecido</Region>
+        <Country>JP</Country>
+      </BillingAddress>
+      <Telephone>Desconhecido</Telephone>
+      <Fax>Desconhecido</Fax>
+      <Email>Desconhecido</Email>
+      <Website>Desconhecido</Website>
+      <SelfBillingIndicator>0</SelfBillingIndicator>
+    </Customer>
+    <Customer>
+      <CustomerID>0013.3</CustomerID>
+      <AccountID>Desconhecido</AccountID>
+      <CustomerTaxID>999999990</CustomerTaxID>
+      <CompanyName>Koji Kondo</CompanyName>
+      <BillingAddress>
+        <BuildingNumber>Desconheci</BuildingNumber>
+        <StreetName>Desconhecido</StreetName>
+        <AddressDetail>Desconhecido</AddressDetail>
+        <City>Desconhecido</City>
+        <PostalCode>Desconhecido</PostalCode>
+        <Region>Desconhecido</Region>
+        <Country>JP</Country>
+      </BillingAddress>
+      <Telephone>Desconhecido</Telephone>
+      <Fax>Desconhecido</Fax>
+      <Email>Desconhecido</Email>
+      <Website>Desconhecido</Website>
+      <SelfBillingIndicator>0</SelfBillingIndicator>
+    </Customer>
+    <Customer>
+      <CustomerID>0013.4</CustomerID>
+      <AccountID>Desconhecido</AccountID>
+      <CustomerTaxID>999999990</CustomerTaxID>
+      <CompanyName>Koji Kondo</CompanyName>
+      <BillingAddress>
+        <BuildingNumber>Desconheci</BuildingNumber>
+        <StreetName>Desconhecido</StreetName>
+        <AddressDetail>Koji Kondo</AddressDetail>
+        <City>Desconhecido</City>
+        <PostalCode>Desconhecido</PostalCode>
+        <Region>Desconhecido</Region>
+        <Country>JP</Country>
+      </BillingAddress>
+      <Telephone>Desconhecido</Telephone>
+      <Fax>Desconhecido</Fax>
+      <Email>Desconhecido</Email>
+      <Website>Desconhecido</Website>
+      <SelfBillingIndicator>0</SelfBillingIndicator>
+    </Customer>
+    <Customer>
+      <CustomerID>0015.1</CustomerID>
+      <AccountID>Desconhecido</AccountID>
+      <CustomerTaxID>999999990</CustomerTaxID>
+      <CompanyName>Vladimir Putin</CompanyName>
+      <BillingAddress>
+        <BuildingNumber>Desconheci</BuildingNumber>
+        <StreetName>Desconhecido</StreetName>
+        <AddressDetail>Vladimir Putin</AddressDetail>
+        <City>Desconhecido</City>
+        <PostalCode>Desconhecido</PostalCode>
+        <Region>Desconhecido</Region>
+        <Country>RU</Country>
+      </BillingAddress>
+      <Telephone>Desconhecido</Telephone>
+      <Fax>Desconhecido</Fax>
+      <Email>Desconhecido</Email>
+      <Website>Desconhecido</Website>
+      <SelfBillingIndicator>0</SelfBillingIndicator>
+    </Customer>
+    <Customer>
+      <CustomerID>0015.2</CustomerID>
+      <AccountID>Desconhecido</AccountID>
+      <CustomerTaxID>999999990</CustomerTaxID>
+      <CompanyName>Vladimir Putin</CompanyName>
+      <BillingAddress>
+        <BuildingNumber>Desconheci</BuildingNumber>
+        <StreetName>Desconhecido</StreetName>
+        <AddressDetail>Vladimir Putin</AddressDetail>
+        <City>Desconhecido</City>
+        <PostalCode>Desconhecido</PostalCode>
+        <Region>Desconhecido</Region>
+        <Country>RU</Country>
+      </BillingAddress>
+      <Telephone>Desconhecido</Telephone>
+      <Fax>Desconhecido</Fax>
+      <Email>Desconhecido</Email>
+      <Website>Desconhecido</Website>
+      <SelfBillingIndicator>0</SelfBillingIndicator>
+    </Customer>
+    <Customer>
+      <CustomerID>0015.3</CustomerID>
+      <AccountID>Desconhecido</AccountID>
+      <CustomerTaxID>999999990</CustomerTaxID>
+      <CompanyName>Vladimir Putin</CompanyName>
+      <BillingAddress>
+        <BuildingNumber>Desconheci</BuildingNumber>
+        <StreetName>Desconhecido</StreetName>
+        <AddressDetail>Desconhecido</AddressDetail>
+        <City>Desconhecido</City>
+        <PostalCode>Desconhecido</PostalCode>
+        <Region>Desconhecido</Region>
+        <Country>RU</Country>
+      </BillingAddress>
+      <Telephone>Desconhecido</Telephone>
+      <Fax>Desconhecido</Fax>
+      <Email>Desconhecido</Email>
+      <Website>Desconhecido</Website>
+      <SelfBillingIndicator>0</SelfBillingIndicator>
+    </Customer>
+    <Customer>
+      <CustomerID>0015.4</CustomerID>
+      <AccountID>Desconhecido</AccountID>
+      <CustomerTaxID>999999990</CustomerTaxID>
+      <CompanyName>Vladimir Putin</CompanyName>
+      <BillingAddress>
+        <BuildingNumber>Desconheci</BuildingNumber>
+        <StreetName>Desconhecido</StreetName>
+        <AddressDetail>Vladimir Putin</AddressDetail>
+        <City>Desconhecido</City>
+        <PostalCode>Desconhecido</PostalCode>
+        <Region>Desconhecido</Region>
+        <Country>RU</Country>
+      </BillingAddress>
+      <Telephone>Desconhecido</Telephone>
+      <Fax>Desconhecido</Fax>
+      <Email>Desconhecido</Email>
+      <Website>Desconhecido</Website>
+      <SelfBillingIndicator>0</SelfBillingIndicator>
+    </Customer>
+    <Customer>
+      <CustomerID>0014.1</CustomerID>
+      <AccountID>Desconhecido</AccountID>
+      <CustomerTaxID>999999990</CustomerTaxID>
+      <CompanyName>Keanu Reeves</CompanyName>
+      <BillingAddress>
+        <BuildingNumber>Desconheci</BuildingNumber>
+        <StreetName>Desconhecido</StreetName>
+        <AddressDetail>Keanu Reeves</AddressDetail>
+        <City>Desconhecido</City>
+        <PostalCode>Desconhecido</PostalCode>
+        <Region>Desconhecido</Region>
+        <Country>US</Country>
+      </BillingAddress>
+      <Telephone>Desconhecido</Telephone>
+      <Fax>Desconhecido</Fax>
+      <Email>Desconhecido</Email>
+      <Website>Desconhecido</Website>
+      <SelfBillingIndicator>0</SelfBillingIndicator>
+    </Customer>
+    <Customer>
+      <CustomerID>0014.2</CustomerID>
+      <AccountID>Desconhecido</AccountID>
+      <CustomerTaxID>999999990</CustomerTaxID>
+      <CompanyName>Keanu Reeves</CompanyName>
+      <BillingAddress>
+        <BuildingNumber>Desconheci</BuildingNumber>
+        <StreetName>Desconhecido</StreetName>
+        <AddressDetail>Keanu Reeves</AddressDetail>
+        <City>Desconhecido</City>
+        <PostalCode>Desconhecido</PostalCode>
+        <Region>Desconhecido</Region>
+        <Country>US</Country>
+      </BillingAddress>
+      <Telephone>Desconhecido</Telephone>
+      <Fax>Desconhecido</Fax>
+      <Email>Desconhecido</Email>
+      <Website>Desconhecido</Website>
+      <SelfBillingIndicator>0</SelfBillingIndicator>
+    </Customer>
+    <Customer>
+      <CustomerID>0014.3</CustomerID>
+      <AccountID>Desconhecido</AccountID>
+      <CustomerTaxID>999999990</CustomerTaxID>
+      <CompanyName>Keanu Reeves</CompanyName>
+      <BillingAddress>
+        <BuildingNumber>Desconheci</BuildingNumber>
+        <StreetName>Desconhecido</StreetName>
+        <AddressDetail>Keanu Reeves</AddressDetail>
+        <City>Desconhecido</City>
+        <PostalCode>Desconhecido</PostalCode>
+        <Region>Desconhecido</Region>
+        <Country>US</Country>
+      </BillingAddress>
+      <Telephone>Desconhecido</Telephone>
+      <Fax>Desconhecido</Fax>
+      <Email>Desconhecido</Email>
+      <Website>Desconhecido</Website>
+      <SelfBillingIndicator>0</SelfBillingIndicator>
+    </Customer>
+    <Customer>
+      <CustomerID>0014.4</CustomerID>
+      <AccountID>Desconhecido</AccountID>
+      <CustomerTaxID>999999990</CustomerTaxID>
+      <CompanyName>Keanu Reeves</CompanyName>
+      <BillingAddress>
+        <BuildingNumber>Desconheci</BuildingNumber>
+        <StreetName>Desconhecido</StreetName>
+        <AddressDetail>Desconhecido</AddressDetail>
+        <City>Desconhecido</City>
+        <PostalCode>Desconhecido</PostalCode>
+        <Region>Desconhecido</Region>
+        <Country>US</Country>
+      </BillingAddress>
+      <Telephone>Desconhecido</Telephone>
+      <Fax>Desconhecido</Fax>
+      <Email>Desconhecido</Email>
+      <Website>Desconhecido</Website>
+      <SelfBillingIndicator>0</SelfBillingIndicator>
+    </Customer>
+    <Customer>
+      <CustomerID>0008.1</CustomerID>
+      <AccountID>Desconhecido</AccountID>
+      <CustomerTaxID>999999990</CustomerTaxID>
+      <CompanyName>Gamer Zone</CompanyName>
+      <BillingAddress>
+        <BuildingNumber>Desconheci</BuildingNumber>
+        <StreetName>Desconhecido</StreetName>
+        <AddressDetail>Gamer Zone</AddressDetail>
+        <City>Desconhecido</City>
+        <PostalCode>Desconhecido</PostalCode>
+        <Region>Desconhecido</Region>
+        <Country>PT</Country>
+      </BillingAddress>
+      <Telephone>Desconhecido</Telephone>
+      <Fax>Desconhecido</Fax>
+      <Email>Desconhecido</Email>
+      <Website>Desconhecido</Website>
+      <SelfBillingIndicator>0</SelfBillingIndicator>
+    </Customer>
+    <Customer>
+      <CustomerID>0008.10</CustomerID>
+      <AccountID>Desconhecido</AccountID>
+      <CustomerTaxID>999999990</CustomerTaxID>
+      <CompanyName>Gamer Zone</CompanyName>
+      <BillingAddress>
+        <BuildingNumber>Desconheci</BuildingNumber>
+        <StreetName>Desconhecido</StreetName>
+        <AddressDetail>Gamer Zone</AddressDetail>
+        <City>Desconhecido</City>
+        <PostalCode>Desconhecido</PostalCode>
+        <Region>Desconhecido</Region>
+        <Country>PT</Country>
+      </BillingAddress>
+      <Telephone>Desconhecido</Telephone>
+      <Fax>Desconhecido</Fax>
+      <Email>Desconhecido</Email>
+      <Website>Desconhecido</Website>
+      <SelfBillingIndicator>0</SelfBillingIndicator>
+    </Customer>
+    <Customer>
+      <CustomerID>0008.2</CustomerID>
+      <AccountID>Desconhecido</AccountID>
+      <CustomerTaxID>999999990</CustomerTaxID>
+      <CompanyName>Gamer Zone</CompanyName>
+      <BillingAddress>
+        <BuildingNumber>Desconheci</BuildingNumber>
+        <StreetName>Desconhecido</StreetName>
+        <AddressDetail>Gamer Zone</AddressDetail>
+        <City>Desconhecido</City>
+        <PostalCode>Desconhecido</PostalCode>
+        <Region>Desconhecido</Region>
+        <Country>PT</Country>
+      </BillingAddress>
+      <Telephone>Desconhecido</Telephone>
+      <Fax>Desconhecido</Fax>
+      <Email>Desconhecido</Email>
+      <Website>Desconhecido</Website>
+      <SelfBillingIndicator>0</SelfBillingIndicator>
+    </Customer>
+    <Customer>
+      <CustomerID>0008.3</CustomerID>
+      <AccountID>Desconhecido</AccountID>
+      <CustomerTaxID>999999990</CustomerTaxID>
+      <CompanyName>Gamer Zone</CompanyName>
+      <BillingAddress>
+        <BuildingNumber>Desconheci</BuildingNumber>
+        <StreetName>Desconhecido</StreetName>
+        <AddressDetail>Gamer Zone</AddressDetail>
+        <City>Desconhecido</City>
+        <PostalCode>Desconhecido</PostalCode>
+        <Region>Desconhecido</Region>
+        <Country>PT</Country>
+      </BillingAddress>
+      <Telephone>Desconhecido</Telephone>
+      <Fax>Desconhecido</Fax>
+      <Email>Desconhecido</Email>
+      <Website>Desconhecido</Website>
+      <SelfBillingIndicator>0</SelfBillingIndicator>
+    </Customer>
+    <Customer>
+      <CustomerID>0008.4</CustomerID>
+      <AccountID>Desconhecido</AccountID>
+      <CustomerTaxID>999999990</CustomerTaxID>
+      <CompanyName>Gamer Zone</CompanyName>
+      <BillingAddress>
+        <BuildingNumber>Desconheci</BuildingNumber>
+        <StreetName>Desconhecido</StreetName>
+        <AddressDetail>Gamer Zone</AddressDetail>
+        <City>Desconhecido</City>
+        <PostalCode>Desconhecido</PostalCode>
+        <Region>Desconhecido</Region>
+        <Country>PT</Country>
+      </BillingAddress>
+      <Telephone>Desconhecido</Telephone>
+      <Fax>Desconhecido</Fax>
+      <Email>Desconhecido</Email>
+      <Website>Desconhecido</Website>
+      <SelfBillingIndicator>0</SelfBillingIndicator>
+    </Customer>
+    <Customer>
+      <CustomerID>0008.5</CustomerID>
+      <AccountID>Desconhecido</AccountID>
+      <CustomerTaxID>999999990</CustomerTaxID>
+      <CompanyName>Gamer Zone</CompanyName>
+      <BillingAddress>
+        <BuildingNumber>Desconheci</BuildingNumber>
+        <StreetName>Desconhecido</StreetName>
+        <AddressDetail>Desconhecido</AddressDetail>
+        <City>Desconhecido</City>
+        <PostalCode>Desconhecido</PostalCode>
+        <Region>Desconhecido</Region>
+        <Country>PT</Country>
+      </BillingAddress>
+      <Telephone>Desconhecido</Telephone>
+      <Fax>Desconhecido</Fax>
+      <Email>Desconhecido</Email>
+      <Website>Desconhecido</Website>
+      <SelfBillingIndicator>0</SelfBillingIndicator>
+    </Customer>
+    <Customer>
+      <CustomerID>0008.6</CustomerID>
+      <AccountID>Desconhecido</AccountID>
+      <CustomerTaxID>999999990</CustomerTaxID>
+      <CompanyName>Gamer Zone</CompanyName>
+      <BillingAddress>
+        <BuildingNumber>Desconheci</BuildingNumber>
+        <StreetName>Desconhecido</StreetName>
+        <AddressDetail>Desconhecido</AddressDetail>
+        <City>Desconhecido</City>
+        <PostalCode>Desconhecido</PostalCode>
+        <Region>Desconhecido</Region>
+        <Country>PT</Country>
+      </BillingAddress>
+      <Telephone>Desconhecido</Telephone>
+      <Fax>Desconhecido</Fax>
+      <Email>Desconhecido</Email>
+      <Website>Desconhecido</Website>
+      <SelfBillingIndicator>0</SelfBillingIndicator>
+    </Customer>
+    <Customer>
+      <CustomerID>0008.7</CustomerID>
+      <AccountID>Desconhecido</AccountID>
+      <CustomerTaxID>999999990</CustomerTaxID>
+      <CompanyName>Gamer Zone</CompanyName>
+      <BillingAddress>
+        <BuildingNumber>Desconheci</BuildingNumber>
+        <StreetName>Desconhecido</StreetName>
+        <AddressDetail>Gamer Zone</AddressDetail>
+        <City>Desconhecido</City>
+        <PostalCode>Desconhecido</PostalCode>
+        <Region>Desconhecido</Region>
+        <Country>PT</Country>
+      </BillingAddress>
+      <Telephone>Desconhecido</Telephone>
+      <Fax>Desconhecido</Fax>
+      <Email>Desconhecido</Email>
+      <Website>Desconhecido</Website>
+      <SelfBillingIndicator>0</SelfBillingIndicator>
+    </Customer>
+    <Customer>
+      <CustomerID>0008.8</CustomerID>
+      <AccountID>Desconhecido</AccountID>
+      <CustomerTaxID>999999990</CustomerTaxID>
+      <CompanyName>Gamer Zone</CompanyName>
+      <BillingAddress>
+        <BuildingNumber>Desconheci</BuildingNumber>
+        <StreetName>Desconhecido</StreetName>
+        <AddressDetail>Desconhecido</AddressDetail>
+        <City>Desconhecido</City>
+        <PostalCode>Desconhecido</PostalCode>
+        <Region>Desconhecido</Region>
+        <Country>PT</Country>
+      </BillingAddress>
+      <Telephone>Desconhecido</Telephone>
+      <Fax>Desconhecido</Fax>
+      <Email>Desconhecido</Email>
+      <Website>Desconhecido</Website>
+      <SelfBillingIndicator>0</SelfBillingIndicator>
+    </Customer>
+    <Customer>
+      <CustomerID>0008.9</CustomerID>
+      <AccountID>Desconhecido</AccountID>
+      <CustomerTaxID>999999990</CustomerTaxID>
+      <CompanyName>Gamer Zone</CompanyName>
+      <BillingAddress>
+        <BuildingNumber>Desconheci</BuildingNumber>
+        <StreetName>Desconhecido</StreetName>
+        <AddressDetail>Gamer Zone</AddressDetail>
+        <City>Desconhecido</City>
+        <PostalCode>Desconhecido</PostalCode>
+        <Region>Desconhecido</Region>
+        <Country>PT</Country>
+      </BillingAddress>
+      <Telephone>Desconhecido</Telephone>
+      <Fax>Desconhecido</Fax>
+      <Email>Desconhecido</Email>
+      <Website>Desconhecido</Website>
+      <SelfBillingIndicator>0</SelfBillingIndicator>
+    </Customer>
+    <Customer>
+      <CustomerID>ALCAD.2</CustomerID>
+      <AccountID>Desconhecido</AccountID>
+      <CustomerTaxID>999999990</CustomerTaxID>
+      <CompanyName>Soluciones Cad de Madrid, SA</CompanyName>
+      <BillingAddress>
+        <BuildingNumber>Desconheci</BuildingNumber>
+        <StreetName>Passeo de Portugal</StreetName>
+        <AddressDetail>Soluciones Cad de Madrid, SA  Passeo de Portugal 4644  28004 Madrid</AddressDetail>
+        <City>Madrid</City>
+        <PostalCode>28004</PostalCode>
+        <Region>Desconhecido</Region>
+        <Country>PT</Country>
+      </BillingAddress>
+      <Telephone>Desconhecido</Telephone>
+      <Fax>Desconhecido</Fax>
+      <Email>Desconhecido</Email>
+      <Website>Desconhecido</Website>
+      <SelfBillingIndicator>0</SelfBillingIndicator>
+    </Customer>
+    <Customer>
+      <CustomerID>ALCAD.3</CustomerID>
+      <AccountID>Desconhecido</AccountID>
+      <CustomerTaxID>999999990</CustomerTaxID>
+      <CompanyName>Soluciones Cad de Madrid, SA</CompanyName>
+      <BillingAddress>
+        <BuildingNumber>Desconheci</BuildingNumber>
+        <StreetName>Passeo de Portugal</StreetName>
+        <AddressDetail>Desconhecido</AddressDetail>
+        <City>Madrid</City>
+        <PostalCode>28004</PostalCode>
+        <Region>Desconhecido</Region>
+        <Country>PT</Country>
+      </BillingAddress>
+      <Telephone>Desconhecido</Telephone>
+      <Fax>Desconhecido</Fax>
+      <Email>Desconhecido</Email>
+      <Website>Desconhecido</Website>
+      <SelfBillingIndicator>0</SelfBillingIndicator>
+    </Customer>
+    <Customer>
+      <CustomerID>ALCAD.4</CustomerID>
+      <AccountID>Desconhecido</AccountID>
+      <CustomerTaxID>999999990</CustomerTaxID>
+      <CompanyName>Soluciones Cad de Madrid, SA</CompanyName>
+      <BillingAddress>
+        <BuildingNumber>Desconheci</BuildingNumber>
+        <StreetName>Passeo de Portugal</StreetName>
+        <AddressDetail>Soluciones Cad de Madrid, SA  Passeo de Portugal 4644  28004 Madrid</AddressDetail>
+        <City>Madrid</City>
+        <PostalCode>28004</PostalCode>
+        <Region>Desconhecido</Region>
+        <Country>PT</Country>
+      </BillingAddress>
+      <Telephone>Desconhecido</Telephone>
+      <Fax>Desconhecido</Fax>
+      <Email>Desconhecido</Email>
+      <Website>Desconhecido</Website>
+      <SelfBillingIndicator>0</SelfBillingIndicator>
+    </Customer>
+    <Customer>
+      <CustomerID>INFORSHOW.545192323</CustomerID>
+      <AccountID>Desconhecido</AccountID>
+      <CustomerTaxID>545192323</CustomerTaxID>
+      <CompanyName>Inforshow - Informática Comunicação, S.A.</CompanyName>
+      <BillingAddress>
+        <BuildingNumber>Desconheci</BuildingNumber>
+        <StreetName>Av. dos Coqueiros</StreetName>
+        <AddressDetail>Inforshow - Informática Comunicação, S.A.  Av. dos Coqueiros 464  1000-443 Lisboa</AddressDetail>
+        <City>Lisboa</City>
+        <PostalCode>1000-443</PostalCode>
+        <Region>Desconhecido</Region>
+        <Country>PT</Country>
+      </BillingAddress>
+      <Telephone>Desconhecido</Telephone>
+      <Fax>Desconhecido</Fax>
+      <Email>Desconhecido</Email>
+      <Website>Desconhecido</Website>
+      <SelfBillingIndicator>0</SelfBillingIndicator>
+    </Customer>
+    <Customer>
+      <CustomerID>JAMARAL.299372170</CustomerID>
+      <AccountID>Desconhecido</AccountID>
+      <CustomerTaxID>299372170</CustomerTaxID>
+      <CompanyName>Joana Amaral</CompanyName>
+      <BillingAddress>
+        <BuildingNumber>Desconheci</BuildingNumber>
+        <StreetName>Rua das Joanas</StreetName>
+        <AddressDetail>Joana Amaral  Rua das Joanas 234  1210-001 Lisboa</AddressDetail>
+        <City>Lisboa</City>
+        <PostalCode>1210-001</PostalCode>
+        <Region>Desconhecido</Region>
+        <Country>PT</Country>
+      </BillingAddress>
+      <Telephone>Desconhecido</Telephone>
+      <Fax>Desconhecido</Fax>
+      <Email>Desconhecido</Email>
+      <Website>Desconhecido</Website>
+      <SelfBillingIndicator>0</SelfBillingIndicator>
+    </Customer>
+    <Customer>
+      <CustomerID>JARAUJO.289176328</CustomerID>
+      <AccountID>Desconhecido</AccountID>
+      <CustomerTaxID>289176328</CustomerTaxID>
+      <CompanyName>Joaquim da Silva Araújo</CompanyName>
+      <BillingAddress>
+        <BuildingNumber>Desconheci</BuildingNumber>
+        <StreetName>Rua dos Joaquins</StreetName>
+        <AddressDetail>Joaquim da Silva Araújo  Rua dos Joaquins 65  1000-321 Lisboa</AddressDetail>
+        <City>Lisboa</City>
+        <PostalCode>1000-321</PostalCode>
+        <Region>Desconhecido</Region>
+        <Country>PT</Country>
+      </BillingAddress>
+      <Telephone>Desconhecido</Telephone>
+      <Fax>Desconhecido</Fax>
+      <Email>Desconhecido</Email>
+      <Website>Desconhecido</Website>
+      <SelfBillingIndicator>0</SelfBillingIndicator>
+    </Customer>
+    <Customer>
+      <CustomerID>JMF.575787341</CustomerID>
+      <AccountID>Desconhecido</AccountID>
+      <CustomerTaxID>575787341</CustomerTaxID>
+      <CompanyName>José Maria Fernandes &amp; Filhos, Lda.</CompanyName>
+      <BillingAddress>
+        <BuildingNumber>Desconheci</BuildingNumber>
+        <StreetName>Av. do Norte</StreetName>
+        <AddressDetail>José Maria Fernandes &amp; Filhos, Lda.  Av. do Norte 2148  4100-002 Porto</AddressDetail>
+        <City>Porto</City>
+        <PostalCode>4100-002</PostalCode>
+        <Region>Desconhecido</Region>
+        <Country>PT</Country>
+      </BillingAddress>
+      <Telephone>Desconhecido</Telephone>
+      <Fax>Desconhecido</Fax>
+      <Email>Desconhecido</Email>
+      <Website>Desconhecido</Website>
+      <SelfBillingIndicator>0</SelfBillingIndicator>
+    </Customer>
+    <Customer>
+      <CustomerID>LIMA.567732649</CustomerID>
+      <AccountID>Desconhecido</AccountID>
+      <CustomerTaxID>567732649</CustomerTaxID>
+      <CompanyName>Empreendimentos do Lima, Lda.</CompanyName>
+      <BillingAddress>
+        <BuildingNumber>Desconheci</BuildingNumber>
+        <StreetName>Empreendimentos do Lima, Lda.</StreetName>
+        <AddressDetail>Empreendimentos do Lima, Lda.  Empreendimentos do Lima, Lda. 100  4990-032 Ponte de Lima</AddressDetail>
+        <City>Ponte de Lima</City>
+        <PostalCode>4990-032</PostalCode>
+        <Region>Desconhecido</Region>
+        <Country>PT</Country>
+      </BillingAddress>
+      <Telephone>Desconhecido</Telephone>
+      <Fax>Desconhecido</Fax>
+      <Email>Desconhecido</Email>
+      <Website>Desconhecido</Website>
+      <SelfBillingIndicator>0</SelfBillingIndicator>
+    </Customer>
+    <Customer>
+      <CustomerID>NW-CORP.576839914</CustomerID>
+      <AccountID>Desconhecido</AccountID>
+      <CustomerTaxID>576839914</CustomerTaxID>
+      <CompanyName>NW - Electrónica e Sistemas, Lda.</CompanyName>
+      <BillingAddress>
+        <BuildingNumber>Desconheci</BuildingNumber>
+        <StreetName>Av. Estados Unidos América</StreetName>
+        <AddressDetail>Desconhecido</AddressDetail>
+        <City>Lisboa</City>
+        <PostalCode>1200-003</PostalCode>
+        <Region>Desconhecido</Region>
+        <Country>PT</Country>
+      </BillingAddress>
+      <Telephone>Desconhecido</Telephone>
+      <Fax>Desconhecido</Fax>
+      <Email>Desconhecido</Email>
+      <Website>Desconhecido</Website>
+      <SelfBillingIndicator>0</SelfBillingIndicator>
+    </Customer>
+    <Customer>
+      <CustomerID>SOFRIO.593362462</CustomerID>
+      <AccountID>Desconhecido</AccountID>
+      <CustomerTaxID>593362462</CustomerTaxID>
+      <CompanyName>Sofrio, Lda.</CompanyName>
+      <BillingAddress>
+        <BuildingNumber>Desconheci</BuildingNumber>
+        <StreetName>AV. DO ETERNO GELO</StreetName>
+        <AddressDetail>Sofrio, Lda.  AV. DO ETERNO GELO 8888  1000-001 Lisboa</AddressDetail>
+        <City>Lisboa</City>
+        <PostalCode>1000-001</PostalCode>
+        <Region>Desconhecido</Region>
+        <Country>PT</Country>
+      </BillingAddress>
+      <Telephone>Desconhecido</Telephone>
+      <Fax>Desconhecido</Fax>
+      <Email>Desconhecido</Email>
+      <Website>Desconhecido</Website>
+      <SelfBillingIndicator>0</SelfBillingIndicator>
+    </Customer>
+    <Product>
+      <ProductType>P</ProductType>
+      <ProductCode>ARECA</ProductCode>
+      <ProductGroup>Plantas</ProductGroup>
+      <ProductDescription>Palmeira areca em vaso grês</ProductDescription>
+      <ProductNumberCode>ARECA</ProductNumberCode>
+    </Product>
+    <Product>
+      <ProductType>P</ProductType>
+      <ProductCode>AZALEA</ProductCode>
+      <ProductGroup>Plantas</ProductGroup>
+      <ProductDescription>Azalea piramide em vaso de barro</ProductDescription>
+      <ProductNumberCode>AZALEA</ProductNumberCode>
+    </Product>
+    <Product>
+      <ProductType>P</ProductType>
+      <ProductCode>BLROSAS</ProductCode>
+      <ProductGroup>Flores</ProductGroup>
+      <ProductDescription>Bola de rosas encarnadas em base de madeira</ProductDescription>
+      <ProductNumberCode>BLROSAS</ProductNumberCode>
+    </Product>
+    <Product>
+      <ProductType>P</ProductType>
+      <ProductCode>BQROSAS</ProductCode>
+      <ProductGroup>Flores</ProductGroup>
+      <ProductDescription>Bouquet rosas encarnadas</ProductDescription>
+      <ProductNumberCode>BQROSAS</ProductNumberCode>
+    </Product>
+    <Product>
+      <ProductType>P</ProductType>
+      <ProductCode>BQROSASBR</ProductCode>
+      <ProductGroup>Flores</ProductGroup>
+      <ProductDescription>Bouquet de rosas brancas</ProductDescription>
+      <ProductNumberCode>BQROSASBR</ProductNumberCode>
+    </Product>
+    <Product>
+      <ProductType>P</ProductType>
+      <ProductCode>BQTULIPAS</ProductCode>
+      <ProductGroup>Flores</ProductGroup>
+      <ProductDescription>Bouquet de tulipas</ProductDescription>
+      <ProductNumberCode>BQTULIPAS</ProductNumberCode>
+    </Product>
+    <Product>
+      <ProductType>P</ProductType>
+      <ProductCode>CTPLANTAS</ProductCode>
+      <ProductGroup>Plantas</ProductGroup>
+      <ProductDescription>Cesto de plantas variadas</ProductDescription>
+      <ProductNumberCode>CTPLANTAS</ProductNumberCode>
+    </Product>
+    <Product>
+      <ProductType>P</ProductType>
+      <ProductCode>ZAMIOCULCA</ProductCode>
+      <ProductGroup>Plantas</ProductGroup>
+      <ProductDescription>Vaso com planta Zamioculca</ProductDescription>
+      <ProductNumberCode>ZAMIOCULCA</ProductNumberCode>
+    </Product>
+    <Product>
+      <ProductType>P</ProductType>
+      <ProductCode>FETH</ProductCode>
+      <ProductGroup>Sem família</ProductGroup>
+      <ProductDescription>Fire Emblem: Three Houses</ProductDescription>
+      <ProductNumberCode>FETH</ProductNumberCode>
+    </Product>
+    <Product>
+      <ProductType>P</ProductType>
+      <ProductCode>SMASHU</ProductCode>
+      <ProductGroup>Sem família</ProductGroup>
+      <ProductDescription>Super Smash Bros. Ultimate</ProductDescription>
+      <ProductNumberCode>SMASHU</ProductNumberCode>
+    </Product>
+    <Product>
+      <ProductType>P</ProductType>
+      <ProductCode>TLOZBOTW</ProductCode>
+      <ProductGroup>Sem família</ProductGroup>
+      <ProductDescription>The Legend of Zelda: Breath of the Wild</ProductDescription>
+      <ProductNumberCode>TLOZBOTW</ProductNumberCode>
+    </Product>
+    <Product>
+      <ProductType>P</ProductType>
+      <ProductCode>IBARG370</ProductCode>
+      <ProductGroup>Sem família</ProductGroup>
+      <ProductDescription>Ibanez RG370AHMZ-BMTStandard</ProductDescription>
+      <ProductNumberCode>IBARG370</ProductNumberCode>
+    </Product>
+    <Product>
+      <ProductType>P</ProductType>
+      <ProductCode>NSWITCH</ProductCode>
+      <ProductGroup>Sem família</ProductGroup>
+      <ProductDescription>Nintendo Switch Neon Blue</ProductDescription>
+      <ProductNumberCode>NSWITCH</ProductNumberCode>
+    </Product>
+    <Product>
+      <ProductType>P</ProductType>
+      <ProductCode>NSPROC</ProductCode>
+      <ProductGroup>Sem família</ProductGroup>
+      <ProductDescription>Nintendo Switch Pro Controller</ProductDescription>
+      <ProductNumberCode>NSPROC</ProductNumberCode>
+    </Product>
+    <TaxTable>
+      <TaxTableEntry>
+        <TaxType>IVA</TaxType>
+        <TaxCountryRegion>PT</TaxCountryRegion>
+        <TaxCode>NOR</TaxCode>
+        <Description>Taxa Normal</Description>
+        <TaxPercentage>23.000000</TaxPercentage>
+      </TaxTableEntry>
+      <TaxTableEntry>
+        <TaxType>IVA</TaxType>
+        <TaxCountryRegion>PT</TaxCountryRegion>
+        <TaxCode>ISE</TaxCode>
+        <Description>Isento</Description>
+        <TaxPercentage>0.000000</TaxPercentage>
+      </TaxTableEntry>
+      <TaxTableEntry>
+        <TaxType>IVA</TaxType>
+        <TaxCountryRegion>PT</TaxCountryRegion>
+        <TaxCode>RED</TaxCode>
+        <Description>Taxa Reduzida</Description>
+        <TaxPercentage>6.000000</TaxPercentage>
+      </TaxTableEntry>
+      <TaxTableEntry>
+        <TaxType>IVA</TaxType>
+        <TaxCountryRegion>PT</TaxCountryRegion>
+        <TaxCode>INT</TaxCode>
+        <Description>Taxa Intermédia</Description>
+        <TaxPercentage>13.000000</TaxPercentage>
+      </TaxTableEntry>
+      <TaxTableEntry>
+        <TaxType>IVA</TaxType>
+        <TaxCountryRegion>PT-MA</TaxCountryRegion>
+        <TaxCode>NOR</TaxCode>
+        <Description>Taxa Normal</Description>
+        <TaxPercentage>22.000000</TaxPercentage>
+      </TaxTableEntry>
+      <TaxTableEntry>
+        <TaxType>IVA</TaxType>
+        <TaxCountryRegion>PT-MA</TaxCountryRegion>
+        <TaxCode>ISE</TaxCode>
+        <Description>Isento</Description>
+        <TaxPercentage>0.000000</TaxPercentage>
+      </TaxTableEntry>
+      <TaxTableEntry>
+        <TaxType>IVA</TaxType>
+        <TaxCountryRegion>PT-MA</TaxCountryRegion>
+        <TaxCode>INT</TaxCode>
+        <Description>Taxa Intermédia</Description>
+        <TaxPercentage>12.000000</TaxPercentage>
+      </TaxTableEntry>
+      <TaxTableEntry>
+        <TaxType>IVA</TaxType>
+        <TaxCountryRegion>PT-MA</TaxCountryRegion>
+        <TaxCode>RED</TaxCode>
+        <Description>Taxa Reduzida</Description>
+        <TaxPercentage>5.000000</TaxPercentage>
+      </TaxTableEntry>
+      <TaxTableEntry>
+        <TaxType>IVA</TaxType>
+        <TaxCountryRegion>PT-AC</TaxCountryRegion>
+        <TaxCode>NOR</TaxCode>
+        <Description>Taxa Normal</Description>
+        <TaxPercentage>18.000000</TaxPercentage>
+      </TaxTableEntry>
+      <TaxTableEntry>
+        <TaxType>IVA</TaxType>
+        <TaxCountryRegion>PT-AC</TaxCountryRegion>
+        <TaxCode>ISE</TaxCode>
+        <Description>Isento</Description>
+        <TaxPercentage>0.000000</TaxPercentage>
+      </TaxTableEntry>
+      <TaxTableEntry>
+        <TaxType>IVA</TaxType>
+        <TaxCountryRegion>PT-AC</TaxCountryRegion>
+        <TaxCode>INT</TaxCode>
+        <Description>Taxa Intermédia</Description>
+        <TaxPercentage>9.000000</TaxPercentage>
+      </TaxTableEntry>
+      <TaxTableEntry>
+        <TaxType>IVA</TaxType>
+        <TaxCountryRegion>PT-AC</TaxCountryRegion>
+        <TaxCode>RED</TaxCode>
+        <Description>Taxa Reduzida</Description>
+        <TaxPercentage>4.000000</TaxPercentage>
+      </TaxTableEntry>
+    </TaxTable>
+  </MasterFiles>
+  <SourceDocuments>
+    <SalesInvoices>
+      <NumberOfEntries>18</NumberOfEntries>
+      <TotalDebit>0.000000</TotalDebit>
+      <TotalCredit>4733.460000</TotalCredit>
+      <Invoice>
+        <InvoiceNo>FA 2019/1</InvoiceNo>
+        <ATCUD>0</ATCUD>
+        <DocumentStatus>
+          <InvoiceStatus>N</InvoiceStatus>
+          <InvoiceStatusDate>2019-10-04T13:06:30</InvoiceStatusDate>
+          <SourceID>application-user::jasmin-apite</SourceID>
+          <SourceBilling>P</SourceBilling>
+        </DocumentStatus>
+        <Hash>S9JgnjJqVZqJRdZtLDrKZZJ8mELeEH3yF4RDEHWmHq/GBjIu90BCvdcFwpXN0BW5ImGKWlfG96X/krry+atHZxUVV2oR5nKsi2lBFrGaQ0Jjzb+AjNs44a/yD7oTA7BRiz80AVaGoTlPsGTggGOZLBr++mlx5dFiqdaWZkc+W3Y=</Hash>
+        <HashControl>1</HashControl>
+        <Period>01</Period>
+        <InvoiceDate>2019-01-11</InvoiceDate>
+        <InvoiceType>FT</InvoiceType>
+        <SpecialRegimes>
+          <SelfBillingIndicator>0</SelfBillingIndicator>
+          <CashVATSchemeIndicator>0</CashVATSchemeIndicator>
+          <ThirdPartiesBillingIndicator>0</ThirdPartiesBillingIndicator>
+        </SpecialRegimes>
+        <SourceID>application-user::jasmin-apite</SourceID>
+        <SystemEntryDate>2019-10-04T13:06:30</SystemEntryDate>
+        <CustomerID>SOFRIO.593362462</CustomerID>
+        <ShipTo>
+          <Address>
+            <StreetName>AV. DO ETERNO GELO</StreetName>
+            <AddressDetail>Your Address AV. DO ETERNO GELO 8888  1000-001 Lisboa</AddressDetail>
+            <City>Lisboa</City>
+            <PostalCode>1000-001</PostalCode>
+            <Region>Desconhecido</Region>
+            <Country>PT</Country>
+          </Address>
+        </ShipTo>
+        <ShipFrom>
+          <Address>
+            <StreetName>Rua Dr. Egídio Guimarães</StreetName>
+            <AddressDetail>Our Address Rua Dr. Egídio Guimarães N 74  4700-006 Braga</AddressDetail>
+            <City>Braga</City>
+            <PostalCode>4700-006</PostalCode>
+            <Region>Desconhecido</Region>
+            <Country>PT</Country>
+          </Address>
+        </ShipFrom>
+        <MovementStartTime>2019-10-04T15:08:29</MovementStartTime>
+        <Line>
+          <LineNumber>1</LineNumber>
+          <ProductCode>ARECA</ProductCode>
+          <ProductDescription>Palmeira areca em vaso grês</ProductDescription>
+          <Quantity>1.000000</Quantity>
+          <UnitOfMeasure>UN</UnitOfMeasure>
+          <UnitPrice>65.000000</UnitPrice>
+          <TaxPointDate>2019-10-04</TaxPointDate>
+          <Description>Palmeira areca em vaso grês</Description>
+          <CreditAmount>65.000000</CreditAmount>
+          <Tax>
+            <TaxType>IVA</TaxType>
+            <TaxCountryRegion>PT</TaxCountryRegion>
+            <TaxCode>NOR</TaxCode>
+            <TaxPercentage>23.000000</TaxPercentage>
+          </Tax>
+          <SettlementAmount>0.000000</SettlementAmount>
+        </Line>
+        <Line>
+          <LineNumber>2</LineNumber>
+          <ProductCode>BQROSAS</ProductCode>
+          <ProductDescription>Bouquet rosas encarnadas</ProductDescription>
+          <Quantity>1.000000</Quantity>
+          <UnitOfMeasure>UN</UnitOfMeasure>
+          <UnitPrice>50.000000</UnitPrice>
+          <TaxPointDate>2019-10-04</TaxPointDate>
+          <Description>Bouquet rosas encarnadas</Description>
+          <CreditAmount>50.000000</CreditAmount>
+          <Tax>
+            <TaxType>IVA</TaxType>
+            <TaxCountryRegion>PT</TaxCountryRegion>
+            <TaxCode>NOR</TaxCode>
+            <TaxPercentage>23.000000</TaxPercentage>
+          </Tax>
+          <SettlementAmount>0.000000</SettlementAmount>
+        </Line>
+        <DocumentTotals>
+          <TaxPayable>26.45</TaxPayable>
+          <NetTotal>115.00</NetTotal>
+          <GrossTotal>141.45</GrossTotal>
+        </DocumentTotals>
+        <WithholdingTax>
+          <WithholdingTaxAmount>0.000000</WithholdingTaxAmount>
+        </WithholdingTax>
+      </Invoice>
+      <Invoice>
+        <InvoiceNo>FA 2019/2</InvoiceNo>
+        <ATCUD>0</ATCUD>
+        <DocumentStatus>
+          <InvoiceStatus>N</InvoiceStatus>
+          <InvoiceStatusDate>2019-10-04T13:06:34</InvoiceStatusDate>
+          <SourceID>application-user::jasmin-apite</SourceID>
+          <SourceBilling>P</SourceBilling>
+        </DocumentStatus>
+        <Hash>jSg7vsCPaJAF2W5v2qDNu0IPxk4vYsIFXX0SHSejV7UxyCZy2MyMHZtVDlvMY+Z5Mhn4BQ3tqCH0HBTaCf8mFkxUHeXHP2USmxYZnEd2nXDhbbveTjgVRQWQ0/jsYwSPwOqCNeoykS02jMKmv4yXfcWzrloyAG2c8nSfqV2Wia4=</Hash>
+        <HashControl>1</HashControl>
+        <Period>01</Period>
+        <InvoiceDate>2019-01-12</InvoiceDate>
+        <InvoiceType>FT</InvoiceType>
+        <SpecialRegimes>
+          <SelfBillingIndicator>0</SelfBillingIndicator>
+          <CashVATSchemeIndicator>0</CashVATSchemeIndicator>
+          <ThirdPartiesBillingIndicator>0</ThirdPartiesBillingIndicator>
+        </SpecialRegimes>
+        <SourceID>application-user::jasmin-apite</SourceID>
+        <SystemEntryDate>2019-10-04T13:06:33</SystemEntryDate>
+        <CustomerID>SOFRIO.593362462</CustomerID>
+        <ShipTo>
+          <Address>
+            <StreetName>AV. DO ETERNO GELO</StreetName>
+            <AddressDetail>Your Address AV. DO ETERNO GELO 8888  1000-001 Lisboa</AddressDetail>
+            <City>Lisboa</City>
+            <PostalCode>1000-001</PostalCode>
+            <Region>Desconhecido</Region>
+            <Country>PT</Country>
+          </Address>
+        </ShipTo>
+        <ShipFrom>
+          <Address>
+            <StreetName>Rua Dr. Egídio Guimarães</StreetName>
+            <AddressDetail>Our Address Rua Dr. Egídio Guimarães N 74  4700-006 Braga</AddressDetail>
+            <City>Braga</City>
+            <PostalCode>4700-006</PostalCode>
+            <Region>Desconhecido</Region>
+            <Country>PT</Country>
+          </Address>
+        </ShipFrom>
+        <MovementStartTime>2019-10-04T15:08:32</MovementStartTime>
+        <Line>
+          <LineNumber>1</LineNumber>
+          <ProductCode>BQTULIPAS</ProductCode>
+          <ProductDescription>Bouquet de tulipas</ProductDescription>
+          <Quantity>1.000000</Quantity>
+          <UnitOfMeasure>UN</UnitOfMeasure>
+          <UnitPrice>45.000000</UnitPrice>
+          <TaxPointDate>2019-10-04</TaxPointDate>
+          <Description>Bouquet de tulipas</Description>
+          <CreditAmount>45.000000</CreditAmount>
+          <Tax>
+            <TaxType>IVA</TaxType>
+            <TaxCountryRegion>PT</TaxCountryRegion>
+            <TaxCode>NOR</TaxCode>
+            <TaxPercentage>23.000000</TaxPercentage>
+          </Tax>
+          <SettlementAmount>0.000000</SettlementAmount>
+        </Line>
+        <DocumentTotals>
+          <TaxPayable>10.35</TaxPayable>
+          <NetTotal>45.00</NetTotal>
+          <GrossTotal>55.35</GrossTotal>
+        </DocumentTotals>
+        <WithholdingTax>
+          <WithholdingTaxAmount>0.000000</WithholdingTaxAmount>
+        </WithholdingTax>
+      </Invoice>
+      <Invoice>
+        <InvoiceNo>FA 2019/3</InvoiceNo>
+        <ATCUD>0</ATCUD>
+        <DocumentStatus>
+          <InvoiceStatus>N</InvoiceStatus>
+          <InvoiceStatusDate>2019-10-04T13:06:37</InvoiceStatusDate>
+          <SourceID>application-user::jasmin-apite</SourceID>
+          <SourceBilling>P</SourceBilling>
+        </DocumentStatus>
+        <Hash>W9InVjLw7pTtlzSqO+O/+ro1CC9/yR9uaqUIUvz4PZvSyRgn1SarUW1laoe3CXevhvvkIACcL4Q0Y+nk22V0YQW6nXCTzGRbXGP7hwIdKOaMzdiq8YYWlbyl1Em8bRvNhkycnRM9UepWn5IAJaUHI/HBEWBC7ZPTuWoU73vwW8w=</Hash>
+        <HashControl>1</HashControl>
+        <Period>02</Period>
+        <InvoiceDate>2019-02-25</InvoiceDate>
+        <InvoiceType>FT</InvoiceType>
+        <SpecialRegimes>
+          <SelfBillingIndicator>0</SelfBillingIndicator>
+          <CashVATSchemeIndicator>0</CashVATSchemeIndicator>
+          <ThirdPartiesBillingIndicator>0</ThirdPartiesBillingIndicator>
+        </SpecialRegimes>
+        <SourceID>application-user::jasmin-apite</SourceID>
+        <SystemEntryDate>2019-10-04T13:06:37</SystemEntryDate>
+        <CustomerID>JMF.575787341</CustomerID>
+        <ShipTo>
+          <Address>
+            <StreetName>Av. do Norte</StreetName>
+            <AddressDetail>Your Address Av. do Norte 2148  4100-002 Porto</AddressDetail>
+            <City>Porto</City>
+            <PostalCode>4100-002</PostalCode>
+            <Region>Desconhecido</Region>
+            <Country>PT</Country>
+          </Address>
+        </ShipTo>
+        <ShipFrom>
+          <Address>
+            <StreetName>Rua Dr. Egídio Guimarães</StreetName>
+            <AddressDetail>Our Address Rua Dr. Egídio Guimarães N 74  4700-006 Braga</AddressDetail>
+            <City>Braga</City>
+            <PostalCode>4700-006</PostalCode>
+            <Region>Desconhecido</Region>
+            <Country>PT</Country>
+          </Address>
+        </ShipFrom>
+        <MovementStartTime>2019-10-04T15:08:36</MovementStartTime>
+        <Line>
+          <LineNumber>1</LineNumber>
+          <ProductCode>ZAMIOCULCA</ProductCode>
+          <ProductDescription>Vaso com planta Zamioculca</ProductDescription>
+          <Quantity>1.000000</Quantity>
+          <UnitOfMeasure>UN</UnitOfMeasure>
+          <UnitPrice>70.000000</UnitPrice>
+          <TaxPointDate>2019-10-04</TaxPointDate>
+          <Description>Vaso com planta Zamioculca</Description>
+          <CreditAmount>70.000000</CreditAmount>
+          <Tax>
+            <TaxType>IVA</TaxType>
+            <TaxCountryRegion>PT</TaxCountryRegion>
+            <TaxCode>NOR</TaxCode>
+            <TaxPercentage>23.000000</TaxPercentage>
+          </Tax>
+          <SettlementAmount>0.000000</SettlementAmount>
+        </Line>
+        <DocumentTotals>
+          <TaxPayable>16.10</TaxPayable>
+          <NetTotal>70.00</NetTotal>
+          <GrossTotal>86.10</GrossTotal>
+        </DocumentTotals>
+        <WithholdingTax>
+          <WithholdingTaxAmount>0.000000</WithholdingTaxAmount>
+        </WithholdingTax>
+      </Invoice>
+      <Invoice>
+        <InvoiceNo>FA 2019/4</InvoiceNo>
+        <ATCUD>0</ATCUD>
+        <DocumentStatus>
+          <InvoiceStatus>N</InvoiceStatus>
+          <InvoiceStatusDate>2019-10-04T13:06:40</InvoiceStatusDate>
+          <SourceID>application-user::jasmin-apite</SourceID>
+          <SourceBilling>P</SourceBilling>
+        </DocumentStatus>
+        <Hash>X9OBYJReXKPuc9gyXlwVAg0+sF0DEE2xO1yiHp5Jd4Z0NSATau8LNdgi+sxo3bvwgsy7847Nag8Iya3CaZRvftEatJJ8BU6GLM2RVQ9PThG6TFYOtKVUEx16FErHLRo+W8QAZWnI/lNqhvK81TeKGQJmmQosT79r6pvXNasvpNA=</Hash>
+        <HashControl>1</HashControl>
+        <Period>03</Period>
+        <InvoiceDate>2019-03-25</InvoiceDate>
+        <InvoiceType>FT</InvoiceType>
+        <SpecialRegimes>
+          <SelfBillingIndicator>0</SelfBillingIndicator>
+          <CashVATSchemeIndicator>0</CashVATSchemeIndicator>
+          <ThirdPartiesBillingIndicator>0</ThirdPartiesBillingIndicator>
+        </SpecialRegimes>
+        <SourceID>application-user::jasmin-apite</SourceID>
+        <SystemEntryDate>2019-10-04T13:06:40</SystemEntryDate>
+        <CustomerID>ALCAD.2</CustomerID>
+        <ShipTo>
+          <Address>
+            <StreetName>Passeo de Portugal</StreetName>
+            <AddressDetail>Your Address Passeo de Portugal 4644  28004 Madrid</AddressDetail>
+            <City>Madrid</City>
+            <PostalCode>28004</PostalCode>
+            <Region>Desconhecido</Region>
+            <Country>PT</Country>
+          </Address>
+        </ShipTo>
+        <ShipFrom>
+          <Address>
+            <StreetName>Rua Dr. Egídio Guimarães</StreetName>
+            <AddressDetail>Our Address Rua Dr. Egídio Guimarães N 74  4700-006 Braga</AddressDetail>
+            <City>Braga</City>
+            <PostalCode>4700-006</PostalCode>
+            <Region>Desconhecido</Region>
+            <Country>PT</Country>
+          </Address>
+        </ShipFrom>
+        <MovementStartTime>2019-10-04T15:08:39</MovementStartTime>
+        <Line>
+          <LineNumber>1</LineNumber>
+          <ProductCode>ZAMIOCULCA</ProductCode>
+          <ProductDescription>Vaso com planta Zamioculca</ProductDescription>
+          <Quantity>1.000000</Quantity>
+          <UnitOfMeasure>UN</UnitOfMeasure>
+          <UnitPrice>70.000000</UnitPrice>
+          <TaxPointDate>2019-10-04</TaxPointDate>
+          <Description>Vaso com planta Zamioculca</Description>
+          <CreditAmount>70.000000</CreditAmount>
+          <Tax>
+            <TaxType>IVA</TaxType>
+            <TaxCountryRegion>PT</TaxCountryRegion>
+            <TaxCode>NOR</TaxCode>
+            <TaxPercentage>23.000000</TaxPercentage>
+          </Tax>
+          <SettlementAmount>0.000000</SettlementAmount>
+        </Line>
+        <DocumentTotals>
+          <TaxPayable>16.10</TaxPayable>
+          <NetTotal>70.00</NetTotal>
+          <GrossTotal>86.10</GrossTotal>
+        </DocumentTotals>
+        <WithholdingTax>
+          <WithholdingTaxAmount>0.000000</WithholdingTaxAmount>
+        </WithholdingTax>
+      </Invoice>
+      <Invoice>
+        <InvoiceNo>FA 2019/5</InvoiceNo>
+        <ATCUD>0</ATCUD>
+        <DocumentStatus>
+          <InvoiceStatus>N</InvoiceStatus>
+          <InvoiceStatusDate>2019-10-04T13:06:44</InvoiceStatusDate>
+          <SourceID>application-user::jasmin-apite</SourceID>
+          <SourceBilling>P</SourceBilling>
+        </DocumentStatus>
+        <Hash>jYaOlnT7p/cL5b2jkOhACX2yRBjFeYz4ZgbqZSlS+uFxiquGfW3fDWBHhKTNwJuQji2jE8wX5OuB6c+5QER5IF4ez2gWc8eatYjIGeSzq3OLy0cTKk7F+BJNnCchWrHnesmpyabR8Vn/C67P0dlKQq5baASVuUtxt7YmIcbqGhs=</Hash>
+        <HashControl>1</HashControl>
+        <Period>04</Period>
+        <InvoiceDate>2019-04-29</InvoiceDate>
+        <InvoiceType>FT</InvoiceType>
+        <SpecialRegimes>
+          <SelfBillingIndicator>0</SelfBillingIndicator>
+          <CashVATSchemeIndicator>0</CashVATSchemeIndicator>
+          <ThirdPartiesBillingIndicator>0</ThirdPartiesBillingIndicator>
+        </SpecialRegimes>
+        <SourceID>application-user::jasmin-apite</SourceID>
+        <SystemEntryDate>2019-10-04T13:06:43</SystemEntryDate>
+        <CustomerID>NW-CORP.576839914</CustomerID>
+        <ShipTo>
+          <Address>
+            <StreetName>Av. Estados Unidos América</StreetName>
+            <AddressDetail>Your Address Av. Estados Unidos América 44773  1200-003 Lisboa</AddressDetail>
+            <City>Lisboa</City>
+            <PostalCode>1200-003</PostalCode>
+            <Region>Desconhecido</Region>
+            <Country>PT</Country>
+          </Address>
+        </ShipTo>
+        <ShipFrom>
+          <Address>
+            <StreetName>Rua Dr. Egídio Guimarães</StreetName>
+            <AddressDetail>Our Address Rua Dr. Egídio Guimarães N 74  4700-006 Braga</AddressDetail>
+            <City>Braga</City>
+            <PostalCode>4700-006</PostalCode>
+            <Region>Desconhecido</Region>
+            <Country>PT</Country>
+          </Address>
+        </ShipFrom>
+        <MovementStartTime>2019-10-04T15:08:42</MovementStartTime>
+        <Line>
+          <LineNumber>1</LineNumber>
+          <ProductCode>ARECA</ProductCode>
+          <ProductDescription>Palmeira areca em vaso grês</ProductDescription>
+          <Quantity>1.000000</Quantity>
+          <UnitOfMeasure>UN</UnitOfMeasure>
+          <UnitPrice>65.000000</UnitPrice>
+          <TaxPointDate>2019-10-04</TaxPointDate>
+          <Description>Palmeira areca em vaso grês</Description>
+          <CreditAmount>65.000000</CreditAmount>
+          <Tax>
+            <TaxType>IVA</TaxType>
+            <TaxCountryRegion>PT</TaxCountryRegion>
+            <TaxCode>NOR</TaxCode>
+            <TaxPercentage>23.000000</TaxPercentage>
+          </Tax>
+          <SettlementAmount>0.000000</SettlementAmount>
+        </Line>
+        <DocumentTotals>
+          <TaxPayable>14.95</TaxPayable>
+          <NetTotal>65.00</NetTotal>
+          <GrossTotal>79.95</GrossTotal>
+        </DocumentTotals>
+        <WithholdingTax>
+          <WithholdingTaxAmount>0.000000</WithholdingTaxAmount>
+        </WithholdingTax>
+      </Invoice>
+      <Invoice>
+        <InvoiceNo>FR 2019/1</InvoiceNo>
+        <ATCUD>0</ATCUD>
+        <DocumentStatus>
+          <InvoiceStatus>N</InvoiceStatus>
+          <InvoiceStatusDate>2019-10-04T13:06:47</InvoiceStatusDate>
+          <SourceID>application-user::jasmin-apite</SourceID>
+          <SourceBilling>P</SourceBilling>
+        </DocumentStatus>
+        <Hash>Vd81lkLvTjAHMdFNfqm3xtMNs80Bt7Vi3bzDinyHXC/IiKpmLzRDQRJV8eVs/MYvIBMnrhxFGjdsrsnF3L4+JdKZQ9w3n8On8yHCIuOXO7kw9sI/moWsyWS0fjspbdnFr4k32Vap1cPgwMlQG5455yuzQ3+qixone1NKMEPPsT8=</Hash>
+        <HashControl>1</HashControl>
+        <Period>05</Period>
+        <InvoiceDate>2019-05-08</InvoiceDate>
+        <InvoiceType>FR</InvoiceType>
+        <SpecialRegimes>
+          <SelfBillingIndicator>0</SelfBillingIndicator>
+          <CashVATSchemeIndicator>0</CashVATSchemeIndicator>
+          <ThirdPartiesBillingIndicator>0</ThirdPartiesBillingIndicator>
+        </SpecialRegimes>
+        <SourceID>application-user::jasmin-apite</SourceID>
+        <SystemEntryDate>2019-10-04T13:06:47</SystemEntryDate>
+        <CustomerID>JAMARAL.299372170</CustomerID>
+        <ShipTo>
+          <Address>
+            <StreetName>Rua das Joanas</StreetName>
+            <AddressDetail>Your Address Rua das Joanas 234  1210-001 Lisboa</AddressDetail>
+            <City>Lisboa</City>
+            <PostalCode>1210-001</PostalCode>
+            <Region>Desconhecido</Region>
+            <Country>PT</Country>
+          </Address>
+        </ShipTo>
+        <ShipFrom>
+          <Address>
+            <StreetName>Rua Dr. Egídio Guimarães</StreetName>
+            <AddressDetail>Our Address Rua Dr. Egídio Guimarães N 74  4700-006 Braga</AddressDetail>
+            <City>Braga</City>
+            <PostalCode>4700-006</PostalCode>
+            <Region>Desconhecido</Region>
+            <Country>PT</Country>
+          </Address>
+        </ShipFrom>
+        <MovementStartTime>2019-10-04T15:08:46</MovementStartTime>
+        <Line>
+          <LineNumber>1</LineNumber>
+          <ProductCode>AZALEA</ProductCode>
+          <ProductDescription>Azalea piramide em vaso de barro</ProductDescription>
+          <Quantity>1.000000</Quantity>
+          <UnitOfMeasure>UN</UnitOfMeasure>
+          <UnitPrice>32.520000</UnitPrice>
+          <TaxPointDate>2019-10-04</TaxPointDate>
+          <Description>Azalea piramide em vaso de barro</Description>
+          <CreditAmount>32.520000</CreditAmount>
+          <Tax>
+            <TaxType>IVA</TaxType>
+            <TaxCountryRegion>PT</TaxCountryRegion>
+            <TaxCode>NOR</TaxCode>
+            <TaxPercentage>23.000000</TaxPercentage>
+          </Tax>
+          <SettlementAmount>0.000000</SettlementAmount>
+        </Line>
+        <DocumentTotals>
+          <TaxPayable>7.48</TaxPayable>
+          <NetTotal>32.52</NetTotal>
+          <GrossTotal>40.00</GrossTotal>
+        </DocumentTotals>
+        <WithholdingTax>
+          <WithholdingTaxAmount>0.000000</WithholdingTaxAmount>
+        </WithholdingTax>
+      </Invoice>
+      <Invoice>
+        <InvoiceNo>FR 2019/2</InvoiceNo>
+        <ATCUD>0</ATCUD>
+        <DocumentStatus>
+          <InvoiceStatus>N</InvoiceStatus>
+          <InvoiceStatusDate>2019-10-04T13:06:51</InvoiceStatusDate>
+          <SourceID>application-user::jasmin-apite</SourceID>
+          <SourceBilling>P</SourceBilling>
+        </DocumentStatus>
+        <Hash>I9Fz/0ix0oF+8BwVIyMJ8mTMEBeaLZgfM3tg/VyInnuqq9wVRgPEXvoGubWkl1oODGZelUaQlsOnc8GLbMi1KqlUTUQLnsOMZiLtWGuCa+4BrTYqCxkfP7TGBSIk56vpq/6bL8ADhc3dSEeeJl4ODbCMi3ZhuabH4coV/VSj1rQ=</Hash>
+        <HashControl>1</HashControl>
+        <Period>06</Period>
+        <InvoiceDate>2019-06-11</InvoiceDate>
+        <InvoiceType>FR</InvoiceType>
+        <SpecialRegimes>
+          <SelfBillingIndicator>0</SelfBillingIndicator>
+          <CashVATSchemeIndicator>0</CashVATSchemeIndicator>
+          <ThirdPartiesBillingIndicator>0</ThirdPartiesBillingIndicator>
+        </SpecialRegimes>
+        <SourceID>application-user::jasmin-apite</SourceID>
+        <SystemEntryDate>2019-10-04T13:06:51</SystemEntryDate>
+        <CustomerID>JARAUJO.289176328</CustomerID>
+        <ShipTo>
+          <Address>
+            <StreetName>Rua dos Joaquins</StreetName>
+            <AddressDetail>Your Address Rua dos Joaquins 65  1000-321 Lisboa</AddressDetail>
+            <City>Lisboa</City>
+            <PostalCode>1000-321</PostalCode>
+            <Region>Desconhecido</Region>
+            <Country>PT</Country>
+          </Address>
+        </ShipTo>
+        <ShipFrom>
+          <Address>
+            <StreetName>Rua Dr. Egídio Guimarães</StreetName>
+            <AddressDetail>Our Address Rua Dr. Egídio Guimarães N 74  4700-006 Braga</AddressDetail>
+            <City>Braga</City>
+            <PostalCode>4700-006</PostalCode>
+            <Region>Desconhecido</Region>
+            <Country>PT</Country>
+          </Address>
+        </ShipFrom>
+        <MovementStartTime>2019-10-04T15:08:50</MovementStartTime>
+        <Line>
+          <LineNumber>1</LineNumber>
+          <ProductCode>BLROSAS</ProductCode>
+          <ProductDescription>Bola de rosas encarnadas em base de madeira</ProductDescription>
+          <Quantity>1.000000</Quantity>
+          <UnitOfMeasure>UN</UnitOfMeasure>
+          <UnitPrice>97.560000</UnitPrice>
+          <TaxPointDate>2019-10-04</TaxPointDate>
+          <Description>Bola de rosas encarnadas em base de madeira</Description>
+          <CreditAmount>97.560000</CreditAmount>
+          <Tax>
+            <TaxType>IVA</TaxType>
+            <TaxCountryRegion>PT</TaxCountryRegion>
+            <TaxCode>NOR</TaxCode>
+            <TaxPercentage>23.000000</TaxPercentage>
+          </Tax>
+          <SettlementAmount>0.000000</SettlementAmount>
+        </Line>
+        <DocumentTotals>
+          <TaxPayable>22.44</TaxPayable>
+          <NetTotal>97.56</NetTotal>
+          <GrossTotal>120.00</GrossTotal>
+        </DocumentTotals>
+        <WithholdingTax>
+          <WithholdingTaxAmount>0.000000</WithholdingTaxAmount>
+        </WithholdingTax>
+      </Invoice>
+      <Invoice>
+        <InvoiceNo>FR 2019/3</InvoiceNo>
+        <ATCUD>0</ATCUD>
+        <DocumentStatus>
+          <InvoiceStatus>N</InvoiceStatus>
+          <InvoiceStatusDate>2019-10-04T13:06:55</InvoiceStatusDate>
+          <SourceID>application-user::jasmin-apite</SourceID>
+          <SourceBilling>P</SourceBilling>
+        </DocumentStatus>
+        <Hash>ZFXJ/bwsjTc7tOq5MWp4lp5x12wrmjZ1j3hBokuiVJXdRQ/y23dB5k6aXppiNONLbP05vdCAhN3hxYrXkkxisj+p2otXVvpIOJhL3JKds7o4H79mU979pp7iTZHedNmb2p94pcKZxLJU7oAdVkNiN6y6RXUriwlS+BSfaJsXdhU=</Hash>
+        <HashControl>1</HashControl>
+        <Period>07</Period>
+        <InvoiceDate>2019-07-15</InvoiceDate>
+        <InvoiceType>FR</InvoiceType>
+        <SpecialRegimes>
+          <SelfBillingIndicator>0</SelfBillingIndicator>
+          <CashVATSchemeIndicator>0</CashVATSchemeIndicator>
+          <ThirdPartiesBillingIndicator>0</ThirdPartiesBillingIndicator>
+        </SpecialRegimes>
+        <SourceID>application-user::jasmin-apite</SourceID>
+        <SystemEntryDate>2019-10-04T13:06:55</SystemEntryDate>
+        <CustomerID>INFORSHOW.545192323</CustomerID>
+        <ShipTo>
+          <Address>
+            <StreetName>Av. dos Coqueiros</StreetName>
+            <AddressDetail>Your Address Av. dos Coqueiros 464  1000-443 Lisboa</AddressDetail>
+            <City>Lisboa</City>
+            <PostalCode>1000-443</PostalCode>
+            <Region>Desconhecido</Region>
+            <Country>PT</Country>
+          </Address>
+        </ShipTo>
+        <ShipFrom>
+          <Address>
+            <StreetName>Rua Dr. Egídio Guimarães</StreetName>
+            <AddressDetail>Our Address Rua Dr. Egídio Guimarães N 74  4700-006 Braga</AddressDetail>
+            <City>Braga</City>
+            <PostalCode>4700-006</PostalCode>
+            <Region>Desconhecido</Region>
+            <Country>PT</Country>
+          </Address>
+        </ShipFrom>
+        <MovementStartTime>2019-10-04T15:08:53</MovementStartTime>
+        <Line>
+          <LineNumber>1</LineNumber>
+          <ProductCode>BQROSASBR</ProductCode>
+          <ProductDescription>Bouquet de rosas brancas</ProductDescription>
+          <Quantity>1.000000</Quantity>
+          <UnitOfMeasure>UN</UnitOfMeasure>
+          <UnitPrice>40.650000</UnitPrice>
+          <TaxPointDate>2019-10-04</TaxPointDate>
+          <Description>Bouquet de rosas brancas</Description>
+          <CreditAmount>40.650000</CreditAmount>
+          <Tax>
+            <TaxType>IVA</TaxType>
+            <TaxCountryRegion>PT</TaxCountryRegion>
+            <TaxCode>NOR</TaxCode>
+            <TaxPercentage>23.000000</TaxPercentage>
+          </Tax>
+          <SettlementAmount>0.000000</SettlementAmount>
+        </Line>
+        <Line>
+          <LineNumber>2</LineNumber>
+          <ProductCode>CTPLANTAS</ProductCode>
+          <ProductDescription>Cesto de plantas variadas</ProductDescription>
+          <Quantity>1.000000</Quantity>
+          <UnitOfMeasure>UN</UnitOfMeasure>
+          <UnitPrice>48.780000</UnitPrice>
+          <TaxPointDate>2019-10-04</TaxPointDate>
+          <Description>Cesto de plantas variadas</Description>
+          <CreditAmount>48.780000</CreditAmount>
+          <Tax>
+            <TaxType>IVA</TaxType>
+            <TaxCountryRegion>PT</TaxCountryRegion>
+            <TaxCode>NOR</TaxCode>
+            <TaxPercentage>23.000000</TaxPercentage>
+          </Tax>
+          <SettlementAmount>0.000000</SettlementAmount>
+        </Line>
+        <DocumentTotals>
+          <TaxPayable>20.57</TaxPayable>
+          <NetTotal>89.43</NetTotal>
+          <GrossTotal>110.00</GrossTotal>
+        </DocumentTotals>
+        <WithholdingTax>
+          <WithholdingTaxAmount>0.000000</WithholdingTaxAmount>
+        </WithholdingTax>
+      </Invoice>
+      <Invoice>
+        <InvoiceNo>FR 2019/4</InvoiceNo>
+        <ATCUD>0</ATCUD>
+        <DocumentStatus>
+          <InvoiceStatus>N</InvoiceStatus>
+          <InvoiceStatusDate>2019-10-04T13:10:28</InvoiceStatusDate>
+          <SourceID>application-user::jasmin-apite</SourceID>
+          <SourceBilling>P</SourceBilling>
+        </DocumentStatus>
+        <Hash>ILreoUjX0yJlwMIQgw6sQp0tNq5YAVwpIyGzWVSwUZrLSwJLWiuCH9JRTIptiJPC/iMdPPnbo+oSi6hK8YYO/7VfewQMQWpMDCEVd3r7oWOa6N38tdjWOJMiVAcgHhva0J7rYPTau+RRqhJ/j+nGvvYWVmBfAd4ImHbn2ZnwGbE=</Hash>
+        <HashControl>1</HashControl>
+        <Period>09</Period>
+        <InvoiceDate>2019-09-11</InvoiceDate>
+        <InvoiceType>FR</InvoiceType>
+        <SpecialRegimes>
+          <SelfBillingIndicator>0</SelfBillingIndicator>
+          <CashVATSchemeIndicator>0</CashVATSchemeIndicator>
+          <ThirdPartiesBillingIndicator>0</ThirdPartiesBillingIndicator>
+        </SpecialRegimes>
+        <SourceID>application-user::jasmin-apite</SourceID>
+        <SystemEntryDate>2019-10-04T13:10:28</SystemEntryDate>
+        <CustomerID>INFORSHOW.545192323</CustomerID>
+        <ShipTo>
+          <Address>
+            <StreetName>Av. dos Coqueiros</StreetName>
+            <AddressDetail>Your Address Av. dos Coqueiros 464  1000-443 Lisboa</AddressDetail>
+            <City>Lisboa</City>
+            <PostalCode>1000-443</PostalCode>
+            <Region>Desconhecido</Region>
+            <Country>PT</Country>
+          </Address>
+        </ShipTo>
+        <ShipFrom>
+          <Address>
+            <StreetName>Rua Dr. Egídio Guimarães</StreetName>
+            <AddressDetail>Our Address Rua Dr. Egídio Guimarães N 74  4700-006 Braga</AddressDetail>
+            <City>Braga</City>
+            <PostalCode>4700-006</PostalCode>
+            <Region>Desconhecido</Region>
+            <Country>PT</Country>
+          </Address>
+        </ShipFrom>
+        <MovementStartTime>2019-10-04T15:12:26</MovementStartTime>
+        <Line>
+          <LineNumber>1</LineNumber>
+          <ProductCode>BQROSASBR</ProductCode>
+          <ProductDescription>Bouquet de rosas brancas</ProductDescription>
+          <Quantity>1.000000</Quantity>
+          <UnitOfMeasure>UN</UnitOfMeasure>
+          <UnitPrice>40.650000</UnitPrice>
+          <TaxPointDate>2019-10-04</TaxPointDate>
+          <Description>Bouquet de rosas brancas</Description>
+          <CreditAmount>40.650000</CreditAmount>
+          <Tax>
+            <TaxType>IVA</TaxType>
+            <TaxCountryRegion>PT</TaxCountryRegion>
+            <TaxCode>NOR</TaxCode>
+            <TaxPercentage>23.000000</TaxPercentage>
+          </Tax>
+          <SettlementAmount>0.000000</SettlementAmount>
+        </Line>
+        <Line>
+          <LineNumber>2</LineNumber>
+          <ProductCode>CTPLANTAS</ProductCode>
+          <ProductDescription>Cesto de plantas variadas</ProductDescription>
+          <Quantity>1.000000</Quantity>
+          <UnitOfMeasure>UN</UnitOfMeasure>
+          <UnitPrice>48.780000</UnitPrice>
+          <TaxPointDate>2019-10-04</TaxPointDate>
+          <Description>Cesto de plantas variadas</Description>
+          <CreditAmount>48.780000</CreditAmount>
+          <Tax>
+            <TaxType>IVA</TaxType>
+            <TaxCountryRegion>PT</TaxCountryRegion>
+            <TaxCode>NOR</TaxCode>
+            <TaxPercentage>23.000000</TaxPercentage>
+          </Tax>
+          <SettlementAmount>0.000000</SettlementAmount>
+        </Line>
+        <DocumentTotals>
+          <TaxPayable>20.57</TaxPayable>
+          <NetTotal>89.43</NetTotal>
+          <GrossTotal>110.00</GrossTotal>
+        </DocumentTotals>
+        <WithholdingTax>
+          <WithholdingTaxAmount>0.000000</WithholdingTaxAmount>
+        </WithholdingTax>
+      </Invoice>
+      <Invoice>
+        <InvoiceNo>FR 2019/5</InvoiceNo>
+        <ATCUD>0</ATCUD>
+        <DocumentStatus>
+          <InvoiceStatus>N</InvoiceStatus>
+          <InvoiceStatusDate>2019-10-04T13:10:33</InvoiceStatusDate>
+          <SourceID>application-user::jasmin-apite</SourceID>
+          <SourceBilling>P</SourceBilling>
+        </DocumentStatus>
+        <Hash>Q4hH6H+BbmMM5lxKcpXlChpktOCQ8OU0piT94us2fjWxKuBL8gHMUIHTovT2wd/M+PxiFCJFNUXb7WrhoKKBAeZfsqgUtG6B4bUNdumHl5UiAZNTClnthpZ8WtIPaah2FG0+fYWoRmNYzDkFM8Jzw1bVmdzVhLN0tQ2pPVKP4qE=</Hash>
+        <HashControl>1</HashControl>
+        <Period>10</Period>
+        <InvoiceDate>2019-10-02</InvoiceDate>
+        <InvoiceType>FR</InvoiceType>
+        <SpecialRegimes>
+          <SelfBillingIndicator>0</SelfBillingIndicator>
+          <CashVATSchemeIndicator>0</CashVATSchemeIndicator>
+          <ThirdPartiesBillingIndicator>0</ThirdPartiesBillingIndicator>
+        </SpecialRegimes>
+        <SourceID>application-user::jasmin-apite</SourceID>
+        <SystemEntryDate>2019-10-04T13:10:33</SystemEntryDate>
+        <CustomerID>INFORSHOW.545192323</CustomerID>
+        <ShipTo>
+          <Address>
+            <StreetName>Av. dos Coqueiros</StreetName>
+            <AddressDetail>Your Address Av. dos Coqueiros 464  1000-443 Lisboa</AddressDetail>
+            <City>Lisboa</City>
+            <PostalCode>1000-443</PostalCode>
+            <Region>Desconhecido</Region>
+            <Country>PT</Country>
+          </Address>
+        </ShipTo>
+        <ShipFrom>
+          <Address>
+            <StreetName>Rua Dr. Egídio Guimarães</StreetName>
+            <AddressDetail>Our Address Rua Dr. Egídio Guimarães N 74  4700-006 Braga</AddressDetail>
+            <City>Braga</City>
+            <PostalCode>4700-006</PostalCode>
+            <Region>Desconhecido</Region>
+            <Country>PT</Country>
+          </Address>
+        </ShipFrom>
+        <MovementStartTime>2019-10-04T15:12:32</MovementStartTime>
+        <Line>
+          <LineNumber>1</LineNumber>
+          <ProductCode>BLROSAS</ProductCode>
+          <ProductDescription>Bola de rosas encarnadas em base de madeira</ProductDescription>
+          <Quantity>1.000000</Quantity>
+          <UnitOfMeasure>UN</UnitOfMeasure>
+          <UnitPrice>97.560000</UnitPrice>
+          <TaxPointDate>2019-10-04</TaxPointDate>
+          <Description>Bola de rosas encarnadas em base de madeira</Description>
+          <CreditAmount>97.560000</CreditAmount>
+          <Tax>
+            <TaxType>IVA</TaxType>
+            <TaxCountryRegion>PT</TaxCountryRegion>
+            <TaxCode>NOR</TaxCode>
+            <TaxPercentage>23.000000</TaxPercentage>
+          </Tax>
+          <SettlementAmount>0.000000</SettlementAmount>
+        </Line>
+        <DocumentTotals>
+          <TaxPayable>22.44</TaxPayable>
+          <NetTotal>97.56</NetTotal>
+          <GrossTotal>120.00</GrossTotal>
+        </DocumentTotals>
+        <WithholdingTax>
+          <WithholdingTaxAmount>0.000000</WithholdingTaxAmount>
+        </WithholdingTax>
+      </Invoice>
+      <Invoice>
+        <InvoiceNo>FA 2019/6</InvoiceNo>
+        <ATCUD>0</ATCUD>
+        <DocumentStatus>
+          <InvoiceStatus>N</InvoiceStatus>
+          <InvoiceStatusDate>2019-12-17T11:18:55</InvoiceStatusDate>
+          <SourceID>up201909574@fe.up.pt</SourceID>
+          <SourceBilling>P</SourceBilling>
+        </DocumentStatus>
+        <Hash>B6Ip+nibOtmP4rUZp/qF3xt0m3iACOBOKLSRhjxJFnFBL3wQxVAmFM8ZeM+S6iBhxKoHbMx7ngiWLDoKTbkW/PgvaHTxZKTw7WpvMC+88c60UcMgqXXlwkxkoLydAks5H6S5i5/NOJjOi2q42j82IP/fIqDeXVJGigFFUkwT2gc=</Hash>
+        <HashControl>1</HashControl>
+        <Period>12</Period>
+        <InvoiceDate>2019-12-17</InvoiceDate>
+        <InvoiceType>FT</InvoiceType>
+        <SpecialRegimes>
+          <SelfBillingIndicator>0</SelfBillingIndicator>
+          <CashVATSchemeIndicator>0</CashVATSchemeIndicator>
+          <ThirdPartiesBillingIndicator>0</ThirdPartiesBillingIndicator>
+        </SpecialRegimes>
+        <SourceID>up201909574@fe.up.pt</SourceID>
+        <SystemEntryDate>2019-12-17T11:18:55</SystemEntryDate>
+        <CustomerID>0008.9</CustomerID>
+        <ShipTo>
+          <Address>
+            <StreetName>Desconhecido</StreetName>
+            <AddressDetail>Your Address</AddressDetail>
+            <City>Desconhecido</City>
+            <PostalCode>Desconhecido</PostalCode>
+            <Region>Desconhecido</Region>
+            <Country>PT</Country>
+          </Address>
+        </ShipTo>
+        <ShipFrom>
+          <Address>
+            <StreetName>Rua Dr. Egídio Guimarães</StreetName>
+            <AddressDetail>Our Address Rua Dr. Egídio Guimarães N 74  4700-006 Braga</AddressDetail>
+            <City>Braga</City>
+            <PostalCode>4700-006</PostalCode>
+            <Region>Desconhecido</Region>
+            <Country>PT</Country>
+          </Address>
+        </ShipFrom>
+        <MovementStartTime>2019-12-17T11:20:38</MovementStartTime>
+        <Line>
+          <LineNumber>1</LineNumber>
+          <OrderReferences>
+            <OriginatingON>GR 2019/2</OriginatingON>
+          </OrderReferences>
+          <ProductCode>FETH</ProductCode>
+          <ProductDescription>Fire Emblem: Three Houses</ProductDescription>
+          <Quantity>1.000000</Quantity>
+          <UnitOfMeasure>UN</UnitOfMeasure>
+          <UnitPrice>59.900000</UnitPrice>
+          <TaxPointDate>2019-12-17</TaxPointDate>
+          <Description>Fire Emblem: Three Houses</Description>
+          <CreditAmount>59.900000</CreditAmount>
+          <Tax>
+            <TaxType>IVA</TaxType>
+            <TaxCountryRegion>PT</TaxCountryRegion>
+            <TaxCode>NOR</TaxCode>
+            <TaxPercentage>23.000000</TaxPercentage>
+          </Tax>
+          <SettlementAmount>0.000000</SettlementAmount>
+        </Line>
+        <Line>
+          <LineNumber>2</LineNumber>
+          <OrderReferences>
+            <OriginatingON>GR 2019/2</OriginatingON>
+          </OrderReferences>
+          <ProductCode>NSWITCH</ProductCode>
+          <ProductDescription>Nintendo Switch Neon Blue</ProductDescription>
+          <Quantity>1.000000</Quantity>
+          <UnitOfMeasure>UN</UnitOfMeasure>
+          <UnitPrice>259.900000</UnitPrice>
+          <TaxPointDate>2019-12-17</TaxPointDate>
+          <Description>Nintendo Switch Neon Blue</Description>
+          <CreditAmount>259.900000</CreditAmount>
+          <Tax>
+            <TaxType>IVA</TaxType>
+            <TaxCountryRegion>PT</TaxCountryRegion>
+            <TaxCode>NOR</TaxCode>
+            <TaxPercentage>23.000000</TaxPercentage>
+          </Tax>
+          <SettlementAmount>0.000000</SettlementAmount>
+        </Line>
+        <Line>
+          <LineNumber>3</LineNumber>
+          <OrderReferences>
+            <OriginatingON>GR 2019/2</OriginatingON>
+          </OrderReferences>
+          <ProductCode>SMASHU</ProductCode>
+          <ProductDescription>Super Smash Bros. Ultimate</ProductDescription>
+          <Quantity>1.000000</Quantity>
+          <UnitOfMeasure>UN</UnitOfMeasure>
+          <UnitPrice>59.940000</UnitPrice>
+          <TaxPointDate>2019-12-17</TaxPointDate>
+          <Description>Super Smash Bros. Ultimate</Description>
+          <CreditAmount>59.940000</CreditAmount>
+          <Tax>
+            <TaxType>IVA</TaxType>
+            <TaxCountryRegion>PT</TaxCountryRegion>
+            <TaxCode>NOR</TaxCode>
+            <TaxPercentage>23.000000</TaxPercentage>
+          </Tax>
+          <SettlementAmount>0.000000</SettlementAmount>
+        </Line>
+        <Line>
+          <LineNumber>4</LineNumber>
+          <OrderReferences>
+            <OriginatingON>GR 2019/2</OriginatingON>
+          </OrderReferences>
+          <ProductCode>TLOZBOTW</ProductCode>
+          <ProductDescription>The Legend of Zelda: Breath of the Wild</ProductDescription>
+          <Quantity>1.000000</Quantity>
+          <UnitOfMeasure>UN</UnitOfMeasure>
+          <UnitPrice>68.950000</UnitPrice>
+          <TaxPointDate>2019-12-17</TaxPointDate>
+          <Description>The Legend of Zelda: Breath of the Wild</Description>
+          <CreditAmount>68.950000</CreditAmount>
+          <Tax>
+            <TaxType>IVA</TaxType>
+            <TaxCountryRegion>PT</TaxCountryRegion>
+            <TaxCode>NOR</TaxCode>
+            <TaxPercentage>23.000000</TaxPercentage>
+          </Tax>
+          <SettlementAmount>0.000000</SettlementAmount>
+        </Line>
+        <DocumentTotals>
+          <TaxPayable>103.20</TaxPayable>
+          <NetTotal>448.69</NetTotal>
+          <GrossTotal>551.89</GrossTotal>
+        </DocumentTotals>
+        <WithholdingTax>
+          <WithholdingTaxAmount>0.000000</WithholdingTaxAmount>
+        </WithholdingTax>
+      </Invoice>
+      <Invoice>
+        <InvoiceNo>FA 2019/7</InvoiceNo>
+        <ATCUD>0</ATCUD>
+        <DocumentStatus>
+          <InvoiceStatus>N</InvoiceStatus>
+          <InvoiceStatusDate>2019-12-17T11:38:22</InvoiceStatusDate>
+          <SourceID>up201909574@fe.up.pt</SourceID>
+          <SourceBilling>P</SourceBilling>
+        </DocumentStatus>
+        <Hash>F3Pjv6l5PusJjdAf7wywLuN+LNsmaJuu408N2jf9aNKgMiXm7YsN6uonOzga/T8OG5PLbtYoi5cCjee43iTO4dQoT0cpR/lB8GIvy954VjpUq18ucX9+OVd0ojkmfkJDKi/D/oNiJCA11z0nfVoJhQ058jqfZFPcFSmkJUEffiM=</Hash>
+        <HashControl>1</HashControl>
+        <Period>12</Period>
+        <InvoiceDate>2019-12-17</InvoiceDate>
+        <InvoiceType>FT</InvoiceType>
+        <SpecialRegimes>
+          <SelfBillingIndicator>0</SelfBillingIndicator>
+          <CashVATSchemeIndicator>0</CashVATSchemeIndicator>
+          <ThirdPartiesBillingIndicator>0</ThirdPartiesBillingIndicator>
+        </SpecialRegimes>
+        <SourceID>up201909574@fe.up.pt</SourceID>
+        <SystemEntryDate>2019-12-17T11:38:22</SystemEntryDate>
+        <CustomerID>0008.4</CustomerID>
+        <ShipTo>
+          <Address>
+            <StreetName>Desconhecido</StreetName>
+            <AddressDetail>Your Address</AddressDetail>
+            <City>Desconhecido</City>
+            <PostalCode>Desconhecido</PostalCode>
+            <Region>Desconhecido</Region>
+            <Country>PT</Country>
+          </Address>
+        </ShipTo>
+        <ShipFrom>
+          <Address>
+            <StreetName>Rua Dr. Egídio Guimarães</StreetName>
+            <AddressDetail>Our Address Rua Dr. Egídio Guimarães N 74  4700-006 Braga</AddressDetail>
+            <City>Braga</City>
+            <PostalCode>4700-006</PostalCode>
+            <Region>Desconhecido</Region>
+            <Country>PT</Country>
+          </Address>
+        </ShipFrom>
+        <MovementStartTime>2019-12-17T11:40:17</MovementStartTime>
+        <Line>
+          <LineNumber>1</LineNumber>
+          <OrderReferences>
+            <OriginatingON>GR 2019/3</OriginatingON>
+          </OrderReferences>
+          <ProductCode>SMASHU</ProductCode>
+          <ProductDescription>Super Smash Bros. Ultimate</ProductDescription>
+          <Quantity>5.000000</Quantity>
+          <UnitOfMeasure>UN</UnitOfMeasure>
+          <UnitPrice>59.940000</UnitPrice>
+          <TaxPointDate>2019-12-17</TaxPointDate>
+          <Description>Super Smash Bros. Ultimate</Description>
+          <CreditAmount>299.700000</CreditAmount>
+          <Tax>
+            <TaxType>IVA</TaxType>
+            <TaxCountryRegion>PT</TaxCountryRegion>
+            <TaxCode>NOR</TaxCode>
+            <TaxPercentage>23.000000</TaxPercentage>
+          </Tax>
+          <SettlementAmount>0.000000</SettlementAmount>
+        </Line>
+        <Line>
+          <LineNumber>2</LineNumber>
+          <OrderReferences>
+            <OriginatingON>GR 2019/3</OriginatingON>
+          </OrderReferences>
+          <ProductCode>NSPROC</ProductCode>
+          <ProductDescription>Nintendo Switch Pro Controller</ProductDescription>
+          <Quantity>5.000000</Quantity>
+          <UnitOfMeasure>UN</UnitOfMeasure>
+          <UnitPrice>69.990000</UnitPrice>
+          <TaxPointDate>2019-12-17</TaxPointDate>
+          <Description>Nintendo Switch Pro Controller</Description>
+          <CreditAmount>349.950000</CreditAmount>
+          <Tax>
+            <TaxType>IVA</TaxType>
+            <TaxCountryRegion>PT</TaxCountryRegion>
+            <TaxCode>NOR</TaxCode>
+            <TaxPercentage>23.000000</TaxPercentage>
+          </Tax>
+          <SettlementAmount>0.000000</SettlementAmount>
+        </Line>
+        <Line>
+          <LineNumber>3</LineNumber>
+          <OrderReferences>
+            <OriginatingON>GR 2019/3</OriginatingON>
+          </OrderReferences>
+          <ProductCode>NSWITCH</ProductCode>
+          <ProductDescription>Nintendo Switch Neon Blue</ProductDescription>
+          <Quantity>5.000000</Quantity>
+          <UnitOfMeasure>UN</UnitOfMeasure>
+          <UnitPrice>259.900000</UnitPrice>
+          <TaxPointDate>2019-12-17</TaxPointDate>
+          <Description>Nintendo Switch Neon Blue</Description>
+          <CreditAmount>1299.500000</CreditAmount>
+          <Tax>
+            <TaxType>IVA</TaxType>
+            <TaxCountryRegion>PT</TaxCountryRegion>
+            <TaxCode>NOR</TaxCode>
+            <TaxPercentage>23.000000</TaxPercentage>
+          </Tax>
+          <SettlementAmount>0.000000</SettlementAmount>
+        </Line>
+        <DocumentTotals>
+          <TaxPayable>448.30</TaxPayable>
+          <NetTotal>1949.15</NetTotal>
+          <GrossTotal>2397.45</GrossTotal>
+        </DocumentTotals>
+        <WithholdingTax>
+          <WithholdingTaxAmount>0.000000</WithholdingTaxAmount>
+        </WithholdingTax>
+      </Invoice>
+      <Invoice>
+        <InvoiceNo>FA 2019/8</InvoiceNo>
+        <ATCUD>0</ATCUD>
+        <DocumentStatus>
+          <InvoiceStatus>N</InvoiceStatus>
+          <InvoiceStatusDate>2019-12-17T23:37:22</InvoiceStatusDate>
+          <SourceID>up201909574@fe.up.pt</SourceID>
+          <SourceBilling>P</SourceBilling>
+        </DocumentStatus>
+        <Hash>c6oezaa2cJUd85WKf7RoCLzudbNFmn905Y4lYmKZ3BK0LMiYMLQX9cJ0yW3MPQ7y8H0pL/Mykpy7hyjcO2ReaITLG/Je82NRPWC3xk5si4F5TIaNUMsyR+wtqZIfNUQFkHacGmUi/eR8Im3RPObDNvI6F4ETmsFfCDs5EadDec8=</Hash>
+        <HashControl>1</HashControl>
+        <Period>12</Period>
+        <InvoiceDate>2019-12-17</InvoiceDate>
+        <InvoiceType>FT</InvoiceType>
+        <SpecialRegimes>
+          <SelfBillingIndicator>0</SelfBillingIndicator>
+          <CashVATSchemeIndicator>0</CashVATSchemeIndicator>
+          <ThirdPartiesBillingIndicator>0</ThirdPartiesBillingIndicator>
+        </SpecialRegimes>
+        <SourceID>up201909574@fe.up.pt</SourceID>
+        <SystemEntryDate>2019-12-17T23:37:22</SystemEntryDate>
+        <CustomerID>0014.1</CustomerID>
+        <ShipTo>
+          <Address>
+            <StreetName>Desconhecido</StreetName>
+            <AddressDetail>Your Address</AddressDetail>
+            <City>Desconhecido</City>
+            <PostalCode>Desconhecido</PostalCode>
+            <Region>Desconhecido</Region>
+            <Country>US</Country>
+          </Address>
+        </ShipTo>
+        <ShipFrom>
+          <Address>
+            <StreetName>Rua Dr. Egídio Guimarães</StreetName>
+            <AddressDetail>Our Address Rua Dr. Egídio Guimarães N 74  4700-006 Braga</AddressDetail>
+            <City>Braga</City>
+            <PostalCode>4700-006</PostalCode>
+            <Region>Desconhecido</Region>
+            <Country>PT</Country>
+          </Address>
+        </ShipFrom>
+        <MovementStartTime>2019-12-17T23:39:15</MovementStartTime>
+        <Line>
+          <LineNumber>1</LineNumber>
+          <OrderReferences>
+            <OriginatingON>GR 2019/4</OriginatingON>
+          </OrderReferences>
+          <ProductCode>NSWITCH</ProductCode>
+          <ProductDescription>Nintendo Switch Neon Blue</ProductDescription>
+          <Quantity>1.000000</Quantity>
+          <UnitOfMeasure>UN</UnitOfMeasure>
+          <UnitPrice>250.000000</UnitPrice>
+          <TaxPointDate>2019-12-17</TaxPointDate>
+          <Description>Nintendo Switch Neon Blue</Description>
+          <CreditAmount>250.000000</CreditAmount>
+          <Tax>
+            <TaxType>IVA</TaxType>
+            <TaxCountryRegion>PT</TaxCountryRegion>
+            <TaxCode>NOR</TaxCode>
+            <TaxPercentage>23.000000</TaxPercentage>
+          </Tax>
+          <SettlementAmount>0.000000</SettlementAmount>
+        </Line>
+        <Line>
+          <LineNumber>2</LineNumber>
+          <OrderReferences>
+            <OriginatingON>GR 2019/4</OriginatingON>
+          </OrderReferences>
+          <ProductCode>NSPROC</ProductCode>
+          <ProductDescription>Nintendo Switch Pro Controller</ProductDescription>
+          <Quantity>1.000000</Quantity>
+          <UnitOfMeasure>UN</UnitOfMeasure>
+          <UnitPrice>60.000000</UnitPrice>
+          <TaxPointDate>2019-12-17</TaxPointDate>
+          <Description>Nintendo Switch Pro Controller</Description>
+          <CreditAmount>60.000000</CreditAmount>
+          <Tax>
+            <TaxType>IVA</TaxType>
+            <TaxCountryRegion>PT</TaxCountryRegion>
+            <TaxCode>NOR</TaxCode>
+            <TaxPercentage>23.000000</TaxPercentage>
+          </Tax>
+          <SettlementAmount>0.000000</SettlementAmount>
+        </Line>
+        <DocumentTotals>
+          <TaxPayable>71.30</TaxPayable>
+          <NetTotal>310.00</NetTotal>
+          <GrossTotal>381.30</GrossTotal>
+        </DocumentTotals>
+        <WithholdingTax>
+          <WithholdingTaxAmount>0.000000</WithholdingTaxAmount>
+        </WithholdingTax>
+      </Invoice>
+      <Invoice>
+        <InvoiceNo>FA 2019/9</InvoiceNo>
+        <ATCUD>0</ATCUD>
+        <DocumentStatus>
+          <InvoiceStatus>N</InvoiceStatus>
+          <InvoiceStatusDate>2019-12-17T23:39:55</InvoiceStatusDate>
+          <SourceID>up201909574@fe.up.pt</SourceID>
+          <SourceBilling>P</SourceBilling>
+        </DocumentStatus>
+        <Hash>LIc24dqYtW3b1ehbbgpUereYhBjx2Qh0b6qNHqCV+ilrn2eVeXOK9G2VURosJczCpVBeIne0nCu9FIA6H9ooDInv9Ye15omCkmGqK8efgzP3KZH+2kuer5ZXwYSOq0xw2AFF94p4CM2+lp5OcCF5fnZS8LqGtg6JyWy4eunFfaI=</Hash>
+        <HashControl>1</HashControl>
+        <Period>12</Period>
+        <InvoiceDate>2019-12-17</InvoiceDate>
+        <InvoiceType>FT</InvoiceType>
+        <SpecialRegimes>
+          <SelfBillingIndicator>0</SelfBillingIndicator>
+          <CashVATSchemeIndicator>0</CashVATSchemeIndicator>
+          <ThirdPartiesBillingIndicator>0</ThirdPartiesBillingIndicator>
+        </SpecialRegimes>
+        <SourceID>up201909574@fe.up.pt</SourceID>
+        <SystemEntryDate>2019-12-17T23:39:41</SystemEntryDate>
+        <CustomerID>0008.7</CustomerID>
+        <ShipTo>
+          <Address>
+            <StreetName>Desconhecido</StreetName>
+            <AddressDetail>Your Address</AddressDetail>
+            <City>Desconhecido</City>
+            <PostalCode>Desconhecido</PostalCode>
+            <Region>Desconhecido</Region>
+            <Country>PT</Country>
+          </Address>
+        </ShipTo>
+        <ShipFrom>
+          <Address>
+            <StreetName>Rua Dr. Egídio Guimarães</StreetName>
+            <AddressDetail>Our Address Rua Dr. Egídio Guimarães N 74  4700-006 Braga</AddressDetail>
+            <City>Braga</City>
+            <PostalCode>4700-006</PostalCode>
+            <Region>Desconhecido</Region>
+            <Country>PT</Country>
+          </Address>
+        </ShipFrom>
+        <MovementStartTime>2019-12-17T23:41:26</MovementStartTime>
+        <Line>
+          <LineNumber>1</LineNumber>
+          <OrderReferences>
+            <OriginatingON>GR 2019/3</OriginatingON>
+          </OrderReferences>
+          <ProductCode>FETH</ProductCode>
+          <ProductDescription>Fire Emblem: Three Houses</ProductDescription>
+          <Quantity>10.000000</Quantity>
+          <UnitOfMeasure>UN</UnitOfMeasure>
+          <UnitPrice>59.900000</UnitPrice>
+          <TaxPointDate>2019-12-17</TaxPointDate>
+          <Description>Fire Emblem: Three Houses</Description>
+          <CreditAmount>599.000000</CreditAmount>
+          <Tax>
+            <TaxType>IVA</TaxType>
+            <TaxCountryRegion>PT</TaxCountryRegion>
+            <TaxCode>NOR</TaxCode>
+            <TaxPercentage>23.000000</TaxPercentage>
+          </Tax>
+          <SettlementAmount>0.000000</SettlementAmount>
+        </Line>
+        <DocumentTotals>
+          <TaxPayable>137.77</TaxPayable>
+          <NetTotal>599.00</NetTotal>
+          <GrossTotal>736.77</GrossTotal>
+        </DocumentTotals>
+        <WithholdingTax>
+          <WithholdingTaxAmount>0.000000</WithholdingTaxAmount>
+        </WithholdingTax>
+      </Invoice>
+      <Invoice>
+        <InvoiceNo>FA 2019/10</InvoiceNo>
+        <ATCUD>0</ATCUD>
+        <DocumentStatus>
+          <InvoiceStatus>N</InvoiceStatus>
+          <InvoiceStatusDate>2019-12-18T00:13:46</InvoiceStatusDate>
+          <SourceID>up201909574@fe.up.pt</SourceID>
+          <SourceBilling>P</SourceBilling>
+        </DocumentStatus>
+        <Hash>XR+U/mEABv/7M8lH6aFUZDFlIWaU6LxZFXhMJEyjPAIj+PCR3TfKN/arr+hhNVSnib3uk8Rxxb4rEtb8lHJmGahWZlzVAWrmon96Sl+IOhGhd/gqCykN8okhJcxM+Piw2LrOtl8C/KXNOJaJFtebugy8y1hmuyK7EK/edW0mBnw=</Hash>
+        <HashControl>1</HashControl>
+        <Period>12</Period>
+        <InvoiceDate>2019-12-18</InvoiceDate>
+        <InvoiceType>FT</InvoiceType>
+        <SpecialRegimes>
+          <SelfBillingIndicator>0</SelfBillingIndicator>
+          <CashVATSchemeIndicator>0</CashVATSchemeIndicator>
+          <ThirdPartiesBillingIndicator>0</ThirdPartiesBillingIndicator>
+        </SpecialRegimes>
+        <SourceID>up201909574@fe.up.pt</SourceID>
+        <SystemEntryDate>2019-12-18T00:13:46</SystemEntryDate>
+        <CustomerID>0015.1</CustomerID>
+        <ShipTo>
+          <Address>
+            <StreetName>Desconhecido</StreetName>
+            <AddressDetail>Your Address</AddressDetail>
+            <City>Desconhecido</City>
+            <PostalCode>Desconhecido</PostalCode>
+            <Region>Desconhecido</Region>
+            <Country>RU</Country>
+          </Address>
+        </ShipTo>
+        <ShipFrom>
+          <Address>
+            <StreetName>Rua Dr. Egídio Guimarães</StreetName>
+            <AddressDetail>Our Address Rua Dr. Egídio Guimarães N 74  4700-006 Braga</AddressDetail>
+            <City>Braga</City>
+            <PostalCode>4700-006</PostalCode>
+            <Region>Desconhecido</Region>
+            <Country>PT</Country>
+          </Address>
+        </ShipFrom>
+        <MovementStartTime>2019-12-18T00:15:41</MovementStartTime>
+        <Line>
+          <LineNumber>1</LineNumber>
+          <OrderReferences>
+            <OriginatingON>GR 2019/5</OriginatingON>
+          </OrderReferences>
+          <ProductCode>IBARG370</ProductCode>
+          <ProductDescription>Ibanez RG370AHMZ-BMTStandard</ProductDescription>
+          <Quantity>1.000000</Quantity>
+          <UnitOfMeasure>UN</UnitOfMeasure>
+          <UnitPrice>503.230000</UnitPrice>
+          <TaxPointDate>2019-12-18</TaxPointDate>
+          <Description>Ibanez RG370AHMZ-BMTStandard</Description>
+          <CreditAmount>503.230000</CreditAmount>
+          <Tax>
+            <TaxType>IVA</TaxType>
+            <TaxCountryRegion>PT</TaxCountryRegion>
+            <TaxCode>NOR</TaxCode>
+            <TaxPercentage>23.000000</TaxPercentage>
+          </Tax>
+          <SettlementAmount>0.000000</SettlementAmount>
+        </Line>
+        <DocumentTotals>
+          <TaxPayable>115.74</TaxPayable>
+          <NetTotal>503.23</NetTotal>
+          <GrossTotal>618.97</GrossTotal>
+        </DocumentTotals>
+        <WithholdingTax>
+          <WithholdingTaxAmount>0.000000</WithholdingTaxAmount>
+        </WithholdingTax>
+      </Invoice>
+      <Invoice>
+        <InvoiceNo>FA 2019/11</InvoiceNo>
+        <ATCUD>0</ATCUD>
+        <DocumentStatus>
+          <InvoiceStatus>N</InvoiceStatus>
+          <InvoiceStatusDate>2019-12-18T01:10:06</InvoiceStatusDate>
+          <SourceID>up201909574@fe.up.pt</SourceID>
+          <SourceBilling>P</SourceBilling>
+        </DocumentStatus>
+        <Hash>XbmePLpjNddofTBUvjbiLzT+T56fnb7zt9Z3bijvC4/m2HP6aFuQwzKG3pQcToaQE+9PlRcHmGhkZLrW1T44h/Uyl4nUcEsOonyDrSt5EhvULCWteb5zUNQis9FgmbB+rs7mY4EJqlzQrGLpc/9Oc15CHXxxdIJNwveo9uIbUKc=</Hash>
+        <HashControl>1</HashControl>
+        <Period>12</Period>
+        <InvoiceDate>2019-12-18</InvoiceDate>
+        <InvoiceType>FT</InvoiceType>
+        <SpecialRegimes>
+          <SelfBillingIndicator>0</SelfBillingIndicator>
+          <CashVATSchemeIndicator>0</CashVATSchemeIndicator>
+          <ThirdPartiesBillingIndicator>0</ThirdPartiesBillingIndicator>
+        </SpecialRegimes>
+        <SourceID>up201909574@fe.up.pt</SourceID>
+        <SystemEntryDate>2019-12-18T01:10:06</SystemEntryDate>
+        <CustomerID>0013.1</CustomerID>
+        <ShipTo>
+          <Address>
+            <StreetName>Desconhecido</StreetName>
+            <AddressDetail>Your Address</AddressDetail>
+            <City>Desconhecido</City>
+            <PostalCode>Desconhecido</PostalCode>
+            <Region>Desconhecido</Region>
+            <Country>JP</Country>
+          </Address>
+        </ShipTo>
+        <ShipFrom>
+          <Address>
+            <StreetName>Rua Dr. Egídio Guimarães</StreetName>
+            <AddressDetail>Our Address Rua Dr. Egídio Guimarães N 74  4700-006 Braga</AddressDetail>
+            <City>Braga</City>
+            <PostalCode>4700-006</PostalCode>
+            <Region>Desconhecido</Region>
+            <Country>PT</Country>
+          </Address>
+        </ShipFrom>
+        <MovementStartTime>2019-12-18T01:12:01</MovementStartTime>
+        <Line>
+          <LineNumber>1</LineNumber>
+          <OrderReferences>
+            <OriginatingON>GR 2019/6</OriginatingON>
+          </OrderReferences>
+          <ProductCode>TLOZBOTW</ProductCode>
+          <ProductDescription>The Legend of Zelda: Breath of the Wild</ProductDescription>
+          <Quantity>1.000000</Quantity>
+          <UnitOfMeasure>UN</UnitOfMeasure>
+          <UnitPrice>68.950000</UnitPrice>
+          <TaxPointDate>2019-12-18</TaxPointDate>
+          <Description>The Legend of Zelda: Breath of the Wild</Description>
+          <CreditAmount>68.950000</CreditAmount>
+          <Tax>
+            <TaxType>IVA</TaxType>
+            <TaxCountryRegion>PT</TaxCountryRegion>
+            <TaxCode>NOR</TaxCode>
+            <TaxPercentage>23.000000</TaxPercentage>
+          </Tax>
+          <SettlementAmount>0.000000</SettlementAmount>
+        </Line>
+        <Line>
+          <LineNumber>2</LineNumber>
+          <OrderReferences>
+            <OriginatingON>GR 2019/6</OriginatingON>
+          </OrderReferences>
+          <ProductCode>SMASHU</ProductCode>
+          <ProductDescription>Super Smash Bros. Ultimate</ProductDescription>
+          <Quantity>1.000000</Quantity>
+          <UnitOfMeasure>UN</UnitOfMeasure>
+          <UnitPrice>59.940000</UnitPrice>
+          <TaxPointDate>2019-12-18</TaxPointDate>
+          <Description>Super Smash Bros. Ultimate</Description>
+          <CreditAmount>59.940000</CreditAmount>
+          <Tax>
+            <TaxType>IVA</TaxType>
+            <TaxCountryRegion>PT</TaxCountryRegion>
+            <TaxCode>NOR</TaxCode>
+            <TaxPercentage>23.000000</TaxPercentage>
+          </Tax>
+          <SettlementAmount>0.000000</SettlementAmount>
+        </Line>
+        <DocumentTotals>
+          <TaxPayable>29.64</TaxPayable>
+          <NetTotal>128.89</NetTotal>
+          <GrossTotal>158.53</GrossTotal>
+        </DocumentTotals>
+        <WithholdingTax>
+          <WithholdingTaxAmount>0.000000</WithholdingTaxAmount>
+        </WithholdingTax>
+      </Invoice>
+      <Invoice>
+        <InvoiceNo>ND 2019/1</InvoiceNo>
+        <ATCUD>0</ATCUD>
+        <DocumentStatus>
+          <InvoiceStatus>N</InvoiceStatus>
+          <InvoiceStatusDate>2019-10-04T14:21:10</InvoiceStatusDate>
+          <SourceID>testerbotprimavera@gmail.com</SourceID>
+          <SourceBilling>P</SourceBilling>
+        </DocumentStatus>
+        <Hash>Io5HMkBdmg84YDolAZRpVBROLX0N9MljNOXHia53yhdZ53KlKfELpBOa4oXzrI6mN/hXPO0inFuEG9O+XmqmSDdozze/7gERLz1ltVDW32Yi5Zo6/+YJAgDbJakwAegepY0T/FBgKDGX+MFryRnNbb5kW9O3pVVvK5bX/bCxa58=</Hash>
+        <HashControl>1</HashControl>
+        <Period>05</Period>
+        <InvoiceDate>2019-05-18</InvoiceDate>
+        <InvoiceType>ND</InvoiceType>
+        <SpecialRegimes>
+          <SelfBillingIndicator>0</SelfBillingIndicator>
+          <CashVATSchemeIndicator>0</CashVATSchemeIndicator>
+          <ThirdPartiesBillingIndicator>0</ThirdPartiesBillingIndicator>
+        </SpecialRegimes>
+        <SourceID>testerbotprimavera@gmail.com</SourceID>
+        <SystemEntryDate>2019-10-04T14:21:10</SystemEntryDate>
+        <CustomerID>JAMARAL.299372170</CustomerID>
+        <ShipTo>
+          <Address>
+            <StreetName>Desconhecido</StreetName>
+            <AddressDetail>Desconhecido</AddressDetail>
+            <City>Desconhecido</City>
+            <PostalCode>Desconhecido</PostalCode>
+            <Region>Desconhecido</Region>
+            <Country>Desconhecido</Country>
+          </Address>
+        </ShipTo>
+        <ShipFrom>
+          <Address>
+            <StreetName>Desconhecido</StreetName>
+            <AddressDetail>Desconhecido</AddressDetail>
+            <City>Desconhecido</City>
+            <PostalCode>Desconhecido</PostalCode>
+            <Region>Desconhecido</Region>
+            <Country>Desconhecido</Country>
+          </Address>
+        </ShipFrom>
+        <Line>
+          <LineNumber>1</LineNumber>
+          <ProductCode>AZALEA</ProductCode>
+          <ProductDescription>Azalea piramide em vaso de barro</ProductDescription>
+          <Quantity>1.000000</Quantity>
+          <UnitOfMeasure>UN</UnitOfMeasure>
+          <UnitPrice>23.000000</UnitPrice>
+          <TaxPointDate>2019-05-18</TaxPointDate>
+          <References>
+            <Reason>Erro no preço</Reason>
+          </References>
+          <Description>Azalea piramide em vaso de barro</Description>
+          <CreditAmount>23.000000</CreditAmount>
+          <Tax>
+            <TaxType>IVA</TaxType>
+            <TaxCountryRegion>PT</TaxCountryRegion>
+            <TaxCode>NOR</TaxCode>
+            <TaxPercentage>23.000000</TaxPercentage>
+          </Tax>
+          <SettlementAmount>0.000000</SettlementAmount>
+        </Line>
+        <DocumentTotals>
+          <TaxPayable>5.29</TaxPayable>
+          <NetTotal>23.00</NetTotal>
+          <GrossTotal>28.29</GrossTotal>
+        </DocumentTotals>
+        <WithholdingTax>
+          <WithholdingTaxAmount>0.000000</WithholdingTaxAmount>
+        </WithholdingTax>
+      </Invoice>
+      <Invoice>
+        <InvoiceNo>NC 2019/1</InvoiceNo>
+        <ATCUD>0</ATCUD>
+        <DocumentStatus>
+          <InvoiceStatus>N</InvoiceStatus>
+          <InvoiceStatusDate>2019-10-04T14:19:04</InvoiceStatusDate>
+          <SourceID>application-user::jasmin-apite</SourceID>
+          <SourceBilling>P</SourceBilling>
+        </DocumentStatus>
+        <Hash>FK3dBVQbt6YRa5fFFtQXO1K3X/klevk80sipCJIbupY0OPLqZiG40xb7ciT7YQiOteE8vSJsb/QrB9tj0+xQzbXpy7PGX4hURtPgV65+WPvmgF7z5DlUhGfX0XBvRBYACYWmpInm66fkz1eOvwo0RRG7hjh/mpYz/ys3pWOrQFY=</Hash>
+        <HashControl>1</HashControl>
+        <Period>02</Period>
+        <InvoiceDate>2019-02-10</InvoiceDate>
+        <InvoiceType>NC</InvoiceType>
+        <SpecialRegimes>
+          <SelfBillingIndicator>0</SelfBillingIndicator>
+          <CashVATSchemeIndicator>0</CashVATSchemeIndicator>
+          <ThirdPartiesBillingIndicator>0</ThirdPartiesBillingIndicator>
+        </SpecialRegimes>
+        <SourceID>application-user::jasmin-apite</SourceID>
+        <SystemEntryDate>2019-10-04T14:19:04</SystemEntryDate>
+        <CustomerID>SOFRIO.593362462</CustomerID>
+        <ShipTo>
+          <Address>
+            <StreetName>Desconhecido</StreetName>
+            <AddressDetail>Desconhecido</AddressDetail>
+            <City>Desconhecido</City>
+            <PostalCode>Desconhecido</PostalCode>
+            <Region>Desconhecido</Region>
+            <Country>Desconhecido</Country>
+          </Address>
+        </ShipTo>
+        <ShipFrom>
+          <Address>
+            <StreetName>Desconhecido</StreetName>
+            <AddressDetail>Desconhecido</AddressDetail>
+            <City>Desconhecido</City>
+            <PostalCode>Desconhecido</PostalCode>
+            <Region>Desconhecido</Region>
+            <Country>Desconhecido</Country>
+          </Address>
+        </ShipFrom>
+        <Line>
+          <LineNumber>1</LineNumber>
+          <ProductCode>ARECA</ProductCode>
+          <ProductDescription>Palmeira areca em vaso grês</ProductDescription>
+          <Quantity>1.000000</Quantity>
+          <UnitOfMeasure>UN</UnitOfMeasure>
+          <UnitPrice>0.000000</UnitPrice>
+          <TaxPointDate>2019-02-10</TaxPointDate>
+          <References>
+            <Reason>Erro no preço</Reason>
+          </References>
+          <Description>""</Description>
+          <DebitAmount>0.000000</DebitAmount>
+          <Tax>
+            <TaxType>IVA</TaxType>
+            <TaxCountryRegion>PT</TaxCountryRegion>
+            <TaxCode>NOR</TaxCode>
+            <TaxPercentage>23.000000</TaxPercentage>
+          </Tax>
+          <SettlementAmount>0.000000</SettlementAmount>
+        </Line>
+        <DocumentTotals>
+          <TaxPayable>0.00</TaxPayable>
+          <NetTotal>0.00</NetTotal>
+          <GrossTotal>0.00</GrossTotal>
+        </DocumentTotals>
+        <WithholdingTax>
+          <WithholdingTaxAmount>0.000000</WithholdingTaxAmount>
+        </WithholdingTax>
+      </Invoice>
+    </SalesInvoices>
+    <MovementOfGoods>
+      <NumberOfMovementLines>15</NumberOfMovementLines>
+      <TotalQuantityIssued>36.000000</TotalQuantityIssued>
+      <StockMovement>
+        <DocumentNumber>GR 2019/6</DocumentNumber>
+        <ATCUD>0</ATCUD>
+        <DocumentStatus>
+          <MovementStatus>N</MovementStatus>
+          <MovementStatusDate>2019-12-18T01:09:22</MovementStatusDate>
+          <SourceID>up201909574@fe.up.pt</SourceID>
+          <SourceBilling>P</SourceBilling>
+        </DocumentStatus>
+        <Hash>LqyJC5q6CIikdGxSLHteDGU+ftrBZNyos63VZKpWSNlJV1X52oqSn1K+5iL6ukwMFDf2I4skydUPL9fjYyIbw8UUOyN92f3iLZpZuT67O5IM76T2UReD7ljIIsbKhEHRt8LgGb7XQny/EORvVQxpsnR2laKEcMvie61+iYFMcc8=</Hash>
+        <HashControl>1</HashControl>
+        <Period>12</Period>
+        <MovementDate>2019-12-18</MovementDate>
+        <MovementType>GR</MovementType>
+        <SystemEntryDate>2019-12-18T01:09:22</SystemEntryDate>
+        <CustomerID>0013.2</CustomerID>
+        <SourceID>up201909574@fe.up.pt</SourceID>
+        <ShipTo>
+          <Address>
+            <BuildingNumber>0</BuildingNumber>
+            <StreetName>Desconhecido</StreetName>
+            <AddressDetail>Your Address</AddressDetail>
+            <City>Desconhecido</City>
+            <PostalCode>Desconhecido</PostalCode>
+            <Region>Desconhecido</Region>
+            <Country>PT</Country>
+          </Address>
+        </ShipTo>
+        <ShipFrom>
+          <Address>
+            <BuildingNumber>N 74</BuildingNumber>
+            <StreetName>Rua Dr. Egídio Guimarães</StreetName>
+            <AddressDetail>Our Address Rua Dr. Egídio Guimarães N 74  4700-006 Braga</AddressDetail>
+            <City>Braga</City>
+            <PostalCode>4700-006</PostalCode>
+            <Region>Desconhecido</Region>
+            <Country>PT</Country>
+          </Address>
+        </ShipFrom>
+        <MovementStartTime>2019-12-18T01:09:22.093</MovementStartTime>
+        <Line>
+          <LineNumber>1</LineNumber>
+          <ProductCode>TLOZBOTW</ProductCode>
+          <ProductDescription>The Legend of Zelda: Breath of the Wild</ProductDescription>
+          <Quantity>1.000000</Quantity>
+          <UnitOfMeasure>UN</UnitOfMeasure>
+          <UnitPrice>68.9500000000000000</UnitPrice>
+          <Description>The Legend of Zelda: Breath of the Wild</Description>
+          <CreditAmount>68.950000</CreditAmount>
+          <Tax>
+            <TaxType>IVA</TaxType>
+            <TaxCountryRegion>PT</TaxCountryRegion>
+            <TaxCode>NOR</TaxCode>
+            <TaxPercentage>23.000000</TaxPercentage>
+          </Tax>
+        </Line>
+        <Line>
+          <LineNumber>2</LineNumber>
+          <ProductCode>SMASHU</ProductCode>
+          <ProductDescription>Super Smash Bros. Ultimate</ProductDescription>
+          <Quantity>1.000000</Quantity>
+          <UnitOfMeasure>UN</UnitOfMeasure>
+          <UnitPrice>59.9400000000000000</UnitPrice>
+          <Description>Super Smash Bros. Ultimate</Description>
+          <CreditAmount>59.940000</CreditAmount>
+          <Tax>
+            <TaxType>IVA</TaxType>
+            <TaxCountryRegion>PT</TaxCountryRegion>
+            <TaxCode>NOR</TaxCode>
+            <TaxPercentage>23.000000</TaxPercentage>
+          </Tax>
+        </Line>
+        <DocumentTotals>
+          <TaxPayable>29.64</TaxPayable>
+          <NetTotal>128.89</NetTotal>
+          <GrossTotal>158.53</GrossTotal>
+        </DocumentTotals>
+      </StockMovement>
+      <StockMovement>
+        <DocumentNumber>GR 2019/2</DocumentNumber>
+        <ATCUD>0</ATCUD>
+        <DocumentStatus>
+          <MovementStatus>N</MovementStatus>
+          <MovementStatusDate>2019-12-17T11:18:08</MovementStatusDate>
+          <SourceID>up201909574@fe.up.pt</SourceID>
+          <SourceBilling>P</SourceBilling>
+        </DocumentStatus>
+        <Hash>R4OytzAZJHcN0H9QDWDZ8fT21w4Ti5yQFnKC3jB9Xzs5/7y4BMmfTrfJ5Kt2tkuC9yN9PEIx+356LO9LlddmFm7GfO/4aAMmjQIisuraHd1YgRCrBKsCzqivlGyQKyGItpa2Da6H4MPNHiOGfrZYWoa4EfvTV3l8uwMnzK9bPes=</Hash>
+        <HashControl>1</HashControl>
+        <Period>12</Period>
+        <MovementDate>2019-12-17</MovementDate>
+        <MovementType>GR</MovementType>
+        <SystemEntryDate>2019-12-17T11:18:07</SystemEntryDate>
+        <CustomerID>0008.2</CustomerID>
+        <SourceID>up201909574@fe.up.pt</SourceID>
+        <ShipTo>
+          <Address>
+            <BuildingNumber>0</BuildingNumber>
+            <StreetName>Desconhecido</StreetName>
+            <AddressDetail>Your Address</AddressDetail>
+            <City>Desconhecido</City>
+            <PostalCode>Desconhecido</PostalCode>
+            <Region>Desconhecido</Region>
+            <Country>PT</Country>
+          </Address>
+        </ShipTo>
+        <ShipFrom>
+          <Address>
+            <BuildingNumber>N 74</BuildingNumber>
+            <StreetName>Rua Dr. Egídio Guimarães</StreetName>
+            <AddressDetail>Our Address Rua Dr. Egídio Guimarães N 74  4700-006 Braga</AddressDetail>
+            <City>Braga</City>
+            <PostalCode>4700-006</PostalCode>
+            <Region>Desconhecido</Region>
+            <Country>PT</Country>
+          </Address>
+        </ShipFrom>
+        <MovementStartTime>2019-12-17T11:18:07.127</MovementStartTime>
+        <Line>
+          <LineNumber>1</LineNumber>
+          <ProductCode>FETH</ProductCode>
+          <ProductDescription>Fire Emblem: Three Houses</ProductDescription>
+          <Quantity>1.000000</Quantity>
+          <UnitOfMeasure>UN</UnitOfMeasure>
+          <UnitPrice>59.9000000000000000</UnitPrice>
+          <Description>Fire Emblem: Three Houses</Description>
+          <CreditAmount>59.900000</CreditAmount>
+          <Tax>
+            <TaxType>IVA</TaxType>
+            <TaxCountryRegion>PT</TaxCountryRegion>
+            <TaxCode>NOR</TaxCode>
+            <TaxPercentage>23.000000</TaxPercentage>
+          </Tax>
+        </Line>
+        <Line>
+          <LineNumber>2</LineNumber>
+          <ProductCode>NSWITCH</ProductCode>
+          <ProductDescription>Nintendo Switch Neon Blue</ProductDescription>
+          <Quantity>1.000000</Quantity>
+          <UnitOfMeasure>UN</UnitOfMeasure>
+          <UnitPrice>259.9000000000000000</UnitPrice>
+          <Description>Nintendo Switch Neon Blue</Description>
+          <CreditAmount>259.900000</CreditAmount>
+          <Tax>
+            <TaxType>IVA</TaxType>
+            <TaxCountryRegion>PT</TaxCountryRegion>
+            <TaxCode>NOR</TaxCode>
+            <TaxPercentage>23.000000</TaxPercentage>
+          </Tax>
+        </Line>
+        <Line>
+          <LineNumber>3</LineNumber>
+          <ProductCode>SMASHU</ProductCode>
+          <ProductDescription>Super Smash Bros. Ultimate</ProductDescription>
+          <Quantity>1.000000</Quantity>
+          <UnitOfMeasure>UN</UnitOfMeasure>
+          <UnitPrice>59.9400000000000000</UnitPrice>
+          <Description>Super Smash Bros. Ultimate</Description>
+          <CreditAmount>59.940000</CreditAmount>
+          <Tax>
+            <TaxType>IVA</TaxType>
+            <TaxCountryRegion>PT</TaxCountryRegion>
+            <TaxCode>NOR</TaxCode>
+            <TaxPercentage>23.000000</TaxPercentage>
+          </Tax>
+        </Line>
+        <Line>
+          <LineNumber>4</LineNumber>
+          <ProductCode>TLOZBOTW</ProductCode>
+          <ProductDescription>The Legend of Zelda: Breath of the Wild</ProductDescription>
+          <Quantity>1.000000</Quantity>
+          <UnitOfMeasure>UN</UnitOfMeasure>
+          <UnitPrice>68.9500000000000000</UnitPrice>
+          <Description>The Legend of Zelda: Breath of the Wild</Description>
+          <CreditAmount>68.950000</CreditAmount>
+          <Tax>
+            <TaxType>IVA</TaxType>
+            <TaxCountryRegion>PT</TaxCountryRegion>
+            <TaxCode>NOR</TaxCode>
+            <TaxPercentage>23.000000</TaxPercentage>
+          </Tax>
+        </Line>
+        <DocumentTotals>
+          <TaxPayable>103.20</TaxPayable>
+          <NetTotal>448.69</NetTotal>
+          <GrossTotal>551.89</GrossTotal>
+        </DocumentTotals>
+      </StockMovement>
+      <StockMovement>
+        <DocumentNumber>GR 2019/1</DocumentNumber>
+        <ATCUD>0</ATCUD>
+        <DocumentStatus>
+          <MovementStatus>N</MovementStatus>
+          <MovementStatusDate>2019-10-04T16:30:38</MovementStatusDate>
+          <SourceID>testerbotprimavera@gmail.com</SourceID>
+          <SourceBilling>P</SourceBilling>
+        </DocumentStatus>
+        <Hash>Oxz3UqWESLCQ1lU/XNU8C5sIylgjgjcVuX5vRuheTcrQkPAy9GZgcK/2cM40Iy4q2t4QpSokdxyyN9vPQPWBJoJ7Oa2jgPyaFANvwylyaCCFLhD2E9ab4DRKztmjfDRwTmbvafq+tgxGdyEAovC9ZI3b49MArdXBgRjCqHKr+lE=</Hash>
+        <HashControl>1</HashControl>
+        <Period>10</Period>
+        <MovementDate>2019-10-02</MovementDate>
+        <MovementType>GR</MovementType>
+        <SystemEntryDate>2019-10-04T16:30:37</SystemEntryDate>
+        <CustomerID>JAMARAL.299372170</CustomerID>
+        <SourceID>testerbotprimavera@gmail.com</SourceID>
+        <ShipTo>
+          <Address>
+            <BuildingNumber>234</BuildingNumber>
+            <StreetName>Rua das Joanas</StreetName>
+            <AddressDetail>O seu endereço Rua das Joanas 234  1210-001 Lisboa</AddressDetail>
+            <City>Lisboa</City>
+            <PostalCode>1210-001</PostalCode>
+            <Region>Desconhecido</Region>
+            <Country>PT</Country>
+          </Address>
+        </ShipTo>
+        <ShipFrom>
+          <Address>
+            <BuildingNumber>N 74</BuildingNumber>
+            <StreetName>Rua Dr. Egídio Guimarães</StreetName>
+            <AddressDetail>O Nosso Endereço Rua Dr. Egídio Guimarães N 74  4700-006 Braga</AddressDetail>
+            <City>Braga</City>
+            <PostalCode>4700-006</PostalCode>
+            <Region>Desconhecido</Region>
+            <Country>PT</Country>
+          </Address>
+        </ShipFrom>
+        <MovementStartTime>2019-10-04T17:30:37.153</MovementStartTime>
+        <Line>
+          <LineNumber>1</LineNumber>
+          <ProductCode>ARECA</ProductCode>
+          <ProductDescription>Palmeira areca em vaso grês</ProductDescription>
+          <Quantity>1.000000</Quantity>
+          <UnitOfMeasure>UN</UnitOfMeasure>
+          <UnitPrice>65.0000000000000000</UnitPrice>
+          <Description>Palmeira areca em vaso grês</Description>
+          <CreditAmount>65.000000</CreditAmount>
+          <Tax>
+            <TaxType>IVA</TaxType>
+            <TaxCountryRegion>PT</TaxCountryRegion>
+            <TaxCode>NOR</TaxCode>
+            <TaxPercentage>23.000000</TaxPercentage>
+          </Tax>
+        </Line>
+        <Line>
+          <LineNumber>2</LineNumber>
+          <ProductCode>AZALEA</ProductCode>
+          <ProductDescription>Azalea piramide em vaso de barro</ProductDescription>
+          <Quantity>1.000000</Quantity>
+          <UnitOfMeasure>UN</UnitOfMeasure>
+          <UnitPrice>40.0000000000000000</UnitPrice>
+          <Description>Azalea piramide em vaso de barro</Description>
+          <CreditAmount>40.000000</CreditAmount>
+          <Tax>
+            <TaxType>IVA</TaxType>
+            <TaxCountryRegion>PT</TaxCountryRegion>
+            <TaxCode>NOR</TaxCode>
+            <TaxPercentage>23.000000</TaxPercentage>
+          </Tax>
+        </Line>
+        <DocumentTotals>
+          <TaxPayable>24.15</TaxPayable>
+          <NetTotal>105.00</NetTotal>
+          <GrossTotal>129.15</GrossTotal>
+        </DocumentTotals>
+      </StockMovement>
+      <StockMovement>
+        <DocumentNumber>GR 2019/4</DocumentNumber>
+        <ATCUD>0</ATCUD>
+        <DocumentStatus>
+          <MovementStatus>N</MovementStatus>
+          <MovementStatusDate>2019-12-17T23:36:49</MovementStatusDate>
+          <SourceID>up201909574@fe.up.pt</SourceID>
+          <SourceBilling>P</SourceBilling>
+        </DocumentStatus>
+        <Hash>WtxwW8NkYOK4CH0W6qGE11/ipUYal6AjDxfeRBpoMYe4fZW4IQffRQIBE4gKTvn6p1qNF0VH8bRUw3pSyDWd02DEEaM1yfiM2YjVIzpnhspRyksybHDL4BQpTi5DQ3O+zPgZtcJ+gnTUuCHLZzraRLJUanhI0bWJz2/04rIro38=</Hash>
+        <HashControl>1</HashControl>
+        <Period>12</Period>
+        <MovementDate>2019-12-17</MovementDate>
+        <MovementType>GR</MovementType>
+        <SystemEntryDate>2019-12-17T23:36:49</SystemEntryDate>
+        <CustomerID>0014.3</CustomerID>
+        <SourceID>up201909574@fe.up.pt</SourceID>
+        <ShipTo>
+          <Address>
+            <BuildingNumber>0</BuildingNumber>
+            <StreetName>Desconhecido</StreetName>
+            <AddressDetail>Your Address</AddressDetail>
+            <City>Desconhecido</City>
+            <PostalCode>Desconhecido</PostalCode>
+            <Region>Desconhecido</Region>
+            <Country>PT</Country>
+          </Address>
+        </ShipTo>
+        <ShipFrom>
+          <Address>
+            <BuildingNumber>N 74</BuildingNumber>
+            <StreetName>Rua Dr. Egídio Guimarães</StreetName>
+            <AddressDetail>Our Address Rua Dr. Egídio Guimarães N 74  4700-006 Braga</AddressDetail>
+            <City>Braga</City>
+            <PostalCode>4700-006</PostalCode>
+            <Region>Desconhecido</Region>
+            <Country>PT</Country>
+          </Address>
+        </ShipFrom>
+        <MovementStartTime>2019-12-17T23:36:49.127</MovementStartTime>
+        <Line>
+          <LineNumber>1</LineNumber>
+          <ProductCode>NSWITCH</ProductCode>
+          <ProductDescription>Nintendo Switch Neon Blue</ProductDescription>
+          <Quantity>1.000000</Quantity>
+          <UnitOfMeasure>UN</UnitOfMeasure>
+          <UnitPrice>250.0000000000000000</UnitPrice>
+          <Description>Nintendo Switch Neon Blue</Description>
+          <CreditAmount>250.000000</CreditAmount>
+          <Tax>
+            <TaxType>IVA</TaxType>
+            <TaxCountryRegion>PT</TaxCountryRegion>
+            <TaxCode>NOR</TaxCode>
+            <TaxPercentage>23.000000</TaxPercentage>
+          </Tax>
+        </Line>
+        <Line>
+          <LineNumber>2</LineNumber>
+          <ProductCode>NSPROC</ProductCode>
+          <ProductDescription>Nintendo Switch Pro Controller</ProductDescription>
+          <Quantity>1.000000</Quantity>
+          <UnitOfMeasure>UN</UnitOfMeasure>
+          <UnitPrice>60.0000000000000000</UnitPrice>
+          <Description>Nintendo Switch Pro Controller</Description>
+          <CreditAmount>60.000000</CreditAmount>
+          <Tax>
+            <TaxType>IVA</TaxType>
+            <TaxCountryRegion>PT</TaxCountryRegion>
+            <TaxCode>NOR</TaxCode>
+            <TaxPercentage>23.000000</TaxPercentage>
+          </Tax>
+        </Line>
+        <DocumentTotals>
+          <TaxPayable>71.30</TaxPayable>
+          <NetTotal>310.00</NetTotal>
+          <GrossTotal>381.30</GrossTotal>
+        </DocumentTotals>
+      </StockMovement>
+      <StockMovement>
+        <DocumentNumber>GR 2019/3</DocumentNumber>
+        <ATCUD>0</ATCUD>
+        <DocumentStatus>
+          <MovementStatus>N</MovementStatus>
+          <MovementStatusDate>2019-12-17T11:37:44</MovementStatusDate>
+          <SourceID>up201909574@fe.up.pt</SourceID>
+          <SourceBilling>P</SourceBilling>
+        </DocumentStatus>
+        <Hash>IVhmLMmVebpxyDxhVv+/o5L4k/l7lhR3djMmq/TDkA3m/3tEaL2tWWbOSt1woexao9kppk5lH2jtsTmcOXrtnSb7FoDh+lxJ+2eEAYtRUaiIqepL/uyRyY1KgTu3reXFsE0cFeWTTkTCFbYCE9H2PYk6HkK3LoK+3IBNkwp6LZA=</Hash>
+        <HashControl>1</HashControl>
+        <Period>12</Period>
+        <MovementDate>2019-12-17</MovementDate>
+        <MovementType>GR</MovementType>
+        <SystemEntryDate>2019-12-17T11:37:44</SystemEntryDate>
+        <CustomerID>0008.10</CustomerID>
+        <SourceID>up201909574@fe.up.pt</SourceID>
+        <ShipTo>
+          <Address>
+            <BuildingNumber>0</BuildingNumber>
+            <StreetName>Desconhecido</StreetName>
+            <AddressDetail>Your Address</AddressDetail>
+            <City>Desconhecido</City>
+            <PostalCode>Desconhecido</PostalCode>
+            <Region>Desconhecido</Region>
+            <Country>PT</Country>
+          </Address>
+        </ShipTo>
+        <ShipFrom>
+          <Address>
+            <BuildingNumber>N 74</BuildingNumber>
+            <StreetName>Rua Dr. Egídio Guimarães</StreetName>
+            <AddressDetail>Our Address Rua Dr. Egídio Guimarães N 74  4700-006 Braga</AddressDetail>
+            <City>Braga</City>
+            <PostalCode>4700-006</PostalCode>
+            <Region>Desconhecido</Region>
+            <Country>PT</Country>
+          </Address>
+        </ShipFrom>
+        <MovementStartTime>2019-12-17T11:37:44.077</MovementStartTime>
+        <Line>
+          <LineNumber>1</LineNumber>
+          <ProductCode>FETH</ProductCode>
+          <ProductDescription>Fire Emblem: Three Houses</ProductDescription>
+          <Quantity>10.000000</Quantity>
+          <UnitOfMeasure>UN</UnitOfMeasure>
+          <UnitPrice>59.9000000000000000</UnitPrice>
+          <Description>Fire Emblem: Three Houses</Description>
+          <CreditAmount>599.000000</CreditAmount>
+          <Tax>
+            <TaxType>IVA</TaxType>
+            <TaxCountryRegion>PT</TaxCountryRegion>
+            <TaxCode>NOR</TaxCode>
+            <TaxPercentage>23.000000</TaxPercentage>
+          </Tax>
+        </Line>
+        <Line>
+          <LineNumber>2</LineNumber>
+          <ProductCode>SMASHU</ProductCode>
+          <ProductDescription>Super Smash Bros. Ultimate</ProductDescription>
+          <Quantity>5.000000</Quantity>
+          <UnitOfMeasure>UN</UnitOfMeasure>
+          <UnitPrice>59.9400000000000000</UnitPrice>
+          <Description>Super Smash Bros. Ultimate</Description>
+          <CreditAmount>299.700000</CreditAmount>
+          <Tax>
+            <TaxType>IVA</TaxType>
+            <TaxCountryRegion>PT</TaxCountryRegion>
+            <TaxCode>NOR</TaxCode>
+            <TaxPercentage>23.000000</TaxPercentage>
+          </Tax>
+        </Line>
+        <Line>
+          <LineNumber>3</LineNumber>
+          <ProductCode>NSPROC</ProductCode>
+          <ProductDescription>Nintendo Switch Pro Controller</ProductDescription>
+          <Quantity>5.000000</Quantity>
+          <UnitOfMeasure>UN</UnitOfMeasure>
+          <UnitPrice>69.9900000000000000</UnitPrice>
+          <Description>Nintendo Switch Pro Controller</Description>
+          <CreditAmount>349.950000</CreditAmount>
+          <Tax>
+            <TaxType>IVA</TaxType>
+            <TaxCountryRegion>PT</TaxCountryRegion>
+            <TaxCode>NOR</TaxCode>
+            <TaxPercentage>23.000000</TaxPercentage>
+          </Tax>
+        </Line>
+        <Line>
+          <LineNumber>4</LineNumber>
+          <ProductCode>NSWITCH</ProductCode>
+          <ProductDescription>Nintendo Switch Neon Blue</ProductDescription>
+          <Quantity>5.000000</Quantity>
+          <UnitOfMeasure>UN</UnitOfMeasure>
+          <UnitPrice>259.9000000000000000</UnitPrice>
+          <Description>Nintendo Switch Neon Blue</Description>
+          <CreditAmount>1299.500000</CreditAmount>
+          <Tax>
+            <TaxType>IVA</TaxType>
+            <TaxCountryRegion>PT</TaxCountryRegion>
+            <TaxCode>NOR</TaxCode>
+            <TaxPercentage>23.000000</TaxPercentage>
+          </Tax>
+        </Line>
+        <DocumentTotals>
+          <TaxPayable>586.07</TaxPayable>
+          <NetTotal>2548.15</NetTotal>
+          <GrossTotal>3134.22</GrossTotal>
+        </DocumentTotals>
+      </StockMovement>
+      <StockMovement>
+        <DocumentNumber>GR 2019/5</DocumentNumber>
+        <ATCUD>0</ATCUD>
+        <DocumentStatus>
+          <MovementStatus>N</MovementStatus>
+          <MovementStatusDate>2019-12-18T00:12:25</MovementStatusDate>
+          <SourceID>up201909574@fe.up.pt</SourceID>
+          <SourceBilling>P</SourceBilling>
+        </DocumentStatus>
+        <Hash>HwfJdjCIKIpiORpKng6eMql2PFYhf//MVwUd440VwRNpn1cYUK77BtetfXWNLUZqbnhUBODkbUZNpPP5WrxA6HZV3WwkRZKCzRA9kKQMWvlSAItbJRSEj/FLR2QB/IyWZm8IJIaDTLU5Gh5slh/IZKZQFseaUhssx963jUZvXcc=</Hash>
+        <HashControl>1</HashControl>
+        <Period>12</Period>
+        <MovementDate>2019-12-18</MovementDate>
+        <MovementType>GR</MovementType>
+        <SystemEntryDate>2019-12-18T00:12:25</SystemEntryDate>
+        <CustomerID>0015.4</CustomerID>
+        <SourceID>up201909574@fe.up.pt</SourceID>
+        <ShipTo>
+          <Address>
+            <BuildingNumber>0</BuildingNumber>
+            <StreetName>Desconhecido</StreetName>
+            <AddressDetail>Your Address</AddressDetail>
+            <City>Desconhecido</City>
+            <PostalCode>Desconhecido</PostalCode>
+            <Region>Desconhecido</Region>
+            <Country>PT</Country>
+          </Address>
+        </ShipTo>
+        <ShipFrom>
+          <Address>
+            <BuildingNumber>N 74</BuildingNumber>
+            <StreetName>Rua Dr. Egídio Guimarães</StreetName>
+            <AddressDetail>Our Address Rua Dr. Egídio Guimarães N 74  4700-006 Braga</AddressDetail>
+            <City>Braga</City>
+            <PostalCode>4700-006</PostalCode>
+            <Region>Desconhecido</Region>
+            <Country>PT</Country>
+          </Address>
+        </ShipFrom>
+        <MovementStartTime>2019-12-18T00:12:25.077</MovementStartTime>
+        <Line>
+          <LineNumber>1</LineNumber>
+          <ProductCode>IBARG370</ProductCode>
+          <ProductDescription>Ibanez RG370AHMZ-BMTStandard</ProductDescription>
+          <Quantity>1.000000</Quantity>
+          <UnitOfMeasure>UN</UnitOfMeasure>
+          <UnitPrice>503.2300000000000000</UnitPrice>
+          <Description>Ibanez RG370AHMZ-BMTStandard</Description>
+          <CreditAmount>503.230000</CreditAmount>
+          <Tax>
+            <TaxType>IVA</TaxType>
+            <TaxCountryRegion>PT</TaxCountryRegion>
+            <TaxCode>NOR</TaxCode>
+            <TaxPercentage>23.000000</TaxPercentage>
+          </Tax>
+        </Line>
+        <DocumentTotals>
+          <TaxPayable>115.74</TaxPayable>
+          <NetTotal>503.23</NetTotal>
+          <GrossTotal>618.97</GrossTotal>
+        </DocumentTotals>
+      </StockMovement>
+    </MovementOfGoods>
+    <WorkingDocuments>
+      <NumberOfEntries>11</NumberOfEntries>
+      <TotalDebit>0</TotalDebit>
+      <TotalCredit>6313.960000</TotalCredit>
+      <WorkDocument>
+        <DocumentNumber>ORC 2019/1</DocumentNumber>
+        <ATCUD>0</ATCUD>
+        <DocumentStatus>
+          <WorkStatus>N</WorkStatus>
+          <WorkStatusDate>2019-10-04T16:31:58</WorkStatusDate>
+          <SourceID>testerbotprimavera@gmail.com</SourceID>
+          <SourceBilling>P</SourceBilling>
+        </DocumentStatus>
+        <Hash>c9OhtLTYeB3Ae7S/8D8NhlVvAVbboRoKmlgZJX0yDeLhs0XZNeT93NdFibjKDwAaTTRjLuNlc/dirXK3Y9L+bX3ggV73LpYUTM3HYQ10zix9DQUOH9CZAU0mbrvn07IAppxZKK3uRcSKYqsruAKp6BLOXax9TO+KmdJ7mvG/y8o=</Hash>
+        <HashControl>1</HashControl>
+        <Period>4</Period>
+        <WorkDate>2019-04-02</WorkDate>
+        <WorkType>OR</WorkType>
+        <SourceID>testerbotprimavera@gmail.com</SourceID>
+        <SystemEntryDate>2019-10-04T16:31:58</SystemEntryDate>
+        <CustomerID>ALCAD.4</CustomerID>
+        <Line>
+          <LineNumber>1</LineNumber>
+          <ProductCode>ARECA</ProductCode>
+          <ProductDescription>Palmeira areca em vaso grês</ProductDescription>
+          <Quantity>6.000000</Quantity>
+          <UnitOfMeasure>UN</UnitOfMeasure>
+          <UnitPrice>65.0000000000000000</UnitPrice>
+          <TaxPointDate>2019-04-02</TaxPointDate>
+          <Description>Palmeira areca em vaso grês</Description>
+          <CreditAmount>390.000000</CreditAmount>
+          <Tax>
+            <TaxType>IVA</TaxType>
+            <TaxCountryRegion>PT</TaxCountryRegion>
+            <TaxCode>NOR</TaxCode>
+            <TaxPercentage>23.000000</TaxPercentage>
+          </Tax>
+        </Line>
+        <DocumentTotals>
+          <TaxPayable>89.70</TaxPayable>
+          <NetTotal>390.00</NetTotal>
+          <GrossTotal>479.70</GrossTotal>
+        </DocumentTotals>
+      </WorkDocument>
+      <WorkDocument>
+        <DocumentNumber>ECL 2019/6</DocumentNumber>
+        <ATCUD>0</ATCUD>
+        <DocumentStatus>
+          <WorkStatus>F</WorkStatus>
+          <WorkStatusDate>2019-12-17T10:56:43</WorkStatusDate>
+          <SourceID>up201909574@fe.up.pt</SourceID>
+          <SourceBilling>P</SourceBilling>
+        </DocumentStatus>
+        <Hash>hRyJYrWKuKFKGfQ7sG2m0PB5D2MquZteUYUe7c0VzwXANSHzVqo6099nazIDRsws6LuovXkpF/fFl516tMGbt/9z9y2g+eOkZfnat0C3A+di2tytjxj2KohfoloSgUrzHmIMnVkNXLuITJvpWQ8DcClUEtxiM05vNgdnzWWAO2I=</Hash>
+        <HashControl>1</HashControl>
+        <Period>12</Period>
+        <WorkDate>2019-12-17</WorkDate>
+        <WorkType>NE</WorkType>
+        <SourceID>up201909574@fe.up.pt</SourceID>
+        <SystemEntryDate>2019-12-17T10:56:43</SystemEntryDate>
+        <CustomerID>0008.1</CustomerID>
+        <Line>
+          <LineNumber>1</LineNumber>
+          <ProductCode>FETH</ProductCode>
+          <ProductDescription>Fire Emblem: Three Houses</ProductDescription>
+          <Quantity>1.000000</Quantity>
+          <UnitOfMeasure>UN</UnitOfMeasure>
+          <UnitPrice>59.9000000000000000</UnitPrice>
+          <TaxPointDate>2019-12-17</TaxPointDate>
+          <Description>Fire Emblem: Three Houses</Description>
+          <CreditAmount>59.900000</CreditAmount>
+          <Tax>
+            <TaxType>IVA</TaxType>
+            <TaxCountryRegion>PT</TaxCountryRegion>
+            <TaxCode>NOR</TaxCode>
+            <TaxPercentage>23.000000</TaxPercentage>
+          </Tax>
+        </Line>
+        <Line>
+          <LineNumber>2</LineNumber>
+          <ProductCode>NSWITCH</ProductCode>
+          <ProductDescription>Nintendo Switch Neon Blue</ProductDescription>
+          <Quantity>1.000000</Quantity>
+          <UnitOfMeasure>UN</UnitOfMeasure>
+          <UnitPrice>259.9000000000000000</UnitPrice>
+          <TaxPointDate>2019-12-17</TaxPointDate>
+          <Description>Nintendo Switch Neon Blue</Description>
+          <CreditAmount>259.900000</CreditAmount>
+          <Tax>
+            <TaxType>IVA</TaxType>
+            <TaxCountryRegion>PT</TaxCountryRegion>
+            <TaxCode>NOR</TaxCode>
+            <TaxPercentage>23.000000</TaxPercentage>
+          </Tax>
+        </Line>
+        <Line>
+          <LineNumber>3</LineNumber>
+          <ProductCode>SMASHU</ProductCode>
+          <ProductDescription>Super Smash Bros. Ultimate</ProductDescription>
+          <Quantity>1.000000</Quantity>
+          <UnitOfMeasure>UN</UnitOfMeasure>
+          <UnitPrice>59.9400000000000000</UnitPrice>
+          <TaxPointDate>2019-12-17</TaxPointDate>
+          <Description>Super Smash Bros. Ultimate</Description>
+          <CreditAmount>59.940000</CreditAmount>
+          <Tax>
+            <TaxType>IVA</TaxType>
+            <TaxCountryRegion>PT</TaxCountryRegion>
+            <TaxCode>NOR</TaxCode>
+            <TaxPercentage>23.000000</TaxPercentage>
+          </Tax>
+        </Line>
+        <Line>
+          <LineNumber>4</LineNumber>
+          <ProductCode>TLOZBOTW</ProductCode>
+          <ProductDescription>The Legend of Zelda: Breath of the Wild</ProductDescription>
+          <Quantity>1.000000</Quantity>
+          <UnitOfMeasure>UN</UnitOfMeasure>
+          <UnitPrice>68.9500000000000000</UnitPrice>
+          <TaxPointDate>2019-12-17</TaxPointDate>
+          <Description>The Legend of Zelda: Breath of the Wild</Description>
+          <CreditAmount>68.950000</CreditAmount>
+          <Tax>
+            <TaxType>IVA</TaxType>
+            <TaxCountryRegion>PT</TaxCountryRegion>
+            <TaxCode>NOR</TaxCode>
+            <TaxPercentage>23.000000</TaxPercentage>
+          </Tax>
+        </Line>
+        <DocumentTotals>
+          <TaxPayable>103.20</TaxPayable>
+          <NetTotal>448.69</NetTotal>
+          <GrossTotal>551.89</GrossTotal>
+        </DocumentTotals>
+      </WorkDocument>
+      <WorkDocument>
+        <DocumentNumber>ECL 2019/7</DocumentNumber>
+        <ATCUD>0</ATCUD>
+        <DocumentStatus>
+          <WorkStatus>F</WorkStatus>
+          <WorkStatusDate>2019-12-17T11:36:02</WorkStatusDate>
+          <SourceID>up201909574@fe.up.pt</SourceID>
+          <SourceBilling>P</SourceBilling>
+        </DocumentStatus>
+        <Hash>a4oPKDfVdVvXhFmG/H9U2LnvoOz9n4zpBWdQYJPrzRoP/AdWXotLTjEFuNuAwujJJEg02ks6l7Tw2M7MnC2jLoDTfq3NqQ81jZ6tM1xR/sIAi2Jlfg8LjhRveuYiGk618P3aa6BnibAS6yO2yESRN4K29rDEIlPv9JUzFHZXumo=</Hash>
+        <HashControl>1</HashControl>
+        <Period>12</Period>
+        <WorkDate>2019-12-17</WorkDate>
+        <WorkType>NE</WorkType>
+        <SourceID>up201909574@fe.up.pt</SourceID>
+        <SystemEntryDate>2019-12-17T11:36:02</SystemEntryDate>
+        <CustomerID>0008.3</CustomerID>
+        <Line>
+          <LineNumber>1</LineNumber>
+          <ProductCode>FETH</ProductCode>
+          <ProductDescription>Fire Emblem: Three Houses</ProductDescription>
+          <Quantity>10.000000</Quantity>
+          <UnitOfMeasure>UN</UnitOfMeasure>
+          <UnitPrice>59.9000000000000000</UnitPrice>
+          <TaxPointDate>2019-12-17</TaxPointDate>
+          <Description>Fire Emblem: Three Houses</Description>
+          <CreditAmount>599.000000</CreditAmount>
+          <Tax>
+            <TaxType>IVA</TaxType>
+            <TaxCountryRegion>PT</TaxCountryRegion>
+            <TaxCode>NOR</TaxCode>
+            <TaxPercentage>23.000000</TaxPercentage>
+          </Tax>
+        </Line>
+        <Line>
+          <LineNumber>2</LineNumber>
+          <ProductCode>SMASHU</ProductCode>
+          <ProductDescription>Super Smash Bros. Ultimate</ProductDescription>
+          <Quantity>5.000000</Quantity>
+          <UnitOfMeasure>UN</UnitOfMeasure>
+          <UnitPrice>59.9400000000000000</UnitPrice>
+          <TaxPointDate>2019-12-17</TaxPointDate>
+          <Description>Super Smash Bros. Ultimate</Description>
+          <CreditAmount>299.700000</CreditAmount>
+          <Tax>
+            <TaxType>IVA</TaxType>
+            <TaxCountryRegion>PT</TaxCountryRegion>
+            <TaxCode>NOR</TaxCode>
+            <TaxPercentage>23.000000</TaxPercentage>
+          </Tax>
+        </Line>
+        <Line>
+          <LineNumber>3</LineNumber>
+          <ProductCode>NSPROC</ProductCode>
+          <ProductDescription>Nintendo Switch Pro Controller</ProductDescription>
+          <Quantity>5.000000</Quantity>
+          <UnitOfMeasure>UN</UnitOfMeasure>
+          <UnitPrice>69.9900000000000000</UnitPrice>
+          <TaxPointDate>2019-12-17</TaxPointDate>
+          <Description>Nintendo Switch Pro Controller</Description>
+          <CreditAmount>349.950000</CreditAmount>
+          <Tax>
+            <TaxType>IVA</TaxType>
+            <TaxCountryRegion>PT</TaxCountryRegion>
+            <TaxCode>NOR</TaxCode>
+            <TaxPercentage>23.000000</TaxPercentage>
+          </Tax>
+        </Line>
+        <Line>
+          <LineNumber>4</LineNumber>
+          <ProductCode>NSWITCH</ProductCode>
+          <ProductDescription>Nintendo Switch Neon Blue</ProductDescription>
+          <Quantity>5.000000</Quantity>
+          <UnitOfMeasure>UN</UnitOfMeasure>
+          <UnitPrice>259.9000000000000000</UnitPrice>
+          <TaxPointDate>2019-12-17</TaxPointDate>
+          <Description>Nintendo Switch Neon Blue</Description>
+          <CreditAmount>1299.500000</CreditAmount>
+          <Tax>
+            <TaxType>IVA</TaxType>
+            <TaxCountryRegion>PT</TaxCountryRegion>
+            <TaxCode>NOR</TaxCode>
+            <TaxPercentage>23.000000</TaxPercentage>
+          </Tax>
+        </Line>
+        <DocumentTotals>
+          <TaxPayable>586.07</TaxPayable>
+          <NetTotal>2548.15</NetTotal>
+          <GrossTotal>3134.22</GrossTotal>
+        </DocumentTotals>
+      </WorkDocument>
+      <WorkDocument>
+        <DocumentNumber>ECL 2019/10</DocumentNumber>
+        <ATCUD>0</ATCUD>
+        <DocumentStatus>
+          <WorkStatus>F</WorkStatus>
+          <WorkStatusDate>2019-12-18T01:08:59</WorkStatusDate>
+          <SourceID>up201909574@fe.up.pt</SourceID>
+          <SourceBilling>P</SourceBilling>
+        </DocumentStatus>
+        <Hash>YHtwGOtyR5oDa4U6ivk+U8aRSmwsvVFIMEC4ISjXEnPJxfU95K0jKUMLR4teoGIy1v3oCarHfDpekjt70yRCLZo1oKn3aOkxrKWZg4lv9b4fiYZ8ZnRw7T4Xyiii7FunxXtzLttgS/a3mQB7hYBG0tqL/LdTvXS4EqNE5m1RRRc=</Hash>
+        <HashControl>1</HashControl>
+        <Period>12</Period>
+        <WorkDate>2019-12-18</WorkDate>
+        <WorkType>NE</WorkType>
+        <SourceID>up201909574@fe.up.pt</SourceID>
+        <SystemEntryDate>2019-12-18T01:08:59</SystemEntryDate>
+        <CustomerID>0013.4</CustomerID>
+        <Line>
+          <LineNumber>1</LineNumber>
+          <ProductCode>TLOZBOTW</ProductCode>
+          <ProductDescription>The Legend of Zelda: Breath of the Wild</ProductDescription>
+          <Quantity>1.000000</Quantity>
+          <UnitOfMeasure>UN</UnitOfMeasure>
+          <UnitPrice>68.9500000000000000</UnitPrice>
+          <TaxPointDate>2019-12-18</TaxPointDate>
+          <Description>The Legend of Zelda: Breath of the Wild</Description>
+          <CreditAmount>68.950000</CreditAmount>
+          <Tax>
+            <TaxType>IVA</TaxType>
+            <TaxCountryRegion>PT</TaxCountryRegion>
+            <TaxCode>NOR</TaxCode>
+            <TaxPercentage>23.000000</TaxPercentage>
+          </Tax>
+        </Line>
+        <Line>
+          <LineNumber>2</LineNumber>
+          <ProductCode>SMASHU</ProductCode>
+          <ProductDescription>Super Smash Bros. Ultimate</ProductDescription>
+          <Quantity>1.000000</Quantity>
+          <UnitOfMeasure>UN</UnitOfMeasure>
+          <UnitPrice>59.9400000000000000</UnitPrice>
+          <TaxPointDate>2019-12-18</TaxPointDate>
+          <Description>Super Smash Bros. Ultimate</Description>
+          <CreditAmount>59.940000</CreditAmount>
+          <Tax>
+            <TaxType>IVA</TaxType>
+            <TaxCountryRegion>PT</TaxCountryRegion>
+            <TaxCode>NOR</TaxCode>
+            <TaxPercentage>23.000000</TaxPercentage>
+          </Tax>
+        </Line>
+        <DocumentTotals>
+          <TaxPayable>29.64</TaxPayable>
+          <NetTotal>128.89</NetTotal>
+          <GrossTotal>158.53</GrossTotal>
+        </DocumentTotals>
+      </WorkDocument>
+      <WorkDocument>
+        <DocumentNumber>ECL 2019/8</DocumentNumber>
+        <ATCUD>0</ATCUD>
+        <DocumentStatus>
+          <WorkStatus>F</WorkStatus>
+          <WorkStatusDate>2019-12-17T23:35:49</WorkStatusDate>
+          <SourceID>up201909574@fe.up.pt</SourceID>
+          <SourceBilling>P</SourceBilling>
+        </DocumentStatus>
+        <Hash>KxeApzIXFGwRaR7qcWXHbkDa6vBvVJxibtt54uNO1QoJxOa0JGT5HhVdtV8OmuNBCXkjxyenQcYx/fzS0ZaLEbW0/w9TkS5aLePvJHSgcGQ839G2H+sJnUg1xUey8jC4fFgaYMG4KQGrqxL06AbVzq5pLJaTJ91//57OsG4wudo=</Hash>
+        <HashControl>1</HashControl>
+        <Period>12</Period>
+        <WorkDate>2019-12-17</WorkDate>
+        <WorkType>NE</WorkType>
+        <SourceID>up201909574@fe.up.pt</SourceID>
+        <SystemEntryDate>2019-12-17T23:35:49</SystemEntryDate>
+        <CustomerID>0014.2</CustomerID>
+        <Line>
+          <LineNumber>1</LineNumber>
+          <ProductCode>NSWITCH</ProductCode>
+          <ProductDescription>Nintendo Switch Neon Blue</ProductDescription>
+          <Quantity>1.000000</Quantity>
+          <UnitOfMeasure>UN</UnitOfMeasure>
+          <UnitPrice>250.0000000000000000</UnitPrice>
+          <TaxPointDate>2019-12-17</TaxPointDate>
+          <Description>Nintendo Switch Neon Blue</Description>
+          <CreditAmount>250.000000</CreditAmount>
+          <Tax>
+            <TaxType>IVA</TaxType>
+            <TaxCountryRegion>PT</TaxCountryRegion>
+            <TaxCode>NOR</TaxCode>
+            <TaxPercentage>23.000000</TaxPercentage>
+          </Tax>
+        </Line>
+        <Line>
+          <LineNumber>2</LineNumber>
+          <ProductCode>NSPROC</ProductCode>
+          <ProductDescription>Nintendo Switch Pro Controller</ProductDescription>
+          <Quantity>1.000000</Quantity>
+          <UnitOfMeasure>UN</UnitOfMeasure>
+          <UnitPrice>60.0000000000000000</UnitPrice>
+          <TaxPointDate>2019-12-17</TaxPointDate>
+          <Description>Nintendo Switch Pro Controller</Description>
+          <CreditAmount>60.000000</CreditAmount>
+          <Tax>
+            <TaxType>IVA</TaxType>
+            <TaxCountryRegion>PT</TaxCountryRegion>
+            <TaxCode>NOR</TaxCode>
+            <TaxPercentage>23.000000</TaxPercentage>
+          </Tax>
+        </Line>
+        <DocumentTotals>
+          <TaxPayable>71.30</TaxPayable>
+          <NetTotal>310.00</NetTotal>
+          <GrossTotal>381.30</GrossTotal>
+        </DocumentTotals>
+      </WorkDocument>
+      <WorkDocument>
+        <DocumentNumber>ECL 2019/9</DocumentNumber>
+        <ATCUD>0</ATCUD>
+        <DocumentStatus>
+          <WorkStatus>F</WorkStatus>
+          <WorkStatusDate>2019-12-18T00:11:40</WorkStatusDate>
+          <SourceID>up201909574@fe.up.pt</SourceID>
+          <SourceBilling>P</SourceBilling>
+        </DocumentStatus>
+        <Hash>ZQ89eoFQMm8iZtijBMoHQq7AXQmPvZZPV3bRYau/msVO73HTF698FCiihRqRQa79AoWHxwg+Gqj4v7oqDTxOpAK/piVPTsmlH/X48q1IaYHor76uYmYNRHTza9EkoH1GG+L0wiuuSiifXvyWD3FXBy+JRiX4Cmm1aEH2DR90OWE=</Hash>
+        <HashControl>1</HashControl>
+        <Period>12</Period>
+        <WorkDate>2019-12-18</WorkDate>
+        <WorkType>NE</WorkType>
+        <SourceID>up201909574@fe.up.pt</SourceID>
+        <SystemEntryDate>2019-12-18T00:11:40</SystemEntryDate>
+        <CustomerID>0015.2</CustomerID>
+        <Line>
+          <LineNumber>1</LineNumber>
+          <ProductCode>IBARG370</ProductCode>
+          <ProductDescription>Ibanez RG370AHMZ-BMTStandard</ProductDescription>
+          <Quantity>1.000000</Quantity>
+          <UnitOfMeasure>UN</UnitOfMeasure>
+          <UnitPrice>503.2300000000000000</UnitPrice>
+          <TaxPointDate>2019-12-18</TaxPointDate>
+          <Description>Ibanez RG370AHMZ-BMTStandard</Description>
+          <CreditAmount>503.230000</CreditAmount>
+          <Tax>
+            <TaxType>IVA</TaxType>
+            <TaxCountryRegion>PT</TaxCountryRegion>
+            <TaxCode>NOR</TaxCode>
+            <TaxPercentage>23.000000</TaxPercentage>
+          </Tax>
+        </Line>
+        <DocumentTotals>
+          <TaxPayable>115.74</TaxPayable>
+          <NetTotal>503.23</NetTotal>
+          <GrossTotal>618.97</GrossTotal>
+        </DocumentTotals>
+      </WorkDocument>
+      <WorkDocument>
+        <DocumentNumber>ECL 2019/5</DocumentNumber>
+        <ATCUD>0</ATCUD>
+        <DocumentStatus>
+          <WorkStatus>N</WorkStatus>
+          <WorkStatusDate>2019-10-04T12:51:05</WorkStatusDate>
+          <SourceID>application-user::jasmin-apite</SourceID>
+          <SourceBilling>P</SourceBilling>
+        </DocumentStatus>
+        <Hash>CMPT4bRTORFYMK1+RNW3xL/IOuGodUauJhpykuiL5NpK84vZjgIzU2TJ3CuSS6+U0yt6IDz7bzqfWM/+WAEUqehA//YKuENTYnw0LsufSiIDhVQoL7hcNvRcxkAIyPRoCrKkjfOGggqIEyZh9FA+mih3SDjAlp3I2mYm6qmI1qg=</Hash>
+        <HashControl>1</HashControl>
+        <Period>7</Period>
+        <WorkDate>2019-07-12</WorkDate>
+        <WorkType>NE</WorkType>
+        <SourceID>application-user::jasmin-apite</SourceID>
+        <SystemEntryDate>2019-10-04T12:51:05</SystemEntryDate>
+        <CustomerID>JARAUJO.289176328</CustomerID>
+        <Line>
+          <LineNumber>1</LineNumber>
+          <ProductCode>ARECA</ProductCode>
+          <ProductDescription>Palmeira areca em vaso grês</ProductDescription>
+          <Quantity>2.000000</Quantity>
+          <UnitOfMeasure>UN</UnitOfMeasure>
+          <UnitPrice>65.0000000000000000</UnitPrice>
+          <TaxPointDate>2019-07-12</TaxPointDate>
+          <Description>Palmeira areca em vaso grês</Description>
+          <CreditAmount>130.000000</CreditAmount>
+          <Tax>
+            <TaxType>IVA</TaxType>
+            <TaxCountryRegion>PT</TaxCountryRegion>
+            <TaxCode>NOR</TaxCode>
+            <TaxPercentage>23.000000</TaxPercentage>
+          </Tax>
+        </Line>
+        <Line>
+          <LineNumber>2</LineNumber>
+          <ProductCode>AZALEA</ProductCode>
+          <ProductDescription>Azalea piramide em vaso de barro</ProductDescription>
+          <Quantity>2.000000</Quantity>
+          <UnitOfMeasure>UN</UnitOfMeasure>
+          <UnitPrice>40.0000000000000000</UnitPrice>
+          <TaxPointDate>2019-07-12</TaxPointDate>
+          <Description>Azalea piramide em vaso de barro</Description>
+          <CreditAmount>80.000000</CreditAmount>
+          <Tax>
+            <TaxType>IVA</TaxType>
+            <TaxCountryRegion>PT</TaxCountryRegion>
+            <TaxCode>NOR</TaxCode>
+            <TaxPercentage>23.000000</TaxPercentage>
+          </Tax>
+        </Line>
+        <DocumentTotals>
+          <TaxPayable>48.30</TaxPayable>
+          <NetTotal>210.00</NetTotal>
+          <GrossTotal>258.30</GrossTotal>
+        </DocumentTotals>
+      </WorkDocument>
+      <WorkDocument>
+        <DocumentNumber>ECL 2019/2</DocumentNumber>
+        <ATCUD>0</ATCUD>
+        <DocumentStatus>
+          <WorkStatus>N</WorkStatus>
+          <WorkStatusDate>2019-10-04T12:50:59</WorkStatusDate>
+          <SourceID>application-user::jasmin-apite</SourceID>
+          <SourceBilling>P</SourceBilling>
+        </DocumentStatus>
+        <Hash>E8I/mo8poB2kf8vzX8buEsj+lNbT6XKQzgvaGk2m4OiInQXsErhDMpDIaqcdSLoQQhTfhQTJb77GDj7iiIhN++6jjlMKEP+dghsmfnGpzD9nklHq1a8aPgucoYuvYs9Zyvw0/JfFNLFG7BKwRqpETFPdYb0/F5rUxZXU8glXRcs=</Hash>
+        <HashControl>1</HashControl>
+        <Period>4</Period>
+        <WorkDate>2019-04-12</WorkDate>
+        <WorkType>NE</WorkType>
+        <SourceID>application-user::jasmin-apite</SourceID>
+        <SystemEntryDate>2019-10-04T12:50:59</SystemEntryDate>
+        <CustomerID>JMF.575787341</CustomerID>
+        <Line>
+          <LineNumber>1</LineNumber>
+          <ProductCode>BQTULIPAS</ProductCode>
+          <ProductDescription>Bouquet de tulipas</ProductDescription>
+          <Quantity>5.000000</Quantity>
+          <UnitOfMeasure>UN</UnitOfMeasure>
+          <UnitPrice>45.0000000000000000</UnitPrice>
+          <TaxPointDate>2019-04-12</TaxPointDate>
+          <Description>Bouquet de tulipas</Description>
+          <CreditAmount>225.000000</CreditAmount>
+          <Tax>
+            <TaxType>IVA</TaxType>
+            <TaxCountryRegion>PT</TaxCountryRegion>
+            <TaxCode>NOR</TaxCode>
+            <TaxPercentage>23.000000</TaxPercentage>
+          </Tax>
+        </Line>
+        <DocumentTotals>
+          <TaxPayable>51.75</TaxPayable>
+          <NetTotal>225.00</NetTotal>
+          <GrossTotal>276.75</GrossTotal>
+        </DocumentTotals>
+      </WorkDocument>
+      <WorkDocument>
+        <DocumentNumber>ECL 2019/3</DocumentNumber>
+        <ATCUD>0</ATCUD>
+        <DocumentStatus>
+          <WorkStatus>N</WorkStatus>
+          <WorkStatusDate>2019-10-04T12:51:01</WorkStatusDate>
+          <SourceID>application-user::jasmin-apite</SourceID>
+          <SourceBilling>P</SourceBilling>
+        </DocumentStatus>
+        <Hash>L6209qbv+QI3zQzsuMNCnN5tzSdGPPkTEtBDCHxkNL2OQjy+VpxMlCD1IbEPLge7QucnZEw0PM4elE2y7VySqXOl5yKTpwhOpKIjMqtw4cIRgTgWi30nJJOeKluwU22tZ6OS6KHVhM/3yFe0nzV5ulY9YwXiUHQOrUuppTZbDbI=</Hash>
+        <HashControl>1</HashControl>
+        <Period>5</Period>
+        <WorkDate>2019-05-28</WorkDate>
+        <WorkType>NE</WorkType>
+        <SourceID>application-user::jasmin-apite</SourceID>
+        <SystemEntryDate>2019-10-04T12:51:01</SystemEntryDate>
+        <CustomerID>LIMA.567732649</CustomerID>
+        <Line>
+          <LineNumber>1</LineNumber>
+          <ProductCode>CTPLANTAS</ProductCode>
+          <ProductDescription>Cesto de plantas variadas</ProductDescription>
+          <Quantity>4.000000</Quantity>
+          <UnitOfMeasure>UN</UnitOfMeasure>
+          <UnitPrice>50.0000000000000000</UnitPrice>
+          <TaxPointDate>2019-05-28</TaxPointDate>
+          <Description>Cesto de plantas variadas</Description>
+          <CreditAmount>200.000000</CreditAmount>
+          <Tax>
+            <TaxType>IVA</TaxType>
+            <TaxCountryRegion>PT</TaxCountryRegion>
+            <TaxCode>NOR</TaxCode>
+            <TaxPercentage>23.000000</TaxPercentage>
+          </Tax>
+        </Line>
+        <DocumentTotals>
+          <TaxPayable>46.00</TaxPayable>
+          <NetTotal>200.00</NetTotal>
+          <GrossTotal>246.00</GrossTotal>
+        </DocumentTotals>
+      </WorkDocument>
+      <WorkDocument>
+        <DocumentNumber>ECL 2019/1</DocumentNumber>
+        <ATCUD>0</ATCUD>
+        <DocumentStatus>
+          <WorkStatus>N</WorkStatus>
+          <WorkStatusDate>2019-10-04T12:50:58</WorkStatusDate>
+          <SourceID>application-user::jasmin-apite</SourceID>
+          <SourceBilling>P</SourceBilling>
+        </DocumentStatus>
+        <Hash>Huat65XGIalayoZicjSf6HpuytSnysANC54Q/gRsvJg8WT5SkM0rSFSOdPpOGeqRVQttu44hxsA1yQPr4+ri4DK4aAHb4ysyTfFP6+sLRpXzrDMuMt2wPCgJFYNcDDvxjqx6ASnKcDivN+bdp9qUdoYXgH9iMH1qv9/i+WOq1X8=</Hash>
+        <HashControl>1</HashControl>
+        <Period>1</Period>
+        <WorkDate>2019-01-25</WorkDate>
+        <WorkType>NE</WorkType>
+        <SourceID>application-user::jasmin-apite</SourceID>
+        <SystemEntryDate>2019-10-04T12:50:58</SystemEntryDate>
+        <CustomerID>SOFRIO.593362462</CustomerID>
+        <Line>
+          <LineNumber>1</LineNumber>
+          <ProductCode>ARECA</ProductCode>
+          <ProductDescription>Palmeira areca em vaso grês</ProductDescription>
+          <Quantity>10.000000</Quantity>
+          <UnitOfMeasure>UN</UnitOfMeasure>
+          <UnitPrice>65.0000000000000000</UnitPrice>
+          <TaxPointDate>2019-01-25</TaxPointDate>
+          <Description>Palmeira areca em vaso grês</Description>
+          <CreditAmount>650.000000</CreditAmount>
+          <Tax>
+            <TaxType>IVA</TaxType>
+            <TaxCountryRegion>PT</TaxCountryRegion>
+            <TaxCode>NOR</TaxCode>
+            <TaxPercentage>23.000000</TaxPercentage>
+          </Tax>
+        </Line>
+        <Line>
+          <LineNumber>2</LineNumber>
+          <ProductCode>AZALEA</ProductCode>
+          <ProductDescription>Azalea piramide em vaso de barro</ProductDescription>
+          <Quantity>5.000000</Quantity>
+          <UnitOfMeasure>UN</UnitOfMeasure>
+          <UnitPrice>40.0000000000000000</UnitPrice>
+          <TaxPointDate>2019-01-25</TaxPointDate>
+          <Description>Azalea piramide em vaso de barro</Description>
+          <CreditAmount>200.000000</CreditAmount>
+          <Tax>
+            <TaxType>IVA</TaxType>
+            <TaxCountryRegion>PT</TaxCountryRegion>
+            <TaxCode>NOR</TaxCode>
+            <TaxPercentage>23.000000</TaxPercentage>
+          </Tax>
+        </Line>
+        <DocumentTotals>
+          <TaxPayable>195.50</TaxPayable>
+          <NetTotal>850.00</NetTotal>
+          <GrossTotal>1045.50</GrossTotal>
+        </DocumentTotals>
+      </WorkDocument>
+      <WorkDocument>
+        <DocumentNumber>ECL 2019/4</DocumentNumber>
+        <ATCUD>0</ATCUD>
+        <DocumentStatus>
+          <WorkStatus>N</WorkStatus>
+          <WorkStatusDate>2019-10-04T12:51:03</WorkStatusDate>
+          <SourceID>application-user::jasmin-apite</SourceID>
+          <SourceBilling>P</SourceBilling>
+        </DocumentStatus>
+        <Hash>UcxftsUl1LYYMmXSAVnGVvBC/ss8JR6f0AAUvh949L6wZuN9+6aR5bluBJCQUsqvGFjtkTE0aZRvmzI0eSetj+ZG3VT8gTY0HSUVjGOeuft4oaNdJ3vfaxDkRMa9Lk5Hn78baNqDwYLuFR4Mws+jhCpcWF3kGantDmTZXw/8abE=</Hash>
+        <HashControl>1</HashControl>
+        <Period>6</Period>
+        <WorkDate>2019-06-20</WorkDate>
+        <WorkType>NE</WorkType>
+        <SourceID>application-user::jasmin-apite</SourceID>
+        <SystemEntryDate>2019-10-04T12:51:03</SystemEntryDate>
+        <CustomerID>SOFRIO.593362462</CustomerID>
+        <Line>
+          <LineNumber>1</LineNumber>
+          <ProductCode>CTPLANTAS</ProductCode>
+          <ProductDescription>Cesto de plantas variadas</ProductDescription>
+          <Quantity>10.000000</Quantity>
+          <UnitOfMeasure>UN</UnitOfMeasure>
+          <UnitPrice>50.0000000000000000</UnitPrice>
+          <TaxPointDate>2019-06-20</TaxPointDate>
+          <Description>Cesto de plantas variadas</Description>
+          <CreditAmount>500.000000</CreditAmount>
+          <Tax>
+            <TaxType>IVA</TaxType>
+            <TaxCountryRegion>PT</TaxCountryRegion>
+            <TaxCode>NOR</TaxCode>
+            <TaxPercentage>23.000000</TaxPercentage>
+          </Tax>
+        </Line>
+        <DocumentTotals>
+          <TaxPayable>115.00</TaxPayable>
+          <NetTotal>500.00</NetTotal>
+          <GrossTotal>615.00</GrossTotal>
+        </DocumentTotals>
+      </WorkDocument>
+    </WorkingDocuments>
+    <Payments>
+      <NumberOfEntries>8</NumberOfEntries>
+      <TotalDebit>0</TotalDebit>
+      <TotalCredit>5010.960000</TotalCredit>
+      <Payment>
+        <PaymentRefNo>REC 2019/6</PaymentRefNo>
+        <ATCUD>0</ATCUD>
+        <Period>12</Period>
+        <TransactionDate>2019-12-17</TransactionDate>
+        <PaymentType>RG</PaymentType>
+        <DocumentStatus>
+          <PaymentStatus>N</PaymentStatus>
+          <PaymentStatusDate>2019-12-17T23:40:06.65</PaymentStatusDate>
+          <SourceID>up201909574@fe.up.pt</SourceID>
+          <SourcePayment>P</SourcePayment>
+        </DocumentStatus>
+        <PaymentMethod>
+          <PaymentAmount>736.770000</PaymentAmount>
+          <PaymentDate>2019-12-17</PaymentDate>
+        </PaymentMethod>
+        <SourceID>up201909574@fe.up.pt</SourceID>
+        <SystemEntryDate>2019-12-17T23:40:06.65</SystemEntryDate>
+        <CustomerID>0008.5</CustomerID>
+        <Line>
+          <LineNumber>1</LineNumber>
+          <SourceDocumentID>
+            <OriginatingON>FA 2019/9</OriginatingON>
+            <InvoiceDate>2019-12-17</InvoiceDate>
+          </SourceDocumentID>
+          <CreditAmount>736.770000</CreditAmount>
+        </Line>
+        <DocumentTotals>
+          <TaxPayable>0.00</TaxPayable>
+          <NetTotal>736.77</NetTotal>
+          <GrossTotal>736.77</GrossTotal>
+          <Settlement>
+            <SettlementAmount>0.000000</SettlementAmount>
+          </Settlement>
+        </DocumentTotals>
+      </Payment>
+      <Payment>
+        <PaymentRefNo>REC 2019/4</PaymentRefNo>
+        <ATCUD>0</ATCUD>
+        <Period>12</Period>
+        <TransactionDate>2019-12-17</TransactionDate>
+        <PaymentType>RG</PaymentType>
+        <DocumentStatus>
+          <PaymentStatus>N</PaymentStatus>
+          <PaymentStatusDate>2019-12-17T11:38:29.047</PaymentStatusDate>
+          <SourceID>up201909574@fe.up.pt</SourceID>
+          <SourcePayment>P</SourcePayment>
+        </DocumentStatus>
+        <PaymentMethod>
+          <PaymentAmount>2397.450000</PaymentAmount>
+          <PaymentDate>2019-12-17</PaymentDate>
+        </PaymentMethod>
+        <SourceID>up201909574@fe.up.pt</SourceID>
+        <SystemEntryDate>2019-12-17T11:38:29.047</SystemEntryDate>
+        <CustomerID>0008.6</CustomerID>
+        <Line>
+          <LineNumber>1</LineNumber>
+          <SourceDocumentID>
+            <OriginatingON>FA 2019/7</OriginatingON>
+            <InvoiceDate>2019-12-17</InvoiceDate>
+          </SourceDocumentID>
+          <CreditAmount>2397.450000</CreditAmount>
+        </Line>
+        <DocumentTotals>
+          <TaxPayable>0.00</TaxPayable>
+          <NetTotal>2397.45</NetTotal>
+          <GrossTotal>2397.45</GrossTotal>
+          <Settlement>
+            <SettlementAmount>0.000000</SettlementAmount>
+          </Settlement>
+        </DocumentTotals>
+      </Payment>
+      <Payment>
+        <PaymentRefNo>REC 2019/3</PaymentRefNo>
+        <ATCUD>0</ATCUD>
+        <Period>12</Period>
+        <TransactionDate>2019-12-17</TransactionDate>
+        <PaymentType>RG</PaymentType>
+        <DocumentStatus>
+          <PaymentStatus>N</PaymentStatus>
+          <PaymentStatusDate>2019-12-17T11:19:39.12</PaymentStatusDate>
+          <SourceID>up201909574@fe.up.pt</SourceID>
+          <SourcePayment>P</SourcePayment>
+        </DocumentStatus>
+        <PaymentMethod>
+          <PaymentAmount>551.890000</PaymentAmount>
+          <PaymentDate>2019-12-17</PaymentDate>
+        </PaymentMethod>
+        <SourceID>up201909574@fe.up.pt</SourceID>
+        <SystemEntryDate>2019-12-17T11:19:39.12</SystemEntryDate>
+        <CustomerID>0008.8</CustomerID>
+        <Line>
+          <LineNumber>1</LineNumber>
+          <SourceDocumentID>
+            <OriginatingON>FA 2019/6</OriginatingON>
+            <InvoiceDate>2019-12-17</InvoiceDate>
+          </SourceDocumentID>
+          <CreditAmount>551.890000</CreditAmount>
+        </Line>
+        <DocumentTotals>
+          <TaxPayable>0.00</TaxPayable>
+          <NetTotal>551.89</NetTotal>
+          <GrossTotal>551.89</GrossTotal>
+          <Settlement>
+            <SettlementAmount>0.000000</SettlementAmount>
+          </Settlement>
+        </DocumentTotals>
+      </Payment>
+      <Payment>
+        <PaymentRefNo>REC 2019/8</PaymentRefNo>
+        <ATCUD>0</ATCUD>
+        <Period>12</Period>
+        <TransactionDate>2019-12-18</TransactionDate>
+        <PaymentType>RG</PaymentType>
+        <DocumentStatus>
+          <PaymentStatus>N</PaymentStatus>
+          <PaymentStatusDate>2019-12-18T01:10:13.993</PaymentStatusDate>
+          <SourceID>up201909574@fe.up.pt</SourceID>
+          <SourcePayment>P</SourcePayment>
+        </DocumentStatus>
+        <PaymentMethod>
+          <PaymentAmount>158.530000</PaymentAmount>
+          <PaymentDate>2019-12-18</PaymentDate>
+        </PaymentMethod>
+        <SourceID>up201909574@fe.up.pt</SourceID>
+        <SystemEntryDate>2019-12-18T01:10:13.993</SystemEntryDate>
+        <CustomerID>0013.3</CustomerID>
+        <Line>
+          <LineNumber>1</LineNumber>
+          <SourceDocumentID>
+            <OriginatingON>FA 2019/11</OriginatingON>
+            <InvoiceDate>2019-12-18</InvoiceDate>
+          </SourceDocumentID>
+          <CreditAmount>158.530000</CreditAmount>
+        </Line>
+        <DocumentTotals>
+          <TaxPayable>0.00</TaxPayable>
+          <NetTotal>158.53</NetTotal>
+          <GrossTotal>158.53</GrossTotal>
+          <Settlement>
+            <SettlementAmount>0.000000</SettlementAmount>
+          </Settlement>
+        </DocumentTotals>
+      </Payment>
+      <Payment>
+        <PaymentRefNo>REC 2019/5</PaymentRefNo>
+        <ATCUD>0</ATCUD>
+        <Period>12</Period>
+        <TransactionDate>2019-12-17</TransactionDate>
+        <PaymentType>RG</PaymentType>
+        <DocumentStatus>
+          <PaymentStatus>N</PaymentStatus>
+          <PaymentStatusDate>2019-12-17T23:38:48.527</PaymentStatusDate>
+          <SourceID>up201909574@fe.up.pt</SourceID>
+          <SourcePayment>P</SourcePayment>
+        </DocumentStatus>
+        <PaymentMethod>
+          <PaymentAmount>381.300000</PaymentAmount>
+          <PaymentDate>2019-12-17</PaymentDate>
+        </PaymentMethod>
+        <SourceID>up201909574@fe.up.pt</SourceID>
+        <SystemEntryDate>2019-12-17T23:38:48.527</SystemEntryDate>
+        <CustomerID>0014.4</CustomerID>
+        <Line>
+          <LineNumber>1</LineNumber>
+          <SourceDocumentID>
+            <OriginatingON>FA 2019/8</OriginatingON>
+            <InvoiceDate>2019-12-17</InvoiceDate>
+          </SourceDocumentID>
+          <CreditAmount>381.300000</CreditAmount>
+        </Line>
+        <DocumentTotals>
+          <TaxPayable>0.00</TaxPayable>
+          <NetTotal>381.30</NetTotal>
+          <GrossTotal>381.30</GrossTotal>
+          <Settlement>
+            <SettlementAmount>0.000000</SettlementAmount>
+          </Settlement>
+        </DocumentTotals>
+      </Payment>
+      <Payment>
+        <PaymentRefNo>REC 2019/7</PaymentRefNo>
+        <ATCUD>0</ATCUD>
+        <Period>12</Period>
+        <TransactionDate>2019-12-18</TransactionDate>
+        <PaymentType>RG</PaymentType>
+        <DocumentStatus>
+          <PaymentStatus>N</PaymentStatus>
+          <PaymentStatusDate>2019-12-18T00:14:17.37</PaymentStatusDate>
+          <SourceID>up201909574@fe.up.pt</SourceID>
+          <SourcePayment>P</SourcePayment>
+        </DocumentStatus>
+        <PaymentMethod>
+          <PaymentAmount>618.970000</PaymentAmount>
+          <PaymentDate>2019-12-18</PaymentDate>
+        </PaymentMethod>
+        <SourceID>up201909574@fe.up.pt</SourceID>
+        <SystemEntryDate>2019-12-18T00:14:17.37</SystemEntryDate>
+        <CustomerID>0015.3</CustomerID>
+        <Line>
+          <LineNumber>1</LineNumber>
+          <SourceDocumentID>
+            <OriginatingON>FA 2019/10</OriginatingON>
+            <InvoiceDate>2019-12-18</InvoiceDate>
+          </SourceDocumentID>
+          <CreditAmount>618.970000</CreditAmount>
+        </Line>
+        <DocumentTotals>
+          <TaxPayable>0.00</TaxPayable>
+          <NetTotal>618.97</NetTotal>
+          <GrossTotal>618.97</GrossTotal>
+          <Settlement>
+            <SettlementAmount>0.000000</SettlementAmount>
+          </Settlement>
+        </DocumentTotals>
+      </Payment>
+      <Payment>
+        <PaymentRefNo>REC 2019/2</PaymentRefNo>
+        <ATCUD>0</ATCUD>
+        <Period>12</Period>
+        <TransactionDate>2019-12-07</TransactionDate>
+        <PaymentType>RG</PaymentType>
+        <DocumentStatus>
+          <PaymentStatus>N</PaymentStatus>
+          <PaymentStatusDate>2019-12-07T20:54:19.16</PaymentStatusDate>
+          <SourceID>up201909574@fe.up.pt</SourceID>
+          <SourcePayment>P</SourcePayment>
+        </DocumentStatus>
+        <PaymentMethod>
+          <PaymentAmount>86.100000</PaymentAmount>
+          <PaymentDate>2019-12-07</PaymentDate>
+        </PaymentMethod>
+        <SourceID>up201909574@fe.up.pt</SourceID>
+        <SystemEntryDate>2019-12-07T20:54:19.16</SystemEntryDate>
+        <CustomerID>ALCAD.3</CustomerID>
+        <Line>
+          <LineNumber>1</LineNumber>
+          <SourceDocumentID>
+            <OriginatingON>FA 2017/4</OriginatingON>
+            <InvoiceDate>2017-03-25</InvoiceDate>
+          </SourceDocumentID>
+          <CreditAmount>86.100000</CreditAmount>
+        </Line>
+        <DocumentTotals>
+          <TaxPayable>0.00</TaxPayable>
+          <NetTotal>86.10</NetTotal>
+          <GrossTotal>86.10</GrossTotal>
+          <Settlement>
+            <SettlementAmount>0.000000</SettlementAmount>
+          </Settlement>
+        </DocumentTotals>
+      </Payment>
+      <Payment>
+        <PaymentRefNo>REC 2019/1</PaymentRefNo>
+        <ATCUD>0</ATCUD>
+        <Period>10</Period>
+        <TransactionDate>2019-10-04</TransactionDate>
+        <PaymentType>RG</PaymentType>
+        <DocumentStatus>
+          <PaymentStatus>N</PaymentStatus>
+          <PaymentStatusDate>2019-10-04T17:01:43.593</PaymentStatusDate>
+          <SourceID>testerbotprimavera@gmail.com</SourceID>
+          <SourcePayment>P</SourcePayment>
+        </DocumentStatus>
+        <PaymentMethod>
+          <PaymentAmount>79.950000</PaymentAmount>
+          <PaymentDate>2019-10-04</PaymentDate>
+        </PaymentMethod>
+        <SourceID>testerbotprimavera@gmail.com</SourceID>
+        <SystemEntryDate>2019-10-04T17:01:43.593</SystemEntryDate>
+        <CustomerID>NW-CORP.576839914</CustomerID>
+        <Line>
+          <LineNumber>1</LineNumber>
+          <SourceDocumentID>
+            <OriginatingON>FA 2019/5</OriginatingON>
+            <InvoiceDate>2019-04-29</InvoiceDate>
+          </SourceDocumentID>
+          <CreditAmount>79.950000</CreditAmount>
+        </Line>
+        <DocumentTotals>
+          <TaxPayable>0.00</TaxPayable>
+          <NetTotal>79.95</NetTotal>
+          <GrossTotal>79.95</GrossTotal>
+          <Settlement>
+            <SettlementAmount>0.000000</SettlementAmount>
+          </Settlement>
+        </DocumentTotals>
+      </Payment>
+    </Payments>
+  </SourceDocuments>
+</AuditFile>
