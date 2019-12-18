@@ -1,3 +1,4 @@
+const Sequelize = require('sequelize');
 const Invoice = require('../../../common/models/invoice');
 const ShippingInfo = require('../../../common/models/shippingInfo');
 const formatTop5 = require('../../utils/formatTop5');
@@ -12,13 +13,14 @@ async function calculate(fiscalYear) {
     },
     include: [{
       model: ShippingInfo,
+      as: 'shipToInfo',
     }],
   });
 
   for (const invoice of invoices) {
     // since the name of the property ShippingInfo.country contains a "." (dot),
     // the property needs to be fetched like this
-    const region = invoice['ShippingInfo.country'];
+    const region = invoice['shipToInfo.country'];
 
     if (!valuePerRegion[region]) {
       valuePerRegion[region] = 0;
